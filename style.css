@@ -86,23 +86,9 @@ a:not(h1 a):visited {
 	display: grid;
 
 	grid-auto-flow: column;
-	grid-template-rows: repeat(20, 50px);
-}
-
-.listlong {
-	display: grid;
-
-	grid-auto-flow: column;
-	grid-template-rows: repeat(45, 50px);
-}
-
-.list2 {
-	display: grid;
-
-	grid-auto-flow: column;
-	grid-template-rows: repeat(1000, 80px);
+	grid-template-rows: repeat(calc(round(down, (1000 / var(--screen-width)) * (var(--child-count) / 4), 10)), 50px);
 }
 
 .listitem {
-	width: 50%;
+	width: 100%;
 }

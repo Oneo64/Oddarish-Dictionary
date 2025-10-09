@@ -26,15 +26,19 @@
 	document.getElementById("letter").innerHTML = "Runan " + v.toUpperCase();
 
 	if (v) {
-		if (v == "s" || v == "h") {
-			document.getElementById("words").classList.remove("list");
-			document.getElementById("words").classList.add("listlong");
-		}
-
 		for (var i = 0; i < entry_words.length; i++) {
 			if (entry_words[i].charAt(0) == v) document.getElementById("words").innerHTML += "<a class='listitem' href='word.html?v=" + entry_words[i] + "'>" + entry_words[i] + "</a>";
 		}
 	}
+
+	document.documentElement.style.setProperty('--child-count', `${document.getElementById("words").children.length}`);
+
+	function windowResized() {
+		document.documentElement.style.setProperty('--screen-width', `${window.innerWidth}`);
+	}
+
+	window.onresize = windowResized;
+	windowResized();
 </script>
 </body>
 </html>
