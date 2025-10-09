@@ -44,7 +44,7 @@ a:not(h1 a):visited {
 .inputbox {
 	font-family: 'Noto Sans', serif;
 	font-size: 18px;
-	width: 360px;
+	width: 200px;
 }
 
 .submit {
@@ -52,7 +52,7 @@ a:not(h1 a):visited {
 	font-size: 18px;
 
 	margin-left: 8px;
-	width: 180px;
+	width: 100px;
 
 	border: 2px solid black;
 	border-radius: 0;
