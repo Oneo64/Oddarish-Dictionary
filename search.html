@@ -25,18 +25,22 @@
 	document.getElementById("title").innerHTML = "Orðpængin um Oddarsku - Orðsilfing";
     document.getElementById("search").innerHTML = "Silfingur um '" + v + "'";
 
-    for (var i = 0; i < entry_words.length; i++) {
-    	var word = entry_words[i];
+    if (v == "") {
+		document.getElementById("results").innerHTML = "<div>Silfingit getir eigi at vera eigeinn.</div>";
+	} else {
+	    for (var i = 0; i < entry_words.length; i++) {
+	    	var word = entry_words[i];
 
-    	if (entries[word][1].includes(v)) {
-    		document.getElementById("results").innerHTML += "<div><a class='listitem' href='word.html?v=" + word + "'>" + entry_words[i] + "</a><div class='nowrap'>&nbsp&nbsp" + entries[word][1] + "</div></div>";
-    	} else if (word.includes(v)) {
-			document.getElementById("results").innerHTML += "<div><a class='listitem' href='word.html?v=" + word + "'>" + word + "</a><div class='nowrap'>&nbsp&nbsp(fyndið í orðinni)</div></div>";
+	    	if (entries[word][1].includes(v)) {
+	    		document.getElementById("results").innerHTML += "<div><a class='listitem' href='word.html?v=" + word + "'>" + entry_words[i] + "</a><div class='nowrap'>&nbsp&nbsp" + entries[word][1] + "</div></div>";
+	    	} else if (word.includes(v)) {
+				document.getElementById("results").innerHTML += "<div><a class='listitem' href='word.html?v=" + word + "'>" + word + "</a><div class='nowrap'>&nbsp&nbsp(fyndið í orðinni)</div></div>";
+			}
 		}
-	}
 
-	if (document.getElementById("results").innerHTML == "") {
-		document.getElementById("results").innerHTML = "<div>Skít!!! Þær býr eigi orðit '" + v + ".' :(</div>";
+		if (document.getElementById("results").innerHTML == "") {
+			document.getElementById("results").innerHTML = "<div>Skít!!! Þær býr eigi orðit '" + v + ".' :(</div>";
+		}
 	}
 </script>
 </body>
