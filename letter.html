@@ -16,7 +16,7 @@
 </div>
 
 <script src="letters.js"></script>
-<script src="oddarish-dictionary.js"></script>
+<script src="oddarish_dictionary.js"></script>
 <script>
 	var query = window.location.search;
 	var params = new URLSearchParams(query);
@@ -26,6 +26,11 @@
 	document.getElementById("letter").innerHTML = "Runan " + v.toUpperCase();
 
 	if (v) {
+		if (v == "s" || v == "h") {
+			document.getElementById("words").classList.remove("list");
+			document.getElementById("words").classList.add("listlong");
+		}
+
 		for (var i = 0; i < entry_words.length; i++) {
 			if (entry_words[i].charAt(0) == v) document.getElementById("words").innerHTML += "<a class='listitem' href='word.html?v=" + entry_words[i] + "'>" + entry_words[i] + "</a>";
 		}

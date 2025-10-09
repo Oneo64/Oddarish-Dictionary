@@ -16,14 +16,14 @@
 </div>
 
 <script src="letters.js"></script>
-<script src="oddarish-dictionary.js"></script>
+<script src="oddarish_dictionary.js"></script>
 <script>
 	var query = window.location.search;
 	var params = new URLSearchParams(query);
 	var v = params.get("v");
 
 	document.getElementById("title").innerHTML = "Orðpængin um Oddarsku - Orðsilfing";
-    document.getElementById("search").innerHTML = "Silfingur um \"" + v + "\"";
+    document.getElementById("search").innerHTML = "Silfingur um '" + v + "'";
 
     for (var i = 0; i < entry_words.length; i++) {
     	var word = entry_words[i];
@@ -33,6 +33,10 @@
     	} else if (word.includes(v)) {
 			document.getElementById("results").innerHTML += "<div><a class='listitem' href='word.html?v=" + word + "'>" + word + "</a><div>&nbsp&nbsp(fyndið í orðinni)</div></div>";
 		}
+	}
+
+	if (document.getElementById("results").innerHTML == "") {
+		document.getElementById("results").innerHTML = "<div>Skít!!! Þær býr eigi orðit '" + v + ".' :(</div>";
 	}
 </script>
 </body>

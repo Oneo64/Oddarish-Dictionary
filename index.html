@@ -12,10 +12,15 @@
 	<h2>Eltjasta orðpængin sem þú hafi lépt í aldr</h2>
 	<div id="letters" class="letterlist"></div>
 	<hr>
-	<p>Þetta ar gýrugt orðpængin fyrir Oddarsku. Séran ar staðr sem þú geti at finna allt orður í Oddarska.</p>
+	<p>Þetta ar gýrugta orðpængin fyrir Oddarsku. Séran ar staðr sem þú geti at finna allt orður í Oddarska í eltjasta góðníminn. Þessi staðr var skrytað um Njáll (Neo) sem ar þessa skaldr ok þessi staðs svíkmandr.</p>
+	<p id="wordcount"></p>
 	<div id="letters2" class="letterlist center"></div>
 </div>
 
 <script src="letters.js"></script>
+<script src="oddarish_dictionary.js"></script>
+<script>
+	document.getElementById("wordcount").innerHTML = "Í núna, Oddarska hafir " + entry_words.length + " orður!";
+</script>
 </body>
 </html>

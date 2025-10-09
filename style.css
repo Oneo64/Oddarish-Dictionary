@@ -26,9 +26,19 @@ h1 a {
 	color: black;
 }
 
-a:not(h1 a):link, a:not(h1 a):visited {
-    color: blue;
-    text-decoration: none;
+a:not(h1 a):link {
+	color: blue;
+	text-decoration: none;
+}
+
+a:not(h1 a):hover {
+	color: blue;
+	text-decoration: underline;
+}
+
+a:not(h1 a):visited {
+	color: blue;
+	text-decoration: none;
 }
 
 .inputbox {
@@ -77,6 +87,13 @@ a:not(h1 a):link, a:not(h1 a):visited {
 
 	grid-auto-flow: column;
 	grid-template-rows: repeat(20, 50px);
+}
+
+.listlong {
+	display: grid;
+
+	grid-auto-flow: column;
+	grid-template-rows: repeat(45, 50px);
 }
 
 .list2 {
