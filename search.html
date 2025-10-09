@@ -12,7 +12,7 @@
 	<div id="letters" class="letterlist h2font"></div>
 	<hr>
 	<h3 id="search"></h2>
-	<div id="results" class="list2 pfont"></div>
+	<div id="results" class="list4 pfont"></div>
 </div>
 
 <script src="letters.js"></script>
@@ -21,6 +21,8 @@
 	var query = window.location.search;
 	var params = new URLSearchParams(query);
 	var v = params.get("v");
+
+	if (v != null) v = v.toLowerCase();
 
 	document.getElementById("title").innerHTML = "Orðpængin um Oddarsku - Orðsilfing";
     document.getElementById("search").innerHTML = "Silfingur um '" + v + "'";

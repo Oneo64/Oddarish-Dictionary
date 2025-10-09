@@ -92,21 +92,21 @@ a:not(h1 a):visited {
 		display: grid;
 
 		grid-auto-flow: column;
-		grid-template-rows: repeat(40, 50px);
+		grid-template-rows: repeat(40, 40px);
 	}
 
 	.list2 {
 		display: grid;
 
 		grid-auto-flow: column;
-		grid-template-rows: repeat(80, 50px);
+		grid-template-rows: repeat(80, 40px);
 	}
 
 	.list3 {
 		display: grid;
 
 		grid-auto-flow: column;
-		grid-template-rows: repeat(120, 50px);
+		grid-template-rows: repeat(120, 40px);
 	}
 }
 
@@ -127,22 +127,29 @@ a:not(h1 a):visited {
 		display: grid;
 
 		grid-auto-flow: column;
-		grid-template-rows: repeat(20, 50px);
+		grid-template-rows: repeat(20, 40px);
 	}
 
 	.list2 {
 		display: grid;
 
 		grid-auto-flow: column;
-		grid-template-rows: repeat(40, 50px);
+		grid-template-rows: repeat(40, 40px);
 	}
 
 	.list3 {
 		display: grid;
 
 		grid-auto-flow: column;
-		grid-template-rows: repeat(60, 50px);
+		grid-template-rows: repeat(60, 40px);
 	}
+}
+
+.list4 {
+	display: grid;
+
+	grid-auto-flow: column;
+	grid-template-rows: repeat(1000, 60px);
 }
 
 .listitem {
