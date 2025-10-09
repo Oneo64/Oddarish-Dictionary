@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title id="title">Orðpæng um Oddarsku</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="body">
+	<h1><a href="index.html"> Orðpængin um Oddarsku</a></h1>
+	<div id="letters" class="letterlist"></div>
+	<hr>
+	<h3 id="search"></h2>
+	<div id="results" class="list2 pfont"></div>
+</div>
+
+<script src="letters.js"></script>
+<script src="oddarish-dictionary.js"></script>
+<script>
+	var query = window.location.search;
+	var params = new URLSearchParams(query);
+	var v = params.get("v");
+
+	document.getElementById("title").innerHTML = "Orðpængin um Oddarsku - Orðsilfing";
+    document.getElementById("search").innerHTML = "Silfingur um \"" + v + "\"";
+
+    for (var i = 0; i < entry_words.length; i++) {
+    	var word = entry_words[i];
+
+    	if (entries[word][1].includes(v)) {
+    		document.getElementById("results").innerHTML += "<div><a class='listitem' href='word.html?v=" + word + "'>" + entry_words[i] + "</a><div>&nbsp&nbsp" + entries[word][1] + "</div></div>";
+    	} else if (word.includes(v)) {
+			document.getElementById("results").innerHTML += "<div><a class='listitem' href='word.html?v=" + word + "'>" + word + "</a><div>&nbsp&nbsp(fyndið í orðinni)</div></div>";
+		}
+	}
+</script>
+</body>
+</html>

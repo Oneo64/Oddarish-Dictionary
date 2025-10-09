@@ -22,18 +22,43 @@ p {
 	font-size: 18px;
 }
 
+h1 a {
+	color: black;
+}
+
+a:not(h1 a):link, a:not(h1 a):visited {
+    color: blue;
+    text-decoration: none;
+}
+
+.inputbox {
+	font-family: 'Noto Sans', serif;
+	font-size: 18px;
+	width: 360px;
+}
+
+.submit {
+	font-family: 'Noto Sans', serif;
+	font-size: 18px;
+
+	margin-left: 8px;
+	width: 180px;
+
+	border: 2px solid black;
+	border-radius: 0;
+}
+
 .pfont {
 	font-family: 'Noto Sans', serif;
 	font-size: 18px;
 }
 
-#letters {
+.letterlist {
 	font-family: 'Noto Sans', serif;
 	font-size: 28px;
 	display: flex;
 	flex-wrap: wrap;
 	gap: 16px;
-	justify-content: center;
 }
 
 .center {
@@ -52,6 +77,13 @@ p {
 
 	grid-auto-flow: column;
 	grid-template-rows: repeat(20, 50px);
+}
+
+.list2 {
+	display: grid;
+
+	grid-auto-flow: column;
+	grid-template-rows: repeat(1000, 80px);
 }
 
 .listitem {

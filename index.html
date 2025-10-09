@@ -3,24 +3,19 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Orðpæng um Oddarsku</title>
+	<title>Orðpængin um Oddarsku</title>
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
 <div class="body">
-	<h1>Orðpæng um Oddarsku</h1>
+	<h1><a href="index.html"> Orðpængin um Oddarsku</a></h1>
 	<h2>Eltjasta orðpængin sem þú hafi lépt í aldr</h2>
+	<div id="letters" class="letterlist"></div>
 	<hr>
 	<p>Þetta ar gýrugt orðpængin fyrir Oddarsku. Séran ar staðr sem þú geti at finna allt orður í Oddarska.</p>
-	<div id="letters" class="center"></div>
+	<div id="letters2" class="letterlist center"></div>
 </div>
 
-<script>
-	var letters = ["a", "á", "b", "d", "e", "é", "f", "g", "h", "i", "í", "j", "k", "l", "m", "n", "o", "ó", "p", "r", "s", "t", "u", "ú", "v", "y", "ý", "z", "þ", "æ", "ö"];
-
-	for (var i = 0; i < letters.length; i++) {
-		document.getElementById("letters").innerHTML += "<a href='letter.html?v=" + letters[i] + "'>" + letters[i] + "</a>";
-	}
-</script>
+<script src="letters.js"></script>
 </body>
 </html>

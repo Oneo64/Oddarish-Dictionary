@@ -3,22 +3,32 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Orðpæng um Oddarsku</title>
+	<title id="title">Orðpængin um Oddarsku</title>
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
 <div class="body">
-	<h1>Orðpæng um Oddarsku</h1>
+	<h1><a href="index.html"> Orðpængin um Oddarsku</a></h1>
+	<div id="letters" class="letterlist"></div>
 	<hr>
-	<h3>Letter A</h2>
+	<h3 id="letter">A</h2>
 	<div id="words" class="list pfont"></div>
 </div>
 
+<script src="letters.js"></script>
+<script src="oddarish-dictionary.js"></script>
 <script>
-	var words = ["abbun", "abbun-tyð", "af", "af-", "af-hlapa", "af-stöggva", "af-vita", "af-viting", "af-ypan", "aftók", "agg", "aggva", "akka", "al-", "al-mandar", "al-výsir", "al-þöllr", "aldask", "aldr", "aldr-eigi", "aldr-sága", "alfalfa", "allr", "allt í lagi", "altari", "amaðysti", "ambun", "ambátt", "amla", "and-hæling eip", "and-jafa", "and-leiða", "and-lit hjálmr", "and-litr", "and-skoti", "and-skotinn", "and-skyma", "and-varpa", "and-vigð", "and-vríta", "and-výsi", "anda", "angr", "ant-elska", "ant-lugr", "anta", "antask", "apta-", "apta-kváma", "apta-svindling", "aptr", "ar/var sem þok ypir", "ar/var til fyrir", "ar/var önn frá", "ar/var önn með", "arka", "arm-gíri", "arm-klúfa", "armr", "arða", "askr", "asni", "at", "at-einn", "at-hygli", "at-magn", "at-var", "aubaski", "auka", "auli", "aupli", "aurgr", "auvullr", "ax", "axla", "aða"];
+	var query = window.location.search;
+	var params = new URLSearchParams(query);
+	var v = params.get("v");
 
-	for (var i = 0; i < words.length; i++) {
-		document.getElementById("words").innerHTML += "<a class='listitem' href='word.html?v=" + words[i] + "'>" + words[i] + "</a>";
+	document.getElementById("title").innerHTML = "Orðpængin um Oddarsku - " + v.toUpperCase() + " Orður";
+	document.getElementById("letter").innerHTML = "Runan " + v.toUpperCase();
+
+	if (v) {
+		for (var i = 0; i < entry_words.length; i++) {
+			if (entry_words[i].charAt(0) == v) document.getElementById("words").innerHTML += "<a class='listitem' href='word.html?v=" + entry_words[i] + "'>" + entry_words[i] + "</a>";
+		}
 	}
 </script>
 </body>
