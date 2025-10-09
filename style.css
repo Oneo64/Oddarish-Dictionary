@@ -81,6 +81,13 @@ a:not(h1 a):visited {
 		margin-right: 25px;
 	}
 
+	.nowrap {
+		width: calc(100vw - 50px - 2em);
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+
 	.list {
 		display: grid;
 
@@ -107,6 +114,13 @@ a:not(h1 a):visited {
 	.body {
 		margin-left: 50px;
 		margin-right: 50px;
+	}
+
+	.nowrap {
+		width: calc(100vw - 100px - 2em);
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
 	}
 
 	.list {
