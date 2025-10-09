@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+h1 {
+	font-family: 'IM Fell English SC', serif;
+	font-size: 64px;
+}
+
+h2 {
+	font-family: 'Noto Sans', serif;
+	font-size: 28px;
+	color: slategrey;
+}
+
+h3 {
+	font-family: 'Noto Sans', serif;
+	font-size: 26px;
+}
+
+p {
+	font-family: 'Noto Sans', serif;
+	font-size: 18px;
+}
+
+.pfont {
+	font-family: 'Noto Sans', serif;
+	font-size: 18px;
+}
+
+#letters {
+	font-family: 'Noto Sans', serif;
+	font-size: 28px;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 16px;
+	justify-content: center;
+}
+
+.center {
+	width: 100%;
+	justify-content: center;
+	text-align: center;
+}
+
+.body {
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+.list {
+	display: grid;
+
+	grid-auto-flow: column;
+	grid-template-rows: repeat(20, 50px);
+}
+
+.listitem {
+	width: 50%;
+}
