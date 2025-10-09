@@ -3,23 +3,33 @@
 
 h1 {
 	font-family: 'IM Fell English SC', serif;
-	font-size: 64px;
+	font-size: calc(42px + 0.75vw);
 }
 
 h2 {
 	font-family: 'Noto Sans', serif;
-	font-size: 28px;
+	font-size: calc(18px + 0.32vw);
 	color: slategrey;
 }
 
 h3 {
 	font-family: 'Noto Sans', serif;
-	font-size: 26px;
+	font-size: calc(16px + 0.3vw);
+}
+
+.h2font {
+	font-family: 'Noto Sans', serif;
+	font-size: calc(18px + 0.32vw);
 }
 
 p {
 	font-family: 'Noto Sans', serif;
-	font-size: 18px;
+	font-size: calc(14px + 0.25vw);
+}
+
+.pfont {
+	font-family: 'Noto Sans', serif;
+	font-size: calc(14px + 0.25vw);
 }
 
 h1 a {
@@ -42,15 +52,10 @@ a:not(h1 a):visited {
 }
 
 .inputbox {
-	font-family: 'Noto Sans', serif;
-	font-size: 18px;
 	width: 200px;
 }
 
 .submit {
-	font-family: 'Noto Sans', serif;
-	font-size: 18px;
-
 	margin-left: 8px;
 	width: 100px;
 
@@ -58,14 +63,7 @@ a:not(h1 a):visited {
 	border-radius: 0;
 }
 
-.pfont {
-	font-family: 'Noto Sans', serif;
-	font-size: 18px;
-}
-
 .letterlist {
-	font-family: 'Noto Sans', serif;
-	font-size: 28px;
 	display: flex;
 	flex-wrap: wrap;
 	gap: 16px;
