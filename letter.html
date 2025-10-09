@@ -31,14 +31,17 @@
 		}
 	}
 
-	document.documentElement.style.setProperty('--child-count', `${document.getElementById("words").children.length}`);
+	var len = document.getElementById("words").children.length;
 
-	function windowResized() {
-		document.documentElement.style.setProperty('--screen-width', `${window.innerWidth}`);
+	if (len > 100) {
+		document.getElementById("words").classList.remove("list");
+		document.getElementById("words").classList.add("list2");
 	}
 
-	window.onresize = windowResized;
-	windowResized();
+	if (len > 200) {
+		document.getElementById("words").classList.remove("list");
+		document.getElementById("words").classList.add("list3");
+	}
 </script>
 </body>
 </html>

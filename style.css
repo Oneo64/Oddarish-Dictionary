@@ -75,16 +75,60 @@ a:not(h1 a):visited {
 	text-align: center;
 }
 
-.body {
-	margin-left: 50px;
-	margin-right: 50px;
+@media (max-width: 500px) {
+	.body {
+		margin-left: 25px;
+		margin-right: 25px;
+	}
+
+	.list {
+		display: grid;
+
+		grid-auto-flow: column;
+		grid-template-rows: repeat(40, 50px);
+	}
+
+	.list2 {
+		display: grid;
+
+		grid-auto-flow: column;
+		grid-template-rows: repeat(80, 50px);
+	}
+
+	.list3 {
+		display: grid;
+
+		grid-auto-flow: column;
+		grid-template-rows: repeat(120, 50px);
+	}
 }
 
-.list {
-	display: grid;
+@media (min-width: 500px) {
+	.body {
+		margin-left: 50px;
+		margin-right: 50px;
+	}
 
-	grid-auto-flow: column;
-	grid-template-rows: repeat(calc(round(down, (100000 / var(--screen-width)) - min(2000 / var(--child-count), 40), 10)), 50px);
+	.list {
+		display: grid;
+
+		grid-auto-flow: column;
+		grid-template-rows: repeat(20, 50px);
+	}
+
+	.list2 {
+		display: grid;
+
+		grid-auto-flow: column;
+		grid-template-rows: repeat(40, 50px);
+	}
+
+	.list3 {
+		display: grid;
+
+		grid-auto-flow: column;
+		grid-template-rows: repeat(60, 50px);
+	}
 }
 
 .listitem {
