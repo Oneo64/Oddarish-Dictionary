@@ -24,10 +24,12 @@
 	var params = new URLSearchParams(query);
 	var v = params.get("v");
 
-	document.getElementById("title").innerHTML = "Orðpængin um Oddarsku - " + v.charAt(0).toUpperCase() + v.substring(1);
-    document.getElementById("word").innerHTML = v;
-    document.getElementById("type").innerHTML = word_type_short_form[entries[v][0]];
-    document.getElementById("definition").innerHTML = entries[v][1];
+	if (v in entries) {
+		document.getElementById("title").innerHTML = "Orðpængin um Oddarsku - " + v.charAt(0).toUpperCase() + v.substring(1);
+		document.getElementById("word").innerHTML = v;
+		document.getElementById("type").innerHTML = word_type_short_form[entries[v][0]];
+		document.getElementById("definition").innerHTML = entries[v][1];
+	}
 </script>
 </body>
 </html>
