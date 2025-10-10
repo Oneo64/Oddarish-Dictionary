@@ -2621,7 +2621,7 @@ const entries = {
 	"gimm": ["neuter noun", "thumb"],
 	"ginna": ["verb", "to seduce | present tense: ginni/ginnir | past tense: gynnði, past participle: ginnið"],
 	"girðing": ["feminine noun", "fence"],
-	"gírja": ["verb", "to swallow, devour, or comsume"],
+	"gírja": ["verb", "to swallow, to devour; to wholly comsume something"],
 	"gírr": ["masculine noun", "a ruler (measurement)"],
 	"girt": ["neuter noun", "ink"],
 	"gjalda": ["verb", "to pay back, to repay, to tribute"],
