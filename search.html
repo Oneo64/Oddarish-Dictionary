@@ -5,18 +5,19 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title id="title">Orðpæng um Oddarsku</title>
 	<link rel="stylesheet" href="style.css">
+	<link rel="icon" type="image/x-icon" href="images/favicon.png">
 </head>
 <body>
 <div class="body">
-	<h1><a href="index.html"> Orðpængin um Oddarsku</a></h1>
+	<span class="titlespan"><img class="h1favicon" src="images/favicon.png" alt="favicon"><h1><a href="index.html">Orðpængin um Oddarsku</a></h1></span>
 	<div id="letters" class="letterlist h2font"></div>
 	<hr>
 	<h3 id="search"></h2>
 	<div id="results" class="list4 pfont"></div>
 </div>
 
-<script src="letters.js"></script>
-<script src="oddarish_dictionary.js"></script>
+<script src="js/letters.js"></script>
+<script src="js/oddarish_dictionary.js"></script>
 <script>
 	var query = window.location.search;
 	var params = new URLSearchParams(query);
