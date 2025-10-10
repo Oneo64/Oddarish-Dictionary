@@ -13,6 +13,7 @@
 	<div id="letters" class="letterlist h2font"></div>
 	<hr>
 	<p>Þetta ar gýrugta orðpængin fyrir Oddarsku. Séran ar staðr sem þú geti at finna allt orður í Oddarska í eltjasta góðníminn. Þessi staðr var skrytað um Njáll (Neo) sem ar þessa skaldr ok þessi staðs svíkmandr.</p>
+	<p>Oddarska ar ænn gamalljasta tungaleiðit ænnun allt etir tungaleiðum á Njáls. Oddarska hafir verið frá Fjallasku, hrun frá Norvunsku, hrun frá Kagalarsku. Pungeinkvistarnir hafir folla výssit um Oddarsku. Þú geti at finna kvostunu í séran: <a href="https://docs.google.com/spreadsheets/d/1AggLjhQJxt3sIcegQ47OOLx4KZX0nQdFapMGkq7yZVk/">Google Pungeinkvistar</a></p>
 	<p id="wordcount"></p>
 	<div id="letters2" class="letterlist center h2font"></div>
 </div>
@@ -20,7 +21,18 @@
 <script src="letters.js"></script>
 <script src="oddarish_dictionary.js"></script>
 <script>
-	document.getElementById("wordcount").innerHTML = "Í núna, Oddarska hafir " + entry_words.length + " orður!";
+
+	var now = new Date();
+	var specificDate = new Date("2024-01-09");
+
+	var diff = now - specificDate;
+	var days = diff / (1000 * 60 * 60 * 24);
+	var years = diff / (1000 * 60 * 60 * 24 * 365.25);
+
+	var years2 = Math.floor(years);
+	var days2 = Math.floor(days - (years2 * 365.25));
+
+	document.getElementById("wordcount").innerHTML = "Í núna, Oddarska hafir " + entry_words.length + " orður, ok ar " + years2 + " ár ok " + days2 + " dægar í aldr!";
 </script>
 </body>
 </html>
