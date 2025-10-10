@@ -152,7 +152,7 @@ a:not(h1 a):visited {
 	display: grid;
 
 	grid-auto-flow: column;
-	grid-template-rows: repeat(1000, 60px);
+	grid-template-rows: repeat(1000, 65px);
 }
 
 .listitem {

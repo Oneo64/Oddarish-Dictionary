@@ -26,9 +26,32 @@
 	document.getElementById("title").innerHTML = "Orðpængin um Oddarsku - " + v.toUpperCase() + " Orður";
 	document.getElementById("letter").innerHTML = "Runan " + v.toUpperCase();
 
+	var list = [];
+
 	if (v) {
 		for (var i = 0; i < entry_words.length; i++) {
-			if (entry_words[i].charAt(0) == v) document.getElementById("words").innerHTML += "<a class='listitem' href='word.html?v=" + entry_words[i] + "'>" + entry_words[i] + "</a>";
+			if (entry_words[i].charAt(0) == v) list.push(entry_words[i]);
+		}
+
+		list.sort(function(a, b) {
+			function normalize(str) {
+				return str
+					.replace(/a/g, "á~")
+					.replace(/d/g, "ð~")
+					.replace(/e/g, "é~")
+					.replace(/i/g, "í~")
+					.replace(/o/g, "ó~")
+					.replace(/u/g, "ú~")
+					.replace(/y/g, "ý~")
+					.replace(/æ/g, "z~")
+					.replace(/ö/g, "þ~");
+			}
+
+			return normalize(a).localeCompare(normalize(b));
+		});
+
+		for (var i = 0; i < list.length; i++) {
+			document.getElementById("words").innerHTML += "<a class='listitem' href='word.html?v=" + list[i] + "'>" + list[i] + "</a>";
 		}
 	}
 
