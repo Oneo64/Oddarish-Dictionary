@@ -24,7 +24,7 @@ const noun_declensions = {
 		"s", "sins", "a", "anna",
 	],
 	feminine: [
-		"", "an", "ir", "irnar",
+		"", "in", "ir", "irnar",
 		"", "ina", "ir", "irnar",
 		"", "inni", "um", "unum",
 		"s", "sins", "a", "anna",
@@ -126,12 +126,20 @@ function get_noun_declension(w, t) {
 					declension.push(word + noun_declensions.feminine_ei[i]);
 				}
 			}
-		} else {
+		} else if (word.charAt(word.length - 1) == word.charAt(word.length - 2)) {
 			for (var i = 0; i < 16; i++) {
 				if (noun_declensions.feminine[i] == "") {
 					declension.push(word);
 				} else {
 					declension.push(word.substring(0, word.length - 1) + noun_declensions.feminine[i]);
+				}
+			}
+		} else {
+			for (var i = 0; i < 16; i++) {
+				if (noun_declensions.feminine[i] == "") {
+					declension.push(word);
+				} else {
+					declension.push(word + noun_declensions.feminine[i]);
 				}
 			}
 		}
