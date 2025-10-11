@@ -2086,6 +2086,7 @@ const entries = {
 	"-liska": ["suffix", "language suffix"],
 	"-nir, -ingi, -tari, -jari": ["suffix", "one like in 'great one', 'old one', 'fiery one'; kin, like in owlkin | check this word out: önn"],
 	"-ugr, -lugr": ["suffix", "full of, characterised by"],
+	
 	"á": ["preposition", "of something, of someone (preposition)"],
 	"á til": ["auxiliary", "should (auxiliary) | question form: á til þú"],
 	"á-brefir": ["adverb", "in front (adverb)"],

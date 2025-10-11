@@ -895,7 +895,6 @@ const entry_words = [
 	"konungs-landr",
 	"konungs-mandr",
 	"koparr",
-	"kors",
 	"kotr",
 	"kraukr",
 	"kremja",
@@ -2082,6 +2081,12 @@ const entry_words = [
 ];
 
 const entries = {
+	"-laust": ["suffix", "without suffix"],
+	"-ligr": ["suffix", "to be like"],
+	"-liska": ["suffix", "language suffix"],
+	"-nir, -ingi, -tari, -jari": ["suffix", "one like in 'great one', 'old one', 'fiery one'; kin, like in owlkin | check this word out: önn"],
+	"-ugr, -lugr": ["suffix", "full of, characterised by"],
+
 	"á": ["preposition", "um sum þing, fyrir sum önn"],
 	"á til": ["auxiliary", "fyrir at tala skoling eða réttr"],
 	"á-brefir": ["adverb", "í brefstaðrinn um bóski"],
