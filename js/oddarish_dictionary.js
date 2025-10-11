@@ -2504,7 +2504,7 @@ const entries = {
 	"fjokinn (1)": ["neuter noun", "something that is damned"],
 	"fjokinn (2)": ["interjection", "a swear word; shit, fuck, damn"],
 	"fjokinn þú": ["phrase", "\"fuck you\""],
-	"fjökkna": ["verb", "to explode or burst; to go up in flames; to instantly combust"],
+	"fjökkna": ["verb", "to explode, to burst; to go up in flames; to instantly combust"],
 	"fjökkning": ["neuter noun", "explosion"],
 	"fjokt (1)": ["adjective", "damned (adjective)"],
 	"fjokt (2)": ["interjection", "short form of the word \"fjokinn\"; a swear word; shit, fuck, damn"],
