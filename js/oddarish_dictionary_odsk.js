@@ -3821,7 +3821,7 @@ const entries = {
 	"tafsi": ["masculine noun", "the rest, the remaining; remnant"],
 	"tagl": ["masculine noun", "tail"],
 	"tagl-vörnd": ["neuter noun", "bowed lyre, taglharpa"],
-	"tala": ["verb", "to speak, talk, or say"],
+	"tala": ["verb", "to speak, to talk, to say"],
 	"tamr": ["adjective", "tame, not wild; obedient, docile, disciplined (adjective)"],
 	"tángi": ["masculine noun", "tongs"],
 	"tár": ["neuter noun", "tear (as in tear drop) | plural is the same"],
