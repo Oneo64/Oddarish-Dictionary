@@ -16,7 +16,8 @@ const word_type_short_form = {
 	"preposition": "pre.",
 	"prefix": "pref.",
 	"pronoun": "pron.",
-	"auxiliary": "aux."
+	"auxiliary": "aux.",
+	"numeral": "num."
 };
 
 const entry_words = [
@@ -3638,7 +3639,7 @@ const entries = {
 	"Síntra/Angliska": ["feminine noun", "Centrumic/English, english"],
 	"sirta": ["verb", "to guess, to assume"],
 	"sjafna": ["verb", "to inspect; to closely observe"],
-	"sjákn": ["conjunction", "seven (noun, adjective)"],
+	"sjákn": ["numeral", "seven (noun, adjective)"],
 	"sjákn-tán": ["numeral", "seventeen"],
 	"sjákninn": ["numeral", "the seventh (noun, adjective)"],
 	"sjalr": ["adjective", "cool, grand, amazing (adjective)"],
