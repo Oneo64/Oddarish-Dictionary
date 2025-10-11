@@ -41,7 +41,7 @@
 </div>
 
 <script src="js/letters.js"></script>
-<script src="js/oddarish_dictionary.js"></script>
+<script src="js/oddarish_dictionary_odsk.js"></script>
 <script src="js/declensions.js"></script>
 <script>
 	var query = window.location.search;
@@ -82,8 +82,12 @@
 				window.onresize = onWindowResize;
 				onWindowResize();
 
-				document.getElementById("declension_top").innerHTML = "orðraðingpung fyrir '" + v + "'";
-				document.getElementById("_declension_top").innerHTML = "orðraðingpung fyrir '" + v + "'";
+				var v2 = v;
+
+				if (v.endsWith(")")) v2 = v.substring(0, v.length - 4);
+
+				document.getElementById("declension_top").innerHTML = "orðraðingpung fyrir '" + v2 + "'";
+				document.getElementById("_declension_top").innerHTML = "orðraðingpung fyrir '" + v2 + "'";
 
 				if (entry[0] == "masculine noun") {
 					document.getElementById("gender").innerHTML = "mandligr";

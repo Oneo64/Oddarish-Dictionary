@@ -52,12 +52,20 @@ const noun_declensions = {
 		" ", "it", "ur", "urnir",
 		"i", "inni", "um", "unum",
 		"s", "sins", "a", "anna",
+	],
+	neuter_á: [
+		"á", "áet", "eyr", "eyrnar",
+		"á", "áet", "eyr", "eyrnar",
+		"æ", "æinni", "eyjum", "eyjunum",
+		"ás", "ásins", "eyja", "eyjanna",
 	]
 };
 
 function get_noun_declension(w, t) {
 	var declension = [];
 	var word = w.replace("-", "");
+
+	if (word.endsWith(")")) word = word.substring(0, word.length - 4);
 	
 	if (t == "masculine noun") {
 		if (word.endsWith("dr")) {
@@ -153,6 +161,14 @@ function get_noun_declension(w, t) {
 				} else {
 					declension.push(word.substring(0, word.length - 1) + noun_declensions.neuter[i]);
 				}
+			}
+		}
+	} else if (word.endsWith("á")) {
+		for (var i = 0; i < 16; i++) {
+			if (noun_declensions.neuter_á[i] == "") {
+				declension.push(word);
+			} else {
+				declension.push(word.substring(0, word.length - 1) + noun_declensions.neuter_á[i]);
 			}
 		}
 	} else {
