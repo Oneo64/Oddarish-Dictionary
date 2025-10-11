@@ -159,6 +159,19 @@ a:not(h1 a):visited {
 	width: 100%;
 }
 
+table {
+	border-collapse: collapse;
+}
+
+th, td {
+	border: 1px solid black;
+	padding: 8px;
+}
+
+th {
+	background: gainsboro;
+}
+
 /* This shit down here is the body padding (adds space around the side of the window) */
 /* Mobile sizes */
 @media (max-width: 500px) {

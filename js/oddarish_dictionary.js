@@ -3253,7 +3253,7 @@ const entries = {
 	"mindkefingi": ["masculine noun", "coward"],
 	"mindr": ["masculine noun", "mind, memory, spirit, consciousness; thoughts (less commonly, more appropriate term is \"hugr\")"],
 	"minn, mín, mitt": ["pronoun", "i, me, my, mine (possessive case) | standalone case = minns, míns, mitts"],
-	"minna": ["verb", "to remember, or recall | present tense: minni/minnir | past tense: mynnði, past participle: minnið"],
+	"minna": ["verb", "to remember, to recall | present tense: minni/minnir | past tense: mynnði, past participle: minnið"],
 	"mirða": ["verb", "to dig"],
 	"mjá": ["verb", "to meow (verb); a meow (noun); meow, cat's meow (interjection)"],
 	"mjöðm": ["feminine noun", "hip (feminine declension)"],
