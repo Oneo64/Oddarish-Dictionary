@@ -58,6 +58,12 @@ const noun_declensions = {
 		"á", "áet", "eyr", "eyrnar",
 		"æ", "æinni", "eyjum", "eyjunum",
 		"ás", "ásins", "eyja", "eyjanna",
+	],
+	nir: [
+		"", "ninn", "níri", "nærinn",
+		"nu", "nynu", "níri", "nærinn",
+		"ni", "nyni", "nyrjum", "nærunum",
+		"nis", "nins", "næra", "næranna",
 	]
 };
 
@@ -67,7 +73,15 @@ function get_noun_declension(w, t) {
 
 	if (word.endsWith(")")) word = word.substring(0, word.length - 4);
 	
-	if (t == "masculine noun") {
+	if (word.endsWith("nir")) {
+		for (var i = 0; i < 16; i++) {
+			if (noun_declensions.nir[i] == "") {
+				declension.push(word);
+			} else {
+				declension.push(word.substring(0, word.length - 3) + noun_declensions.nir[i]);
+			}
+		}
+	} else if (t == "masculine noun") {
 		if (word.endsWith("dr")) {
 			for (var i = 0; i < 16; i++) {
 				if (noun_declensions.masculine_dr[i] == "") {
