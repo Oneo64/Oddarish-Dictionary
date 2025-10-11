@@ -15,14 +15,28 @@
 	<h3 id="word">Orðinn ar eigi fyndið</h2>
 	<p id="type">n/a</p>
 	<p id="definition">Þelsmúin, þetta orð býr eigi í Oddarska!</p>
-
-	<table id="noun" class="pfont table" hidden><tbody>
+	<table id="noun_declension" class="pfont" hidden><tbody>
+		<tr> <th id="declension_top" colspan="5">orðraðingpung fyrir...</th> </tr>
 		<tr> <th id="gender" rowspan="2">eigeinligr</th> <th colspan="2">einhlett</th> <th colspan="2">mákarhlett</th> </tr>
 		<tr> <th>óþærbúandi</th> <th>þærbúandi</th> <th>óþærbúandi</th> <th>þærbúandi</th> </tr>
 		<tr> <th>fráorð</th> <td id="n0"></td> <td id="n1"></td> <td id="n2"></td> <td id="n3"></td> </tr>
 		<tr> <th>tilorð</th> <td id="n4"></td> <td id="n5"></td> <td id="n6"></td> <td id="n7"></td> </tr>
 		<tr> <th>etirorð</th> <td id="n8"></td> <td id="n9"></td> <td id="n10"></td> <td id="n11"></td> </tr>
 		<tr> <th>ekkinorð</th> <td id="n12"></td> <td id="n13"></td> <td id="n14"></td> <td id="n15"></td> </tr>
+	</tbody></table>
+	<table id="noun_declension_mobile" class="pfont" hidden><tbody>
+		<tr> <th id="_declension_top" colspan="5">orðraðingpung fyrir...</th> </tr>
+		<tr> <th id="_gender" rowspan="2">eigeinligr</th> <th colspan="2">einhlett</th> </tr>
+		<tr> <th>óþærbúandi</th> <th>þærbúandi</th> </tr>
+		<tr> <th>fráorð</th> <td id="_n0"></td> <td id="_n1"></td> </tr>
+		<tr> <th>tilorð</th> <td id="_n4"></td> <td id="_n5"></td> </tr>
+		<tr> <th>etirorð</th> <td id="_n8"></td> <td id="_n9"></td> </tr>
+		<tr> <th>ekkinorð</th> <td id="_n12"></td> <td id="_n13"></td> </tr>
+		<tr> <th></th> <th colspan="2">mákarhlett</th> </tr>
+		<tr> <th>fráorð</th> <td id="_n2"></td> <td id="_n3"></td> </tr>
+		<tr> <th>tilorð</th> <td id="_n6"></td> <td id="_n7"></td> </tr>
+		<tr> <th>etirorð</th> <td id="_n10"></td> <td id="_n11"></td> </tr>
+		<tr> <th>ekkinorð</th> <td id="_n14"></td> <td id="_n15"></td> </tr>
 	</tbody></table>
 </div>
 
@@ -47,103 +61,44 @@
 			document.getElementById("definition").innerHTML = entry[1].substring(0, entry[1].indexOf("|")).trim();
 		}
 
-		var declension = [];
-
-		if (entry[0].includes("noun")) {
-			document.getElementById("noun").hidden = false;
-
-			if (entry[0] == "masculine noun") {
-				document.getElementById("gender").innerHTML = "mandligr";
-
-				if (v.endsWith("dr")) {
-					for (var i = 0; i < 16; i++) {
-						if (noun_declensions.masculine_dr[i] == "") {
-							declension.push(v);
-						} else {
-							declension.push(v + noun_declensions.masculine_dr[i]);
-						}
-					}
-				} else if (v.endsWith("r")) {
-					for (var i = 0; i < 16; i++) {
-						if (noun_declensions.masculine_r[i] == "") {
-							declension.push(v);
-						} else {
-							declension.push(v.substring(0, v.length - 1) + noun_declensions.masculine_r[i]);
-						}
-					}
-				} else if (v.endsWith("i")) {
-					for (var i = 0; i < 16; i++) {
-						if (noun_declensions.masculine_i[i] == "") {
-							declension.push(v);
-						} else {
-							declension.push(v.substring(0, v.length - 1) + noun_declensions.masculine_i[i]);
-						}
-					}
-				} else {
-					for (var i = 0; i < 16; i++) {
-						if (noun_declensions.masculine[i] == "") {
-							declension.push(v);
-						} else {
-							declension.push(v.substring(0, v.length - 1) + noun_declensions.masculine[i]);
-						}
-					}
-				}
-			} else if (entry[0] == "feminine noun") {
-				document.getElementById("gender").innerHTML = "kónligr";
-
-				if (v.endsWith("ja")) {
-					for (var i = 0; i < 16; i++) {
-						if (noun_declensions.feminine_ja[i] == "") {
-							declension.push(v);
-						} else {
-							declension.push(v.substring(0, v.length - 1) + noun_declensions.feminine_ja[i]);
-						}
-					}
-				} else if (v.endsWith("a")) {
-					for (var i = 0; i < 16; i++) {
-						if (noun_declensions.feminine_a[i] == "") {
-							declension.push(v);
-						} else {
-							declension.push(v.substring(0, v.length - 1) + noun_declensions.feminine_a[i]);
-						}
-					}
-				} else if (v.endsWith("ei")) {
-					for (var i = 0; i < 16; i++) {
-						if (noun_declensions.feminine_ei[i] == "") {
-							declension.push(v);
-						} else {
-							declension.push(v + noun_declensions.feminine_ei[i]);
-						}
-					}
-				} else {
-					for (var i = 0; i < 16; i++) {
-						if (noun_declensions.feminine[i] == "") {
-							declension.push(v);
-						} else {
-							declension.push(v.substring(0, v.length - 1) + noun_declensions.feminine[i]);
-						}
-					}
-				}
-			} else if (v.endsWith("i")) {
-				for (var i = 0; i < 16; i++) {
-					if (noun_declensions.neuter[i] == "") {
-						declension.push(v);
-					} else {
-						declension.push(v.substring(0, v.length - 1) + noun_declensions.neuter[i]);
-					}
+		function onWindowResize() {
+			if (window.innerWidth < 500 || window.innerHeight < 500) {
+				if (document.getElementById("noun_declension_mobile").hidden) {
+					document.getElementById("noun_declension").hidden = true;
+					document.getElementById("noun_declension_mobile").hidden = false;
 				}
 			} else {
-				for (var i = 0; i < 16; i++) {
-					if (noun_declensions.neuter[i] == "") {
-						declension.push(v);
-					} else {
-						declension.push(v + noun_declensions.neuter[i]);
-					}
+				if (document.getElementById("noun_declension").hidden) {
+					document.getElementById("noun_declension").hidden = false;
+					document.getElementById("noun_declension_mobile").hidden = true;
 				}
 			}
+		}
 
-			for (var i = 0; i < 16; i++) {
-				document.getElementById("n" + i).innerHTML = declension[i];
+		if (entry[0].includes("noun")) {
+			var declension = get_noun_declension(v, entry[0]);
+
+			if (declension.length != 0) {
+				window.onresize = onWindowResize;
+				onWindowResize();
+
+				document.getElementById("declension_top").innerHTML = "orðraðingpung fyrir '" + v + "'";
+				document.getElementById("_declension_top").innerHTML = "orðraðingpung fyrir '" + v + "'";
+
+				if (entry[0] == "masculine noun") {
+					document.getElementById("gender").innerHTML = "mandligr";
+					document.getElementById("_gender").innerHTML = "mandligr";
+				}
+
+				if (entry[0] == "feminine noun") {
+					document.getElementById("gender").innerHTML = "kónligr";
+					document.getElementById("_gender").innerHTML = "kónligr";
+				}
+
+				for (var i = 0; i < 16; i++) {
+					document.getElementById("n" + i).innerHTML = declension[i];
+					document.getElementById("_n" + i).innerHTML = declension[i];
+				}
 			}
 		}
 	}

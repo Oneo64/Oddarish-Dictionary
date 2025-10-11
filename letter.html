@@ -56,7 +56,7 @@
 	}
 
 	function onWindowResize() {
-		if (window.innerWidth < 500) {
+		if (window.innerWidth < 500 || window.innerHeight < 500) {
 			document.documentElement.style.setProperty("--words-per-column", Math.ceil(document.getElementById("words").children.length / 3));
 		} else {
 			document.documentElement.style.setProperty("--words-per-column", Math.ceil(document.getElementById("words").children.length / 4));

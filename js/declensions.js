@@ -49,11 +49,116 @@ const noun_declensions = {
 	],
 	neuter: [
 		"", "it", "ur", "urnir",
-		"", "it", "ur", "urnir",
+		" ", "it", "ur", "urnir",
 		"i", "inni", "um", "unum",
 		"s", "sins", "a", "anna",
 	]
 };
+
+function get_noun_declension(w, t) {
+	var declension = [];
+	var word = w.replace("-", "");
+	
+	if (t == "masculine noun") {
+		if (word.endsWith("dr")) {
+			for (var i = 0; i < 16; i++) {
+				if (noun_declensions.masculine_dr[i] == "") {
+					declension.push(word);
+				} else {
+					declension.push(word + noun_declensions.masculine_dr[i]);
+				}
+			}
+		} else if (word.endsWith("r")) {
+			for (var i = 0; i < 16; i++) {
+				if (noun_declensions.masculine_r[i] == "") {
+					declension.push(word);
+				} else {
+					declension.push(word.substring(0, word.length - 1) + noun_declensions.masculine_r[i]);
+				}
+			}
+		} else if (word.endsWith("i")) {
+			for (var i = 0; i < 16; i++) {
+				if (noun_declensions.masculine_i[i] == "") {
+					declension.push(word);
+				} else {
+					declension.push(word.substring(0, word.length - 1) + noun_declensions.masculine_i[i]);
+				}
+			}
+		} else if (word.charAt(word.length - 1) == word.charAt(word.length - 2)) {
+			for (var i = 0; i < 16; i++) {
+				if (noun_declensions.masculine[i] == "") {
+					declension.push(word);
+				} else {
+					declension.push(word.substring(0, word.length - 1) + noun_declensions.masculine[i]);
+				}
+			}
+		} else {
+			for (var i = 0; i < 16; i++) {
+				if (noun_declensions.masculine[i] == "") {
+					declension.push(word);
+				} else {
+					declension.push(word + noun_declensions.masculine[i]);
+				}
+			}
+		}
+	} else if (t == "feminine noun") {
+		if (word.endsWith("ja")) {
+			for (var i = 0; i < 16; i++) {
+				if (noun_declensions.feminine_ja[i] == "") {
+					declension.push(word);
+				} else {
+					declension.push(word.substring(0, word.length - 1) + noun_declensions.feminine_ja[i]);
+				}
+			}
+		} else if (word.endsWith("a")) {
+			for (var i = 0; i < 16; i++) {
+				if (noun_declensions.feminine_a[i] == "") {
+					declension.push(word);
+				} else {
+					declension.push(word.substring(0, word.length - 1) + noun_declensions.feminine_a[i]);
+				}
+			}
+		} else if (word.endsWith("ei")) {
+			for (var i = 0; i < 16; i++) {
+				if (noun_declensions.feminine_ei[i] == "") {
+					declension.push(word);
+				} else {
+					declension.push(word + noun_declensions.feminine_ei[i]);
+				}
+			}
+		} else {
+			for (var i = 0; i < 16; i++) {
+				if (noun_declensions.feminine[i] == "") {
+					declension.push(word);
+				} else {
+					declension.push(word.substring(0, word.length - 1) + noun_declensions.feminine[i]);
+				}
+			}
+		}
+	} else if (word.endsWith("i")) {
+		for (var i = 0; i < 16; i++) {
+			if (noun_declensions.neuter[i] == "" || (word.endsWith("vi") && (noun_declensions.neuter[i] == " " || noun_declensions.neuter[i] == "i"))) {
+				declension.push(word);
+			} else {
+				if (word.endsWith("vi") && (!"aui".includes(noun_declensions.neuter[i].charAt(0)))) {
+					declension.push(word + noun_declensions.neuter[i]);
+				} else {
+					declension.push(word.substring(0, word.length - 1) + noun_declensions.neuter[i]);
+				}
+			}
+		}
+	} else {
+		for (var i = 0; i < 16; i++) {
+			if (noun_declensions.neuter[i] == "") {
+				declension.push(word);
+			} else {
+				declension.push(word + noun_declensions.neuter[i]);
+			}
+		}
+	}
+
+	return declension;
+}
 
 function get_past_tense(word) {
 	var stem = word.substring(0, word.length - 1);
