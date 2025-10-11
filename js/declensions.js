@@ -62,7 +62,7 @@ const noun_declensions = {
 	nir: [
 		"", "ninn", "níri", "nærinn",
 		"nu", "nynu", "níri", "nærinn",
-		"ni", "nyni", "nyrjum", "nærunum",
+		"ni", "nynum", "nyrjum", "nærunum",
 		"nis", "nins", "næra", "næranna",
 	]
 };
