@@ -74,7 +74,7 @@ const entry_words = [
 	"apta-svindla",
 	"apta-svindla fyrir",
 	"apta-svindling",
-	"apta-tala"
+	"apta-tala",
 	"aptr",
 	"ar/var sem þok ypir",
 	"ar/var til fyrir",
