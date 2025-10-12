@@ -58,10 +58,10 @@
 
 	function onWindowResize() {
 		var details = navigator.userAgent;
-		var regexp = /android|iphone|kindle|ipad/i;
+		var regexp = /android|iphone/i;
 		var columns = 4;
 
-		if (regexp.test(details)) columns = 3;
+		if (regexp.test(details) || window.innerWidth < 500) columns = 3;
 
 		document.documentElement.style.setProperty(
 			"--words-per-column",
