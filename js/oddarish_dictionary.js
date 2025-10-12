@@ -3530,7 +3530,7 @@ const entries = {
 	"senda inn": ["verb", "to submit, to send, to give"],
 	"senda": ["verb", "to send"],
 	"serkr": ["masculine noun", "an undergarment shirt/tunic, usually made of linen or cotton; a chemise or frock"],
-	"setja": ["verb", "to sit; to put, to place; (poetic) to stay or lay undisturbed | past tense: sati | past participle: setið"],
+	"setja": ["verb", "to sit; to put, to place; to set, to fixate, to apply changes (general use); to stay or lay undisturbed (poetic) | past tense: sati | past participle: setið"],
 	"seygla": ["verb", "to sail"],
 	"sika": ["verb", "to blame or accuse"],
 	"silfa": ["verb", "to scour; to search through, to search over thoroughly"],
