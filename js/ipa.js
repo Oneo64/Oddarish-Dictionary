@@ -76,7 +76,8 @@ const consonants = {
 	"k-": "kʰ",
 	"k": "k",
 	"-tl": "t̪l",
-	"-ll": "tl̥",
+	"-llr": "lr",
+	"ll": "tl̥",
 	"l": "l",
 	"m": "m",
 	"n": "n",
@@ -99,6 +100,12 @@ const consonants = {
 	"-ng": "ŋk",
 	".": "",
 	" ": " "
+}
+
+// exceptions go here!!!
+const exceptions = {
+	"'atl̥a": "'ala",
+	"'fʏrɪr": "'fɪrɪr"
 }
 
 function replace(word, list, replace_with) {
@@ -173,6 +180,12 @@ function ipa(word) {
 	}
 
 	if (syllables > 1) ipa = ipa.substring(0, last_ending) + "'" + ipa.substring(last_ending);
+
+	var exceptions_keys = Object.keys(exceptions);
+
+	for (var i = 0; i < exceptions_keys.length; i++) {
+		ipa = ipa.replace(exceptions_keys[i], exceptions[exceptions_keys[i]]);
+	}
 
 	return "/" + ipa + "/";
 }
