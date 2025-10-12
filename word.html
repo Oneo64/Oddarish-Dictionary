@@ -13,6 +13,7 @@
 	<div id="letters" class="letterlist h2font"></div>
 	<hr>
 	<h3 id="word">Orðinn ar eigi fyndið</h2>
+	<h4 id="ipa" class="ipa">IPA</h4>
 	<p id="type">n/a</p>
 	<p id="definition">Þelsmúin, þetta orð býr eigi í Oddarska!</p>
 	<table id="noun_declension" class="pfont" hidden><tbody>
@@ -38,12 +39,15 @@
 		<tr> <th>etirorð</th> <td id="_n10"></td> <td id="_n11"></td> </tr>
 		<tr> <th>ekkinorð</th> <td id="_n14"></td> <td id="_n15"></td> </tr>
 	</tbody></table>
-	<p>Þetta tungaleiði ar setið með <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.</p>
+	<br>
+	<hr>
+	<p>Minnu! IPA-inn mændu ar eigi réttr, ássi þú á til at tryggja um það ar réttr í fyrr.</p><p>Þetta tungaleiði ar setið með <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.</p>
 </div>
 
 <script src="js/letters.js"></script>
 <script src="js/oddarish_dictionary_odsk.js"></script>
 <script src="js/declensions.js"></script>
+<script src="js/ipa.js"></script>
 <script>
 	var query = window.location.search;
 	var params = new URLSearchParams(query);
@@ -55,6 +59,7 @@
 
 		var entry = entries[v];
 
+		document.getElementById("ipa").innerHTML = ipa(v.replace("-", "."));
 		document.getElementById("type").innerHTML = word_type_short_form[entry[0]];
 		document.getElementById("definition").innerHTML = entry[1];
 
