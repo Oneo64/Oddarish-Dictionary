@@ -17,7 +17,8 @@ const vowels = {
 	"ú": "uː",
 	"y": "ʏ",
 	"ý": "yː",
-	".": ""
+	".": "",
+	" ": " "
 }
 
 const i_stems = ["i", "í", "e", "é", "y", "ý"];
@@ -89,7 +90,8 @@ const consonants = {
 	"ng": "ŋg",
 	"-ing": "iŋk",
 	"-ng": "ŋk",
-	".": ""
+	".": "",
+	" ": " "
 }
 
 function replace(word, list, replace_with) {
