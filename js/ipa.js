@@ -108,6 +108,9 @@ function ipa(word) {
 	var ipa = "";
 	var last_sound = "";
 
+	var syllables = 0;
+	var last_ending = 0;
+
 	for (var i = 0; i < word.length; i++) {
 		for (var k = word.length; k > i; k--) {
 			var check = word.substring(i, k);
@@ -115,18 +118,33 @@ function ipa(word) {
 
 			var is_ending = k == word.length || word.charAt(k) == "." || word.charAt(k) == " ";
 
+			if (check == " ") {
+				if (syllables > 1) {
+					ipa = ipa.substring(0, last_ending) + "'" + ipa.substring(last_ending);
+				}
+
+				syllables = 0;
+				last_ending = k + 1;
+			}
+
 			if (check == "g" && k > 1 && i_stems.includes(word.charAt(k - 2))) {
 				sound = consonants["ghh"];
 			} else if (check == "g" && k > 1 && word.charAt(k - 2) in vowels && (i_stems.includes(word.charAt(k)) || u_stems.includes(word.charAt(k)))) {
 				sound = consonants["ghh"];
 			} else if (is_ending && "-" + check in consonants) {
 				sound = consonants["-" + check];
+
+				if (/[aáæeéiíoóöuúyý]/i.test(sound)) syllables++;
 			} else if (is_ending && "-" + check in vowels) {
 				sound = vowels["-" + check];
+				syllables++;
 			} else if (check in consonants) {
 				sound = consonants[check];
+
+				if (/[aáæeéiíoóöuúyý]/i.test(sound)) syllables++;
 			} else if (check in vowels) {
 				sound = vowels[check];
+				syllables++;
 			}
 
 			if (sound && sound != last_sound) {
@@ -139,6 +157,8 @@ function ipa(word) {
 			}
 		}
 	}
+
+	if (syllables > 1) ipa = ipa.substring(0, last_ending) + "'" + ipa.substring(last_ending);
 
 	return "/" + ipa + "/";
 }
