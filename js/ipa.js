@@ -72,6 +72,7 @@ const consonants = {
 	"hv": "kʋ",
 	"h": "h",
 	"j": "j",
+	"kj": "cʰ",
 	"kv": "kf",
 	"k-": "kʰ",
 	"k": "k",
