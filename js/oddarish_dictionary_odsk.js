@@ -2118,7 +2118,7 @@ const entries = {
 	"akka": ["feminine noun", "langa eikkvistinn á öri eða þóti"],
 	"al-": ["prefix", "allr"],
 	"al-fika": ["verb", "at fika allt skógtreyr til af jörði"],
-	"al-výsir": ["adverb", "always, everytime (adverb)"],
+	"al-výsir": ["adverb", "í allt mellar"],
 	"al-þöllr": ["adjective", "silent (adjective); to be absolutely calm or peaceful (adjective)"],
 	"aldask": ["verb", "to grow; to become old; to raise an animal or person"],
 	"aldr": ["masculine noun", "age, life, period (noun) | plural: aldrar"],

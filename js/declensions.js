@@ -106,7 +106,7 @@ function get_noun_declension(w, t) {
 					declension.push(word.substring(0, word.length - 1) + noun_declensions.masculine_i[i]);
 				}
 			}
-		} else if (word.charAt(word.length - 1) == word.charAt(word.length - 2)) {
+		} else if (word.charAt(word.length - 1) == word.charAt(word.length - 2) && !word.endsWith("ll")) {
 			for (var i = 0; i < 16; i++) {
 				if (noun_declensions.masculine[i] == "") {
 					declension.push(word);
