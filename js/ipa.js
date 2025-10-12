@@ -73,6 +73,7 @@ const consonants = {
 	"h": "h",
 	"j": "j",
 	"kv": "kf",
+	"k-": "kʰ",
 	"k": "k",
 	"-tl": "t̪l",
 	"-ll": "tl̥",
@@ -80,11 +81,13 @@ const consonants = {
 	"m": "m",
 	"n": "n",
 	"pv": "pʋ",
+	"p-": "pʰ",
 	"p": "p",
 	"r": "r",
 	"sv": "sʋ",
 	"s": "s",
 	"tv": "tʋ",
+	"t-": "tʰ",
 	"t": "t",
 	"v": "v",
 	"x": "ks",
@@ -114,6 +117,7 @@ function ipa(word) {
 
 	var syllables = 0;
 	var last_ending = 0;
+	var last_ending2 = 0;
 
 	for (var i = 0; i < word.length; i++) {
 		for (var k = word.length; k > i; k--) {
@@ -121,6 +125,7 @@ function ipa(word) {
 			var sound = "";
 
 			var is_ending = k == word.length || word.charAt(k) == "." || word.charAt(k) == " ";
+			var is_starting = i == last_ending2;
 
 			if (check == " ") {
 				if (syllables > 1) {
@@ -129,6 +134,7 @@ function ipa(word) {
 
 				syllables = 0;
 				last_ending = ipa.length + 1;
+				last_ending2 = i + 1;
 			}
 
 			if (check == "g" && k > 1 && i_stems.includes(word.charAt(k - 2))) {
@@ -142,6 +148,10 @@ function ipa(word) {
 			} else if (is_ending && "-" + check in vowels) {
 				sound = vowels["-" + check];
 				syllables++;
+			} else if (is_starting && check + "-" in consonants) {
+				sound = consonants[check + "-"];
+
+				if (/[aáæeéiíoóöuúyý]/i.test(sound)) syllables++;
 			} else if (check in consonants) {
 				sound = consonants[check];
 
