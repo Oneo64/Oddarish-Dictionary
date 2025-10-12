@@ -600,7 +600,7 @@ const entry_words = [
 	"gýr-ugr",
 	"gýsga",
 	"hafa",
-	"hafa mind-angr"
+	"hafa mind-angr",
 	"haka",
 	"haki",
 	"hakk",
