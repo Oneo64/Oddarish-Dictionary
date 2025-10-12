@@ -1946,6 +1946,7 @@ const entry_words = [
 	"óss",
 	"óssambi",
 	"ótt-voknandi",
+	"óttask",
 	"ótti",
 	"öbb",
 	"öblett",
