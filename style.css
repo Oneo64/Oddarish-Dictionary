@@ -157,14 +157,14 @@ a:not(h1 a):visited {
 	display: grid;
 
 	grid-auto-flow: column;
-	grid-template-rows: repeat(var(--words-per-column), 40px);
+	grid-template-rows: repeat(var(--words-per-column), 35px);
 }
 
 .list4 {
 	display: grid;
 
 	grid-auto-flow: column;
-	grid-template-rows: repeat(1000, 65px);
+	grid-template-rows: repeat(100, 65px);
 }
 
 .listitem {
@@ -193,7 +193,7 @@ th {
 	}
 
 	.nowrap {
-		width: calc(100vw - 50px - 2em);
+		width: calc(100vw - 50px);
 		white-space: nowrap;
 		overflow: hidden;
 		text-overflow: ellipsis;
@@ -208,7 +208,7 @@ th {
 	}
 
 	.nowrap {
-		width: calc(100vw - 100px - 2em);
+		width: calc(100vw - 100px);
 		white-space: nowrap;
 		overflow: hidden;
 		text-overflow: ellipsis;
