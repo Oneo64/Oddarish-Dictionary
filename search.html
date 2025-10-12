@@ -31,18 +31,29 @@
 	if (v == "") {
 		document.getElementById("results").innerHTML = "<div>Silfingit getir eigi at vera eigeinn.</div>";
 	} else {
+		var slotsLeft = 100;
+
 		for (var i = 0; i < entry_words.length; i++) {
 			var word = entry_words[i];
 
 			if (word in entries) {
 				var def = entries[word][1];
+				var added = false;
 
 				if (def.includes("|")) def = def.substring(0, def.indexOf("|")).trim();
 
 				if (def.includes(v)) {
-				document.getElementById("results").innerHTML += "<div><a class='listitem' href='word.html?v=" + word + "'>" + entry_words[i] + "</a><div class='nowrap'>&nbsp&nbsp" + def + "</div></div>";
+					document.getElementById("results").innerHTML += "<div><a class='listitem' href='word.html?v=" + word + "'>" + entry_words[i] + "</a><div class='nowrap'>&nbsp&nbsp" + def + "</div></div>";
+					added = true;
 				} else if (word.includes(v)) {
 					document.getElementById("results").innerHTML += "<div><a class='listitem' href='word.html?v=" + word + "'>" + word + "</a><div class='nowrap'>&nbsp&nbsp(fyndið í orðinni)</div></div>";
+					added = true;
+				}
+
+				if (added) {
+					slotsLeft -= 1;
+
+					if (slotsLeft <= 0) break;
 				}
 			} else {
 				alert("VÁGING: Orðit " + word + " ar eigi í hletan!");
