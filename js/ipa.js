@@ -18,7 +18,7 @@ const vowels = {
 	"y": "ʏ",
 	"ý": "yː",
 	".": "",
-	" ": " '"
+	" ": " "
 }
 
 const i_stems = ["i", "í", "e", "é", "y", "ý"];
@@ -91,7 +91,7 @@ const consonants = {
 	"-ing": "iŋk",
 	"-ng": "ŋk",
 	".": "",
-	" ": " '"
+	" ": " "
 }
 
 function replace(word, list, replace_with) {
@@ -113,7 +113,7 @@ function ipa(word) {
 			var check = word.substring(i, k);
 			var sound = "";
 
-			var is_ending = k == word.length || word.charAt(k) == ".";
+			var is_ending = k == word.length || word.charAt(k) == "." || word.charAt(k) == " ";
 
 			if (check == "g" && k > 1 && i_stems.includes(word.charAt(k - 2))) {
 				sound = consonants["ghh"];
@@ -140,5 +140,5 @@ function ipa(word) {
 		}
 	}
 
-	return "/'" + ipa + "/";
+	return "/" + ipa + "/";
 }
