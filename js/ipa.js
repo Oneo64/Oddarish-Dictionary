@@ -60,6 +60,7 @@ const consonants = {
 	
 	//"gi": "c" + vowels["-i"],
 
+	"gv": "gʋ",
 	"g": "g",
 
 	"hl": "l̥",
