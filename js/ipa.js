@@ -124,7 +124,7 @@ function ipa(word) {
 				}
 
 				syllables = 0;
-				last_ending = k + 1;
+				last_ending = ipa.length + 1;
 			}
 
 			if (check == "g" && k > 1 && i_stems.includes(word.charAt(k - 2))) {
