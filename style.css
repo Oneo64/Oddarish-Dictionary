@@ -214,3 +214,14 @@ th {
 		text-overflow: ellipsis;
 	}
 }
+
+.textcenter {
+	padding-top: calc(10px);
+}
+
+.footer {
+	height: 60px;
+	vertical-align: center;
+	justify-content: center;
+	background: gainsboro;
+}
