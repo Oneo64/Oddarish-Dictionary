@@ -58,8 +58,7 @@ const consonants = {
 	"æg": vowels["æ"] + "ɣ",
 	"aug": vowels["au"] + "ɣ",
 	
-	//"gi": "c" + vowels["-i"],
-
+	"-gi": "c" + vowels["-i"],
 	"gv": "gʋ",
 	"g": "g",
 
