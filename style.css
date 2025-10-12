@@ -207,7 +207,7 @@ th {
 textarea {
 	resize: none;
 	width: 100%;
-	height: 10em;
+	height: 10rem;
 }
 
 /* This shit down here is the body padding (adds space around the side of the window) */

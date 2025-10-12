@@ -24,15 +24,15 @@
 <script src="js/ipa.js"></script>
 <script>
 	function ipatext() {
-		var texts = document.getElementById("input").innerHTML.split("\n");
+		var texts = document.getElementById("input").value.split("\n");
 
-		document.getElementById("output").innerHTML = "";
+		document.getElementById("output").value = "";
 
 		for (var i = 0; i < texts.length; i++) {
 			console.log(texts[i]);
-			document.getElementById("output").innerHTML += ipa(texts[i]);
+			document.getElementById("output").value += ipa(texts[i].toLowerCase());
 
-			if (i < texts.length - 1) document.getElementById("output").innerHTML += "\n";
+			if (i < texts.length - 1) document.getElementById("output").value += "\n";
 		}
 	}
 </script>
