@@ -145,9 +145,9 @@ function ipa(word) {
 				last_ending2 = i + 1;
 			}
 
-			if (check == "g" && k > 1 && i_stems.includes(word.charAt(k - 2))) {
+			if (check == "g" && !is_starting && k > 1 && i_stems.includes(word.charAt(k - 2))) {
 				sound = consonants["ghh"];
-			} else if (check == "g" && k > 1 && word.charAt(k - 2) in vowels && (i_stems.includes(word.charAt(k)) || u_stems.includes(word.charAt(k)))) {
+			} else if (check == "g" && !is_starting && k > 1 && word.charAt(k - 2) in vowels && (i_stems.includes(word.charAt(k)) || u_stems.includes(word.charAt(k)))) {
 				sound = consonants["ghh"];
 			} else if (is_ending && "-" + check in consonants) {
 				sound = consonants["-" + check];
