@@ -4142,7 +4142,7 @@ const entries = {
 	"þyptr": ["adjective", "sticky, paste-like (adjective)"],
 	"þyrstr": ["adjective", "thirsty (adjective)"],
 	"þyta": ["verb", "to whisper"],
-	"þytr": ["masculine noun", "a whipering sound or noise; a wispy sound"]
+	"þytr": ["masculine noun", "a whipering sound or noise; a wispy sound"],
 	"þær": ["adverb", "there (adverb)"],
 	"þé": ["pronoun", "you (plural nominative)"],
 	"þék": ["pronoun", "you (plural accusative and dative)"],
