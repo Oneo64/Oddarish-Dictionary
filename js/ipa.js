@@ -51,6 +51,10 @@ const consonants = {
 	"æggv": vowels["æ"] + "gʋ",
 	"auggv": vowels["au"] + "gʋ",
 
+	"öggj": vowels["ö"] + "c",
+	"æggj": vowels["æ"] + "c",
+	"auggj": vowels["au"] + "c",
+
 	"ögg": vowels["ö"] + "g",
 	"ægg": vowels["æ"] + "g",
 	"augg": vowels["au"] + "g",
@@ -62,6 +66,9 @@ const consonants = {
 	"ög": vowels["ö"] + "ɣ",
 	"æg": vowels["æ"] + "ɣ",
 	"aug": vowels["au"] + "ɣ",
+
+	"ggj": "c",
+	"gj": "c",
 	
 	"gv": "gʋ",
 	"g": "g",
@@ -72,7 +79,8 @@ const consonants = {
 	"hv": "kʋ",
 	"h": "h",
 	"j": "j",
-	"kj": "cʰ",
+	"kkj": "kj",
+	"kj": "kj",
 	"kv": "kf",
 	"k-": "kʰ",
 	"k": "k",
