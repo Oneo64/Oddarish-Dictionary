@@ -3053,7 +3053,7 @@ const entries = {
 	"lang-skjorð": ["neuter noun", "longsword (weapon)"],
 	"lang-tala": ["verb", "to lecture; a speech"],
 	"lang-öx": ["neuter noun", "longaxe, dane axe (weapon)"],
-	"lang-þótr": ["neuter noun", "pike, long spear (weapon)"],
+	"lang-þótr": ["masculine noun", "pike, long spear (weapon)"],
 	"langr": ["adjective", "long (adjective)"],
 	"langð": ["neuter noun", "length of"],
 	"lapisskórr": ["masculine noun", "lapis lazili"],
