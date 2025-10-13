@@ -29,6 +29,12 @@ const noun_declensions = {
 		"i", "inum", "um", "unum",
 		"s", "sins", "a", "anna",
 	],
+	masculine_ir: [
+		"", "inn", "íri", "ærinn",
+		"u", "ynu", "íri", "ærinn",
+		"i", "ynum", "yrjum", "ærunum",
+		"is", "ins", "yrja", "æranna",
+	],
 	feminine: [
 		"", "in", "ir", "irnar",
 		"", "ina", "ir", "irnar",
@@ -64,12 +70,6 @@ const noun_declensions = {
 		"á", "áet", "eyr", "eyrnar",
 		"æ", "æinni", "eyjum", "eyjunum",
 		"ás", "ásins", "eyja", "eyjanna",
-	],
-	nir: [
-		"", "inn", "íri", "ærinn",
-		"u", "ynu", "íri", "ærinn",
-		"i", "ynum", "yrjum", "ærunum",
-		"is", "ins", "yrja", "æranna",
 	]
 };
 
@@ -79,12 +79,12 @@ function get_noun_declension(w, t) {
 
 	if (word.endsWith(")")) word = word.substring(0, word.length - 4);
 	
-	if (word.endsWith("nir")) {
+	if (word.endsWith("ir")) {
 		for (var i = 0; i < 16; i++) {
-			if (noun_declensions.nir[i] == "") {
+			if (noun_declensions.masculine_ir[i] == "") {
 				declension.push(word);
 			} else {
-				declension.push(word.substring(0, word.length - 2) + noun_declensions.nir[i]);
+				declension.push(word.substring(0, word.length - 2) + noun_declensions.masculine_ir[i]);
 			}
 		}
 	} else if (t == "masculine noun") {
