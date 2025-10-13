@@ -99,7 +99,9 @@ const consonants = {
 	"pv": "pʋ",
 	"p-": "pʰ",
 	"p": "p",
-	"-r": "r̩",
+
+	"r_ending": "r̩",
+
 	"r": "r",
 	"sv": "sʋ",
 	"s": "s",
@@ -169,7 +171,9 @@ function ipa(_word, english) {
 				last_ending2 = i + 1;
 			}
 
-			if (check == "g" && !is_starting && k > 1 && i_stems.includes(word.charAt(k - 2))) {
+			if (check == "r" && is_ending && !(word.charAt(k - 2) in vowels) && word.charAt(k - 2) != "r") {
+				sound = consonants["r_ending"];
+			} else if (check == "g" && !is_starting && k > 1 && i_stems.includes(word.charAt(k - 2))) {
 				sound = consonants["ghh"];
 			} else if (check == "g" && !is_starting && k > 1 && word.charAt(k - 2) in vowels && (i_stems.includes(word.charAt(k)) || u_stems.includes(word.charAt(k)))) {
 				sound = consonants["ghh"];
