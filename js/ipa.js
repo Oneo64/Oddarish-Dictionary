@@ -73,7 +73,8 @@ const consonants = {
 
 	"ggj": "c",
 	"gj": "c",
-	
+
+	"ggv": "gʋ",
 	"gv": "gʋ",
 	"g": "g",
 
