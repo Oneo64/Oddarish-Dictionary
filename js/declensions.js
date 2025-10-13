@@ -365,7 +365,7 @@ function get_mediopassive(word) {
 	if ("áæeéiíoóöuúyý".includes(word.charAt(word.length - 1))) stem = word;
 
 	if (stem.endsWith("eyj")) {
-		return stem.substring(0, stem.length - 1) + "nask";
+		return stem.substring(0, stem.length - 1) + "jask";
 	} else {
 		return stem + "ask";
 	}
@@ -380,7 +380,7 @@ function get_mediopassive_past(word) {
 
 	if (stem.endsWith("eyj")) {
 		return stem.substring(0, stem.length - 1) + "ðisk";
-	} else if (stem.endsWith("d")) {
+	} else if (stem.endsWith("d") || stem.endsWith("t")) {
 		return stem + "aðisk";
 	} else {
 		return stem + "ðisk";
@@ -395,7 +395,7 @@ function get_mediopassive_present(word) {
 	if ("áæeéiíoóöuúyý".includes(word.charAt(word.length - 1))) stem = word;
 
 	if (stem.endsWith("eyj")) {
-		return stem.substring(0, stem.length - 1) + "nisk";
+		return stem.substring(0, stem.length - 1) + "isk";
 	} else {
 		return stem + "isk";
 	}
