@@ -434,7 +434,7 @@ function get_mediopassive_past(word) {
 		return stem.substring(0, stem.length - 1) + "ýðisk";
 	} else if (stem.endsWith("á")) {
 		return stem.substring(0, stem.length - 1) + "ætask";
-	} else if (stem.endsWith("eyj")) {
+	} else if (stem.endsWith("eyj") || (stem.endsWith("j") && "frg".includes(stem.charAt(stem.length - 2)))) {
 		return stem.substring(0, stem.length - 1) + "ðisk";
 	} else if (vowels.includes(stem.charAt(stem.length - 1))) {
 		return stem + "ðisk";
