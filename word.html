@@ -129,7 +129,7 @@
 					document.getElementById("_n" + i).innerHTML = declension[i];
 				}
 			}
-		} else if (entry[0].endsWith("verb")) {
+		} else if (entry[0] == "verb" || entry[0] == "auxiliary") {
 			var v2 = v;
 
 			if (v.endsWith(")")) v2 = v.substring(0, v.length - 4);
@@ -150,13 +150,15 @@
 				document.getElementById("gerund").innerHTML = get_gerund(v2);
 			}
 
-			if (v2.endsWith("ask")) v2 = v2.substring(0, v2.length - 3) + "a";
+			if (entry[0] == "verb") {
+				if (v2.endsWith("ask")) v2 = v2.substring(0, v2.length - 3) + "a";
 
-			document.getElementById("mediopassive_declension").hidden = false;
-			document.getElementById("mediopassive_top").innerHTML = get_mediopassive(v2);
-			document.getElementById("infinitive2").innerHTML = "at " + get_mediopassive(v2);
-			document.getElementById("present_tense2").innerHTML = get_mediopassive_present(v2);
-			document.getElementById("past_tense2").innerHTML = get_mediopassive_past(v2);
+				document.getElementById("mediopassive_declension").hidden = false;
+				document.getElementById("mediopassive_top").innerHTML = get_mediopassive(v2);
+				document.getElementById("infinitive2").innerHTML = "at " + get_mediopassive(v2);
+				document.getElementById("present_tense2").innerHTML = get_mediopassive_present(v2);
+				document.getElementById("past_tense2").innerHTML = get_mediopassive_past(v2);
+			}
 		}
 	}
 </script>

@@ -1125,7 +1125,7 @@ const entry_words = [
 	"morjúm",
 	"morna",
 	"muna",
-	"munað",
+	"munið",
 	"munkr",
 	"murga",
 	"mygg",
@@ -3208,8 +3208,8 @@ const entries = {
 	"molna": ["verb", "to crumble, to break down, to fall apart"],
 	"morjúm": ["neuter noun", "morning"],
 	"morna": ["verb", "to cry or weep"],
-	"muna": ["verb", "to will (auxiliary); to be able or to can, passively (verb); future tense (see morphemes); past tense: myndi | question form: muntú, myndi þú"],
-	"munað": ["adjective", "willed, fated (adjective, past participle of muna)"],
+	"muna": ["auxiliary", "to will (auxiliary); to be able or to can, passively (verb); future tense (see morphemes); past tense: myndi | question form: muntú, myndi þú"],
+	"munið": ["adjective", "willed, fated (adjective, past participle of muna)"],
 	"munkr": ["masculine noun", "monk"],
 	"murga": ["verb", "to rub"],
 	"mygg": ["neuter noun", "heart; an elemental core"],
@@ -4180,4 +4180,80 @@ const entries = {
 	"þörðr": ["masculine noun", "lake"],
 	"þú": ["pronoun", "you (nominative case)"],
 	"þýkr": ["masculine noun", "swamp, bog"],
+};
+
+const special_declensions = {
+	"boða": {
+		"past_tense": "baði",
+		"past_tense_mediopassive": "baðisk"
+	},
+	"éta": {
+		"past_tense": "áti",
+		"past_tense_mediopassive": "átisk"
+	},
+	"finna": {
+		"past_tense": "fyndi",
+		"past_participle": "fyndið",
+		"past_tense_mediopassive": "fyndisk"
+	},
+	"geta": {
+		"past_tense": "gæti",
+		"past_participle": "gætið",
+		"past_tense_mediopassive": "gætisk"
+	},
+	"ginna": {
+		"past_tense": "gynnði",
+		"past_participle": "gynnið",
+		"past_tense_mediopassive": "gynnðisk"
+	},
+	"gveta": {
+		"past_tense": "gvæti",
+		"past_participle": "gvætið",
+		"past_tense_mediopassive": "gvætisk"
+	},
+	"minna": {
+		"past_tense": "mynnði",
+		"past_participle": "mynnið",
+		"past_tense_mediopassive": "mynnðisk"
+	},
+	"muna": {
+		"past_tense": "myndi",
+		"past_participle": "myndið"
+	},
+	"setja": {
+		"past_tense": "sati",
+		"past_participle": "setið",
+		"past_tense_mediopassive": "satisk"
+	},
+	"sækja": {
+		"past_tense": "sókti",
+		"past_participle": "sókt",
+		"past_tense_mediopassive": "sóktisk"
+	},
+	"skola": {
+		"past_tense": "sköldi",
+		"past_participle": "skölið"
+	},
+	"sve": {
+		"present_tense": "svi",
+		"past_tense": "svá",
+		"past_participle": "svið",
+		"mediopassive": "svask",
+		"present_mediopassive": "svisk",
+		"past_tense_mediopassive": "sváðisk",
+		"gerund": "sveng"
+	},
+	"lítt-sve": {
+		"present_tense": "lítt-svi",
+		"past_tense": "lítt-svá",
+		"past_participle": "lítt-svið",
+		"mediopassive": "lítt-svask",
+		"present_mediopassive": "lítt-svisk",
+		"past_tense_mediopassive": "lítt-sváðisk",
+		"gerund": "lítt-sveng"
+	},
+	"vita": {
+		"past_tense": "vissi",
+		"past_tense_mediopassive": "vissisk"
+	}
 };

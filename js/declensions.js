@@ -213,6 +213,14 @@ function get_noun_declension(w, t) {
 }
 
 function add_verb_ending_basic(word, ending) {
+	if (word.endsWith("e")) {
+		if (ending == "u") {
+			return word.substring(0, word.length - 1) + "ý";
+		} else {
+			return word.substring(0, word.length - 1) + "andi";
+		}
+	}
+
 	if (word.endsWith("a")) {
 		return word.substring(0, word.length - 1) + ending;
 	}
@@ -221,6 +229,10 @@ function add_verb_ending_basic(word, ending) {
 }
 
 function get_past_tense(word) {
+	if (word in special_declensions && "past_tense" in special_declensions[word]) {
+		return special_declensions[word]["past_tense"];
+	}
+
 	var stem = word.substring(0, word.length - 1);
 	var vowels = "aáæeéiíoóöuúyý";
 
@@ -253,6 +265,14 @@ function get_past_tense(word) {
 			return stem.substring(0, stem.length - 1) + "ði";
 		}
 	} else {
+		if (last_letter == "ú") {
+			return stem.substring(0, stem.length - 1) + "ýði";
+		}
+
+		if (last_letter == "ó") {
+			return stem + "ði";
+		}
+
 		if ((last_letter == "j" && "frg".includes(stem.charAt(stem.length - 2)))) {
 			return stem.substring(0, stem.length - 1) + "ði";
 		}
@@ -262,6 +282,10 @@ function get_past_tense(word) {
 }
 
 function get_past_participle(word) {
+	if (word in special_declensions && "past_participle" in special_declensions[word]) {
+		return special_declensions[word]["past_participle"];
+	}
+
 	var stem = word.substring(0, word.length - 1);
 	var vowels = "aáæeéiíoóöuúyý";
 
@@ -275,6 +299,8 @@ function get_past_participle(word) {
 			return stem + "ð";
 		} else if (stem.endsWith("á")) {
 			return stem.substring(0, stem.length - 1) + "æt";
+		} else if (stem.endsWith("ó")) {
+			return stem.substring(0, stem.length - 1) + "eið";
 		} else if (stem.endsWith("va")) {
 			return stem.substring(0, stem.length - 1) + "ið";
 		} else if (stem.endsWith("j")) {
@@ -283,6 +309,8 @@ function get_past_participle(word) {
 			} else {
 				return stem.substring(0, stem.length - 1) + "ið";
 			}
+		} else if (stem.endsWith("ú")) {
+			return stem.substring(0, stem.length - 1) + "ýð";
 		} else {
 			var vowel = "";
 
@@ -302,6 +330,10 @@ function get_past_participle(word) {
 }
 
 function get_present_tense(word, pov) {
+	if (word in special_declensions && "present_tense" in special_declensions[word]) {
+		return special_declensions[word]["present_tense"];
+	}
+
 	var stem = word.substring(0, word.length - 1);
 	var vowels = "aáæeéiíoóöuúyý";
 
@@ -315,7 +347,9 @@ function get_present_tense(word, pov) {
 			return word;
 		}
 	} else if (pov == 2) {
-		if (stem.endsWith("á")) {
+		if (stem.endsWith("ú")) {
+			return stem.substring(0, stem.length - 1) + "ý";
+		} else if (stem.endsWith("á")) {
 			return stem.substring(0, stem.length - 1) + "æ";
 		} else if (stem.endsWith("eyj")) {
 			return stem.substring(0, stem.length - 1);
@@ -325,7 +359,9 @@ function get_present_tense(word, pov) {
 			return stem + "i";
 		}
 	} else {
-		if (stem.endsWith("á")) {
+		if (stem.endsWith("ú")) {
+			return stem.substring(0, stem.length - 1) + "ýr";
+		} else if (stem.endsWith("á")) {
 			return stem.substring(0, stem.length - 1) + "ær";
 		} else if (stem.endsWith("eyj")) {
 			return stem.substring(0, stem.length - 1) + "r";
@@ -340,6 +376,10 @@ function get_present_tense(word, pov) {
 }
 
 function get_gerund(word) {
+	if (word in special_declensions && "gerund" in special_declensions[word]) {
+		return special_declensions[word]["gerund"];
+	}
+
 	var stem = word.substring(0, word.length - 1);
 	var vowels = "aáæeéiíoóöuúyý";
 
@@ -358,13 +398,17 @@ function get_gerund(word) {
 }
 
 function get_mediopassive(word) {
+	if (word in special_declensions && "mediopassive" in special_declensions[word]) {
+		return special_declensions[word]["mediopassive"];
+	}
+
 	var stem = word.substring(0, word.length - 1);
 	var vowels = "aáæeéiíoóöuúyý";
 
 	// makes sure that only -a verb endings are removed
 	if ("áæeéiíoóöuúyý".includes(word.charAt(word.length - 1))) stem = word;
 
-	if (stem.endsWith("eyj")) {
+	if (stem.endsWith("j")) {
 		return stem.substring(0, stem.length - 1) + "jask";
 	} else {
 		return stem + "ask";
@@ -372,16 +416,24 @@ function get_mediopassive(word) {
 }
 
 function get_mediopassive_past(word) {
+	if (word in special_declensions && "past_tense_mediopassive" in special_declensions[word]) {
+		return special_declensions[word]["past_tense_mediopassive"];
+	}
+
 	var stem = word.substring(0, word.length - 1);
 	var vowels = "aáæeéiíoóöuúyý";
 
 	// makes sure that only -a verb endings are removed
 	if ("áæeéiíoóöuúyý".includes(word.charAt(word.length - 1))) stem = word;
 
-	if (stem.endsWith("á")) {
+	if (stem.endsWith("ú")) {
+		return stem.substring(0, stem.length - 1) + "ýðisk";
+	} else if (stem.endsWith("á")) {
 		return stem.substring(0, stem.length - 1) + "ætask";
 	} else if (stem.endsWith("eyj")) {
 		return stem.substring(0, stem.length - 1) + "ðisk";
+	} else if (vowels.includes(stem.charAt(stem.length - 1))) {
+		return stem + "ðisk";
 	} else if (stem.endsWith("d") || stem.endsWith("t") || !vowels.includes(stem.charAt(stem.length - 2))) {
 		return stem + "aðisk";
 	} else {
@@ -390,15 +442,21 @@ function get_mediopassive_past(word) {
 }
 
 function get_mediopassive_present(word) {
+	if (word in special_declensions && "present_mediopassive" in special_declensions[word]) {
+		return special_declensions[word]["present_mediopassive"];
+	}
+
 	var stem = word.substring(0, word.length - 1);
 	var vowels = "aáæeéiíoóöuúyý";
 
 	// makes sure that only -a verb endings are removed
 	if ("áæeéiíoóöuúyý".includes(word.charAt(word.length - 1))) stem = word;
 
-	if (stem.endsWith("á")) {
+	if (stem.endsWith("ú")) {
+		return stem.substring(0, stem.length - 1) + "ýisk";
+	} else if (stem.endsWith("á")) {
 		return stem.substring(0, stem.length - 1) + "æsk";
-	} else if (stem.endsWith("eyj")) {
+	} else if (stem.endsWith("j")) {
 		return stem.substring(0, stem.length - 1) + "isk";
 	} else {
 		return stem + "isk";
