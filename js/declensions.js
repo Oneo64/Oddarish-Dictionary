@@ -11,6 +11,12 @@ const noun_declensions = {
 		"i", "inum", "um", "unum",
 		"s", "sins", "a", "anna",
 	],
+	masculine_r2: [
+		"", "inn", "ir", "irnir",
+		"u", "unu", "ir", "irnir",
+		"i", "inum", "um", "unum",
+		"s", "sins", "a", "anna",
+	],
 	masculine_i: [
 		"", "inn", "ar", "arnir",
 		"a", "anu", "ar", "arnir",
@@ -88,6 +94,14 @@ function get_noun_declension(w, t) {
 					declension.push(word);
 				} else {
 					declension.push(word + noun_declensions.masculine_dr[i]);
+				}
+			}
+		} else if (word.endsWith("spr") || word.endsWith("ptr") || word.endsWith("gðr")) {
+			for (var i = 0; i < 16; i++) {
+				if (noun_declensions.masculine_r2[i] == "") {
+					declension.push(word);
+				} else {
+					declension.push(word.substring(0, word.length - 1) + noun_declensions.masculine_r2[i]);
 				}
 			}
 		} else if (word.endsWith("r")) {
