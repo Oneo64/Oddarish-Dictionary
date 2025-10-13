@@ -331,7 +331,11 @@ function get_past_participle(word) {
 
 function get_present_tense(word, pov) {
 	if (word in special_declensions && "present_tense" in special_declensions[word]) {
-		return special_declensions[word]["present_tense"];
+		if (Array.isArray(special_declensions[word]["present_tense"])) {
+			return special_declensions[word]["present_tense"][pov - 1];
+		} else {
+			return special_declensions[word]["present_tense"];
+		}
 	}
 
 	var stem = word.substring(0, word.length - 1);

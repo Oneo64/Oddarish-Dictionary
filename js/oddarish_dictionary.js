@@ -1789,8 +1789,8 @@ const entry_words = [
 	"vilja",
 	"viljandi til",
 	"vinga",
+	"vinna",
 	"virki",
-	"virna",
 	"viska",
 	"viskandi-ligr",
 	"visknir",
@@ -3873,8 +3873,8 @@ const entries = {
 	"vilja": ["verb", "to want or to wish | present tense: vil/vili/vilir | question form: viltú | past tense: vilti | past participle: viltið"],
 	"viljandi til": ["adjective", "to be willing to (adjective)"],
 	"vinga": ["verb", "to long, to yearn; to deeply want"],
+	"vinna": ["verb", "to need, require, or cost (auxiliary) | question form: vinnaðú/vynnði þú | past tense: vynnði | past participle: vynnið"],
 	"virki": ["masculine noun", "fortified structure, fortress, mostly used to refer castles"],
-	"virna": ["verb", "to need, require, or cost (auxiliary) | question form: virniðú/vyndi þú | present tense: virn/virni/virnir | past tense: vyndi | past participle: vynið"],
 	"viska": ["verb", "to work"],
 	"viskandi-ligr": ["adjective", "busy, have work (adjective)"],
 	"visknir": ["masculine noun", "worker"],
@@ -4251,6 +4251,21 @@ const special_declensions = {
 		"present_mediopassive": "lítt-svisk",
 		"past_tense_mediopassive": "lítt-sváðisk",
 		"gerund": "lítt-sveng"
+	},
+	"vera": {
+		"present_tense": "ar",
+		"past_tense": "var"
+	},
+	"vilja": {
+		"present_tense": ["vil", "vili", "vilir"],
+		"past_tense": "vilti",
+		"past_participle": "viltið",
+		"past_tense_mediopassive": "viltisk"
+	},
+	"vinna": {
+		"past_tense": "vynnði",
+		"past_participle": "vynnið",
+		"past_tense_mediopassive": "vynnðisk"
 	},
 	"vita": {
 		"past_tense": "vissi",
