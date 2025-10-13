@@ -59,7 +59,7 @@
 
 		var entry = entries[v];
 
-		document.getElementById("ipa").innerHTML = ipa(v.replace("-", "."));
+		document.getElementById("ipa").innerHTML = ipa(v.replace("-", "."), false);
 		document.getElementById("type").innerHTML = word_type_short_form[entry[0]];
 		document.getElementById("definition").innerHTML = entry[1];
 

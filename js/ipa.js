@@ -106,7 +106,8 @@ const consonants = {
 // exceptions go here!!!
 const exceptions = {
 	"'atl̥a": "'ala",
-	"'fʏrɪr": "'fɪrɪr"
+	"'fʏrɪr": "'fɪrɪr",
+	"'hatl̥ouː": "'halouː"
 }
 
 function replace(word, list, replace_with) {
@@ -119,7 +120,15 @@ function replace(word, list, replace_with) {
 	return w;
 }
 
-function ipa(word) {
+function ipa(_word, english) {
+	var word = _word;
+
+	if (english) {
+		word = word.replace("th", "þ").replace("dh", "ð");
+		word = word.replace("ya", "ja").replace("yaw", "já").replace("ye", "é").replace("yoo", "jú").replace("you", "jo").replace("yoe", "jö").replace("yo", "jo").replace("yu", "ju");
+		word = word.replace("aw", "á").replace("je", "é").replace("ee", "í").replace("ou", "ó").replace("oe", "ö").replace("oo", "ú").replace("yy", "ý");
+	}
+
 	var ipa = "";
 	var last_sound = "";
 
