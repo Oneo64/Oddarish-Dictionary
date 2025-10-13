@@ -36,9 +36,13 @@ const consonants = {
 	"gg": "g",
 	"ggi": "c" + vowels["-i"],
 
+	"gl": "gl",
+	"gm": "gm",
+	"gn": "gn",
 	"gs": "xs",
 	"gt": "xt",
 
+	"-ag": vowels["a"] + "x",
 	"-ág": vowels["á"] + "x",
 	"-ug": vowels["u"] + "x",
 	"-úg": vowels["ú"] + "x",
