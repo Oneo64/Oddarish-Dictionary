@@ -212,6 +212,14 @@ function get_noun_declension(w, t) {
 	return declension;
 }
 
+function add_verb_ending_basic(word, ending) {
+	if (word.endsWith("a")) {
+		return word.substring(0, word.length - 1) + ending;
+	}
+
+	return word + ending;
+}
+
 function get_past_tense(word) {
 	var stem = word.substring(0, word.length - 1);
 	var vowels = "aáæeéiíoóöuúyý";
@@ -225,7 +233,11 @@ function get_past_tense(word) {
 	if (word.length >= 3) last_2_letters = stem.charAt(stem.length - 2) + stem.charAt(stem.length - 1);
 
 	if (word.length >= 3 && (vowels.includes(stem.charAt(stem.length - 2)) || stem == word)) {
-		if ("frgdá".includes(last_letter) || vowels.includes(last_letter)) {
+		if (last_letter == "á") {
+			return stem.substring(0, stem.length - 1) + "æði";
+		}
+
+		if ("frgd".includes(last_letter) || vowels.includes(last_letter)) {
 			return stem + "ði";
 		}
 
@@ -236,7 +248,155 @@ function get_past_tense(word) {
 		if ("bkpsð".includes(last_letter) || last_2_letters == "lf") {
 			return stem + "ti";
 		}
+
+		if (stem.endsWith("eyj")) {
+			return stem.substring(0, stem.length - 1) + "ði";
+		}
+	} else {
+		if ((last_letter == "j" && "frg".includes(stem.charAt(stem.length - 2)))) {
+			return stem.substring(0, stem.length - 1) + "ði";
+		}
 	}
 
 	return stem + "aði";
+}
+
+function get_past_participle(word) {
+	var stem = word.substring(0, word.length - 1);
+	var vowels = "aáæeéiíoóöuúyý";
+
+	// makes sure that only -a verb endings are removed
+	if ("áæeéiíoóöuúyý".includes(word.charAt(word.length - 1))) stem = word;
+
+	if (word.length >= 3) {
+		if (stem.endsWith("p") || stem.endsWith("k")) {
+			return stem + "t";
+		} else if (stem.endsWith("g")) {
+			return stem + "ð";
+		} else if (stem.endsWith("á")) {
+			return stem.substring(0, stem.length - 1) + "æt";
+		} else if (stem.endsWith("va")) {
+			return stem.substring(0, stem.length - 1) + "ið";
+		} else if (stem.endsWith("j")) {
+			if (stem.endsWith("gj") || stem.endsWith("eyj")) {
+				return stem.substring(0, stem.length - 1) + "ð";
+			} else {
+				return stem.substring(0, stem.length - 1) + "ið";
+			}
+		} else {
+			var vowel = "";
+
+			for (var i = 0; i < word.length - 1; i++) {
+				if (vowels.includes(word.charAt(i))) vowel = word.charAt(i);
+			}
+
+			if (i_stems.includes(vowel) || u_stems.includes(vowel)) {
+				return stem + "ið";
+			} else {
+				return stem + "að";
+			}
+		}
+	}
+
+	return stem + "að";
+}
+
+function get_present_tense(word, pov) {
+	var stem = word.substring(0, word.length - 1);
+	var vowels = "aáæeéiíoóöuúyý";
+
+	// makes sure that only -a verb endings are removed
+	if ("áæeéiíoóöuúyý".includes(word.charAt(word.length - 1))) stem = word;
+
+	if (pov == 1) {
+		if (stem.endsWith("f") || stem.endsWith("r") || stem.endsWith("g")) {
+			return stem;
+		} else {
+			return word;
+		}
+	} else if (pov == 2) {
+		if (stem.endsWith("á")) {
+			return stem.substring(0, stem.length - 1) + "æ";
+		} else if (stem.endsWith("eyj")) {
+			return stem.substring(0, stem.length - 1);
+		} else if (stem.endsWith("j")) {
+			return stem.substring(0, stem.length - 1) + "i";
+		} else {
+			return stem + "i";
+		}
+	} else {
+		if (stem.endsWith("á")) {
+			return stem.substring(0, stem.length - 1) + "ær";
+		} else if (stem.endsWith("eyj")) {
+			return stem.substring(0, stem.length - 1) + "r";
+		} else if (stem.endsWith("j")) {
+			return word + "r";
+		} else {
+			return stem + "ir";
+		}
+	}
+
+	return stem + "ir";
+}
+
+function get_gerund(word) {
+	var stem = word.substring(0, word.length - 1);
+	var vowels = "aáæeéiíoóöuúyý";
+
+	// makes sure that only -a verb endings are removed
+	if ("áæeéiíoóöuúyý".includes(word.charAt(word.length - 1))) stem = word;
+
+	if (stem.endsWith("á")) {
+		return stem.substring(0, stem.length - 1) + "æing";
+	} else if (stem.endsWith("eyj")) {
+		return stem.substring(0, stem.length - 1) + "ning";
+	} else if (stem.endsWith("j")) {
+		return stem + "ang";
+	} else {
+		return stem + "ing";
+	}
+}
+
+function get_mediopassive(word) {
+	var stem = word.substring(0, word.length - 1);
+	var vowels = "aáæeéiíoóöuúyý";
+
+	// makes sure that only -a verb endings are removed
+	if ("áæeéiíoóöuúyý".includes(word.charAt(word.length - 1))) stem = word;
+
+	if (stem.endsWith("eyj")) {
+		return stem.substring(0, stem.length - 1) + "nask";
+	} else {
+		return stem + "ask";
+	}
+}
+
+function get_mediopassive_past(word) {
+	var stem = word.substring(0, word.length - 1);
+	var vowels = "aáæeéiíoóöuúyý";
+
+	// makes sure that only -a verb endings are removed
+	if ("áæeéiíoóöuúyý".includes(word.charAt(word.length - 1))) stem = word;
+
+	if (stem.endsWith("eyj")) {
+		return stem.substring(0, stem.length - 1) + "ðisk";
+	} else if (stem.endsWith("d")) {
+		return stem + "aðisk";
+	} else {
+		return stem + "ðisk";
+	}
+}
+
+function get_mediopassive_present(word) {
+	var stem = word.substring(0, word.length - 1);
+	var vowels = "aáæeéiíoóöuúyý";
+
+	// makes sure that only -a verb endings are removed
+	if ("áæeéiíoóöuúyý".includes(word.charAt(word.length - 1))) stem = word;
+
+	if (stem.endsWith("eyj")) {
+		return stem.substring(0, stem.length - 1) + "nisk";
+	} else {
+		return stem + "isk";
+	}
 }
