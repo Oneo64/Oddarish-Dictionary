@@ -378,9 +378,11 @@ function get_mediopassive_past(word) {
 	// makes sure that only -a verb endings are removed
 	if ("áæeéiíoóöuúyý".includes(word.charAt(word.length - 1))) stem = word;
 
-	if (stem.endsWith("eyj")) {
+	if (stem.endsWith("á")) {
+		return stem.substring(0, stem.length - 1) + "ætask";
+	} else if (stem.endsWith("eyj")) {
 		return stem.substring(0, stem.length - 1) + "ðisk";
-	} else if (stem.endsWith("d") || stem.endsWith("t")) {
+	} else if (stem.endsWith("d") || stem.endsWith("t") || !vowels.includes(stem.charAt(stem.length - 2))) {
 		return stem + "aðisk";
 	} else {
 		return stem + "ðisk";
@@ -394,7 +396,9 @@ function get_mediopassive_present(word) {
 	// makes sure that only -a verb endings are removed
 	if ("áæeéiíoóöuúyý".includes(word.charAt(word.length - 1))) stem = word;
 
-	if (stem.endsWith("eyj")) {
+	if (stem.endsWith("á")) {
+		return stem.substring(0, stem.length - 1) + "æsk";
+	} else if (stem.endsWith("eyj")) {
 		return stem.substring(0, stem.length - 1) + "isk";
 	} else {
 		return stem + "isk";
