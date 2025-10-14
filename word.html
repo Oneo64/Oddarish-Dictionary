@@ -51,15 +51,7 @@
 		<tr> <th>það, þetta<br>hann, hon<br>þey, þau, þaður</th> <td id="3rd_present"></td> </tr>
 		<tr> <th>nafnorð</th> <td id="gerund" colspan="2"></td> </tr>
 	</tbody></table>
-	<br>
-	<table id="mediopassive_declension" class="pfont" hidden><tbody>
-		<tr> <th id="mediopassive_top" colspan="2">orðraðingpung fyrir...</th> </tr>
-		<tr> <th>fyrstorð</th> <td id="infinitive2"></td> </tr>
-		<tr> <th>núligr</th> <td id="present_tense2"></td> </tr>
-		<tr> <th>fyrligr</th> <td id="past_tense2"></td> </tr>
-	</tbody></table>
-	<br>
-	<table id="adjective_declension" class="pfont"><tbody>
+	<table id="adjective_declension" class="pfont" hidden><tbody>
 		<tr> <th id="adjective_top" colspan="3">orðraðingpung fyrir...</th> </tr>
 		<tr> <th></th> <th>óþærbúandi</th> <th>þærbúandi</th> </tr>
 		<tr> <th>rótorð</th> <td id="a0" colspan="2"></td> </tr>
@@ -68,6 +60,13 @@
 		<tr> <th>ypanligr</th> <td id="a5"></td> <td id="a6"></td> </tr>
 		<tr> <th>verkhrimlingorð</th> <td id="a7"></td> <td id="a8"></td> </tr>
 		<tr> <th>nafnorð</th> <td id="a9"></td> <td id="a10"></td> </tr>
+	</tbody></table>
+	<br>
+	<table id="mediopassive_declension" class="pfont" hidden><tbody>
+		<tr> <th id="mediopassive_top" colspan="2">orðraðingpung fyrir...</th> </tr>
+		<tr> <th>fyrstorð</th> <td id="infinitive2"></td> </tr>
+		<tr> <th>núligr</th> <td id="present_tense2"></td> </tr>
+		<tr> <th>fyrligr</th> <td id="past_tense2"></td> </tr>
 	</tbody></table>
 	<br>
 	<hr>
@@ -171,6 +170,7 @@
 				document.getElementById("past_tense2").innerHTML = get_mediopassive_past(v2);
 			}
 		} else if (entry[0] == "adjective") {
+			document.getElementById("adjective_declension").hidden = false;
 			document.getElementById("a0").innerHTML = v2;
 			document.getElementById("a1").innerHTML = add_adj_ending_basic(v2, "");
 			document.getElementById("a2").innerHTML = add_adj_ending_basic(v2, "a");
