@@ -59,6 +59,17 @@
 		<tr> <th>fyrligr</th> <td id="past_tense2"></td> </tr>
 	</tbody></table>
 	<br>
+	<table id="adjective_declension" class="pfont"><tbody>
+		<tr> <th id="adjective_top" colspan="3">orðraðingpung fyrir...</th> </tr>
+		<tr> <th></th> <th>óþærbúandi</th> <th>þærbúandi</th> </tr>
+		<tr> <th>rótorð</th> <td id="a0" colspan="2"></td> </tr>
+		<tr> <th>fyrr orð</th> <td id="a1"></td> <td id="a2"></td> </tr>
+		<tr> <th>gærligr</th> <td id="a3"></td> <td id="a4"></td> </tr>
+		<tr> <th>ypanligr</th> <td id="a5"></td> <td id="a6"></td> </tr>
+		<tr> <th>verkhrimlingorð</th> <td id="a7"></td> <td id="a8"></td> </tr>
+		<tr> <th>nafnorð</th> <td id="a9"></td> <td id="a10"></td> </tr>
+	</tbody></table>
+	<br>
 	<hr>
 	<p>Minnu! IPA-inn ok orðraðingpungit mændu ar eigi réttr, ássi þú á til at tryggja um það ar réttr í fyrr.</p><p>Þetta tungaleiði ar setið með <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.</p>
 </div>
@@ -100,16 +111,16 @@
 			}
 		}
 
+		var v2 = v;
+
+		if (v.endsWith(")")) v2 = v.substring(0, v.length - 4);
+
 		if (entry[0].endsWith("noun")) {
 			var declension = get_noun_declension(v, entry[0]);
 
 			if (declension.length != 0) {
 				window.onresize = onWindowResize;
 				onWindowResize();
-
-				var v2 = v;
-
-				if (v.endsWith(")")) v2 = v.substring(0, v.length - 4);
 
 				document.getElementById("declension_top").innerHTML = "orðraðingpung fyrir '" + v2 + "'";
 				document.getElementById("_declension_top").innerHTML = "orðraðingpung fyrir '" + v2 + "'";
@@ -159,6 +170,18 @@
 				document.getElementById("present_tense2").innerHTML = get_mediopassive_present(v2);
 				document.getElementById("past_tense2").innerHTML = get_mediopassive_past(v2);
 			}
+		} else if (entry[0] == "adjective") {
+			document.getElementById("a0").innerHTML = v2;
+			document.getElementById("a1").innerHTML = add_adj_ending_basic(v2, "");
+			document.getElementById("a2").innerHTML = add_adj_ending_basic(v2, "a");
+			document.getElementById("a3").innerHTML = add_adj_ending_basic(v2, "urt");
+			document.getElementById("a4").innerHTML = add_adj_ending_basic(v2, "urta");
+			document.getElementById("a5").innerHTML = add_adj_ending_basic(v2, "jast");
+			document.getElementById("a6").innerHTML = add_adj_ending_basic(v2, "jasta");
+			document.getElementById("a7").innerHTML = add_adj_ending_basic(v2, "na");
+			document.getElementById("a8").innerHTML = add_adj_ending_basic(v2, "na");
+			document.getElementById("a9").innerHTML = add_adj_ending_basic(v2, "an");
+			document.getElementById("a10").innerHTML = add_adj_ending_basic(v2, "an");
 		}
 	}
 </script>

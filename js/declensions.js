@@ -228,6 +228,24 @@ function add_verb_ending_basic(word, ending) {
 	return word + ending;
 }
 
+function add_adj_ending_basic(word, ending) {
+	if (word.endsWith("r")) {
+		if (ending == "") {
+			if (word.endsWith("ðr")) {
+				return word.substring(0, word.length - 2) + "tt";
+			}
+
+			if (word.endsWith("lr")) {
+				return word.substring(0, word.length - 1) + "t";
+			}
+		}
+		
+		return word.substring(0, word.length - 1) + ending;
+	}
+
+	return word + ending;
+}
+
 function get_past_tense(word) {
 	if (word in special_declensions && "past_tense" in special_declensions[word]) {
 		return special_declensions[word]["past_tense"];
