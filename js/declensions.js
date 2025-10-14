@@ -245,7 +245,10 @@ function get_past_tense(word) {
 
 	if (word.length >= 3) last_2_letters = stem.charAt(stem.length - 2) + stem.charAt(stem.length - 1);
 
-	if ("lmn".includes(last_letter)) {
+	var a = duplicate_exception.includes(stem.charAt(stem.length - 2));
+	var b = vowels.includes(stem.charAt(stem.length - 2));
+
+	if ("mn".includes(last_letter) && (!word.endsWith("na") || word.endsWith("nna"))) {
 		return stem + "di";
 	}
 
@@ -253,7 +256,7 @@ function get_past_tense(word) {
 		return stem + "ti";
 	}
 
-	if (word.length >= 3 && (duplicate_exception.includes(stem.charAt(stem.length - 2)) || stem == word)) {
+	if (word.length >= 3 && (a || stem == word)) {
 		if (last_letter == "á") {
 			return stem.substring(0, stem.length - 1) + "æði";
 		}
@@ -264,6 +267,10 @@ function get_past_tense(word) {
 
 		if (stem.endsWith("eyj")) {
 			return stem.substring(0, stem.length - 1) + "ði";
+		}
+
+		if (stem.endsWith("l") && b) {
+			return stem + "di";
 		}
 	} else {
 		if (last_letter == "ú") {
