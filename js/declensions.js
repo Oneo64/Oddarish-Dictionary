@@ -243,6 +243,10 @@ function add_adj_ending_basic(word, ending) {
 		return word.substring(0, word.length - 1) + ending;
 	}
 
+	if (word.endsWith("an") && ending == "na") {
+		return word.substring(0, word.length - 2) + "ir";
+	}
+
 	return word + ending;
 }
 
@@ -270,7 +274,7 @@ function get_past_tense(word) {
 		return stem + "di";
 	}
 
-	if ("bkpsð".includes(last_letter) || last_2_letters == "lf") {
+	if ("bkpszð".includes(last_letter) || last_2_letters == "lf") {
 		return stem + "ti";
 	}
 
@@ -319,7 +323,7 @@ function get_past_participle(word) {
 	if ("áæeéiíoóöuúyý".includes(word.charAt(word.length - 1))) stem = word;
 
 	if (word.length >= 3) {
-		if (stem.endsWith("p") || stem.endsWith("k") || stem.endsWith("s") || stem.endsWith("m") || stem.endsWith("g")) {
+		if (stem.endsWith("p") || stem.endsWith("k") || stem.endsWith("s") || stem.endsWith("z") || stem.endsWith("m") || stem.endsWith("g")) {
 			return stem + "t";
 		} else if (stem.endsWith("gj")) {
 			return stem.substring(0, stem.length - 1) + "t";
@@ -461,7 +465,7 @@ function get_mediopassive_past(word) {
 
 	if (word.length >= 3) last_2_letters = stem.charAt(stem.length - 2) + stem.charAt(stem.length - 1);
 
-	if ("bkpsð".includes(last_letter) || last_2_letters == "lf") {
+	if ("bkpszð".includes(last_letter) || last_2_letters == "lf") {
 		return stem + "tisk";
 	} else if (last_letter == "ú") {
 		return stem.substring(0, stem.length - 1) + "ýðisk";
