@@ -301,10 +301,8 @@ function get_past_participle(word) {
 	if ("áæeéiíoóöuúyý".includes(word.charAt(word.length - 1))) stem = word;
 
 	if (word.length >= 3) {
-		if (stem.endsWith("p") || stem.endsWith("k") || stem.endsWith("s")) {
+		if (stem.endsWith("p") || stem.endsWith("k") || stem.endsWith("s") || stem.endsWith("m") || stem.endsWith("g")) {
 			return stem + "t";
-		} else if (stem.endsWith("g")) {
-			return stem + "ð";
 		} else if (stem.endsWith("á")) {
 			return stem.substring(0, stem.length - 1) + "æt";
 		} else if (stem.endsWith("ó")) {
