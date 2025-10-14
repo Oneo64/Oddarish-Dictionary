@@ -4,7 +4,9 @@ for (var i = 0; i < letters.length; i++) {
 	document.getElementById("letters").innerHTML += "<a href='letter.html?v=" + letters[i] + "'>" + letters[i] + "</a>";
 }
 
-document.getElementById("letters").innerHTML += '<form action="search.html" method="GET"><input type="text" class="inputbox pfont" id="searchbox" name="v"><input type="submit" class="submit pfont" value="Silfa"></form>';
+if (!document.getElementById("searchbox")) {
+	document.getElementById("letters").innerHTML += '<form action="search.html" method="GET"><input type="text" class="inputbox pfont" id="searchbox" name="v"><input type="submit" class="submit pfont" value="Silfa"></form>';
+}
 
 if (document.getElementById("letters2") != null) {
 	for (var i = 0; i < letters.length; i++) {

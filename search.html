@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title id="title">Orðpæng um Oddarsku</title>
 	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="custom_checkboxes.css">
 	<link rel="icon" type="image/x-icon" href="images/favicon.png">
 </head>
 <body>
@@ -12,18 +13,44 @@
 	<span class="titlespan"><img class="h1favicon" src="images/favicon.png" alt="favicon"><h1><a href="index.html">Orðpængin um Oddarsku</a></h1></span>
 	<div id="letters" class="letterlist h2font"></div>
 	<hr>
-	<h3 id="search"></h2>
+
+	<form action="search.html" method="GET">
+		<input type="text" class="inputbox pfont" id="searchbox" name="v">
+		<br><br>
+		<label for="pos" class="pfont">Kvisti um Telli:</label>&nbsp&nbsp<select name="pos" id="pos" class="pfont button" style="width: auto;">
+			<option value="all">allr</option>
+			<option value="adjective">hrimlingorð</option>
+			<option value="adverb">verkhrimlingorð</option>
+			<option value="noun">nafnorð</option>
+			<option value="verb">verkorð</option>
+		</select>
+		<br><br>
+		<label class="container pfont" style="margin-bottom: 20px;">Silfa í Orðraðingpungum
+			<input id="declensions" name="d" type="checkbox" checked="checked">
+			<span class="checkmark" style="border: 2px solid black;"></span>
+		</label>
+		<input type="submit" class="submit pfont" value="Silfa" style="margin: 0;">
+	</form>
+	<h3 id="search"></h3>
 	<div id="results" class="list4 pfont"></div>
 </div>
 
 <script src="js/letters.js"></script>
 <script src="js/oddarish_dictionary.js"></script>
+<script src="js/ipa.js"></script>
+<script src="js/declensions.js"></script>
 <script>
 	var query = window.location.search;
 	var params = new URLSearchParams(query);
 	var v = params.get("v");
+	var pos = params.get("pos");
+	var d = params.get("d");
 
 	if (v != null) v = v.toLowerCase();
+
+	document.getElementById("searchbox").value = v;
+	document.getElementById("pos").value = pos != null ? pos : "all";
+	document.getElementById("declensions").checked = d != null;
 
 	document.getElementById("title").innerHTML = "Orðpængin um Oddarsku - Orðsilfing";
 	document.getElementById("search").innerHTML = "Silfingur um '" + v + "'";
@@ -37,6 +64,8 @@
 			var word = entry_words[i];
 
 			if (word in entries) {
+				if (pos != "all" && entries[word][0] != pos) continue;
+
 				var def = entries[word][1];
 				var added = false;
 
@@ -48,6 +77,32 @@
 				} else if (word.includes(v)) {
 					document.getElementById("results").innerHTML += "<div><a class='listitem' href='word.html?v=" + word + "'>" + word + "</a><div class='nowrap'>&nbsp&nbsp(fyndið í orðinni)</div></div>";
 					added = true;
+				}
+
+				var v2 = v;
+
+				if (v.endsWith(")")) v2 = v.substring(0, v.length - 4);
+
+				switch (true) {
+					case v2 == get_past_tense(word):
+						document.getElementById("results").innerHTML += "<div><a class='listitem' href='word.html?v=" + word + "'>" + word + "</a><div class='nowrap'>&nbsp&nbsp(fyndið í fyrligt orði)</div></div>";
+						added = true;
+						break;
+
+					case v2 == get_past_participle(word):
+						document.getElementById("results").innerHTML += "<div><a class='listitem' href='word.html?v=" + word + "'>" + word + "</a><div class='nowrap'>&nbsp&nbsp(fyndið í fyrligt hrimlingorði)</div></div>";
+						added = true;
+						break;
+
+					case v2 == get_present_tense(word, 1) || v2 == get_present_tense(word, 2) || v2 == get_present_tense(word, 3):
+						document.getElementById("results").innerHTML += "<div><a class='listitem' href='word.html?v=" + word + "'>" + word + "</a><div class='nowrap'>&nbsp&nbsp(fyndið í núligt orði)</div></div>";
+						added = true;
+						break;
+
+					case v2 == add_verb_ending_basic(word, "andi"):
+						document.getElementById("results").innerHTML += "<div><a class='listitem' href='word.html?v=" + word + "'>" + word + "</a><div class='nowrap'>&nbsp&nbsp(fyndið í núligt hrimlingorði)</div></div>";
+						added = true;
+						break;
 				}
 
 				if (added) {

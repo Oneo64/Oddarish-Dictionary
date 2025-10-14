@@ -235,6 +235,7 @@ function get_past_tense(word) {
 
 	var stem = word.substring(0, word.length - 1);
 	var vowels = "aáæeéiíoóöuúyý";
+	var duplicate_exception = "aáæeéiíoóöuúyýnml";
 
 	// makes sure that only -a verb endings are removed
 	if ("áæeéiíoóöuúyý".includes(word.charAt(word.length - 1))) stem = word;
@@ -244,21 +245,21 @@ function get_past_tense(word) {
 
 	if (word.length >= 3) last_2_letters = stem.charAt(stem.length - 2) + stem.charAt(stem.length - 1);
 
-	if (word.length >= 3 && (vowels.includes(stem.charAt(stem.length - 2)) || stem == word)) {
+	if ("lmn".includes(last_letter)) {
+		return stem + "di";
+	}
+
+	if ("bkpsð".includes(last_letter) || last_2_letters == "lf") {
+		return stem + "ti";
+	}
+
+	if (word.length >= 3 && (duplicate_exception.includes(stem.charAt(stem.length - 2)) || stem == word)) {
 		if (last_letter == "á") {
 			return stem.substring(0, stem.length - 1) + "æði";
 		}
 
 		if ("frgd".includes(last_letter) || vowels.includes(last_letter)) {
 			return stem + "ði";
-		}
-
-		if ("lmn".includes(last_letter)) {
-			return stem + "di";
-		}
-
-		if ("bkpsð".includes(last_letter) || last_2_letters == "lf") {
-			return stem + "ti";
 		}
 
 		if (stem.endsWith("eyj")) {
@@ -293,7 +294,7 @@ function get_past_participle(word) {
 	if ("áæeéiíoóöuúyý".includes(word.charAt(word.length - 1))) stem = word;
 
 	if (word.length >= 3) {
-		if (stem.endsWith("p") || stem.endsWith("k")) {
+		if (stem.endsWith("p") || stem.endsWith("k") || stem.endsWith("s")) {
 			return stem + "t";
 		} else if (stem.endsWith("g")) {
 			return stem + "ð";
@@ -430,15 +431,22 @@ function get_mediopassive_past(word) {
 	// makes sure that only -a verb endings are removed
 	if ("áæeéiíoóöuúyý".includes(word.charAt(word.length - 1))) stem = word;
 
-	if (stem.endsWith("ú")) {
+	var last_letter = stem.charAt(stem.length - 1);
+	var last_2_letters = last_letter;
+
+	if (word.length >= 3) last_2_letters = stem.charAt(stem.length - 2) + stem.charAt(stem.length - 1);
+
+	if ("bkpsð".includes(last_letter) || last_2_letters == "lf") {
+		return stem + "tisk";
+	} else if (last_letter == "ú") {
 		return stem.substring(0, stem.length - 1) + "ýðisk";
-	} else if (stem.endsWith("á")) {
+	} else if (last_letter == "á") {
 		return stem.substring(0, stem.length - 1) + "ætask";
-	} else if (stem.endsWith("eyj") || (stem.endsWith("j") && "frg".includes(stem.charAt(stem.length - 2)))) {
+	} else if (stem.endsWith("eyj") || (last_letter == "j" && "frg".includes(stem.charAt(stem.length - 2)))) {
 		return stem.substring(0, stem.length - 1) + "ðisk";
-	} else if (vowels.includes(stem.charAt(stem.length - 1))) {
+	} else if (vowels.includes(last_letter)) {
 		return stem + "ðisk";
-	} else if (stem.endsWith("d") || stem.endsWith("t") || !vowels.includes(stem.charAt(stem.length - 2))) {
+	} else if (last_letter == "d" || last_letter == "t" || !vowels.includes(stem.charAt(stem.length - 2))) {
 		return stem + "aðisk";
 	} else {
 		return stem + "ðisk";
