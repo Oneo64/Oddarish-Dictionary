@@ -64,7 +64,7 @@
 			var word = entry_words[i];
 
 			if (word in entries) {
-				if (pos != "all" && entries[word][0] != pos) continue;
+				if (pos != null && pos != "all" && entries[word][0] != pos) continue;
 
 				var def = entries[word][1];
 				var added = false;
