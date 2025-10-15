@@ -4209,6 +4209,16 @@ const entries = {
 };
 
 const special_declensions = {
+	"apta-tala": {
+		"past_tense": "apta-teldi",
+		"past_participle": "apta-telið",
+		"past_tense_mediopassive": "apta-telðisk"
+	},
+	"blá-tala": {
+		"past_tense": "blá-teldi",
+		"past_participle": "blá-telið",
+		"past_tense_mediopassive": "blá-telðisk"
+	},
 	"boða": {
 		"past_tense": "baði",
 		"past_tense_mediopassive": "baðisk"
@@ -4237,6 +4247,20 @@ const special_declensions = {
 		"past_participle": "gvætið",
 		"past_tense_mediopassive": "gvætisk"
 	},
+	"lang-tala": {
+		"past_tense": "lang-teldi",
+		"past_participle": "lang-telið",
+		"past_tense_mediopassive": "lang-telðisk"
+	},
+	"lítt-sve": {
+		"present_tense": "lítt-svi",
+		"past_tense": "lítt-svá",
+		"past_participle": "lítt-svið",
+		"mediopassive": "lítt-svask",
+		"present_mediopassive": "lítt-svisk",
+		"past_tense_mediopassive": "lítt-sváðisk",
+		"gerund": "lítt-sveng"
+	},
 	"minna": {
 		"past_tense": "mynnði",
 		"past_participle": "mynnið",
@@ -4245,6 +4269,11 @@ const special_declensions = {
 	"muna": {
 		"past_tense": "myndi",
 		"past_participle": "myndið"
+	},
+	"of-tala": {
+		"past_tense": "of-teldi",
+		"past_participle": "of-telið",
+		"past_tense_mediopassive": "of-telðisk"
 	},
 	"setja": {
 		"past_tense": "sati",
@@ -4269,14 +4298,15 @@ const special_declensions = {
 		"past_tense_mediopassive": "sváðisk",
 		"gerund": "sveng"
 	},
-	"lítt-sve": {
-		"present_tense": "lítt-svi",
-		"past_tense": "lítt-svá",
-		"past_participle": "lítt-svið",
-		"mediopassive": "lítt-svask",
-		"present_mediopassive": "lítt-svisk",
-		"past_tense_mediopassive": "lítt-sváðisk",
-		"gerund": "lítt-sveng"
+	"rala": {
+		"past_tense": "reldi",
+		"past_participle": "relið",
+		"past_tense_mediopassive": "relðisk"
+	},
+	"tala": {
+		"past_tense": "teldi",
+		"past_participle": "telið",
+		"past_tense_mediopassive": "telðisk"
 	},
 	"vera": {
 		"present_tense": "ar",
