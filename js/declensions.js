@@ -30,6 +30,12 @@ const noun_declensions = {
 		"s", "sins", "a", "anna",
 	],
 	masculine_ir: [
+		"", "urinn", "r", "rnir",
+		"ur", "urinn", "r", "rnir",
+		"ur", "urnum", "rum", "runum",
+		"ur", "urins", "ra", "ranna",
+	],
+	masculine_nir: [
 		"", "inn", "íri", "ærinn",
 		"u", "ynu", "íri", "ærinn",
 		"i", "ynum", "yrjum", "ærunum",
@@ -59,6 +65,12 @@ const noun_declensions = {
 		"", "énni", "jum", "junum",
 		"z", "jar", "ja", "janna",
 	],
+	feminine_ir: [
+		"", "irin", "r", "rnar",
+		"ur", "urina", "r", "rnar",
+		"ur", "urinni", "rum", "runum",
+		"ur", "urinnar", "ra", "ranna",
+	],
 	neuter: [
 		"", "it", "ur", "urnir",
 		" ", "it", "ur", "urnir",
@@ -79,16 +91,26 @@ function get_noun_declension(w, t) {
 
 	if (word.endsWith(")")) word = word.substring(0, word.length - 4);
 	
-	if (word.endsWith("ir")) {
+	if (word.endsWith("nir")) {
 		for (var i = 0; i < 16; i++) {
-			if (noun_declensions.masculine_ir[i] == "") {
+			if (noun_declensions.masculine_nir[i] == "") {
 				declension.push(word);
 			} else {
-				declension.push(word.substring(0, word.length - 2) + noun_declensions.masculine_ir[i]);
+				declension.push(word.substring(0, word.length - 2) + noun_declensions.masculine_nir[i]);
 			}
 		}
 	} else if (t == "masculine noun") {
-		if (word.endsWith("dr")) {
+		if (word.endsWith("ir")) {
+			for (var i = 0; i < 16; i++) {
+				if (noun_declensions.masculine_ir[i] == "") {
+					declension.push(word);
+				} else if (word.charAt(word.length - 4) == "ó" && noun_declensions.masculine_ir[i].startsWith("r")) {
+					declension.push(word.substring(0, word.length - 4) + "æ" + word.charAt(word.length - 3) + noun_declensions.masculine_ir[i]);
+				} else {
+					declension.push(word.substring(0, word.length - 2) + noun_declensions.masculine_ir[i]);
+				}
+			}
+		} else if (word.endsWith("dr")) {
 			for (var i = 0; i < 16; i++) {
 				if (noun_declensions.masculine_dr[i] == "") {
 					declension.push(word);
@@ -138,7 +160,17 @@ function get_noun_declension(w, t) {
 			}
 		}
 	} else if (t == "feminine noun") {
-		if (word.endsWith("ja")) {
+		if (word.endsWith("ir")) {
+			for (var i = 0; i < 16; i++) {
+				if (noun_declensions.feminine_ir[i] == "") {
+					declension.push(word);
+				} else if (word.charAt(word.length - 4) == "ó" && noun_declensions.feminine_ir[i].startsWith("r")) {
+					declension.push(word.substring(0, word.length - 4) + "æ" + word.charAt(word.length - 3) + noun_declensions.feminine_ir[i]);
+				} else {
+					declension.push(word.substring(0, word.length - 2) + noun_declensions.feminine_ir[i]);
+				}
+			}
+		} else if (word.endsWith("ja")) {
 			for (var i = 0; i < 16; i++) {
 				if (noun_declensions.feminine_ja[i] == "") {
 					declension.push(word);
