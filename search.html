@@ -79,7 +79,7 @@
 					added = true;
 				}
 
-				if (entries[word][0] == "verb" && !added) {
+				if (entries[word][0] == "verb" && !added && d) {
 					var v2 = v;
 
 					if (v.endsWith(")")) v2 = v.substring(0, v.length - 4);
