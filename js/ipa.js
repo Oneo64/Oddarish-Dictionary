@@ -49,6 +49,13 @@ const consonants = {
 	"-óg": vowels["ó"] + "χ",
 	"-ug": vowels["u"] + "χ",
 	"-úg": vowels["ú"] + "χ",
+
+	"-agna": vowels["a"] + "χn" + vowels["a"],
+	"-ágna": vowels["á"] + "χn" + vowels["a"],
+	"-ógna": vowels["ó"] + "χn" + vowels["a"],
+	"-ugna": vowels["u"] + "χn" + vowels["a"],
+	"-úgna": vowels["ú"] + "χn" + vowels["a"],
+
 	"-gl": "kl̥",
 	"-gð": "χθ",
 
