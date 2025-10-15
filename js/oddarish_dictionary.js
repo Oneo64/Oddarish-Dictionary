@@ -2215,7 +2215,7 @@ const entries = {
 	"bastark": ["neuter noun", "baldric"],
 	"bastarð-skjorð": ["neuter noun", "bastard sword"],
 	"beigr": ["masculine noun", "dog"],
-	"beinn": ["adjective", "straight, without bends or curves (adjective)"],
+	"beinnr": ["adjective", "straight, without bends or curves (adjective)"],
 	"beirr": ["masculine noun", "hearth, campfire, bonfire"],
 	"beita": ["verb", "to poison"],
 	"beitr": ["neuter noun", "a poison (neuter declension)"],
