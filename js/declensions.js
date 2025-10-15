@@ -316,6 +316,10 @@ function get_past_tense(word) {
 		if ((last_letter == "j" && "frg".includes(stem.charAt(stem.length - 2)))) {
 			return stem.substring(0, stem.length - 1) + "ði";
 		}
+
+		if (stem.endsWith("kv") || stem.endsWith("gv")) {
+			return stem + "iði";
+		}
 	}
 
 	return stem + "aði";
@@ -341,8 +345,8 @@ function get_past_participle(word) {
 			return stem.substring(0, stem.length - 1) + "æt";
 		} else if (stem.endsWith("ó")) {
 			return stem.substring(0, stem.length - 1) + "eið";
-		} else if (stem.endsWith("va")) {
-			return stem.substring(0, stem.length - 1) + "ið";
+		} else if (stem.endsWith("kv") || stem.endsWith("gv")) {
+			return stem + "ið";
 		} else if (stem.endsWith("j")) {
 			if (stem.endsWith("eyj")) {
 				return stem.substring(0, stem.length - 1) + "ð";
@@ -485,6 +489,8 @@ function get_mediopassive_past(word) {
 		return stem.substring(0, stem.length - 1) + "ðisk";
 	} else if (vowels.includes(last_letter)) {
 		return stem + "ðisk";
+	} else if (stem.endsWith("kv") || stem.endsWith("gv")) {
+		return stem + "iðisk";
 	} else if (last_letter == "d" || last_letter == "t" || !vowels.includes(stem.charAt(stem.length - 2))) {
 		return stem + "aðisk";
 	} else {
