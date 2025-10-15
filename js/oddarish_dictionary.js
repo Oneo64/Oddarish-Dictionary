@@ -118,7 +118,7 @@ const entry_words = [
 	"bastark",
 	"bastarð-skjorð",
 	"beigr",
-	"beinn",
+	"beinnr",
 	"beirr",
 	"beita",
 	"beitr",
