@@ -87,8 +87,11 @@
 		document.getElementById("word").innerHTML = v;
 
 		var entry = entries[v];
+		var v2 = v;
 
-		document.getElementById("ipa").innerHTML = ipa(v.replace("-", "."), false);
+		if (v.endsWith(")")) v2 = v.substring(0, v.length - 4);
+
+		document.getElementById("ipa").innerHTML = ipa(v2.replace("-", "."), false);
 		document.getElementById("type").innerHTML = word_type_short_form[entry[0]];
 		document.getElementById("definition").innerHTML = entry[1];
 
@@ -109,10 +112,6 @@
 				}
 			}
 		}
-
-		var v2 = v;
-
-		if (v.endsWith(")")) v2 = v.substring(0, v.length - 4);
 
 		if (entry[0].endsWith("noun")) {
 			var declension = get_noun_declension(v, entry[0]);
@@ -139,11 +138,7 @@
 					document.getElementById("_n" + i).innerHTML = declension[i];
 				}
 			}
-		} else if (entry[0] == "verb" || entry[0] == "auxiliary") {
-			var v2 = v;
-
-			if (v.endsWith(")")) v2 = v.substring(0, v.length - 4);
-
+		} else if ((entry[0] == "verb" || entry[0] == "auxiliary") && !v2.includes(" ")) {
 			if (!v2.endsWith("ask")) {
 				document.getElementById("verb_declension").hidden = false;
 
