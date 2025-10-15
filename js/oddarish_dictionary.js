@@ -3366,7 +3366,7 @@ const entries = {
 	"of-þröng": ["neuter noun", "a horde, a large crowd"],
 	"offr": ["masculine noun", "an offer or a sacrifice, often in a religious sense"],
 	"offra": ["verb", "to offer, to sacrifice, often in a religious sense"],
-	"offring": ["masculine noun", "a religious sacrifice"],
+	"offring": ["neuter noun", "a religious sacrifice"],
 	"ofsi": ["masculine noun", "evil (noun)"],
 	"ogn": ["neuter noun", "bait"],
 	"ogóna": ["verb", "to lose; to be defeated"],
