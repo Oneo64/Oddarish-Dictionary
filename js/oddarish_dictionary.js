@@ -4221,10 +4221,12 @@ const special_declensions = {
 	},
 	"boða": {
 		"past_tense": "baði",
+		"past_participle": "bað",
 		"past_tense_mediopassive": "baðisk"
 	},
 	"éta": {
 		"past_tense": "áti",
+		"past_participle": "át",
 		"past_tense_mediopassive": "átisk"
 	},
 	"finna": {
