@@ -235,8 +235,18 @@ function add_adj_ending_basic(word, ending) {
 				return word.substring(0, word.length - 2) + "tt";
 			}
 
-			if (word.endsWith("lr")) {
+			if (word.endsWith("llr") || word.endsWith("mr") || word.endsWith("gr")) {
 				return word.substring(0, word.length - 1) + "t";
+			}
+		} else {
+			if (word.endsWith("ligr")) {
+				if (ending == "a") return word.substring(0, word.length - 1) + "t";
+
+				if (ending.endsWith("a") && !ending.endsWith("na")) {
+					return word.substring(0, word.length - 1) + ending.substring(0, ending.length - 1);
+				} else {
+					return word.substring(0, word.length - 1) + ending;
+				}
 			}
 		}
 		

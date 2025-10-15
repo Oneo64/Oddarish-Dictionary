@@ -41,15 +41,15 @@ const consonants = {
 	"gl": "gl",
 	"gm": "gm",
 	"gn": "gn",
-	"gs": "xs",
-	"gt": "xt",
+	"gs": "χs",
+	"gt": "χt",
 
-	"-ag": vowels["a"] + "x",
-	"-ág": vowels["á"] + "x",
-	"-ug": vowels["u"] + "x",
-	"-úg": vowels["ú"] + "x",
+	"-ag": vowels["a"] + "χ",
+	"-ág": vowels["á"] + "χ",
+	"-ug": vowels["u"] + "χ",
+	"-úg": vowels["ú"] + "χ",
 	"-gl": "kl̥",
-	"-gð": "xθ",
+	"-gð": "χθ",
 
 	"ghh": "ɣ",
 
@@ -65,9 +65,9 @@ const consonants = {
 	"ægg": vowels["æ"] + "g",
 	"augg": vowels["au"] + "g",
 
-	"ögð": vowels["ö"] + "xθ",
-	"ægð": vowels["æ"] + "xθ",
-	"augð": vowels["au"] + "xθ",
+	"ögð": vowels["ö"] + "χθ",
+	"ægð": vowels["æ"] + "χθ",
+	"augð": vowels["au"] + "χθ",
 
 	"ög": vowels["ö"] + "ɣ",
 	"æg": vowels["æ"] + "ɣ",
