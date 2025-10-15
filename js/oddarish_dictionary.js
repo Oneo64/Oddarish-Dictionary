@@ -1271,6 +1271,7 @@ const entry_words = [
 	"of-gærr",
 	"of-hlóra",
 	"of-kvíla",
+	"of-tala",
 	"of-taling",
 	"of-þröng",
 	"offr",
