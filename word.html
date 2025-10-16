@@ -69,9 +69,8 @@
 		<tr> <th>fyrligr</th> <td id="past_tense2"></td> </tr>
 	</tbody></table>
 	<br>
-	<h4 id="runes" class="pfont">Runar</h4>
 	<hr>
-	<p>Minnu! IPA-inn ok orðraðingpungit mændu ar eigi réttr, ássi þú á til at tryggja um það ar réttr í fyrr.</p><p>Þetta tungaleiði ar setið með <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.</p>
+	<p>Minnu! IPA-inn, orðraðingpungit, ok runirnar mændu ar eigi réttr, ássi þú á til at tryggja um það ar réttr í fyrr.</p><p>Þetta tungaleiði ar setið með <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.</p>
 </div>
 
 <script src="js/letters.js"></script>
@@ -85,9 +84,6 @@
 	var v = params.get("v");
 
 	if (v in entries) {
-		document.getElementById("title").innerHTML = "Orðpængin um Oddarsku - " + v.charAt(0).toUpperCase() + v.substring(1);
-		document.getElementById("word").innerHTML = v;
-
 		var entry = entries[v];
 		var v2 = v;
 
@@ -95,6 +91,8 @@
 
 		var ipa = ipa(v2.replace("-", "."), false);
 
+		document.getElementById("title").innerHTML = "Orðpængin um Oddarsku - " + v.charAt(0).toUpperCase() + v.substring(1);
+		document.getElementById("word").innerHTML = v + " | " + get_runic_inscription(ipa);
 		document.getElementById("ipa").innerHTML = ipa;
 		document.getElementById("type").innerHTML = word_type_short_form[entry[0]];
 		document.getElementById("definition").innerHTML = entry[1];
@@ -182,8 +180,6 @@
 			document.getElementById("a9").innerHTML = add_adj_ending_basic(v2, "an");
 			document.getElementById("a10").innerHTML = add_adj_ending_basic(v2, "an");
 		}
-
-		document.getElementById("runes").innerHTML = "Mændurétt runar í skrytingum: " + get_runic_inscription(ipa);
 	}
 </script>
 </body>
