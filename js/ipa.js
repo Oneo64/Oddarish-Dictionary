@@ -48,9 +48,10 @@ const consonants = {
 
 	"gl": "gl",
 	"gm": "gm",
-	"gn": "gn",
 	"gs": "χs",
 	"gt": "χt",
+	
+	"gn": "-gn",
 
 	"-gl": "kl̥",
 	"-gð": "χθ",
@@ -63,6 +64,7 @@ const consonants = {
 
 	"-agna": vowels["a"] + "χn" + vowels["a"],
 	"-ágna": vowels["á"] + "χn" + vowels["a"],
+	"-agna": vowels["a"] + "χn" + vowels["a"],
 	"-ógna": vowels["ó"] + "χn" + vowels["a"],
 	"-ugna": vowels["u"] + "χn" + vowels["a"],
 	"-úgna": vowels["ú"] + "χn" + vowels["a"],
