@@ -1,0 +1,111 @@
+const runes = {
+	"f": "ᚠ",
+	"v": "ᚡ",
+	"ʋ": "ᚡ",
+	"y": "ᛦᚺ",
+	"ʉ": "ᚢ",
+	"u": "ᚢᚺ",
+	"œ": "ᚤ",
+	"θ": "ᚦ",
+	"ð̠": "ᚧ",
+	"t̪l": "ᚧᛚ",
+	"o": "ᛟ",
+	"ɔ": "ᛟ",
+	"ou": "ᛟᚢ",
+	"r": "ᚱ",
+	"r̥": "ᚺᚱ",
+	"k": "ᚴ",
+	"g": "ᚷ",
+	"ɣ": "ᚷ",
+	"χ": "ᚷ",
+	"h": "ᚺ",
+	"n": "ᚾ",
+	"n̥": "ᚺᚾ",
+	"ŋ": "ᚾ",
+	"ŋg": "ᚾᚷ",
+	"ɪ": "ᛁ",
+	"j": "ᛁ",
+	"ei": "ᛖᛁ",
+	"e": "ᛁ",
+	"i": "ᛁᚺ",
+	"ɛ": "ᛖ",
+	"a": "ᛅ",
+	"ai": "ᛅᛁ",
+	"ɑu": "ᛅᚢ",
+	"ɑi": "ᛟᛁ",
+	"s": "ᛋ",
+	"t": "ᛏ",
+	"tl̥": "ᛏᛚ",
+	"d": "ᛞ",
+	"b": "ᛒ",
+	"p": "ᛓ",
+	"m": "ᛘ",
+	"l": "ᛚ",
+	"l̥": "ᚺᛚ",
+	"ʏ": "ᛦ"
+};
+
+const keys_in_this_order = [
+	"ɑu",
+	"ɑi",
+	"ŋg",
+	"t̪l",
+	"tl̥",
+	"ou",
+	"ei",
+	"ai",
+	"χ",
+	"θ",
+	"ʏ",
+	"ʋ",
+	"ʉ",
+	"ɪ",
+	"ɣ",
+	"ɛ",
+	"ɔ",
+	"œ",
+	"ŋ",
+	"ð̠",
+	"y",
+	"v",
+	"u",
+	"t",
+	"s",
+	"r̥",
+	"r",
+	"p",
+	"o",
+	"n̥",
+	"n",
+	"m",
+	"l̥",
+	"l",
+	"k",
+	"j",
+	"i",
+	"h",
+	"g",
+	"f",
+	"e",
+	"d",
+	"b",
+	"a",
+];
+
+function get_runic_inscription(ipa) {
+	var runic_version = ipa;
+	var keys = Object.keys(runes);
+
+	keys.sort((a, b) => {
+		return b > a;
+	});
+
+	for (var i = 0; i < keys_in_this_order.length; i++) {
+		runic_version = runic_version.replaceAll(keys_in_this_order[i], runes[keys_in_this_order[i]]);
+	}
+
+	// this piece of shit code removes all ipa accent marks from our runic version of the ipa given
+	var clean = runic_version.normalize("NFD").replace(/[\u0300-\u036F\u1AB0-\u1AFF\u1DC0-\u1DFF\uFE20-\uFE2F]/g, "").normalize("NFC");
+
+	return clean.replaceAll("/", "").replaceAll("'", "").replaceAll("ː", "").replaceAll("ʰ", "");
+}
