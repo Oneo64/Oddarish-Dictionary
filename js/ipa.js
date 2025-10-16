@@ -50,8 +50,8 @@ const consonants = {
 	"gm": "gm",
 	"gs": "χs",
 	"gt": "χt",
-	
-	"gn": "-gn",
+
+	"-gn": "gn",
 
 	"-gl": "kl̥",
 	"-gð": "χθ",
