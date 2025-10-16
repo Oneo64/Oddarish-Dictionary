@@ -35,7 +35,15 @@ const consonants = {
 	"fn": "vn",
 	"f": "f",
 
+	"g-": "g",
+	"gv-": "gʋ",
+	"gj-": "c",
+
+	"g": "ɣ",
 	"gg": "g",
+	"ggv": "gʋ",
+
+	"ggj": "c",
 	"ggi": "c" + vowels["-i"],
 
 	"gl": "gl",
@@ -43,6 +51,9 @@ const consonants = {
 	"gn": "gn",
 	"gs": "χs",
 	"gt": "χt",
+
+	"-gl": "kl̥",
+	"-gð": "χθ",
 
 	"-ag": vowels["a"] + "χ",
 	"-ág": vowels["á"] + "χ",
@@ -55,38 +66,6 @@ const consonants = {
 	"-ógna": vowels["ó"] + "χn" + vowels["a"],
 	"-ugna": vowels["u"] + "χn" + vowels["a"],
 	"-úgna": vowels["ú"] + "χn" + vowels["a"],
-
-	"-gl": "kl̥",
-	"-gð": "χθ",
-
-	"ghh": "ɣ",
-
-	"öggv": vowels["ö"] + "gʋ",
-	"æggv": vowels["æ"] + "gʋ",
-	"auggv": vowels["au"] + "gʋ",
-
-	"öggj": vowels["ö"] + "c",
-	"æggj": vowels["æ"] + "c",
-	"auggj": vowels["au"] + "c",
-
-	"ögg": vowels["ö"] + "g",
-	"ægg": vowels["æ"] + "g",
-	"augg": vowels["au"] + "g",
-
-	"ögð": vowels["ö"] + "χθ",
-	"ægð": vowels["æ"] + "χθ",
-	"augð": vowels["au"] + "χθ",
-
-	"ög": vowels["ö"] + "ɣ",
-	"æg": vowels["æ"] + "ɣ",
-	"aug": vowels["au"] + "ɣ",
-
-	"ggj": "c",
-	"gj": "c",
-
-	"ggv": "gʋ",
-	"gv": "gʋ",
-	"g": "g",
 
 	"hl": "l̥",
 	"hn": "n̥",
@@ -186,10 +165,6 @@ function ipa(_word, english) {
 
 			if (check == "r" && is_ending && !(word.charAt(k - 2) in vowels) && word.charAt(k - 2) != "r") {
 				sound = consonants["r_ending"];
-			} else if (check == "g" && !is_starting && k > 1 && i_stems.includes(word.charAt(k - 2))) {
-				sound = consonants["ghh"];
-			} else if (check == "g" && !is_starting && k > 1 && word.charAt(k - 2) in vowels && (i_stems.includes(word.charAt(k)) || u_stems.includes(word.charAt(k)))) {
-				sound = consonants["ghh"];
 			} else if (is_ending && "-" + check in consonants) {
 				sound = consonants["-" + check];
 
