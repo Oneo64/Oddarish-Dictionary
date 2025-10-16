@@ -264,9 +264,11 @@ function add_verb_ending_basic(word, ending) {
 	return word + ending;
 }
 
-function add_adj_ending_basic(word, ending) {
+function add_adj_ending_basic(w, ending) {
+	var word = w;
+
 	if (word.endsWith("ill")) {
-		return word.substring(0, word.length - 2) + "t";
+		word = word.substring(0, word.length - 3) + "t";
 	}
 
 	if (word.endsWith("r")) {

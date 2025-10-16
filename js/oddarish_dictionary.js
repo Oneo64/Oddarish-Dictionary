@@ -3906,7 +3906,7 @@ const entries = {
 	"vigð-ugr": ["adjective", "persistent, unyielding, relentless, restless, dedicated, constant, stubborn (adjective)"],
 	"vika": ["feminine noun", "week"],
 	"vilja": ["verb", "to want or to wish | present tense: vil/vili/vilir | question form: viltú | past tense: vilti | past participle: viltið"],
-	"viljandi til": ["adjective", "to be willing to (adjective)"],
+	"viljandi til": ["adjective", "to be willing to (adjective)", "no-declension"],
 	"vinga": ["verb", "to long, to yearn; to deeply want"],
 	"vinna": ["verb", "to need, require, or cost (auxiliary) | question form: vinnaðú/vynnði þú | past tense: vynnði | past participle: vynnið"],
 	"virki": ["masculine noun", "fortified structure, fortress, mostly used to refer castles"],
