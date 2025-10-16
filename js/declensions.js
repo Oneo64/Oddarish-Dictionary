@@ -30,8 +30,8 @@ const noun_declensions = {
 		"s", "sins", "a", "anna",
 	],
 	masculine_ir: [
-		"", "urinn", "r", "rnir",
-		"ur", "urinn", "r", "rnir",
+		"", "irinn", "r", "rnir",
+		"ur", "urnu", "r", "rnir",
 		"ur", "urnum", "rum", "runum",
 		"ur", "urins", "ra", "ranna",
 	],
