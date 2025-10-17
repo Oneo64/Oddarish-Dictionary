@@ -2310,7 +2310,7 @@ const entries = {
 	"bölva": ["verb", "to succumb, to die, to perish to"],
 	"börsk-eip": ["neuter noun", "cedar (herb)"],
 	"börskr": ["masculine noun", "tree bark"],
-	"búa": ["verb", "to live at, to live in"],
+	"búa": ["verb", "to live at, to live in; to have or to be, in the sense of being there"],
 	"búfn": ["neuter noun", "belt"],
 	"búi": ["masculine noun", "dweller, inhabitant, one who lives in the place"],
 	"búnda": ["verb", "to embrace, to hug"],
