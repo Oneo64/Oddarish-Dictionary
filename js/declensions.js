@@ -379,7 +379,7 @@ function get_past_participle(word) {
 	if ("áæeéiíoóöuúyý".includes(word.charAt(word.length - 1))) stem = word;
 
 	if (word.length >= 3) {
-		if (stem.endsWith("f") || stem.endsWith("r") || stem.endsWith("g")) {
+		if (stem.endsWith("f") || stem.endsWith("r")) {
 			return stem + "ið";
 		} else if (stem.endsWith("p") || stem.endsWith("k") || stem.endsWith("s") || stem.endsWith("z") || stem.endsWith("m") || stem.endsWith("g")) {
 			return stem + "t";
