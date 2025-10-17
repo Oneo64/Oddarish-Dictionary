@@ -1,6 +1,7 @@
 const vowels = {
 	"au": "œyː",
 	"ar": "ɑr",
+	"ara": "ara",
 	"a": "a",
 	"ái": "ɑiː",
 	"á": "ɑuː",
@@ -183,6 +184,10 @@ function ipa(_word, english) {
 				if (/[aáæeéiíoóöuúyý]/i.test(sound)) syllables++;
 			} else if (check in vowels) {
 				sound = vowels[check];
+				syllables++;
+			}
+
+			if (sound.length == 3 && /[aáæeéiíoóöuúyý]/i.test(sound.charAt(0)) && /[aáæeéiíoóöuúyý]/i.test(sound.charAt(2))) {
 				syllables++;
 			}
 
