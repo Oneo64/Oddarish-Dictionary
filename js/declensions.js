@@ -379,7 +379,9 @@ function get_past_participle(word) {
 	if ("áæeéiíoóöuúyý".includes(word.charAt(word.length - 1))) stem = word;
 
 	if (word.length >= 3) {
-		if (stem.endsWith("p") || stem.endsWith("k") || stem.endsWith("s") || stem.endsWith("z") || stem.endsWith("m") || stem.endsWith("g")) {
+		if (stem.endsWith("f") || stem.endsWith("r") || stem.endsWith("g")) {
+			return stem + "ið";
+		} else if (stem.endsWith("p") || stem.endsWith("k") || stem.endsWith("s") || stem.endsWith("z") || stem.endsWith("m") || stem.endsWith("g")) {
 			return stem + "t";
 		} else if (stem.endsWith("gj")) {
 			return stem.substring(0, stem.length - 1) + "t";
@@ -397,18 +399,6 @@ function get_past_participle(word) {
 			}
 		} else if (stem.endsWith("ú")) {
 			return stem.substring(0, stem.length - 1) + "ýð";
-		} else {
-			var vowel = "";
-
-			for (var i = 0; i < word.length - 1; i++) {
-				if (vowels.includes(word.charAt(i))) vowel = word.charAt(i);
-			}
-
-			if (i_stems.includes(vowel) || u_stems.includes(vowel)) {
-				return stem + "ið";
-			} else {
-				return stem + "að";
-			}
 		}
 	}
 
