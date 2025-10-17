@@ -119,7 +119,8 @@ const consonants = {
 const exceptions = {
 	"'atl̥a": "'ala",
 	"'fʏrɪr": "'fɪrɪr",
-	"'hatl̥ouː": "'halouː"
+	"'hatl̥ouː": "'halouː",
+	"'feiːgma": "'feiːɣma"
 }
 
 function replace(word, list, replace_with) {
