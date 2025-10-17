@@ -2332,7 +2332,7 @@ const entries = {
 	"dersa": ["verb", "to spit out or onto"],
 	"derta": ["verb", "to flirt"],
 	"deyja": ["verb", "to die"],
-	"deyð": ["adjective", "dead (adjective)"],
+	"deyð": ["adjective", "dead (adjective)", "no-declension"],
 	"dilva": ["verb", "to decrease, to lower, to go down"],
 	"dimmr": ["adjective", "dim, dark, not bright (adjective)"],
 	"dofna": ["verb", "to close"],
