@@ -35,6 +35,7 @@ const consonants = {
 	"d": "d",
 	"ð": "ð̠",
 	"fn": "vn",
+	"-fna": "fn" + vowels["a"],
 	"f": "f",
 
 	"g-": "g",
