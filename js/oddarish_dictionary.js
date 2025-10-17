@@ -3349,7 +3349,7 @@ const entries = {
 	"næsta-dagr": ["masculine noun", "tomorrow (noun)"],
 	"næstr": ["adjective-adverb", "next (adjective); then, return to, back to (not in movement but in what someone was doing before) (adverb)"],
 	"næðingr": ["masculine noun", "a cold gust of wind"],
-	"né": ["conjunction", "nor, or not (conjunction)"],
+	"né": ["conjunction", "nor, or not (conjunction); or not, like in \"ar þetta rauðr né\" = \"is this red or not\""],
 	"nérask": ["verb", "to arrive, to approach, to go towards"],
 	"nérr": ["adverb", "near, beside, close, next to (adverb)"],
 	"nímna": ["verb", "to count"],
