@@ -449,7 +449,9 @@ function get_present_tense(word, pov) {
 			return stem + "i";
 		}
 	} else {
-		if (stem.endsWith("ú")) {
+		if (stem.endsWith("f") || stem.endsWith("r") || stem.endsWith("g") || word.endsWith("va")) {
+			return stem + "ir";
+		} else if (stem.endsWith("ú")) {
 			return stem.substring(0, stem.length - 1) + "ýr";
 		} else if (stem.endsWith("á")) {
 			return stem.substring(0, stem.length - 1) + "ær";
@@ -458,7 +460,7 @@ function get_present_tense(word, pov) {
 		} else if (stem.endsWith("j")) {
 			return word + "r";
 		} else {
-			return stem + "ir";
+			return stem + "ar";
 		}
 	}
 
