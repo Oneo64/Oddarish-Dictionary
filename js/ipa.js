@@ -70,6 +70,7 @@ const consonants = {
 	"-ugna": vowels["u"] + "χn" + vowels["a"],
 	"-úgna": vowels["ú"] + "χn" + vowels["a"],
 
+	"hj": "j̊",
 	"hl": "l̥",
 	"hn": "n̥",
 	"hr": "r̥",
