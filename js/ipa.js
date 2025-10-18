@@ -41,12 +41,14 @@ const consonants = {
 	"g-": "g",
 	"gv-": "gʋ",
 	"gj-": "c",
+	"gé-": "c" + vowels["e"],
 
 	"g": "ɣ",
 	"gg": "g",
 	"ggv": "gʋ",
 
 	"ggj": "c",
+	"ggé": "c" + vowels["e"],
 	"ggi": "c" + vowels["-i"],
 
 	"gl": "gl",
@@ -70,6 +72,7 @@ const consonants = {
 	"-ugna": vowels["u"] + "χn" + vowels["a"],
 	"-úgna": vowels["ú"] + "χn" + vowels["a"],
 
+	"hé": "j̊" + vowels["e"],
 	"hj": "j̊",
 	"hl": "l̥",
 	"hn": "n̥",
