@@ -41,14 +41,14 @@ const consonants = {
 	"g-": "g",
 	"gv-": "gʋ",
 	"gj-": "c",
-	"gé-": "c" + vowels["e"],
+	"gé-": "c" + vowels["é"].substring(1),
 
 	"g": "ɣ",
 	"gg": "g",
 	"ggv": "gʋ",
 
 	"ggj": "c",
-	"ggé": "c" + vowels["e"],
+	"ggé": "c" + vowels["é"].substring(1),
 	"ggi": "c" + vowels["-i"],
 
 	"gl": "gl",
@@ -72,7 +72,7 @@ const consonants = {
 	"-ugna": vowels["u"] + "χn" + vowels["a"],
 	"-úgna": vowels["ú"] + "χn" + vowels["a"],
 
-	"hé": "j̊" + vowels["e"],
+	"hé": "j̊" + vowels["é"].substring(1),
 	"hj": "j̊",
 	"hl": "l̥",
 	"hn": "n̥",
@@ -80,9 +80,13 @@ const consonants = {
 	"hv": "kʋ",
 	"h": "h",
 	"j": "j",
+
 	"kkj": "kj",
 	"kj": "kj",
+
 	"kj-": "cʰ",
+	"ké-": "cʰ" + vowels["é"].substring(1),
+
 	"kkv": "kʋ",
 	"kv": "kʋ",
 	"kv-": "kf",
