@@ -23,6 +23,8 @@
 			<option value="adverb">verkhrimlingorð</option>
 			<option value="noun">nafnorð</option>
 			<option value="verb">verkorð</option>
+			<option value="prefix">byrjandi um</option>
+			<option value="suffix">með loki</option>
 		</select>
 		<br><br>
 		<label class="container pfont" style="margin-bottom: 20px;">Silfa í Orðraðingpungum
@@ -64,7 +66,13 @@
 			var word = entry_words[i];
 
 			if (word in entries) {
-				if (pos != null && pos != "all" && entries[word][0] != pos) continue;
+				var word2 = word;
+
+				if (word.endsWith(")")) word2 = word.substring(0, word.length - 4);
+
+				if (pos != null && pos != "all" && entries[word][0] != pos) {
+					if ((pos != "prefix" || !word2.startsWith(v)) && (pos != "suffix" || !word2.endsWith(v))) continue;
+				}
 
 				var def = entries[word][1];
 				var added = false;
@@ -80,27 +88,23 @@
 				}
 
 				if (entries[word][0] == "verb" && !added && d) {
-					var v2 = v;
-
-					if (v.endsWith(")")) v2 = v.substring(0, v.length - 4);
-
 					switch (true) {
-						case v2 == get_past_tense(word):
+						case v == get_past_tense(word):
 							document.getElementById("results").innerHTML += "<div><a class='listitem' href='word.html?v=" + word + "'>" + word + "</a><div class='nowrap'>&nbsp&nbsp(fyndið í fyrligt orði)</div></div>";
 							added = true;
 							break;
 
-						case v2 == get_past_participle(word):
+						case v == get_past_participle(word):
 							document.getElementById("results").innerHTML += "<div><a class='listitem' href='word.html?v=" + word + "'>" + word + "</a><div class='nowrap'>&nbsp&nbsp(fyndið í fyrligt hrimlingorði)</div></div>";
 							added = true;
 							break;
 
-						case v2 == get_present_tense(word, 1) || v2 == get_present_tense(word, 2) || v2 == get_present_tense(word, 3):
+						case v == get_present_tense(word, 1) || v == get_present_tense(word, 2) || v == get_present_tense(word, 3):
 							document.getElementById("results").innerHTML += "<div><a class='listitem' href='word.html?v=" + word + "'>" + word + "</a><div class='nowrap'>&nbsp&nbsp(fyndið í núligt orði)</div></div>";
 							added = true;
 							break;
 
-						case v2 == add_verb_ending_basic(word, "andi"):
+						case v == add_verb_ending_basic(word, "andi"):
 							document.getElementById("results").innerHTML += "<div><a class='listitem' href='word.html?v=" + word + "'>" + word + "</a><div class='nowrap'>&nbsp&nbsp(fyndið í núligt hrimlingorði)</div></div>";
 							added = true;
 							break;

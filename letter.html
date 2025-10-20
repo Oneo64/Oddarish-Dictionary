@@ -31,7 +31,7 @@
 
 	if (v) {
 		for (var i = 0; i < entry_words.length; i++) {
-			if (entry_words[i].charAt(0) == v) list.push(entry_words[i]);
+			if (entry_words[i].startsWith(v) || entry_words[i].startsWith("-" + v)) list.push(entry_words[i]);
 		}
 
 		list.sort(function(a, b) {

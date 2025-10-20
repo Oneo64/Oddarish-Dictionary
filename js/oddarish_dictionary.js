@@ -21,6 +21,13 @@ const word_type_short_form = {
 };
 
 const entry_words = [
+	"-laust",
+	"-ligr",
+	"-liska",
+	"-nir, -ingi",
+	"-tari, -jari",
+	"-ugr",
+
 	"abbun",
 	"abbun-tyð",
 	"af",
@@ -2136,7 +2143,8 @@ const entries = {
 	"-laust": ["suffix", "without suffix"],
 	"-ligr": ["suffix", "to be like"],
 	"-liska": ["suffix", "language suffix"],
-	"-nir, -ingi, -tari, -jari": ["suffix", "one like in 'great one', 'old one', 'fiery one'; kin, like in owlkin | check this word out: önn"],
+	"-nir, -ingi": ["suffix", "meaning \"one who is like, or one who is one of\", but never used to describe characterisation"],
+	"-tari, -jari": ["suffix", "meaning \"one who believes, one who does, one who is with, or one who is characterised by\", usually only used to describe someone who had a choice in being so"],
 	"-ugr": ["suffix", "full of, characterised by"],
 	
 	"abbun": ["feminine noun", "stomach/bowel; belly"],
