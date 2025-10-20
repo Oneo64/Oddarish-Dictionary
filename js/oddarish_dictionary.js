@@ -4263,9 +4263,9 @@ const entries = {
 const special_declensions = {
 	"mandr": [
 		"mandr", "mandrinn", "mendr", "mendrnir",
-		"mandru", "mandrunu", "mendra", "mendrana",
-		"mandri", "mandrinum", "mendrum", "mendrunum",
-		"mandrs", "mandrsins", "mendra", "mendranna",
+		"mandu", "mandunu", "mendr", "mendrnir",
+		"mandi", "mandinum", "mendrum", "mendrunum",
+		"mands", "mandsins", "mendra", "mendranna",
 	],
 
 	"apta-tala": {
