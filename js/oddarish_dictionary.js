@@ -509,7 +509,7 @@ const entry_words = [
 	"gera",
 	"germanskr",
 	"geta",
-	"geta verið"
+	"geta verið",
 	"giftask",
 	"giftr",
 	"gikna",
