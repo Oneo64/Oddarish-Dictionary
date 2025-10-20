@@ -87,7 +87,7 @@ const noun_declensions = {
 
 function get_noun_declension(w, t) {
 	var declension = [];
-	var word = w.replace("-", "");
+	var word = w.replaceAll("-", "");
 
 	if (word.endsWith(")")) word = word.substring(0, word.length - 4);
 	

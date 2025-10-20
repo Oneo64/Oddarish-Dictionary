@@ -89,7 +89,7 @@
 
 		if (v.endsWith(")")) v2 = v.substring(0, v.length - 4);
 
-		var ipa = ipa(v2.replace("-", "."), false);
+		var ipa = ipa(v2.replaceAll("-", "."), false);
 
 		document.getElementById("title").innerHTML = "Orðpængin um Oddarsku - " + v.charAt(0).toUpperCase() + v.substring(1);
 		document.getElementById("word").innerHTML = v + " | " + get_runic_inscription(ipa);
