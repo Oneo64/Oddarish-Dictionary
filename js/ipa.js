@@ -90,7 +90,11 @@ const consonants = {
 	"kv-": "kf",
 	"k-": "kʰ",
 	"k": "k",
-	"-llr": "l̪ːr",
+
+	"-öllr": vowels["ö"] + "lr̩",
+	"-íllr": vowels["í"] + "lr̩",
+
+	"-llr": "l̪ːr̩",
 	"-llt": "l̪ːt",
 	"ll": "tl̥",
 	"l": "l",
