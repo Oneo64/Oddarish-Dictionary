@@ -4370,5 +4370,9 @@ const special_declensions = {
 	"vita": {
 		"past_tense": "vissi",
 		"past_tense_mediopassive": "vissisk"
+	},
+	"æma": {
+		"past_tense": "æmaði",
+		"past_participle": "æmað"
 	}
 };
