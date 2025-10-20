@@ -2826,7 +2826,7 @@ const entries = {
 	"hrása": ["verb", "to tightly hug or embrace; to tightly hold someone or soemthing"],
 	"hræga": ["feminine noun", "pillar"],
 	"hrænti": ["masculine noun", "enemy"],
-	"hræra": ["verb", "to stir, to mix"],
+	"hræra": ["verb", "to stir, to mix (of water or another liquid)"],
 	"hrík-akkar": ["feminine noun", "ladder | always in plural form"],
 	"hríka": ["verb", "to climb"],
 	"hróa": ["verb", "to warm up"],
