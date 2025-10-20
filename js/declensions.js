@@ -340,10 +340,6 @@ function get_past_tense(word) {
 		return stem + "di";
 	}
 
-	if (word.length >= 3 && word.endsWith("na") && vowels.includes(word.charAt(word.length - 3))) {
-		return stem + "di";
-	}
-
 	if ("bkpszð".includes(last_letter) || last_2_letters == "lf") {
 		return stem + "ti";
 	}
