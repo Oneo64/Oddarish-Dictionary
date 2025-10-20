@@ -3827,7 +3827,7 @@ const entries = {
 	"tellr": ["masculine noun", "speech"],
 	"tenda": ["feminine noun", "feeling, emotion; mood; sense"],
 	"tenga": ["verb", "to give a frame to; to timber or set a frame up"],
-	"tengr": ["masculine noun", "a building's frame"],
+	"tengr": ["masculine noun", "frame, rack, holder; building frame"],
 	"terta": ["feminine noun", "a pie"],
 	"tigl": ["masculine noun", "tiny (adjective)"],
 	"tigr": ["masculine noun", "tiger"],
