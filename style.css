@@ -120,6 +120,7 @@ p {
 	}
 
 	font-family: Gentium, 'Gentium Plus', GentiumAlt, 'DejaVu Sans', 'Segoe UI', 'Lucida Grande', 'Charis SIL', 'Doulos SIL', 'TITUS Cyberbit Basic', 'Code2000', 'Lucida Sans Unicode', sans-serif;
+	font-variant-ligatures: none;
 	font-weight: normal;
 }
 
