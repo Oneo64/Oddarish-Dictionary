@@ -3925,7 +3925,7 @@ const entries = {
 	"velt": ["masculine noun", "fur"],
 	"vera": ["verb", "is, am, are, be, equal (auxiliary, verb) | present tense: ar | past tense: var | question form: artú (do not use accusative form for Y in \"X ar Y\" sentences)"],
 	"verask": ["verb", "to happen"],
-	"verið-ligr": ["adjective", "probably, possible (adjective)"],
+	"verið-ligr": ["adjective", "maybe, perhaps; probably, possible (adjective)"],
 	"verk": ["neuter noun", "action, deed, doing"],
 	"verk-výsa": ["feminine noun", "idea, plan"],
 	"versi": ["masculine noun", "a stanza or verse in a poem"],
