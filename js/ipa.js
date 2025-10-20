@@ -92,14 +92,13 @@ const consonants = {
 	"k": "k",
 
 	"-llr": "lr̩",
-	"-llt": "lt",
-
-	"lln": "l̥n",
-
+	"llj": "lj",
+	"lln": "ln",
+	"llr": "lr",
+	"llt": "lt",
 	"ll": "tl̥",
-	"llr": "lːr",
-
 	"l": "l",
+	
 	"m": "m",
 	"n": "n",
 	"pv": "pʋ",
