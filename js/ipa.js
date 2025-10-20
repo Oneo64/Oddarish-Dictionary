@@ -1,9 +1,6 @@
 const vowels = {
 	"au": "œyː",
-	"ar": "ɑr",
-	"ara": "aːra",
-	"-ari": "aːre",
-	"ari": "aːrɪ",
+	"ar": "är",
 	"a": "a",
 	"ái": "ɑiː",
 	"á": "ɑuː",
