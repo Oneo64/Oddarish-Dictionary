@@ -55,6 +55,7 @@ const consonants = {
 	"gs": "χs",
 	"gt": "χt",
 
+	"-fl": "fl̩",
 	"-gl": "kl̥",
 	"-gð": "χθ",
 
