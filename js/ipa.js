@@ -93,8 +93,7 @@ const consonants = {
 
 	"-llr": "lr̩",
 	"-llt": "l̥t",
-	"llr": "lr",
-	
+
 	"ll": "tl̥",
 	"l": "l",
 
