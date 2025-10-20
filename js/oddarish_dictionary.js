@@ -3501,7 +3501,7 @@ const entries = {
 	"rað": ["feminine noun", "row, order, sequence"],
 	"raða": ["verb", "to sort or order"],
 	"reikun": ["adjective", "green (color) (noun, adjective)"],
-	"reim": ["neuter", "a strip or strap"],
+	"reim": ["neuter", "a strip of material; a strap"],
 	"reina": ["verb", "to clean, to wash"],
 	"reizga": ["feminine noun", "moss"],
 	"reka": ["feminine noun", "a shovel"],
