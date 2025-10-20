@@ -124,7 +124,7 @@ const consonants = {
 
 // exceptions go here!!!
 const exceptions = {
-	"'atl̥a": "'ala",
+	//"'atl̥a": "'ala",
 	"'fʏrɪr": "'fɪrɪr",
 	"'hatl̥ouː": "'halouː"
 }
