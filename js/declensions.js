@@ -93,7 +93,17 @@ const noun_declensions = {
 
 function get_noun_declension(w, t) {
 	if (w in special_declensions) {
-		return special_declensions[word];
+		return special_declensions[w];
+	}
+
+	if (w.includes("-") && w.substring(w.indexOf("-") + 1) in special_declensions) {
+		var declension = special_declensions[w.substring(w.indexOf("-") + 1)];
+
+		for (var i = 0; i < declension.length; i++) {
+			declension[i] = w.substring(0, w.indexOf("-") + 1) + declension[i];
+		}
+
+		return declension;
 	}
 
 	var declension = [];
