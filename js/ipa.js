@@ -93,8 +93,7 @@ const consonants = {
 
 	"-llr": "lr̩",
 	"-llt": "lt",
-	"-ll": "tl̥",
-	"ll": "tl",
+	"ll": "tl̥",
 	"l": "l",
 	"m": "m",
 	"n": "n",
@@ -124,7 +123,6 @@ const consonants = {
 
 // exceptions go here!!!
 const exceptions = {
-	//"'atl̥a": "'ala",
 	"'fʏrɪr": "'fɪrɪr",
 	"'hatl̥ouː": "'halouː"
 }
