@@ -2649,7 +2649,7 @@ const entries = {
 	"gjalda": ["verb", "to pay back, to repay, to tribute"],
 	"gjalla": ["verb", "to resonate, to make loud noises; to yell, to scream, to cry"],
 	"gjarka": ["verb", "to declare, to state, to make known"],
-	"gjástr": ["masculine noun", "ghost, spirit"],
+	"gjástr": ["masculine noun", "ghost, specter, apparition, spirit"],
 	"gjófa": ["verb", "to cover; a cover, usually made of fabric or wood"],
 	"gjóð-laust": ["adjective", "blasphemous, unholy (adjective)"],
 	"gjóðr": ["masculine noun", "god, deity"],
