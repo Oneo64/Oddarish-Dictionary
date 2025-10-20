@@ -92,7 +92,7 @@ const noun_declensions = {
 };
 
 function get_noun_declension(w, t) {
-	if (word in special_declensions) {
+	if (w in special_declensions) {
 		return special_declensions[word];
 	}
 
