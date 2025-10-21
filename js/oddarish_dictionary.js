@@ -4309,6 +4309,12 @@ const special_declensions = {
 		"mandi", "mandinum", "mendrum", "mendrunum",
 		"mands", "mandsins", "mendra", "mendranna",
 	],
+	"nátt": [
+		"nátt", "náttin", "nætr", "nætrnar",
+		"nátt", "náttina", "nætr", "nætrnar",
+		"nátt", "náttinni", "náttum", "náttunum",
+		"náttar", "náttarinnar", "nátta", "náttanna",
+	],
 	"apta-tala": {
 		"past_tense": "apta-teldi",
 		"past_participle": "apta-telið",
