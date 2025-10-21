@@ -47,7 +47,8 @@ const consonants = {
 
 	"ggj": "c",
 	"ggé": "c" + vowels["é"].substring(1),
-	"ggi": "c" + vowels["-i"],
+	"-ggi": "c" + vowels["-i"],
+	"ggi": "c" + vowels["i"],
 
 	"gl": "gl",
 	"gm": "gm",
