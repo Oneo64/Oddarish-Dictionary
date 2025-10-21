@@ -113,6 +113,7 @@ const consonants = {
 	"tv": "tʋ",
 	"t-": "tʰ",
 	"t": "t",
+	"tt": "ht",
 	"v": "v",
 	"x": "ks",
 	"z": "t͡s",
