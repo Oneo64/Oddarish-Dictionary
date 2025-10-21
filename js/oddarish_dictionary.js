@@ -4100,7 +4100,7 @@ const entries = {
 	"í ygann": ["preposition", "through, into (preposition)"],
 	"í ássága": ["conjunction", "for example (conjunction)"],
 	"í": ["preposition", "in, into, inside (preposition)"],
-	"ígill": ["masculine noun", "hedgehog"],
+	"íggill": ["masculine noun", "hedgehog"],
 	"ísk": ["neuter noun", "ice"],
 	"Ísk-land": ["neuter noun", "Iceland"],
 	"Ísk-landska": ["feminine noun", "Icelandic"],

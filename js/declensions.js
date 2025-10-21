@@ -41,11 +41,11 @@ const noun_declensions = {
 		"i", "ynum", "yrjum", "ærunum",
 		"is", "ins", "yrja", "æranna",
 	],
-	masculine_till: [
-		"", "tillinn", "tlar", "tlarnir",
-		"tillu", "tlunu", "tlar", "tlarnir",
-		"tilli", "tlinum", "tlum", "tlunum",
-		"tills", "tlins", "tla", "tlanna",
+	masculine_ill: [
+		"", "illinn", "lar", "larnir",
+		"illu", "lunu", "lar", "larnir",
+		"illi", "linum", "lum", "lunum",
+		"ills", "lins", "la", "lanna",
 	],
 	feminine: [
 		"", "in", "ir", "irnar",
@@ -106,6 +106,8 @@ function get_noun_declension(w, t) {
 		return declension;
 	}
 
+	var vowels = "aáæeéiíoóöuúyý";
+
 	var declension = [];
 	var word = w.replaceAll("-", "");
 
@@ -164,12 +166,12 @@ function get_noun_declension(w, t) {
 					declension.push(word.substring(0, word.length - 1) + noun_declensions.masculine_i[i]);
 				}
 			}
-		} else if (word.endsWith("till")) {
+		} else if (!vowels.includes(word.charAt(word.length - 4)) && word.endsWith("ill")) {
 			for (var i = 0; i < 16; i++) {
-				if (noun_declensions.masculine_till[i] == "") {
+				if (noun_declensions.masculine_ill[i] == "") {
 					declension.push(word);
 				} else {
-					declension.push(word.substring(0, word.length - 4) + noun_declensions.masculine_till[i]);
+					declension.push(word.substring(0, word.length - 3) + noun_declensions.masculine_ill[i]);
 				}
 			}
 		} else if (word.charAt(word.length - 1) == word.charAt(word.length - 2) && !word.endsWith("ll")) {
