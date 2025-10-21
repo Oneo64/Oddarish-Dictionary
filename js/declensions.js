@@ -130,6 +130,8 @@ function get_noun_declension(w, t) {
 					declension.push(word.substring(0, word.length - 4) + "æ" + word.charAt(word.length - 3) + noun_declensions.masculine_ir[i]);
 				} else if (word.charAt(word.length - 5) == "ó" && noun_declensions.masculine_ir[i].startsWith("r")) {
 					declension.push(word.substring(0, word.length - 5) + "æ" + word.substring(word.length - 4, word.length - 2) + noun_declensions.masculine_ir[i]);
+				} else if (word.charAt(word.length - 5) == "a" && noun_declensions.masculine_ir[i].startsWith("r")) {
+					declension.push(word.substring(0, word.length - 5) + "e" + word.substring(word.length - 4, word.length - 2) + noun_declensions.masculine_ir[i]);
 				} else {
 					declension.push(word.substring(0, word.length - 2) + noun_declensions.masculine_ir[i]);
 				}
