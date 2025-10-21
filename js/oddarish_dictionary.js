@@ -3285,7 +3285,7 @@ const entries = {
 	"molna": ["verb", "to crumble, to break down, to fall apart"],
 	"morjúm": ["neuter noun", "morning"],
 	"morna": ["verb", "to cry or weep"],
-	"mug-arða": ["neuter noun", "mugwort (herb)"],
+	"mug-arða": ["feminine noun", "mugwort (herb)"],
 	"muna": ["auxiliary", "to will (auxiliary); to be able or to can, passively (verb); future tense (see morphemes); past tense: myndi | question form: muntú, myndi þú"],
 	"munið": ["adjective", "willed, fated (adjective, past participle of muna)"],
 	"munkr": ["masculine noun", "monk"],
