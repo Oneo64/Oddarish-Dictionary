@@ -163,7 +163,7 @@ function ipa(_word, english) {
 			var sound = "";
 
 			var is_ending = k == word.length || word.charAt(k) == "." || word.charAt(k) == " ";
-			var is_starting = i == last_ending2;
+			var is_starting = i == last_ending2 || word.charAt(k - 2) == "." || word.charAt(k - 2) == " ";
 
 			if (check == " ") {
 				if (syllables > 1) {
