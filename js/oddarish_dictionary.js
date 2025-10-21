@@ -504,6 +504,7 @@ const entry_words = [
 	"fýki",
 	"fýpla",
 	"galdr",
+	"galdra-kóna",
 	"galdra-norn",
 	"galdra-pæng",
 	"galdra-stofar",
@@ -2633,6 +2634,7 @@ const entries = {
 	"fýki": ["masculine noun", "kelp"],
 	"fýpla": ["verb", "to copy; to follow instructions; to do what someone has done, to follow their footsteps"],
 	"galdr": ["masculine noun", "magic; spell, incantation, charm, wizardry, witchcraft | plural: galdrar"],
+	"galdra-kóna": ["feminine noun", "witch, sorceress"],
 	"galdra-norn": ["feminine noun", "a witch who practices magic (feminine declension)"],
 	"galdra-pæng": ["feminine noun", "spellbook, grimoire"],
 	"galdra-stofar": ["masculine noun", "stave magic"],
@@ -4279,6 +4281,12 @@ const entries = {
 };
 
 const special_declensions = {
+	"taufr": [
+		"taufr", "taufrinn", "taufrar", "taufrarnir",
+		"taufru", "taufrinn", "taufra", "taufrana",
+		"taufri", "taufrinum", "taufrum", "taufrunum",
+		"taufrs", "taufrsins", "taufra", "taufranna",
+	],
 	"mandr": [
 		"mandr", "mandrinn", "mendr", "mendrnir",
 		"mandu", "mandunu", "mendr", "mendrnir",
