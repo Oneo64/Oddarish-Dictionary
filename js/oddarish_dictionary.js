@@ -1973,7 +1973,7 @@ const entry_words = [
 	"í ygann",
 	"í ássága",
 	"í",
-	"ígill",
+	"íggill",
 	"ísk",
 	"Ísk-land",
 	"Ísk-landska",
