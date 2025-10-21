@@ -2762,7 +2762,7 @@ const entries = {
 	"hafa": ["verb", "to have (auxiliary, verb) | question form: hafðú/hafaðú"],
 	"haka": ["feminine noun", "someone's chin"],
 	"hakkarr": ["masculine noun", "a pickaxe"],
-	"halda": ["verb", "to keep or store; to maintain"],
+	"halda": ["verb", "to keep, to store; to maintain"],
 	"halding-hýs": ["neuter noun", "a building where a collection of things are; a storage area"],
 	"haldr": ["masculine noun", "a fight"],
 	"halló, hæ, hei": ["interjection", "hello, hi, hey"],
