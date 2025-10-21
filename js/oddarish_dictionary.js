@@ -183,7 +183,7 @@ const entry_words = [
 	"brjóst",
 	"brjúma",
 	"brot",
-	"brult-mök"
+	"brult-mök",
 	"brult-ugr",
 	"brultr",
 	"brusta",
