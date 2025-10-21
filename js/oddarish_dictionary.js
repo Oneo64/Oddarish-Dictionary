@@ -3105,7 +3105,7 @@ const entries = {
 	"kæri (2)": ["masculine noun", "darling, dear (noun)"],
 	"kómm": ["neuter noun", "cave, cavern"],
 	"kóna": ["feminine noun", "humanoid female, woman"],
-	"kónguló": ["neuter noun", "spider"],
+	"kónguló": ["feminine noun", "spider"],
 	"kópin": ["neuter noun", "chicken"],
 	"kópin-kotr": ["masculine noun", "chicken meat"],
 	"kópta": ["verb", "to complete, to finish"],
@@ -4276,6 +4276,13 @@ const special_declensions = {
 		"mandu", "mandunu", "mendr", "mendrnir",
 		"mandi", "mandinum", "mendrum", "mendrunum",
 		"mands", "mandsins", "mendra", "mendranna",
+	],
+
+	"kónguló": [
+		"kónguló", "kóngulóin", "kóngulær", "kóngulærnar",
+		"kónguló", "kóngulóna", "kóngulær", "kóngulærnar",
+		"kónguló", "kóngulónni", "kóngulóm", "kóngulónum",
+		"kóngulóar", "kóngulóarinnar", "kóngulóa", "kóngulónna",
 	],
 
 	"apta-tala": {
