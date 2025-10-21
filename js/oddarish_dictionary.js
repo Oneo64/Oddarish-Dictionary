@@ -3722,7 +3722,7 @@ const entries = {
 	"skurpa": ["verb", "to spar"],
 	"skvaliskr": ["masculine noun", "scorpion"],
 	"skvarna": ["feminine noun", "square"],
-	"skygna": ["verb", "to spy, to pry, to peer, to peep, to look at something without being known"],
+	"skygna": ["verb", "to spy, to pry, to peer, to peep, to peek, to look at something without being known"],
 	"skyma": ["verb", "to soak, to quench"],
 	"skálfa": ["verb", "to cut or slash with a weapon; to hew"],
 	"skálmildr": ["masculine noun", "chamomile (herb)"],
