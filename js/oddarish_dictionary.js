@@ -3262,7 +3262,7 @@ const entries = {
 	"lódjolf": ["neuter noun", "labradorite"],
 	"lóg": ["neuter noun", "a wasting; something thats wasted"],
 	"lók-mandr": ["masculine noun", "guard (occupation)"],
-	"lóka": ["verb", "to watch, gaze, or observe; to intentionally look at"],
+	"lóka": ["verb", "to watch, to gaze, to observe; to intentionally look at"],
 	"lóp-gleða": ["feminine noun", "fun, mischief"],
 	"lóp-ugr": ["adjective", "playful, silly, whimsy, whimsical (adjective)"],
 	"lópa": ["verb", "to play"],
