@@ -4190,7 +4190,7 @@ const entries = {
 	"ólga": ["verb", "to swell, to bulge, to grow"],
 	"óndungrust": ["adjective", "convenient, familiar, everyday (adjective)"],
 	"ópera": ["feminine noun", "an opera"],
-	"ór": ["preposition", "out, out of, outside (preposition)"],
+	"ór": ["preposition", "out, out of, outside; out of, from (as in made from) (preposition)"],
 	"órað-ligr": ["adjective", "chaotic, messy (adjective)"],
 	"ósk": ["neuter noun", "a wish or wanting"],
 	"óss": ["neuter noun", "river mouth"],
