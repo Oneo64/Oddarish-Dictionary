@@ -79,7 +79,7 @@ const noun_declensions = {
 	],
 	neuter: [
 		"", "it", "ur", "urnir",
-		" ", "it", "ur", "urnir",
+		"", "it", "ur", "urnir",
 		"i", "inni", "um", "unum",
 		"s", "sins", "a", "anna",
 	],
