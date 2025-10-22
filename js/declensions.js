@@ -421,7 +421,7 @@ function get_past_participle(word) {
 			return stem.substring(0, stem.length - 1) + "æt";
 		} else if (stem.endsWith("ó")) {
 			return stem.substring(0, stem.length - 1) + "eið";
-		} else if (stem.endsWith("kv") || stem.endsWith("gv")) {
+		} else if (word.endsWith("va") && !vowels.includes(stem.charAt(stem.length - 1))) {
 			return stem + "ið";
 		} else if (stem.endsWith("j")) {
 			if (stem.endsWith("eyj")) {
