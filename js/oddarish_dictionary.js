@@ -2989,7 +2989,7 @@ const entries = {
 	"inn-mótull": ["adjective", "cloaked, to be cloaked (adjective)"],
 	"inn-smeikligna": ["adverb", "accidentally (adverb) (less commonly used compared to \"í smeikr\")"],
 	"inn-svíka": ["verb", "to graft, to transplant"],
-	"inn-taufra": ["verb", "to enchant, to put magic on"],
+	"inn-taufra": ["verb", "to enchant (as in putting magic on an item), to put magic on"],
 	"inn-votn": ["adjective", "underwater (adjective)"],
 	"innland-ligr": ["adjective", "native, aboriginal (adjective)"],
 	"innlandingi": ["neuter noun", "native, aboriginal (as in the people)"],
