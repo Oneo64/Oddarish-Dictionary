@@ -3828,7 +3828,7 @@ const entries = {
 	"stóka": ["verb", "to burn, to scorch"],
 	"stöggva": ["verb", "to hit, strike, smash, smite, or bash"],
 	"stöngr": ["masculine noun", "a metal bar (longer than an ingot)"],
-	"stöðingr": ["masculine noun", "equipment"],
+	"stöðingr": ["masculine noun", "equipment, gear"],
 	"stýra": ["verb", "to use, to work, to operate, to control, to steer"],
 	"stýring": ["feminine noun", "controller"],
 	"sum-stund": ["adverb", "sometimes, ocasionally (adverb)"],
