@@ -1741,7 +1741,6 @@ const entry_words = [
 	"tastr",
 	"tauf-mandr",
 	"taufr",
-	"taufra",
 	"taufra-pæng",
 	"te",
 	"tefting",
