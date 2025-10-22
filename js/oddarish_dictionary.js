@@ -2968,7 +2968,7 @@ const entries = {
 	"hám": ["pronoun", "he, him, his (accusative and dative case)"],
 	"hámi": ["pronoun", "he, him (dative case)"],
 	"hægr": ["adjective", "slow (adjective)"],
-	"hægð": ["neuter", "slowness, laziness"],
+	"hægð": ["neuter noun", "slowness, laziness"],
 	"hæla": ["verb", "to cure, to heal, to recover"],
 	"hæling eip": ["neuter noun", "healing herb"],
 	"hæma": ["feminine noun", "light, as in \"sunlight\""],
