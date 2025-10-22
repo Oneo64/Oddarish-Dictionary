@@ -3490,6 +3490,7 @@ const entries = {
 	"of-hlóra": ["verb", "to overload, to encumber"],
 	"of-kvíla": ["verb", "to overly fill, to overflow"],
 	"of-mjök": ["adverb", "too much (adverb)"],
+	"of-svangr": ["adjective", "starving, too hungry (adjective)"],
 	"of-tala": ["verb", "to exaggerate, to make an exaggerated statement"],
 	"of-taling": ["neuter noun", "an exaggeration, an exaggerated statement"],
 	"of-þröng": ["neuter noun", "a horde, a large crowd"],
