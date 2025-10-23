@@ -105,7 +105,7 @@ const consonants = {
 	"pv": "pʋ",
 	"p-": "pʰ",
 	"p": "p",
-	"p": "hp",
+	"pp": "hp",
 
 	"r_ending": "r̩",
 
