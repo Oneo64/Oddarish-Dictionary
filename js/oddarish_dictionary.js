@@ -3500,7 +3500,7 @@ const entries = {
 	"názking": ["neuter noun", "anger, wrath"],
 	"názkr": ["adjective", "angry, mad (adjective)"],
 	"nægr": ["adjective", "intelligent, smart (adjective)"],
-	"nægð": ["neuter noun", "intelligence"],
+	"nægð": ["neuter noun", "intelligence, intellect, understanding"],
 	"næsta-dagr": ["masculine noun", "tomorrow (noun)"],
 	"næstr (1)": ["adjective", "next (adjective)"],
 	"næstr (2)": ["adverb", "then, return to, back to (not in movement but in what someone was doing before) (adverb)"],
