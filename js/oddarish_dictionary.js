@@ -3835,7 +3835,7 @@ const entries = {
 	"stikkask": ["verb", "to quicken"],
 	"stikkr": ["adverb", "quick (adverb)"],
 	"stjarn-tyg": ["neuter noun", "a star shape"],
-	"stjarna": ["feminine noun", "a star"],
+	"stjarna": ["feminine noun", "star (a celestial star)"],
 	"stjúga": ["verb", "to trip over from something"],
 	"stofna": ["verb", "to hire, to employ; to assign or arrange someone a work"],
 	"stofr": ["masculine noun", "pole, staff, scepter, a long rod longer than a leg"],
