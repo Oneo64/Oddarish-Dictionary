@@ -4066,7 +4066,7 @@ const entries = {
 	"veiki": ["masculine noun", "an illness or sickness"],
 	"veikr": ["adjective", "weak, fragile (adjective)"],
 	"veili": ["masculine noun", "water well"],
-	"vekja": ["verb" "to impress, to give an impression of"],
+	"vekja": ["verb", "to impress, to give an impression of"],
 	"vekr": ["masculine noun", "wall"],
 	"vel": ["adverb", "well, not ill, good (adverb)"],
 	"veldi": ["masculine noun", "power, realm"],
