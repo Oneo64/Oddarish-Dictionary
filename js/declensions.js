@@ -309,7 +309,7 @@ function add_adj_ending_basic(w, ending) {
 				return word.substring(0, word.length - 2) + "tt";
 			}
 
-			if (word.endsWith("llr") || word.endsWith("mr") || word.endsWith("gr")) {
+			if (word.endsWith("llr") || word.endsWith("mr") || word.endsWith("gr") || word.endsWith("kr")) {
 				return word.substring(0, word.length - 1) + "t";
 			}
 		} else {
