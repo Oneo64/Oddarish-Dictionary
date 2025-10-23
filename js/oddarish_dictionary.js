@@ -2282,6 +2282,7 @@ const entries = {
 	"arm-klúfa": ["feminine noun", "wristwatch"],
 	"armr": ["masculine noun", "arm of creature"],
 	"arða": ["feminine noun", "a wart"],
+	"arta": ["feminine noun", "a small duck, usually a teal"],
 	"askr": ["masculine noun", "an ash tree or its wood"],
 	"asni": ["masculine noun", "asinus, donkey; an ass (it's the animal, not someone's butt)"],
 	"at": ["preposition", "at (preposition); infinitive marker, adverbs and prepositions go before the infinitive marker (don't use in the first verb of imperative sentences or questions)"],
