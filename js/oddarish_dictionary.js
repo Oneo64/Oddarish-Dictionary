@@ -3407,7 +3407,7 @@ const entries = {
 	"móðga": ["verb", "to offend, to insult"],
 	"móðir": ["feminine noun", "mother (feminine declension) | plural: mæðir"],
 	"möfn": ["neuter noun", "mouth"],
-	"mögla": ["verb", "to mutter or murmur"],
+	"mögla": ["verb", "to mutter, to murmur"],
 	"mök": ["neuter noun", "a mouse"],
 	"möl": ["feminine noun", "gravel"],
 	"mölva": ["verb", "to shatter, to smash, to burst, to break into fragments"],
