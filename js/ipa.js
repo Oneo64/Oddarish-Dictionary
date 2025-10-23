@@ -81,14 +81,13 @@ const consonants = {
 	"h": "h",
 	"j": "j",
 
-	"kkj": "kj",
+	"kkj": "hkj",
 	"kj": "kj",
 
 	"kj-": "cʰ",
 	"ké-": "cʰ" + vowels["é"].substring(1),
 
-	"kkn": "kn",
-	"kkv": "kʋ",
+	"kkv": "hkʋ",
 	"kv": "kʋ",
 	"kv-": "kf",
 	"k-": "kʰ",
