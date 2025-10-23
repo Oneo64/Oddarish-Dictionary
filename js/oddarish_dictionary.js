@@ -3017,7 +3017,7 @@ const entries = {
 	"hæm": ["neuter noun", "light, as in \"sunlight\""],
 	"hæmba": ["verb", "to listen, to heed"],
 	"hæmja": ["verb", "to show, to reveal, to make known"],
-	"hæmjask": ["verb", "to appear"],
+	"hæmjask": ["verb", "to appear, to materialise; to come out of hiding, to come into the light"],
 	"hætta": ["verb", "to prevent, to stop, to end"],
 	"hæði": ["masculine noun", "air"],
 	"hékkva": ["verb", "to startle, to frighten, to scare"],
