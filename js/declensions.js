@@ -415,6 +415,8 @@ function get_past_participle(word) {
 			return stem + "ið";
 		} else if (stem.endsWith("p") || stem.endsWith("k") || stem.endsWith("s") || stem.endsWith("z") || stem.endsWith("m") || stem.endsWith("g")) {
 			return stem + "t";
+		} else if (stem.endsWith("n") && (vowels.includes(stem.charAt(stem.length - 2)) || stem.endsWith("nn"))) {
+			return stem + "t";
 		} else if (stem.endsWith("gj")) {
 			return stem.substring(0, stem.length - 1) + "t";
 		} else if (stem.endsWith("á")) {
