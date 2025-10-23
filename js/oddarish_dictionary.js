@@ -97,6 +97,7 @@ const entry_words = [
 	"arm-klúfa",
 	"armr",
 	"arða",
+	"arta",
 	"askr",
 	"asni",
 	"at",
