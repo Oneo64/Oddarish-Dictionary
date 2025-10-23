@@ -2726,7 +2726,7 @@ const entries = {
 	"gleizka": ["verb", "to roast"],
 	"gleð-ugr": ["adjective", "happy, glad (adjective)"],
 	"gleða": ["feminine noun", "joy, happiness (feminine declension)"],
-	"glista": ["verb", "to shimmer, sparkle, glisten, or twinkle; to shine brightly"],
+	"glista": ["verb", "to shimmer, to sparkle, to glisten, to glister, to twinkle; to shine brightly"],
 	"glupa inn": ["verb", "to absorb, or take in"],
 	"glupa": ["verb", "to drink"],
 	"glyja": ["verb", "to stare or gaze at; to look or gaze intensely"],
