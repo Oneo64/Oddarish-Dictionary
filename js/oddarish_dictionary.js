@@ -4356,7 +4356,7 @@ const entries = {
 	"þéttr": ["adjective", "narrow, tight (adjective)"],
 	"þínt": ["adjective", "morally good (adjective)"],
 	"þíri": ["feminine noun", "a deal, an agreement"],
-	"þíspa": ["verb", "to bless or grant"],
+	"þíspa": ["verb", "to bless, to grant"],
 	"þísping": ["neuter noun", "blessing"],
 	"þíu": ["numeral", "three (noun, adjective)"],
 	"þíu-tán": ["numeral", "thirteen"],
