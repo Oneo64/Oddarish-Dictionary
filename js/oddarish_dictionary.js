@@ -278,7 +278,7 @@ const entry_words = [
 	"dægr",
 	"dær",
 	"dél",
-	"démant-tyg"
+	"démant-tyg",
 	"démantr",
 	"désna",
 	"dís",
