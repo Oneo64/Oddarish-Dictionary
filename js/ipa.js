@@ -92,6 +92,7 @@ const consonants = {
 	"kv-": "kf",
 	"k-": "kʰ",
 	"k": "k",
+	"kk": "hk",
 
 	"-llr": "lr̩",
 	"-llt": "l̥t",
@@ -104,6 +105,7 @@ const consonants = {
 	"pv": "pʋ",
 	"p-": "pʰ",
 	"p": "p",
+	"p": "hp",
 
 	"r_ending": "r̩",
 
