@@ -120,6 +120,7 @@ const consonants = {
 	"x": "ks",
 	"z": "t͡s",
 	"þ": "θ",
+	"þv": "θʋ",
 	"ing": "iŋg",
 	"ng": "ŋg",
 	"-ing": "iŋk",
