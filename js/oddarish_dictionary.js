@@ -3414,7 +3414,7 @@ const entries = {
 	"morna": ["verb", "to cry, to weep, to sob"],
 	"mugg-arða": ["feminine noun", "mugwort (herb)"],
 	"muna": ["auxiliary", "to will (auxiliary); to be able or to can, passively (verb); future tense (see morphemes); past tense: myndi | question form: muntú, myndi þú"],
-	"munt": ["adjective", "willed, fated (adjective, past participle of muna)"],
+	"munt": ["adjective", "willed, fated (adjective, past participle of muna)", "no-declension"],
 	"munkr": ["masculine noun", "monk"],
 	"murga": ["verb", "to rub"],
 	"mygg": ["neuter noun", "heart; an elemental core"],
