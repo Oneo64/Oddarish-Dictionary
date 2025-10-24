@@ -131,6 +131,10 @@ const consonants = {
 	"lp": "l̥p",
 	"lt": "l̥t",
 
+	"mk": "m̥k",
+	"mp": "m̥p",
+	"mt": "m̥t",
+
 	"nk": "n̥k",
 	"np": "n̥p",
 	"nt": "n̥t",
@@ -138,6 +142,10 @@ const consonants = {
 	"rk": "r̥k",
 	"rp": "r̥p",
 	"rt": "r̥t",
+
+	"mmk": "mk",
+	"mmp": "mp",
+	"mmt": "mt",
 
 	"nnk": "nk",
 	"nnp": "np",
