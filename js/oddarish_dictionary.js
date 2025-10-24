@@ -4003,7 +4003,7 @@ const entries = {
 	"treysta": ["verb", "to trust"],
 	"tryggja": ["verb", "to make sure, to ensure"],
 	"tryggr": ["adjective", "loyal, faithful, true"],
-	"tryggt": ["adjective", "sure, certain"],
+	"tryggt": ["adjective", "sure, certain", "no-declension"],
 	"tryggð": ["neuter noun", "loyalty, trustworthiness"],
 	"trá": ["neuter noun", "tree"],
 	"trá-lysi": ["masculine noun", "tree sap"],
