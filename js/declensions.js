@@ -35,7 +35,7 @@ const noun_declensions = {
 		"ur", "urnum", "rum", "runum",
 		"ur", "urins", "ra", "ranna",
 	],
-	masculine_nir: [
+	masculine_ir2: [
 		"", "inn", "íri", "ærinn",
 		"u", "ynu", "íri", "ærinn",
 		"i", "ynum", "yrjum", "ærunum",
@@ -115,10 +115,10 @@ function get_noun_declension(w, t) {
 	
 	if (word.endsWith("nir")) {
 		for (var i = 0; i < 16; i++) {
-			if (noun_declensions.masculine_nir[i] == "") {
+			if (noun_declensions.masculine_ir2[i] == "") {
 				declension.push(word);
 			} else {
-				declension.push(word.substring(0, word.length - 2) + noun_declensions.masculine_nir[i]);
+				declension.push(word.substring(0, word.length - 2) + noun_declensions.masculine_ir2[i]);
 			}
 		}
 	} else if (t == "masculine noun") {
@@ -128,6 +128,8 @@ function get_noun_declension(w, t) {
 					declension.push(word);
 				} else if (word.charAt(word.length - 4) == "ó" && noun_declensions.masculine_ir[i].startsWith("r")) {
 					declension.push(word.substring(0, word.length - 4) + "æ" + word.charAt(word.length - 3) + noun_declensions.masculine_ir[i]);
+				} else if (word.charAt(word.length - 4) == "a" && noun_declensions.masculine_ir[i].startsWith("r")) {
+					declension.push(word.substring(0, word.length - 4) + "e" + word.substring(word.length - 3, word.length - 2) + noun_declensions.masculine_ir[i]);
 				} else if (word.charAt(word.length - 5) == "ó" && noun_declensions.masculine_ir[i].startsWith("r")) {
 					declension.push(word.substring(0, word.length - 5) + "æ" + word.substring(word.length - 4, word.length - 2) + noun_declensions.masculine_ir[i]);
 				} else if (word.charAt(word.length - 5) == "a" && noun_declensions.masculine_ir[i].startsWith("r")) {
