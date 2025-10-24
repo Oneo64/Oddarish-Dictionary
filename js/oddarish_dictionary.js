@@ -4434,17 +4434,23 @@ const entries = {
 };
 
 const special_declensions = {
-	"taufr": [
-		"taufr", "taufrinn", "taufrar", "taufrarnir",
-		"taufru", "taufrinn", "taufra", "taufrana",
-		"taufri", "taufrinum", "taufrum", "taufrunum",
-		"taufrs", "taufrsins", "taufra", "taufranna",
+	"hirðir": [
+		"hirðir", "hirðirinn", "hirðar", "hirðarnir",
+		"hirðu", "hirðunu", "hirðar", "hirðarnir",
+		"hirði", "hirðinum", "hirðrum", "hirðrunum",
+		"hirðis", "hirðisins", "hirðra", "hirðranna",
 	],
 	"mandr": [
 		"mandr", "mandrinn", "mendr", "mendrnir",
 		"mandu", "mandunu", "mendr", "mendrnir",
 		"mandi", "mandinum", "mendrum", "mendrunum",
 		"mands", "mandsins", "mendra", "mendranna",
+	],
+	"taufr": [
+		"taufr", "taufrinn", "taufrar", "taufrarnir",
+		"taufru", "taufrinn", "taufra", "taufrana",
+		"taufri", "taufrinum", "taufrum", "taufrunum",
+		"taufrs", "taufrsins", "taufra", "taufranna",
 	],
 	"apta-tala": {
 		"past_tense": "apta-teldi",
