@@ -110,6 +110,7 @@ const consonants = {
 	"r_ending": "r̩",
 
 	"r": "r",
+
 	"sv": "sʋ",
 	"s": "s",
 	"tv": "tʋ",
@@ -125,6 +126,19 @@ const consonants = {
 	"ng": "ŋg",
 	"-ing": "iŋk",
 	"-ng": "ŋk",
+
+	"lk": "l̥k",
+	"lp": "l̥p",
+	"lt": "l̥t",
+
+	"nk": "n̥k",
+	"np": "n̥p",
+	"nt": "n̥t",
+
+	"rk": "r̥k",
+	"rp": "r̥p",
+	"rt": "r̥t",
+
 	".": "",
 	" ": " "
 }
