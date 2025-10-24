@@ -45,7 +45,15 @@
 	var years2 = Math.floor(years);
 	var days2 = Math.floor(days - (years2 * 365.25));
 
-	document.getElementById("wordcount").innerHTML = "Í núna, Oddarska hafir " + entry_words.length + " orður, ok ar " + years2 + " ár ok " + days2 + " dægar í aldr!";
+	var roots = 0;
+
+	for (var i = 0; i < entry_words.length; i++) {
+		var w = entry_words[i];
+
+		if (!w.includes(" ") && !w.includes(",") && !w.includes("/") && !w.includes("-")) roots++;
+	}
+
+	document.getElementById("wordcount").innerHTML = "Í núna, Oddarska hafir " + entry_words.length + " orður (" + roots + " rótorður), ok ar " + years2 + " ár ok " + days2 + " dægar í aldr!";
 </script>
 </body>
 </html>
