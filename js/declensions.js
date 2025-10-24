@@ -311,6 +311,10 @@ function add_adj_ending_basic(w, ending) {
 				return word.substring(0, word.length - 2) + "tt";
 			}
 
+			if (word.endsWith("ldr")) {
+				return word.substring(0, word.length - 2) + "t";
+			}
+
 			if (word.endsWith("llr") || word.endsWith("mr") || word.endsWith("nr") || word.endsWith("gr") || word.endsWith("kr")) {
 				return word.substring(0, word.length - 1) + "t";
 			}
