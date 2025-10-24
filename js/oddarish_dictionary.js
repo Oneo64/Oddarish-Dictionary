@@ -4436,9 +4436,9 @@ const entries = {
 const special_declensions = {
 	"hirðir": [
 		"hirðir", "hirðirinn", "hirðar", "hirðarnir",
-		"hirðu", "hirðunu", "hirðar", "hirðarnir",
-		"hirði", "hirðinum", "hirðrum", "hirðrunum",
-		"hirðis", "hirðisins", "hirðra", "hirðranna",
+		"hirður", "hirðurnu", "hirðar", "hirðarnir",
+		"hirður", "hirðurnum", "hirðrum", "hirðrunum",
+		"hirður", "hirðurins", "hirðra", "hirðranna",
 	],
 	"mandr": [
 		"mandr", "mandrinn", "mendr", "mendrnir",
