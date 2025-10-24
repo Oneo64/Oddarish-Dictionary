@@ -455,7 +455,7 @@ function get_present_tense(word, pov) {
 	if ("áæeéiíoóöuúyý".includes(word.charAt(word.length - 1))) stem = word;
 
 	if (pov == 1) {
-		if (stem.endsWith("f") || stem.endsWith("r") || stem.endsWith("g")) {
+		if ((stem.endsWith("f") || stem.endsWith("r") || stem.endsWith("g") || stem.endsWith("t")) && !stem.endsWith("tt")) {
 			return stem;
 		} else {
 			return word;
@@ -473,7 +473,7 @@ function get_present_tense(word, pov) {
 			return stem + "i";
 		}
 	} else {
-		if (stem.endsWith("f") || stem.endsWith("r") || stem.endsWith("g") || word.endsWith("va")) {
+		if ((stem.endsWith("f") || stem.endsWith("r") || stem.endsWith("g") || stem.endsWith("t") || word.endsWith("va")) && !stem.endsWith("tt")) {
 			return stem + "ir";
 		} else if (stem.endsWith("ú")) {
 			return stem.substring(0, stem.length - 1) + "ýr";

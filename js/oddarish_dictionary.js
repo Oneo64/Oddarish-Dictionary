@@ -4472,7 +4472,6 @@ const special_declensions = {
 		"past_tense_mediopassive": "fyndisk"
 	},
 	"geta": {
-		"present_tense": ["get", "geti", "getir"],
 		"past_tense": "gæti",
 		"past_participle": "gætið",
 		"past_tense_mediopassive": "gætisk"
