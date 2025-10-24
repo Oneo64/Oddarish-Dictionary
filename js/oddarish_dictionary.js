@@ -4229,7 +4229,7 @@ const entries = {
 	"í alla staðarnir": ["expression adverb", "everywhere"],
 	"í dagu": ["expression adverb", "today (adverb)"],
 	"í kringum": ["adverb", "around in circles (adverb)"],
-	"í nýtandi": ["adjective", "in use, is being used, occupied (adjective)"],
+	"í nýtandi": ["adjective", "in use, is being used, occupied (adjective)", "no-declension"],
 	"í rað": ["expression adverb", "in a row, repeated in a row (adverb)"],
 	"í smeikr": ["expression adverb", "on accident"],
 	"í trú": ["expression adverb", "certainly, surely, must be (adverb)"],
