@@ -4281,7 +4281,7 @@ const entries = {
 	"ósk": ["neuter noun", "a wish or wanting"],
 	"óss": ["neuter noun", "river mouth"],
 	"óssambi": ["masculine noun", "mint"],
-	"ótt-voknandi": ["adjective", "scary, frightening, fear-instilling"],
+	"ótt-voknandi": ["adjective", "scary, frightening, fear-instilling", "no-declension"],
 	"óttask": ["verb", "to be afraid of, to fear, to dread"],
 	"ótti": ["masculine noun", "dread, fear, terror"],
 	"öbb": ["neuter noun", "resin"],
