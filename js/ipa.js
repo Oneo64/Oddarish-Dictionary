@@ -139,6 +139,14 @@ const consonants = {
 	"rp": "r̥p",
 	"rt": "r̥t",
 
+	"nnk": "nk",
+	"nnp": "np",
+	"nnt": "nt",
+
+	"rrk": "rk",
+	"rrp": "rp",
+	"rrt": "rt",
+
 	".": "",
 	" ": " "
 }
