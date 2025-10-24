@@ -4500,6 +4500,11 @@ const special_declensions = {
 		"past_tense_mediopassive": "lítt-sváðisk",
 		"gerund": "lítt-sveng"
 	},
+	"meta": {
+		"past_tense": "mæti",
+		"past_participle": "mætið",
+		"past_tense_mediopassive": "mætisk"
+	},
 	"minna": {
 		"past_tense": "mynnði",
 		"past_participle": "mynnið",
