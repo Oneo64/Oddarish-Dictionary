@@ -311,7 +311,7 @@ function add_adj_ending_basic(w, ending) {
 				return word.substring(0, word.length - 2) + "tt";
 			}
 
-			if (word.endsWith("ldr")) {
+			if (word.endsWith("dr")) {
 				return word.substring(0, word.length - 2) + "t";
 			}
 
