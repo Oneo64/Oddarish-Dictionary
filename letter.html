@@ -34,21 +34,21 @@
 			if (entry_words[i].startsWith(v) || entry_words[i].startsWith("-" + v)) list.push(entry_words[i]);
 		}
 
-		list.sort(function(a, b) {
-			function normalize(str) {
-				return str
-					.replace(/a/g, "á~")
-					.replace(/d/g, "ð~")
-					.replace(/e/g, "é~")
-					.replace(/i/g, "í~")
-					.replace(/o/g, "ó~")
-					.replace(/u/g, "ú~")
-					.replace(/y/g, "ý~")
-					.replace(/æ/g, "z~")
-					.replace(/ö/g, "þ~");
+		var order = "aábdðeéfghiíjklmnoóprstuúvxyýzþæö";
+		var orderMap = new Map(order.split("").map((x, i) => [x, i]));
+
+		list.sort((a, b) => {
+			var len = Math.max(a.length, b.length);
+
+			for (var i = 0; i < len; i++) {
+				var a2 = orderMap.get(a[i]) ?? Infinity;
+				var b2 = orderMap.get(b[i]) ?? Infinity;
+
+				if (a2 == Infinity) return b2 - a2;
+				if (a2 != b2) return a2 - b2;
 			}
 
-			return normalize(a).localeCompare(normalize(b));
+			return a.length - b.length;
 		});
 
 		for (var i = 0; i < list.length; i++) {
