@@ -20,12 +20,12 @@ const word_type_short_form = {
 };
 
 const entry_words = [
+	"-ari, -tari",
+	"-ingi",
 	"-laust",
 	"-ligr",
-	"-liska",
 	"-nir",
-	"-ingi",
-	"-tari, -jari",
+	"-ska, -liska",
 	"-ugr",
 
 	"abbun",
@@ -2244,12 +2244,12 @@ const entry_words = [
 ];
 
 const entries = {
+	"-ari, -tari": ["suffix", "agent suffix, equivalent to english -er; meaning \"one who believes, one who does, one who is with, or one who is characterised by\""],
+	"-ingi": ["suffix", "meaning \"one who is one of, one who is appointed or acted on from someone else\", but never used to describe characterisation"],
 	"-laust": ["suffix", "without suffix"],
 	"-ligr": ["suffix", "to be like"],
-	"-liska": ["suffix", "language suffix"],
 	"-nir": ["suffix", "meaning \"one who is like, one who is one of\", but never used to describe characterisation"],
-	"-ingi": ["suffix", "meaning \"one who is one of, one who is appointed or acted on from someone else\", but never used to describe characterisation"],
-	"-tari, -jari": ["suffix", "meaning \"one who believes, one who does, one who is with, or one who is characterised by\", usually only used to describe someone who had a choice in being so"],
+	"-ska, -liska": ["suffix", "language suffix"],
 	"-ugr": ["suffix", "full of, characterised by"],
 	
 	"abbun": ["feminine noun", "stomach/bowel; belly"],
@@ -4275,7 +4275,7 @@ const entries = {
 	"éka": ["adjective", "each, every (adjective)"],
 	"ékkva": ["verb", "to succeed or finish; to gain success"],
 	"él": ["feminine noun", "a loud sound made with the mouth; a yell, roar, scream, screech, or shout"],
-	"éta": ["verb", "to eat or consume | past tense: át"],
+	"éta": ["verb", "to eat, to consume | past tense: át"],
 	"í alla staðarnir": ["expression adverb", "everywhere"],
 	"í dagu": ["expression adverb", "today (adverb)"],
 	"í kringum": ["adverb", "around in circles (adverb)"],
