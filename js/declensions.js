@@ -272,9 +272,7 @@ function get_noun_declension(w, t) {
 	}
 
 	for (var i = 0; i < 16; i++) {
-		if (declension[i].includes("sss")) {
-			declension[i] = declension[i].replace("sss", "ss");
-		}
+		declension[i] = declension[i].replace("sss", "ss");
 	}
 
 	return declension;
