@@ -1301,7 +1301,6 @@ const entry_words = [
 	"neyða",
 	"neðr",
 	"nindr",
-	"njágta",
 	"njátr",
 	"njóta",
 	"njúðinn",
