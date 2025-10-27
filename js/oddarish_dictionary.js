@@ -4057,7 +4057,7 @@ const entries = {
 	"tjókr": ["adjective", "thick (adjective)"],
 	"tjónna": ["verb", "to lose (objects)"],
 	"tjörn": ["feminine noun", "a pond; a small lake (feminine declension)"],
-	"tofa": ["verb", "to hit"],
+	"tofa": ["verb", "to hit lightly without drawing blood"],
 	"tolla": ["verb", "to ring a bell"],
 	"tollr": ["masculine noun", "the ringing of a bell"],
 	"tor": ["neuter noun", "bug, insect"],
