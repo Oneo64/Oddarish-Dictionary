@@ -4220,7 +4220,7 @@ const entries = {
 	"véla": ["feminine noun", "weal"],
 	"vérr": ["masculine noun", "vein"],
 	"vík": ["neuter noun", "bay, inlet"],
-	"vín": ["masculine noun", "wine"],
+	"vín": ["neuter noun", "wine"],
 	"vín-kóna": ["feminine noun", "maid; a female servant"],
 	"vín-mandr": ["masculine noun", "bartender, barkeep, barkeeper"],
 	"vírr": ["masculine noun", "wire"],
