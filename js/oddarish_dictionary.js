@@ -3015,7 +3015,7 @@ const entries = {
 	"hverju": ["conjunction", "who (conjunction)"],
 	"hvestju kondi á...": ["phrase", "\"what kind of...\""],
 	"hvestju": ["conjunction", "which (conjunction)"],
-	"hveða": ["verb", "to wait; to stay at, to stay with"],
+	"hveða": ["verb", "to wait, to pass time; to stay, as in to stay at a place or stay away from"],
 	"hvogr": ["masculine noun", "pig, boar"],
 	"hvort": ["conjunction", "whether, either"],
 	"hváf": ["onomatopeia", "woof, bark, dog's bark (interjection)"],
