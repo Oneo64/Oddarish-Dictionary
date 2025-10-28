@@ -459,6 +459,10 @@ function get_present_tense(word, pov) {
 	if (pov == 1) {
 		if ((stem.endsWith("f") || stem.endsWith("r") || stem.endsWith("g") || stem.endsWith("t")) && !stem.endsWith("tt")) {
 			return stem;
+		} else if (stem.endsWith("eyj")) {
+			return stem.substring(0, stem.length - 1);
+		} else if (stem.endsWith("j")) {
+			return stem.substring(0, stem.length - 1) + "i";
 		} else {
 			return word;
 		}
