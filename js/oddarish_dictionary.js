@@ -2708,7 +2708,7 @@ const entries = {
 	"Fornnorræna": ["feminine noun", "Old Norse"],
 	"fornroma lor": ["feminine noun", "Old Italic Script"],
 	"frast": ["neuter noun", "frost"],
-	"frega": ["feminine", "freckle"],
+	"frega": ["feminine noun", "freckle"],
 	"frigna": ["feminine noun", "basket"],
 	"frjálsa": ["verb", "to free"],
 	"frjálsing": ["neuter noun", "freeing of; discharging of"],
