@@ -4056,7 +4056,7 @@ const entries = {
 	"sæng-tengr": ["masculine noun", "bed frame"],
 	"sæta": ["verb", "to sweeten"],
 	"sætr": ["adjective", "cute, pretty (adjective); sweet, nice, kind (adjective); sweet, saccharine, sugary (adjective)"],
-	"ségja": ["verb", "to tell; to speak to"],
+	"ségja": ["verb", "to tell, to say to"],
 	"sémma": ["verb", "to rest, to relax, to take a break"],
 	"sémming eip": ["neuter noun", "relaxation herb"],
 	"sérr": ["adverb", "here (adverb)"],
