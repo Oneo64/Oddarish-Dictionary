@@ -3009,7 +3009,7 @@ const entries = {
 	"hrá": ["feminine noun", "warmth, heat (feminined declension)"],
 	"hráfun": ["feminine noun", "palm of hand"],
 	"hrákk": ["neuter noun", "endurance, bodily strength, constitution, resilience; resistance, armor, protection"],
-	"hrákk-ugr": ["adjective", "athletic"],
+	"hrákk-ugr": ["adjective", "athletic, acrobatic, gymnastic"],
 	"hrákkja": ["verb", "to resist, to withstand, to endure, to tolerate; a battlecry shouted by warriors"],
 	"hrápna": ["verb", "to attack with an army"],
 	"hrápning-fekla": ["feminine noun", "artillery, siege weapons"],
