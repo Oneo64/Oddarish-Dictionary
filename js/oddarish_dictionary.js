@@ -4607,6 +4607,7 @@ const special_declensions = {
 		"past_tense_mediopassive": "mynnðisk"
 	},
 	"muna": {
+		"present_tense": ["mun", "mun", "munir"],
 		"past_tense": "myndi",
 		"past_participle": "myndið"
 	},
