@@ -568,7 +568,7 @@ function get_mediopassive_past(word) {
 	} else if (vowels.includes(last_letter)) {
 		return stem + "ðisk";
 	} else if (stem.endsWith("kv") || stem.endsWith("gv")) {
-		return stem + "iðisk";
+		return stem + "ðisk";
 	} else if (last_letter == "d" || last_letter == "t" || !vowels.includes(stem.charAt(stem.length - 2))) {
 		return stem + "aðisk";
 	} else {
