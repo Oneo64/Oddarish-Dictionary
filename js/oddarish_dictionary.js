@@ -4670,9 +4670,7 @@ const special_declensions = {
 		"past_tense": "var"
 	},
 	"vilja": {
-		"present_tense": ["vil", "vili", "vilir"],
-		"past_tense": "vilti",
-		"past_participle": "viltið",
+		"present_tense": ["vil", "vili", "vilar"],
 		"past_tense_mediopassive": "viltisk"
 	},
 	"vinna": {
