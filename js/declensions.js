@@ -398,7 +398,7 @@ function get_past_tense(word) {
 		}
 
 		if (stem.endsWith("kv") || stem.endsWith("gv")) {
-			return stem + "iði";
+			return stem + "ði";
 		}
 	}
 
