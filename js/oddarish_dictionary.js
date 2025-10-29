@@ -3787,7 +3787,7 @@ const entries = {
 	"rár": ["interjection", "growl, grrr (interjection)"],
 	"ráza": ["feminine noun", "rose (flower)"],
 	"ræfill": ["masculine noun", "rogue, scoundrel, rascal"],
-	"ræga": ["verb", "to rule or reign"],
+	"ræga": ["verb", "to rule, to reign"],
 	"rægr": ["masculine noun", "reign, domination, control, power"],
 	"rænd-mandr": ["masculine noun", "raider, pillager"],
 	"rænda": ["verb", "to raid, to pillage, to rob, to steal openly"],
