@@ -490,7 +490,7 @@ function get_present_tense(word, pov) {
 		} else if (stem.endsWith("eyj")) {
 			return stem.substring(0, stem.length - 1) + "r";
 		} else if (stem.endsWith("j")) {
-			return word + "r";
+			return stem.substring(0, stem.length - 1) + "ar";
 		} else {
 			return stem + "ar";
 		}
