@@ -393,6 +393,10 @@ function get_past_tense(word) {
 			return stem.substring(0, stem.length - 1) + "ði";
 		}
 
+		if (stem.endsWith("lj") || stem.endsWith("mj") || stem.endsWith("nnj")) {
+			return stem.substring(0, stem.length - 1) + "di";
+		}
+
 		if (stem.endsWith("kv") || stem.endsWith("gv")) {
 			return stem + "iði";
 		}
