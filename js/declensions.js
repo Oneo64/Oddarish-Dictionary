@@ -380,6 +380,8 @@ function get_past_tense(word) {
 		if (stem.endsWith("l") && b) {
 			return stem + "di";
 		}
+
+		if (stem.endsWith("lj")) return stem.substring(0, stem.length - 1) + "di";
 	} else {
 		if (last_letter == "ú") {
 			return stem.substring(0, stem.length - 1) + "ýði";
@@ -389,11 +391,9 @@ function get_past_tense(word) {
 			return stem + "ði";
 		}
 
-		if ((last_letter == "j" && "frg".includes(stem.charAt(stem.length - 2)))) {
+		if (last_letter == "j" && "frg".includes(stem.charAt(stem.length - 2))) {
 			return stem.substring(0, stem.length - 1) + "ði";
 		}
-
-		if (stem.endsWith("lj")) return stem.substring(0, stem.length - 1) + "di";
 
 		if (stem.endsWith("kv") || stem.endsWith("gv")) {
 			return stem + "iði";
@@ -512,6 +512,8 @@ function get_gerund(word) {
 		return stem.substring(0, stem.length - 1) + "æing";
 	} else if (stem.endsWith("eyj")) {
 		return stem.substring(0, stem.length - 1) + "ning";
+	} else if (stem.endsWith("lj")) {
+		return stem.substring(0, stem.length - 1) + "ing";
 	} else if (stem.endsWith("j")) {
 		return stem + "ang";
 	} else {
