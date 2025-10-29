@@ -301,6 +301,8 @@ function add_adj_ending_basic(w, ending) {
 		word = word.substring(0, word.length - 3) + "t";
 	}
 
+	if (word.endsWith("nn")) return word.substring(0, word.length - 1) + ending;
+
 	if (word.endsWith("r")) {
 		if (ending == "") {
 			if (word.endsWith("ðr")) {
