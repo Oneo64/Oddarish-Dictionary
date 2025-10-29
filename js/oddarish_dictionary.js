@@ -2811,7 +2811,7 @@ const entries = {
 	"ginna": ["verb", "to seduce | present tense: ginni/ginnir | past tense: gynnði, past participle: ginnið"],
 	"girt": ["neuter noun", "ink"],
 	"girðing": ["feminine noun", "fence"],
-	"gjalda": ["verb", "to pay back, to repay, to tribute"],
+	"gjalda": ["verb", "to pay back, to repay, to tribute; to be paid by one's employer"],
 	"gjalla": ["verb", "to resonate, to make loud noises; to yell, to scream, to cry"],
 	"gjarka": ["verb", "to declare, to state, to make known; to name, to give a title to"],
 	"gjarni": ["masculine noun", "core, kernel; the middle of a nut; the nucleus of a biological cell"],
