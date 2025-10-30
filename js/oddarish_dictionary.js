@@ -2394,7 +2394,7 @@ const entries = {
 	"baggi": ["masculine noun", "package, things wrapped in paper, parchment, vellum, or fabric/cloth"],
 	"bagla": ["verb", "to boast, to brag"],
 	"bagr": ["adjective", "bumbling, stumbling, not careful, like a klutz, clumsy (adjective)"],
-	"bak": ["neuter noun", "the back side of a creature"],
+	"bak": ["neuter noun", "back (of a creature); the back or end area of a place, like a room, garden, or cave"],
 	"baka": ["verb", "to bake; to cook in an oven"],
 	"bakstr": ["masculine noun", "wafer, thin biscuit"],
 	"bambaur": ["masculine noun", "bamboo"],
