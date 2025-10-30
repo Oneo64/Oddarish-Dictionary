@@ -3444,7 +3444,7 @@ const entries = {
 	"mandr": ["masculine noun", "humanoid male, man"],
 	"manneskja": ["feminine noun", "character of story"],
 	"mara": ["feminine noun", "nightmare, bad dream"],
-	"mark": ["neuter noun", "goal, objective; the focus of a mission, quest, assignment, errand, or task"],
+	"mark": ["neuter noun", "goal, objective; the focus of a mission, quest, assignment, errand, or task; target"],
 	"marl": ["adjective", "malevolent, violent (adjective)"],
 	"marðr": ["masculine noun", "missile"],
 	"mauk": ["neuter noun", "jelly, jello"],
