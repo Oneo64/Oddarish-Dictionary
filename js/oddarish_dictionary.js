@@ -2783,7 +2783,7 @@ const entries = {
 	"fógr": ["adjective", "incorrect, wrong, false (adjective)"],
 	"fók-borður": ["neuter noun", "oak planks"],
 	"fókr": ["masculine noun", "an oak tree or its wood"],
-	"fólk": ["neuter noun", "guy, folk"],
+	"fólk": ["neuter noun", "guy, folk, people, men"],
 	"föt": ["neuter noun", "foot, feet"],
 	"föt-hitta": ["verb", "to kick with the foot or leg"],
 	"föðr": ["masculine noun", "father"],
