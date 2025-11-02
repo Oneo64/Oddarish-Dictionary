@@ -2661,7 +2661,7 @@ const entries = {
 	"faða": ["verb", "to draw"],
 	"fegl": ["masculine noun", "bird"],
 	"feigta": ["verb", "to bounce off; to rebound; to deflect"],
-	"feika": ["verb", "to hurt, to injure, to maim"],
+	"feika": ["verb", "to hurt, to harm, to injure, to maim"],
 	"feimm": ["adjective", "shy, timid (adjective)"],
 	"fekla": ["feminine noun", "cart, wagon"],
 	"fela": ["verb", "to hide, to conceal, usually means to hide out of sight; can also mean to keep a secret"],
