@@ -4564,7 +4564,7 @@ const entries = {
 	"þöllask": ["verb", "to calm down, to become calm, to become still"],
 	"þölling-ligr": ["adjective", "comfortable (adjective)"],
 	"þöllinn": ["neuter noun", "peace, stillness, tranquility, serenity; silence"],
-	"þöllr": ["adjective", "calm, patient (adjective)"],
+	"þöllr": ["adjective", "calm, patient, peaceful (adjective)"],
 	"þört": ["adjective", "low (adjective)"],
 	"þörðr": ["masculine noun", "lake"],
 	"þú": ["pronoun", "you (nominative case)"],
