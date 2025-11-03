@@ -396,10 +396,6 @@ function get_past_tense(word) {
 		if (last_letter == "j" && "frg".includes(stem.charAt(stem.length - 2))) {
 			return stem.substring(0, stem.length - 1) + "ði";
 		}
-
-		if (stem.endsWith("kv") || stem.endsWith("gv")) {
-			return stem + "ði";
-		}
 	}
 
 	return stem + "aði";
