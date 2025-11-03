@@ -296,6 +296,7 @@ function add_verb_ending_basic(word, ending) {
 
 function add_adj_ending_basic(w, ending) {
 	var word = w;
+	var vowels = "aáæeéiíoóöuúyý";
 
 	if (word.endsWith("ill")) {
 		word = word.substring(0, word.length - 3) + "t";
@@ -303,7 +304,7 @@ function add_adj_ending_basic(w, ending) {
 
 	if (word.endsWith("nn")) return word.substring(0, word.length - 1) + ending;
 
-	if (word.endsWith("r")) {
+	if (word.endsWith("r") && !vowels.includes(word.charAt(word.length - 2))) {
 		if (ending == "") {
 			if (word.endsWith("ðr")) {
 				return word.substring(0, word.length - 2) + "tt";
