@@ -83,6 +83,12 @@ const noun_declensions = {
 		"i", "inni", "um", "unum",
 		"s", "sins", "a", "anna",
 	],
+	neuter_a: [
+		"", "at", "u", "un",
+		"", "at", "u", "un",
+		"", "anni", "um", "unum",
+		"", "ans", "na", "nanna",
+	],
 	neuter_á: [
 		"á", "áet", "eyr", "eyrnar",
 		"á", "áet", "eyr", "eyrnar",
@@ -251,6 +257,14 @@ function get_noun_declension(w, t) {
 				} else {
 					declension.push(word.substring(0, word.length - 1) + noun_declensions.neuter[i]);
 				}
+			}
+		}
+	} else if (word.endsWith("a")) {
+		for (var i = 0; i < 16; i++) {
+			if (noun_declensions.neuter_a[i] == "") {
+				declension.push(word);
+			} else {
+				declension.push(word.substring(0, word.length - 1) + noun_declensions.neuter_a[i]);
 			}
 		}
 	} else if (word.endsWith("á")) {
