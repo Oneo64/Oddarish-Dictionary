@@ -2232,8 +2232,6 @@ const entry_words = [
 	"þjortinginn",
 	"þjána",
 	"þjófr",
-	"þjúðinn",
-	"þjúðu",
 	"þoki",
 	"þorskr",
 	"þosk",
@@ -2277,6 +2275,7 @@ const entry_words = [
 	"þísping",
 	"þíu",
 	"þíð",
+	"þókr",
 	"þóse",
 	"þótr",
 	"þöbsa",
@@ -2294,7 +2293,8 @@ const entry_words = [
 	"þý-",
 	"þý-tán",
 	"þý-æss-tyg",
-	"þýkr",
+	"þýinn",
+	"þýju",
 ];
 
 const entries = {
@@ -4510,7 +4510,6 @@ const entries = {
 	"þjortinginn": ["masculine noun", "prison cell, jail cell"],
 	"þjána": ["verb", "to suffer"],
 	"þjófr": ["masculine noun", "thief, robber, mugger"],
-	"þjúðu": ["adjective", "three times, thrice (adverb)"],
 	"þoki": ["masculine noun", "roof"],
 	"þorskr": ["masculine noun", "a cod fish"],
 	"þosk": ["neuter noun", "a case, a box designed to hold a specific thing"],
@@ -4554,6 +4553,7 @@ const entries = {
 	"þísping": ["neuter noun", "blessing"],
 	"þíu": ["numeral", "three (noun, adjective)"],
 	"þíð": ["neuter noun", "pit, deep hole in the ground"],
+	"þókr": ["masculine noun", "swamp, bog"],
 	"þóse": ["interjection", "please do"],
 	"þótr": ["masculine noun", "spear (weapon)"],
 	"þöbsa": ["verb", "to have sexual intercourse"],
@@ -4572,7 +4572,7 @@ const entries = {
 	"þý-tán": ["numeral", "thirteen"],
 	"þý-æss-tyg": ["neuter noun", "triangle"],
 	"þýinn": ["numeral", "the third (noun, adjective)"],
-	"þýkr": ["masculine noun", "swamp, bog"],
+	"þýju": ["adjective", "three times, thrice (adverb)"],
 };
 
 const special_declensions = {
