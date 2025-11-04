@@ -2404,7 +2404,7 @@ const entries = {
 	"auvullr": ["masculine noun", "a forge"],
 	"ax": ["neuter noun", "an ear of corn"],
 	"axla": ["feminine noun", "algae"],
-	"aða": ["neuter noun", "sea shell, or a snail, mollusk, clam, oyster, or mussel shell"],
+	"aða": ["feminine noun", "sea shell, or a snail, mollusk, clam, oyster, or mussel shell"],
 	"aðall": ["masculine noun", "nobility"],
 	"aðals-kóna": ["feminine noun", "noblewoman"],
 	"aðals-mandr": ["masculine noun", "nobleman"],
