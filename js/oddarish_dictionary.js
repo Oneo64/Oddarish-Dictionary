@@ -2276,7 +2276,6 @@ const entry_words = [
 	"þíspa",
 	"þísping",
 	"þíu",
-	"þíu-tán",
 	"þíð",
 	"þóse",
 	"þótr",
@@ -2293,6 +2292,7 @@ const entry_words = [
 	"þörðr",
 	"þú",
 	"þý-",
+	"þý-tán",
 	"þý-æss-tyg",
 	"þýkr",
 ];
@@ -4510,7 +4510,6 @@ const entries = {
 	"þjortinginn": ["masculine noun", "prison cell, jail cell"],
 	"þjána": ["verb", "to suffer"],
 	"þjófr": ["masculine noun", "thief, robber, mugger"],
-	"þjúðinn": ["numeral", "the third (noun, adjective)"],
 	"þjúðu": ["adjective", "three times, thrice (adverb)"],
 	"þoki": ["masculine noun", "roof"],
 	"þorskr": ["masculine noun", "a cod fish"],
@@ -4554,7 +4553,6 @@ const entries = {
 	"þíspa": ["verb", "to bless, to grant"],
 	"þísping": ["neuter noun", "blessing"],
 	"þíu": ["numeral", "three (noun, adjective)"],
-	"þíu-tán": ["numeral", "thirteen"],
 	"þíð": ["neuter noun", "pit, deep hole in the ground"],
 	"þóse": ["interjection", "please do"],
 	"þótr": ["masculine noun", "spear (weapon)"],
@@ -4571,7 +4569,9 @@ const entries = {
 	"þörðr": ["masculine noun", "lake"],
 	"þú": ["pronoun", "you (nominative case)"],
 	"þý-": ["prefix", "three prefix"],
+	"þý-tán": ["numeral", "thirteen"],
 	"þý-æss-tyg": ["neuter noun", "triangle"],
+	"þýinn": ["numeral", "the third (noun, adjective)"],
 	"þýkr": ["masculine noun", "swamp, bog"],
 };
 
