@@ -1329,7 +1329,6 @@ const entry_words = [
 	"nitr",
 	"njátr",
 	"njóta",
-	"njúðinn",
 	"nogga",
 	"norn",
 	"norð-taling",
@@ -1380,6 +1379,7 @@ const entry_words = [
 	"núna, nú",
 	"núðja",
 	"ný-",
+	"ný-inn",
 	"ný-tán",
 	"nýba",
 	"nýgla",
@@ -2292,9 +2292,9 @@ const entry_words = [
 	"þörðr",
 	"þú",
 	"þý-",
+	"þý-inn",
 	"þý-tán",
 	"þý-æss-tyg",
-	"þýinn",
 	"þýju",
 ];
 
@@ -3608,7 +3608,6 @@ const entries = {
 	"nitr": ["adverb", "down, downwards (adverb)"],
 	"njátr": ["verb", "beetle"],
 	"njóta": ["verb", "to enjoy"],
-	"njúðinn": ["numeral", "the ninth (noun, adjective)"],
 	"nogga": ["verb", "to snore"],
 	"norn": ["feminine noun", "a witch (feminine declension)"],
 	"norð-taling": ["neuter noun", "a compass"],
@@ -3659,6 +3658,7 @@ const entries = {
 	"núna, nú": ["adverb", "now (adverb)"],
 	"núðja": ["verb", "to grind, to crush, to mash"],
 	"ný-": ["prefix", "nine prefix"],
+	"ný-inn": ["numeral", "the ninth (noun, adjective)"],
 	"ný-tán": ["numeral", "nineteen"],
 	"nýba": ["feminine noun", "a door knob or door handle; lever"],
 	"nýgla": ["feminine noun", "lichen"],
@@ -4571,9 +4571,9 @@ const entries = {
 	"þörðr": ["masculine noun", "lake"],
 	"þú": ["pronoun", "you (nominative case)"],
 	"þý-": ["prefix", "three prefix"],
+	"þý-inn": ["numeral", "the third (noun, adjective)"],
 	"þý-tán": ["numeral", "thirteen"],
 	"þý-æss-tyg": ["neuter noun", "triangle"],
-	"þýinn": ["numeral", "the third (noun, adjective)"],
 	"þýju": ["adjective", "three times, thrice (adverb)"],
 };
 
