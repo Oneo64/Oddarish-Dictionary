@@ -306,7 +306,7 @@ function add_adj_ending_basic(w, ending) {
 
 	if (word.endsWith("r") && !vowels.includes(word.charAt(word.length - 2))) {
 		if (ending == "") {
-			if (word.endsWith("ðr")) {
+			if (word.endsWith("ðr") || word.endsWith("tr")) {
 				return word.substring(0, word.length - 2) + "tt";
 			}
 
