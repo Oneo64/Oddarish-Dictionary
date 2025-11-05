@@ -473,7 +473,7 @@ const entry_words = [
 	"frast",
 	"frega",
 	"frigna",
-	"frjáls-inn",
+	"frjáls-un",
 	"frjálsa",
 	"frjálsing",
 	"frjósa",
