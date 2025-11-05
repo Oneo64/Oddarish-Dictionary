@@ -2754,7 +2754,7 @@ const entries = {
 	"frast": ["neuter noun", "frost"],
 	"frega": ["feminine noun", "freckle"],
 	"frigna": ["feminine noun", "basket"],
-	"frjáls-inn": ["feminine noun", "freedom (feminine declension)"],
+	"frjáls-un": ["feminine noun", "freedom"],
 	"frjálsa": ["verb", "to free"],
 	"frjálsing": ["neuter noun", "freeing of; discharging of"],
 	"frjósa": ["verb", "to freeze, to become frozen"],
