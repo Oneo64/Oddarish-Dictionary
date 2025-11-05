@@ -4616,6 +4616,9 @@ const special_declensions = {
 		"past_participle": "át",
 		"past_tense_mediopassive": "átisk"
 	},
+	"fara": {
+		"present_tense": ["fer", "fer", "ferir"]
+	},
 	"finna": {
 		"past_tense": "fyndi",
 		"past_participle": "fyndið",

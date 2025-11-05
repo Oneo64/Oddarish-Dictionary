@@ -59,6 +59,12 @@ const noun_declensions = {
 		"u", "unni", "um", "unum",
 		"u", "unnar", "a", "anna",
 	],
+	feminine_a2: [
+		"", "an", "ur", "urnar",
+		"u", "una", "ur", "urnar",
+		"u", "unni", "um", "unum",
+		"u", "unnar", "a", "anna",
+	],
 	feminine_ja: [
 		"", "an", "ar", "arnar",
 		"u", "una", "ar", "arnar",
@@ -95,6 +101,12 @@ const noun_declensions = {
 		"æ", "æinni", "eyjum", "eyjunum",
 		"ás", "ásins", "eyja", "eyjanna",
 	]
+};
+
+const u_umlaut = {
+	"a": "ö",
+	"á": "au",
+	"ái": "ey"
 };
 
 function get_noun_declension(w, t) {
@@ -223,11 +235,33 @@ function get_noun_declension(w, t) {
 				}
 			}
 		} else if (word.endsWith("a")) {
-			for (var i = 0; i < 16; i++) {
-				if (noun_declensions.feminine_a[i] == "") {
-					declension.push(word);
-				} else {
-					declension.push(word.substring(0, word.length - 1) + noun_declensions.feminine_a[i]);
+			var last_vowel_pos = 0;
+
+			for (var i = 0; i < word.length - 1; i++) {
+				if (vowels.includes(word.charAt(i))) last_vowel_pos = i;
+			}
+
+			if (word.charAt(last_vowel_pos) in u_umlaut) {
+				for (var i = 0; i < 16; i++) {
+					if (noun_declensions.feminine_a2[i] == "") {
+						declension.push(word);
+					} else {
+						var shifted = word.substring(0, word.length - 1);
+
+						if (noun_declensions.feminine_a2[i].charAt(0) == "u") {
+							shifted = word.substring(0, last_vowel_pos) + u_umlaut[word.charAt(last_vowel_pos)] + word.substring(last_vowel_pos + 1, word.length - 1);
+						}
+
+						declension.push(shifted + noun_declensions.feminine_a2[i]);
+					}
+				}
+			} else {
+				for (var i = 0; i < 16; i++) {
+					if (noun_declensions.feminine_a[i] == "") {
+						declension.push(word);
+					} else {
+						declension.push(word.substring(0, word.length - 1) + noun_declensions.feminine_a[i]);
+					}
 				}
 			}
 		} else if (word.endsWith("ei")) {
@@ -293,6 +327,8 @@ function get_noun_declension(w, t) {
 }
 
 function add_verb_ending_basic(word, ending) {
+	var vowels = "aáæeéiíoóöuúyý";
+	
 	if (word.endsWith("e")) {
 		if (ending == "u") {
 			return word.substring(0, word.length - 1) + "ý";
@@ -302,7 +338,19 @@ function add_verb_ending_basic(word, ending) {
 	}
 
 	if (word.endsWith("a")) {
-		return word.substring(0, word.length - 1) + ending;
+		var shifted = word.substring(0, word.length - 1);
+
+		if (ending == "u") {
+			var last_vowel_pos = 0;
+
+			for (var i = 0; i < word.length - 1; i++) {
+				if (vowels.includes(word.charAt(i))) last_vowel_pos = i;
+			}
+			
+			shifted = word.substring(0, last_vowel_pos) + u_umlaut[word.charAt(last_vowel_pos)] + word.substring(last_vowel_pos + 1, word.length - 1);
+		}
+
+		return shifted + ending;
 	}
 
 	return word + ending;
