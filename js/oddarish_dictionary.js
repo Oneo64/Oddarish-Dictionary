@@ -2984,7 +2984,7 @@ const entries = {
 	"herri": ["masculine noun", "lord, master"],
 	"heyra": ["verb", "to hear, to listen"],
 	"hjaldra-stubbar": ["masculine noun", "battlements"],
-	"hjaldr": ["feminine noun", "battle, large scale fight (feminine declension)"],
+	"hjaldr": ["masculine noun", "battle, large scale fight (feminine declension)"],
 	"hinn, hin, hit": ["pronoun", "definite articles, just in case if for some reason the definite suffixes can't be used or becomes confusing"],
 	"hirðir": ["masculine noun", "herdsman, sheperd"],
 	"hettja": ["verb", "to punch, to hit with the hand; to hit a mark or target"],
