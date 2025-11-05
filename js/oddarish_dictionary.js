@@ -2308,7 +2308,7 @@ const entries = {
 	"-nir": ["suffix", "meaning \"one who is like, one who is one of\", but never used to describe characterisation"],
 	"-ska, -liska": ["suffix", "language suffix"],
 	"-ugr": ["suffix", "full of, characterised by"],
-	"-un": ["suffix", "equivalent to -ment"],
+	"-un": ["suffix", "equivalent to -ment or -dom"],
 	
 	"abb-töð": ["neuter noun", "stomach ache"],
 	"abba": ["feminine noun", "stomach/bowel; belly"],
