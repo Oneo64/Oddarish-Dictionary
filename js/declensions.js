@@ -328,7 +328,7 @@ function get_noun_declension(w, t) {
 
 function add_verb_ending_basic(word, ending) {
 	var vowels = "aáæeéiíoóöuúyý";
-	
+
 	if (word.endsWith("e")) {
 		if (ending == "u") {
 			return word.substring(0, word.length - 1) + "ý";
@@ -347,7 +347,9 @@ function add_verb_ending_basic(word, ending) {
 				if (vowels.includes(word.charAt(i))) last_vowel_pos = i;
 			}
 			
-			shifted = word.substring(0, last_vowel_pos) + u_umlaut[word.charAt(last_vowel_pos)] + word.substring(last_vowel_pos + 1, word.length - 1);
+			if (word.charAt(last_vowel_pos) in u_umlaut) {
+				shifted = word.substring(0, last_vowel_pos) + u_umlaut[word.charAt(last_vowel_pos)] + word.substring(last_vowel_pos + 1, word.length - 1);
+			}
 		}
 
 		return shifted + ending;
