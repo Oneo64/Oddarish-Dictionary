@@ -4651,6 +4651,9 @@ const special_declensions = {
 		"past_participle": "gvætið",
 		"past_tense_mediopassive": "gvætisk"
 	},
+	"hafa": {
+		"present_tense": ["hef", "hefi", "hefir"]
+	},
 	"lang-tala": {
 		"past_tense": "lang-teldi",
 		"past_participle": "lang-telið",
