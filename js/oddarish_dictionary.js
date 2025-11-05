@@ -432,7 +432,7 @@ const entry_words = [
 	"fjó-tán",
 	"fjórm",
 	"fjóðir",
-	"fjóðirinn",
+	"fjóðir-inn",
 	"fjökkna",
 	"fjökkning",
 	"fjöll",
