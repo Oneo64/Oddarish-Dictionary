@@ -143,21 +143,29 @@
 						document.getElementById("_n" + i).innerHTML = declension[i];
 					}
 				}
-			} else if ((entry[0] == "verb" || entry[0] == "auxiliary") && !v2.includes(" ")) {
+			} else if (entry[0] == "verb" || entry[0] == "auxiliary") {
+				var v3 = v2;
+				var v4 = "";
+
+				if (v2.includes(" ")) {
+					v3 = v2.substring(0, v2.indexOf(" "));
+					v4 = v2.substring(v2.indexOf(" "));
+				}
+
 				if (!v2.endsWith("ask")) {
 					document.getElementById("verb_declension").hidden = false;
 
 					document.getElementById("declension_top2").innerHTML = "orðraðingpung fyrir '" + v2 + "'";
 					document.getElementById("infinitive").innerHTML = "at " + v2;
-					document.getElementById("imperative").innerHTML = add_verb_ending_basic(v2, "u");
-					document.getElementById("present_participle").innerHTML = add_verb_ending_basic(v2, "andi");
-					document.getElementById("past_participle").innerHTML = get_past_participle(v2);
+					document.getElementById("imperative").innerHTML = add_verb_ending_basic(v3, "u") + v4;
+					document.getElementById("present_participle").innerHTML = add_verb_ending_basic(v3, "andi") + v4;
+					document.getElementById("past_participle").innerHTML = get_past_participle(v3) + v4;
 
-					document.getElementById("past_tense").innerHTML = get_past_tense(v2);
-					document.getElementById("1st_present").innerHTML = get_present_tense(v2, 1);
-					document.getElementById("2nd_present").innerHTML = get_present_tense(v2, 2);
-					document.getElementById("3rd_present").innerHTML = get_present_tense(v2, 3);
-					document.getElementById("gerund").innerHTML = get_gerund(v2);
+					document.getElementById("past_tense").innerHTML = get_past_tense(v3) + v4;
+					document.getElementById("1st_present").innerHTML = get_present_tense(v3, 1) + v4;
+					document.getElementById("2nd_present").innerHTML = get_present_tense(v3, 2) + v4;
+					document.getElementById("3rd_present").innerHTML = get_present_tense(v3, 3) + v4;
+					document.getElementById("gerund").innerHTML = get_gerund(v3) + v4;
 				}
 
 				if (entry[0] == "verb") {
