@@ -106,6 +106,7 @@ const noun_declensions = {
 const u_umlaut = {
 	"a": "ö",
 	"á": "au",
+	"ja": "jö",
 	"ái": "ey"
 };
 
@@ -254,7 +255,11 @@ function get_noun_declension(w, t) {
 				if (vowels.includes(word.charAt(i))) last_vowel_pos = i;
 			}
 
-			if (word.charAt(last_vowel_pos) in u_umlaut) {
+			var vowel = word.charAt(last_vowel_pos);
+
+			if (last_vowel_pos > 0 && word.charAt(last_vowel_pos - 1) == "j") vowel = "j" + vowel;
+
+			if (vowel in u_umlaut) {
 				for (var i = 0; i < 16; i++) {
 					if (noun_declensions.feminine_a2[i] == "") {
 						declension.push(word);
@@ -262,7 +267,7 @@ function get_noun_declension(w, t) {
 						var shifted = word.substring(0, word.length - 1);
 
 						if (noun_declensions.feminine_a2[i].charAt(0) == "u") {
-							shifted = word.substring(0, last_vowel_pos) + u_umlaut[word.charAt(last_vowel_pos)] + word.substring(last_vowel_pos + 1, word.length - 1);
+							shifted = word.substring(0, last_vowel_pos - (vowel.length - 1)) + u_umlaut[vowel] + word.substring(last_vowel_pos + 1, word.length - 1);
 						}
 
 						declension.push(shifted + noun_declensions.feminine_a2[i]);
@@ -361,9 +366,13 @@ function add_verb_ending_basic(word, ending) {
 			for (var i = 0; i < word.length - 1; i++) {
 				if (vowels.includes(word.charAt(i))) last_vowel_pos = i;
 			}
+
+			var vowel = word.charAt(last_vowel_pos);
+
+			if (last_vowel_pos > 0 && word.charAt(last_vowel_pos - 1) == "j") vowel = "j" + vowel;
 			
-			if (word.charAt(last_vowel_pos) in u_umlaut) {
-				shifted = word.substring(0, last_vowel_pos) + u_umlaut[word.charAt(last_vowel_pos)] + word.substring(last_vowel_pos + 1, word.length - 1);
+			if (vowel in u_umlaut) {
+				shifted = word.substring(0, last_vowel_pos - (vowel.length - 1)) + u_umlaut[vowel] + word.substring(last_vowel_pos + 1, word.length - 1);
 			}
 		}
 
