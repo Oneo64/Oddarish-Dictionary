@@ -4629,7 +4629,8 @@ const special_declensions = {
 		"past_tense_mediopassive": "átisk"
 	},
 	"fara": {
-		"present_tense": ["fer", "fer", "ferir"]
+		"present_tense": ["fer", "fer", "ferir"],
+		"present_mediopassive": "ferisk"
 	},
 	"finna": {
 		"past_tense": "fyndi",
@@ -4652,7 +4653,8 @@ const special_declensions = {
 		"past_tense_mediopassive": "gvætisk"
 	},
 	"hafa": {
-		"present_tense": ["hef", "hefi", "hefir"]
+		"present_tense": ["hef", "hefi", "hefir"],
+		"present_mediopassive": "hefisk"
 	},
 	"lang-tala": {
 		"past_tense": "lang-teldi",
