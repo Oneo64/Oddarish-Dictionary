@@ -372,8 +372,6 @@ function add_verb_ending_basic(word, ending) {
 		if (ending == "u") {
 			if (word.endsWith("já")) return word;
 			if (word.endsWith("á")) return word.substring(0, word.length - 1) + "au";
-		} else if (ending == "andi") {
-			if (word.endsWith("á")) return word + "ndi";
 		}
 	}
 
