@@ -109,6 +109,19 @@ const u_umlaut = {
 	"ái": "ey"
 };
 
+const i_umlaut = {
+	"a": "e",
+	"á": "æ",
+	"o": "ö",
+	"ó": "ö",
+	"u": "y",
+	"ú": "ý",
+	"au": "ey",
+	"ju": "y",
+	"jo": "ý",
+	"jö": "é"
+};
+
 function get_noun_declension(w, t) {
 	if (w in special_declensions) {
 		return special_declensions[w];
