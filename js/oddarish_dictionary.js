@@ -4630,7 +4630,7 @@ const special_declensions = {
 	},
 	"fara": {
 		"present_tense": ["fer", "fer", "ferir"],
-		"present_mediopassive": "fersk"
+		"present_mediopassive": "ferisk"
 	},
 	"finna": {
 		"past_tense": "fyndi",
