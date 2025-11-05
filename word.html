@@ -70,6 +70,8 @@
 	</tbody></table>
 	<br>
 	<hr>
+	<p id="examples">Eigein ássögur :(</p>
+	<hr>
 	<p>Minnu! IPA-inn, orðraðingpungit, ok runirnar getir verið eigi réttr, ássi þú á til at tryggja um það ar réttr í fyrr.</p><p>Þetta tungaleiði ar setið með <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.</p>
 </div>
 
@@ -182,6 +184,12 @@
 				document.getElementById("a9").innerHTML = add_adj_ending_basic(v2, "an");
 				document.getElementById("a10").innerHTML = add_adj_ending_basic(v2, "an");
 			}
+		}
+
+		if (entry[3] != null) {
+			var examples = entry[3].join("<br>");
+			
+			document.getElementById("examples").innerHTML = examples;
 		}
 	}
 </script>

@@ -95,6 +95,7 @@ const entry_words = [
 	"apta-svindling",
 	"apta-tala",
 	"aptr",
+	"ar til",
 	"ar/var/sem ein frá",
 	"ar/var/sem ein með",
 	"ar/var/sem með ... í kringum",
@@ -2374,6 +2375,11 @@ const entries = {
 	"apta-svindling": ["neuter noun", "vengeance, revenge"],
 	"apta-tala": ["verb", "to repeat"],
 	"aptr": ["adverb", "again (adverb)"],
+	"ar til": [
+		"auxiliary",
+		"future imperative, usually used with second/third person and imperative case; in the same sense as shall or must, but less intense and less formal",
+		"", ["Þey ar til föru aptr. = They will go back.", "Hann ar til spönu skógunu. = He will scout the forest."]
+	],
 	"ar/var/sem ein frá": ["expression", "is one of, one of, any one of (conjunction)"],
 	"ar/var/sem ein með": ["expression", "same, like, as if (conjunction)"],
 	"ar/var/sem með ... í kringum": ["phrase", "\"was surrounded by\""],
@@ -3530,7 +3536,7 @@ const entries = {
 	"morjúm": ["neuter noun", "morning"],
 	"morna": ["verb", "to cry, to weep, to sob"],
 	"mugg-arða": ["feminine noun", "mugwort (herb)"],
-	"muna": ["auxiliary", "to will (auxiliary); to be able or to can, passively (verb); future tense (see morphemes); past tense: myndi | question form: muntú, myndi þú"],
+	"muna": ["auxiliary", "to will (auxiliary); to be able or to can, passively (verb); future tense (see morphemes, also see \"ar til\"); past tense: myndi | question form: muntú, myndi þú"],
 	"munkr": ["masculine noun", "monk"],
 	"munt": ["adjective", "willed, fated (adjective, past participle of muna)", "no-declension"],
 	"murga": ["verb", "to rub"],
@@ -4578,6 +4584,12 @@ const entries = {
 };
 
 const special_declensions = {
+	"ergi": [
+		"ergi", "ergin", "ergi", "ergin",
+		"ergi", "ergina", "ergi", "ergina",
+		"ergi", "erginni", "ergi", "erginni",
+		"ergi", "erginnar", "ergi", "erginnar",
+	],
 	"hirðir": [
 		"hirðir", "hirðirinn", "hirðar", "hirðarnir",
 		"hirður", "hirðurnu", "hirðar", "hirðarnir",

@@ -354,6 +354,8 @@ function add_verb_ending_basic(word, ending) {
 		var shifted = word.substring(0, word.length - 1);
 
 		if (ending == "u") {
+			if (word.endsWith("úa")) return word.substring(0, word.length - 2) + "ú";
+
 			var last_vowel_pos = 0;
 
 			for (var i = 0; i < word.length - 1; i++) {
@@ -366,6 +368,13 @@ function add_verb_ending_basic(word, ending) {
 		}
 
 		return shifted + ending;
+	} else if (word.endsWith("á")) {
+		if (ending == "u") {
+			if (word.endsWith("já")) return word;
+			if (word.endsWith("á")) return word.substring(0, word.length - 1) + "au";
+		} else if (ending == "andi") {
+			if (word.endsWith("á")) return word + "ndi";
+		}
 	}
 
 	return word + ending;
