@@ -3676,7 +3676,7 @@ const entries = {
 	"názka": ["verb", "to anger"],
 	"názking": ["neuter noun", "anger, wrath"],
 	"názkr": ["adjective", "angry, mad (adjective)"],
-	"næ (1)": ["adjective", "nigh, next, near; near, beside, close to (adverb)"],
+	"næ (1)": ["adverb", "nigh, next, near; near, beside, close to (adverb)"],
 	"næ (2)": ["adjective", "nigh, near, nearby (adjective)"],
 	"nægja": ["verb", "to show, to let someone know, to enlighten someone (with dative)"],
 	"nægr": ["adjective", "intelligent, smart (adjective)"],
