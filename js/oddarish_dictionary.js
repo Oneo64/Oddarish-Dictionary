@@ -3682,7 +3682,7 @@ const entries = {
 	"nægr": ["adjective", "intelligent, smart (adjective)"],
 	"nægð": ["neuter noun", "intelligence, intellect, understanding"],
 	"næjast": ["adverb", "beside, next (adverb, superlative of næ)", "", ["Ek ar næjast gultunu. = I am beside the boulder.", "Þú ar næjast. = You are next."]],
-	"nær": ["adverb", "next, next to; then, after that; return to, back to (not in movement but in what someone was doing before) (adverb, comparative of næ)", "", ["Hann lipti nær til gvíta skvörnunni. = He then jumped to the white square."]],
+	"nær": ["adverb", "next, next to; then, after that; return to, back to (not in movement but in what someone was doing before) (adverb, comparative of næ)", "", ["Hann lipti nær til gvíta skvörnunni. = He then jumped to the white square.", "Nær! = Next!", "Kvaumu nær. = Come nearer."]],
 	"nær-dagr": ["masculine noun", "tomorrow (noun)"],
 	"nærask": ["verb", "to arrive, to approach, to go towards"],
 	"næðingr": ["masculine noun", "a cold gust of wind"],
