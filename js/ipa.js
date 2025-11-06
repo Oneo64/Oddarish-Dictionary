@@ -102,6 +102,11 @@ const consonants = {
 
 	"m": "m",
 	"n": "n",
+	"mm": "m̥m",
+	"nn": "n̥n",
+	"-mm": "m̥",
+	"-nn": "n̥",
+
 	"pv": "pʋ",
 	"p-": "pʰ",
 	"p": "p",
