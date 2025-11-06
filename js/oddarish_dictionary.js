@@ -4079,7 +4079,7 @@ const entries = {
 	"stýring": ["feminine noun", "controller"],
 	"sum-stund": ["adverb", "sometimes, ocasionally (adverb)"],
 	"sumarr": ["neuter noun", "summer (neuter declension)"],
-	"sumr": ["adjective", "some (adjective)"],
+	"sumr": ["adjective", "some, a few (as in numbers) (adjective)"],
 	"sundr (1)": ["adjective", "different, seperate, apart (adjective)"],
 	"sundr (2)": ["masculine noun", "difference"],
 	"sundra": ["verb", "to divide, to split"],
