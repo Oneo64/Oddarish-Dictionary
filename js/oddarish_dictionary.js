@@ -3681,7 +3681,7 @@ const entries = {
 	"nægja": ["verb", "to show, to let someone know, to enlighten someone (with dative)"],
 	"nægr": ["adjective", "intelligent, smart (adjective)"],
 	"nægð": ["neuter noun", "intelligence, intellect, understanding"],
-	"næjast": ["adverb", "beside, next (adverb, superlative of næ)", "", ["Ek ar næjast gultunu. = I am beside the boulder.", "Næjast! = Next!", "Þú ar næjast. = You are next."]],
+	"næjast": ["adverb", "next; beside, by, next to (adverb, superlative of næ)", "", ["Ek ar næjast gultunu. = I am beside the boulder.", "Næjast! = Next!", "Þú ar næjast. = You are next."]],
 	"nær": ["adverb", "nearer; then, after that; return to, back to (not in movement but in what someone was doing before) (adverb, comparative of næ)", "", ["Hann lipti nær til gvíta skvörnunni. = He then jumped to the white square.", "Kvaumu nær. = Come nearer."]],
 	"nær-dagr": ["masculine noun", "tomorrow (noun)"],
 	"nærask": ["verb", "to arrive, to approach, to go towards"],
