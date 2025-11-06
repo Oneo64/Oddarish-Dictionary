@@ -3680,7 +3680,7 @@ const entries = {
 	"nægð": ["neuter noun", "intelligence, intellect, understanding"],
 	"næsta-dagr": ["masculine noun", "tomorrow (noun)"],
 	"næstr (1)": ["adjective", "next (adjective)"],
-	"næstr (2)": ["adverb", "then, return to, back to (not in movement but in what someone was doing before) (adverb)"],
+	"næstr (2)": ["adverb", "next, then, after that; return to, back to (not in movement but in what someone was doing before) (adverb)"],
 	"næðingr": ["masculine noun", "a cold gust of wind"],
 	"né": ["conjunction", "nor, or not (conjunction); or not, like in \"ar þetta rauðr né\" = \"is this red or not\""],
 	"nérask": ["verb", "to arrive, to approach, to go towards"],
