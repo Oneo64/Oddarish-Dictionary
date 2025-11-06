@@ -430,6 +430,11 @@ function add_adj_ending_basic(w, ending) {
 		return word.substring(0, word.length - 2) + "ir";
 	}
 
+	if (word.endsWith("æ") && ending.trim().length != 0) {
+		if (ending.startsWith("ar")) return word + ending.substring(1);
+		if (vowels.includes(ending.charAt(0))) return word + "j" + ending;
+	}
+
 	return word + ending;
 }
 
