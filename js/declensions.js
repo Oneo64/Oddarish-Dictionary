@@ -360,6 +360,7 @@ function add_verb_ending_basic(word, ending) {
 
 		if (ending == "u") {
 			if (word.endsWith("úa")) return word.substring(0, word.length - 2) + "ú";
+			if (word.endsWith("óa")) return word.substring(0, word.length - 1);
 
 			var last_vowel_pos = 0;
 
