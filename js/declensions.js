@@ -400,6 +400,10 @@ function add_adj_ending_basic(w, ending) {
 	if (word.endsWith("nn")) return word.substring(0, word.length - 1) + ending;
 
 	if (word.endsWith("r") && !vowels.includes(word.charAt(word.length - 2))) {
+		if (word.endsWith("nr") && ending == "na") {
+			return word.substring(0, word.length - 2) + "na";
+		}
+
 		if (ending == "") {
 			if (word.endsWith("ðr") || word.endsWith("tr")) {
 				return word.substring(0, word.length - 2) + "tt";

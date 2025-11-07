@@ -147,7 +147,8 @@
 					document.getElementById("past_tense2").innerHTML = get_mediopassive_past(v2);
 				}
 			} else if (entry[0] == "adjective") {
-				document.getElementById("adjective_declension").hidden = false;
+				document.getElementById("tables").innerHTML = declension_tables_html[5];
+
 				document.getElementById("adjective_top").innerHTML = "orðraðingpung fyri '" + v2 + "'";
 				document.getElementById("a0").innerHTML = v2;
 				document.getElementById("a1").innerHTML = add_adj_ending_basic(v2, "");
