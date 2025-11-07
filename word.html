@@ -73,6 +73,8 @@
 			if (entry[0].endsWith("noun")) {
 				var sg_only = singular_only.includes(v2);
 
+				if (!sg_only) sg_only = v2.includes("-") && singular_only.includes(v2.substring(v2.indexOf("-") + 1));
+
 				if (sg_only) {
 					document.getElementById("tables").innerHTML = declension_tables_html[1];
 				} else {
