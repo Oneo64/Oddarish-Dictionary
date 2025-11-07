@@ -458,6 +458,8 @@ function get_past_tense(word) {
 	var a = duplicate_exception.includes(stem.charAt(stem.length - 2));
 	var b = vowels.includes(stem.charAt(stem.length - 2));
 
+	if (word.endsWith("inna")) return word.substring(0, word.length - 4) + "ynnði";
+
 	if ("mn".includes(last_letter) && (!word.endsWith("na") || word.endsWith("nna"))) {
 		return stem + "di";
 	}
@@ -656,6 +658,8 @@ function get_mediopassive_past(word) {
 	var last_2_letters = last_letter;
 
 	if (word.length >= 3) last_2_letters = stem.charAt(stem.length - 2) + stem.charAt(stem.length - 1);
+
+	if (word.endsWith("inna")) return word.substring(0, word.length - 4) + "ynnðisk";
 
 	if ("bkpszð".includes(last_letter) || last_2_letters == "lf") {
 		return stem + "tisk";
