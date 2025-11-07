@@ -4765,9 +4765,12 @@ const special_declensions = {
 };
 
 const singular_only = [
+	"fjöll",
+	"fytvir",
 	"græssa",
 	"hnúgr",
 	"hrík-akkar",
+	"hrófir",
 	"hæm",
 	"húst",
 	"kráin",
@@ -4777,6 +4780,7 @@ const singular_only = [
 	"lyng",
 	"lóð",
 	"myrkr",
+	"norðr",
 	"pind",
 	"safi",
 	"salt",
@@ -4786,5 +4790,6 @@ const singular_only = [
 	"vei",
 	"votn",
 	"ár",
+	"östr",
 	"úldir",
 ];

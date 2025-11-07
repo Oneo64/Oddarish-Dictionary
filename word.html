@@ -85,9 +85,9 @@
 					window.onresize = onWindowResize;
 					onWindowResize();
 
-					document.getElementById("declension_top").innerHTML = "orðraðingpung fyrir '" + v2 + "'";
+					document.getElementById("declension_top").innerHTML = "orðraðingpung fyri '" + v2 + "'";
 					
-					if (!sg_only) document.getElementById("_declension_top").innerHTML = "orðraðingpung fyrir '" + v2 + "'";
+					if (!sg_only) document.getElementById("_declension_top").innerHTML = "orðraðingpung fyri '" + v2 + "'";
 
 					if (entry[0] == "masculine noun") {
 						document.getElementById("gender").innerHTML = "mandligr";
@@ -117,7 +117,7 @@
 
 				if (!v2.endsWith("ask")) {
 					document.getElementById("tables").innerHTML = declension_tables_html[3];
-					document.getElementById("declension_top2").innerHTML = "orðraðingpung fyrir '" + v2 + "'";
+					document.getElementById("declension_top2").innerHTML = "orðraðingpung fyri '" + v2 + "'";
 					document.getElementById("infinitive").innerHTML = "at " + v2;
 					document.getElementById("imperative").innerHTML = add_verb_ending_basic(v3, "u") + v4;
 					document.getElementById("present_participle").innerHTML = add_verb_ending_basic(v3, "andi") + v4;
@@ -131,7 +131,6 @@
 				}
 
 				if (entry[0] == "verb") {
-
 					if (v2.endsWith("ask")) {
 						v2 = v2.substring(0, v2.length - 3) + "a";
 					} else {
@@ -147,7 +146,7 @@
 				}
 			} else if (entry[0] == "adjective") {
 				document.getElementById("adjective_declension").hidden = false;
-				document.getElementById("adjective_top").innerHTML = "orðraðingpung fyrir '" + v2 + "'";
+				document.getElementById("adjective_top").innerHTML = "orðraðingpung fyri '" + v2 + "'";
 				document.getElementById("a0").innerHTML = v2;
 				document.getElementById("a1").innerHTML = add_adj_ending_basic(v2, "");
 				document.getElementById("a2").innerHTML = add_adj_ending_basic(v2, "a");
