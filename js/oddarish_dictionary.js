@@ -4794,6 +4794,7 @@ const singular_only = [
 	"ljúnna",
 	"lyng",
 	"lóð",
+	"mana",
 	"myrkr",
 	"mænt",
 	"möl",
