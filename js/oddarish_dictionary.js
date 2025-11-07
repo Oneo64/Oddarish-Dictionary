@@ -4042,7 +4042,7 @@ const entries = {
 	"snöbb-varðr hjálmr": ["masculine noun", "nasal helmet, norman helmet"],
 	"snöbbr": ["masculine noun", "nose"],
 	"snúa": ["verb", "to turn, to rotate"],
-	"soll": ["masculine", "grime, dirt, dust"],
+	"soll": ["masculine noun", "grime, dirt, dust"],
 	"solla": ["verb", "to soil, to make dirty"],
 	"solva": ["verb", "to bathe; to clean oneself"],
 	"solving-keir": ["feminine noun", "bathtub"],
