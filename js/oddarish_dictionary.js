@@ -4766,11 +4766,14 @@ const special_declensions = {
 	}
 };
 
+// common words that go in here: measurements, sounds, materials, abstract nouns, masses, liquids, plant growths like grass or moss, etc
 const singular_only = [
 	"aurr",
 	"breiði",
+	"bémm",
 	"börskr",
 	"eikr",
+	"elska",
 	"ergi",
 	"fjöll",
 	"fytvir",
@@ -4800,12 +4803,17 @@ const singular_only = [
 	"möl",
 	"norðr",
 	"næðingr",
+	"nýgla",
 	"pind",
+	"reizga",
+	"rög",
 	"safi",
 	"salt",
 	"soll",
 	"stigi",
 	"svein",
+	"tellr",
+	"tollr",
 	"tár",
 	"té",
 	"vei",
@@ -4818,4 +4826,5 @@ const singular_only = [
 	"östr",
 	"úldir",
 	"þera",
+	"þruma",
 ];
