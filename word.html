@@ -15,7 +15,7 @@
 	<h3 id="word">Orðit ar eigi fyndið</h3>
 	<h4 id="ipa" class="ipa">IPA</h4>
 	<p id="type">n/a</p>
-	<p id="definition">Þeladapr, þetta orð býr eigi í Oddarsku!</p>
+	<ol id="definitions" class="pfont"></ol>
 	<div id="tables"></div>
 	<br>
 	<hr>
@@ -47,10 +47,17 @@
 		document.getElementById("word").innerHTML = v + " | " + get_runic_inscription(ipa);
 		document.getElementById("ipa").innerHTML = ipa;
 		document.getElementById("type").innerHTML = word_type_short_form[entry[0]];
-		document.getElementById("definition").innerHTML = entry[1];
 
-		if (entry[1].includes("|")) {
-			document.getElementById("definition").innerHTML = entry[1].substring(0, entry[1].indexOf("|")).trim();
+		document.getElementById("definitions").innerHTML = "";
+
+		var defText = entry[1];
+
+		if (defText.includes("|")) defText = defText.substring(0, defText.indexOf("|")).trim();
+
+		var defs = defText.split(";");
+
+		for (var i = 0; i < defs.length; i++) {
+			document.getElementById("definitions").innerHTML += "<li>" + defs[i] + "</li>";
 		}
 
 		function onWindowResize() {
@@ -164,11 +171,7 @@
 			}
 		}
 
-		if (entry[3] != null) {
-			var examples = entry[3].join("<br>");
-			
-			document.getElementById("examples").innerHTML = examples;
-		}
+		if (entry[3] != null) document.getElementById("examples").innerHTML = entry[3].join("<br>");
 	}
 </script>
 </body>

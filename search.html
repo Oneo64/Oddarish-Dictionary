@@ -78,8 +78,15 @@
 
 				if (def.includes("|")) def = def.substring(0, def.indexOf("|")).trim();
 
+
+				var defText = entries[word][1];
+
+				if (defText.includes("|")) defText = defText.substring(0, defText.indexOf("|")).trim();
+
+				var defs = defText.split(";");
+
 				if (def.includes(v)) {
-					document.getElementById("results").innerHTML += "<div><a class='listitem' href='word.html?v=" + word + "'>" + entry_words[i] + "</a><div class='nowrap'>&nbsp&nbsp" + def + "</div></div>";
+					document.getElementById("results").innerHTML += "<div><a class='listitem' href='word.html?v=" + word + "'>" + entry_words[i] + "</a><div class='nowrap'><ol><li>" + defs.join("</li><li>") + "</li></ol></div></div>";
 					added = true;
 				} else if (word.includes(v)) {
 					document.getElementById("results").innerHTML += "<div><a class='listitem' href='word.html?v=" + word + "'>" + word + "</a><div class='nowrap'>&nbsp&nbsp(fyndið í orðinni)</div></div>";
