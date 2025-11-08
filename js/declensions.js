@@ -123,6 +123,33 @@ const i_umlaut = {
 	"jö": "é"
 };
 
+const a_umlaut = {
+	"e": "a",
+	"é": "á",
+	"ei": "æ"
+};
+
+function apply_umlaut(word, rules) {
+	var vowels = "aáæeéiíoóöuúyý";
+	var last_vowel_pos = 0;
+
+	for (var i = 0; i < word.length - 1; i++) {
+		if (vowels.includes(word.charAt(i))) last_vowel_pos = i;
+	}
+
+	var vowel = word.charAt(last_vowel_pos);
+
+	if (last_vowel_pos > 0 && (word.charAt(last_vowel_pos - 1) == "j" || vowels.includes(word.charAt(last_vowel_pos - 1)))) vowel = word.charAt(last_vowel_pos - 1) + vowel;
+
+	if (vowel in rules) {
+		return word.substring(0, last_vowel_pos - (vowel.length - 1)) + rules[vowel] + word.substring(last_vowel_pos + 1);
+	} else {
+		return word;
+	}
+}
+
+console.log(apply_umlaut("vega", a_umlaut));
+
 function get_noun_declension(w, t) {
 	if (w in special_declensions) {
 		return special_declensions[w];
@@ -465,6 +492,8 @@ function get_past_tense(word) {
 
 	if (word.endsWith("inna")) return word.substring(0, word.length - 4) + "ynnði";
 
+	stem = apply_umlaut(stem, a_umlaut);
+
 	if ("mn".includes(last_letter) && (!word.endsWith("na") || word.endsWith("nna"))) {
 		return stem + "di";
 	}
@@ -522,6 +551,8 @@ function get_past_participle(word) {
 
 	// makes sure that only -a verb endings are removed
 	if ("áæeéiíoóöuúyý".includes(word.charAt(word.length - 1))) stem = word;
+
+	stem = apply_umlaut(stem, a_umlaut);
 
 	if (word.length >= 3) {
 		if (stem.endsWith("f") || stem.endsWith("r")) {
@@ -665,6 +696,8 @@ function get_mediopassive_past(word) {
 	if (word.length >= 3) last_2_letters = stem.charAt(stem.length - 2) + stem.charAt(stem.length - 1);
 
 	if (word.endsWith("inna")) return word.substring(0, word.length - 4) + "ynnðisk";
+
+	stem = apply_umlaut(stem, a_umlaut);
 
 	if ("bkpszð".includes(last_letter) || last_2_letters == "lf") {
 		return stem + "tisk";
