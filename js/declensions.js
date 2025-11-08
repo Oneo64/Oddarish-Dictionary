@@ -508,7 +508,7 @@ function get_past_tense(word) {
 					return apply_umlaut(word.substring(0, word.length - 2), past_tense_sound_shift) + "ti";
 				}
 
-				if (ending.endsWith("g") || ending.endsWith("r")) return apply_umlaut(word.substring(0, word.length - 2), past_tense_sound_shift) + "ði";
+				if ("frg".includes(ending.charAt(ending.length - 1))) return apply_umlaut(word.substring(0, word.length - 2), past_tense_sound_shift) + "ði";
 				if (ending == "l") return apply_umlaut(word.substring(0, word.length - 2), past_tense_sound_shift) + "di";
 			} else if (ending.endsWith("g") || ending.endsWith("r")) {
 				return word.substring(0, word.length - 2) + "ði";
