@@ -148,8 +148,6 @@ function apply_umlaut(word, rules) {
 	}
 }
 
-console.log(apply_umlaut("vega", a_umlaut));
-
 function get_noun_declension(w, t) {
 	if (w in special_declensions) {
 		return special_declensions[w];
@@ -492,7 +490,7 @@ function get_past_tense(word) {
 
 	if (word.endsWith("inna")) return word.substring(0, word.length - 4) + "ynnði";
 
-	stem = apply_umlaut(stem, a_umlaut);
+	var stem = ("jv".includes(last_letter) && !"frg".includes(stem.charAt(stem.length - 2))) ? stem : apply_umlaut(stem, a_umlaut);
 
 	if ("mn".includes(last_letter) && (!word.endsWith("na") || word.endsWith("nna"))) {
 		return stem + "di";
@@ -552,7 +550,9 @@ function get_past_participle(word) {
 	// makes sure that only -a verb endings are removed
 	if ("áæeéiíoóöuúyý".includes(word.charAt(word.length - 1))) stem = word;
 
-	stem = apply_umlaut(stem, a_umlaut);
+	var past = get_past_tense(word);
+
+	var stem = (past.endsWith("jaði") || past.endsWith("uði")) ? stem : apply_umlaut(stem, a_umlaut);
 
 	if (word.length >= 3) {
 		if (stem.endsWith("f") || stem.endsWith("r")) {
