@@ -123,10 +123,11 @@ const i_umlaut = {
 	"jö": "é"
 };
 
-const a_umlaut = {
+const past_tense_sound_shift = {
 	"e": "a",
 	"é": "á",
-	"ei": "æ"
+	"ei": "æ",
+	"æ": "ó"
 };
 
 function apply_umlaut(word, rules) {
@@ -146,6 +147,10 @@ function apply_umlaut(word, rules) {
 	} else {
 		return word;
 	}
+}
+
+function can_apply_umlaut(word, rules) {
+	return word != apply_umlaut(word, rules);
 }
 
 function get_noun_declension(w, t) {
@@ -472,67 +477,62 @@ function get_past_tense(word) {
 	if (word in special_declensions && "past_tense" in special_declensions[word]) {
 		return special_declensions[word]["past_tense"];
 	}
-
-	var stem = word.substring(0, word.length - 1);
+	
 	var vowels = "aáæeéiíoóöuúyý";
-	var duplicate_exception = "aáæeéiíoóöuúyýnml";
 
-	// makes sure that only -a verb endings are removed
-	if ("áæeéiíoóöuúyý".includes(word.charAt(word.length - 1))) stem = word;
+	// organised funct test
 
-	var last_letter = stem.charAt(stem.length - 1);
-	var last_2_letters = last_letter;
-
-	if (word.length >= 3) last_2_letters = stem.charAt(stem.length - 2) + stem.charAt(stem.length - 1);
-
-	var a = duplicate_exception.includes(stem.charAt(stem.length - 2));
-	var b = vowels.includes(stem.charAt(stem.length - 2));
-
-	if (word.endsWith("inna")) return word.substring(0, word.length - 4) + "ynnði";
-
-	var stem = ("jv".includes(last_letter) && !"frg".includes(stem.charAt(stem.length - 2))) ? stem : apply_umlaut(stem, a_umlaut);
-
-	if ("mn".includes(last_letter) && (!word.endsWith("na") || word.endsWith("nna"))) {
-		return stem + "di";
-	}
-
-	if ("bkpszð".includes(last_letter) || last_2_letters == "lf") {
-		return stem + "ti";
-	}
-
-	if (word.length >= 3 && (a || stem == word)) {
-		if (last_letter == "á") {
-			return stem.substring(0, stem.length - 1) + "æði";
-		}
-
-		if ("frgd".includes(last_letter) || vowels.includes(last_letter)) {
-			return stem + "ði";
-		}
-
-		if (stem.endsWith("eyj")) {
-			return stem.substring(0, stem.length - 1) + "ði";
-		}
-
-		if (stem.endsWith("l") && b) {
-			return stem + "di";
-		}
-
-		if (stem.endsWith("lj")) return stem.substring(0, stem.length - 1) + "di";
+	if (word.endsWith("inna")) {
+		return word.substring(0, word.length - 4) + "ynnði";
+	} else if (word.endsWith("á")) {
+		return word.substring(0, word.length - 1) + "æði";
+	} else if (word.endsWith("óa")) {
+		return word.substring(0, word.length - 1) + "ði";
+	} else if (word.endsWith("úa")) {
+		return word.substring(0, word.length - 2) + "jóði";
+	} else if (word.endsWith("eyja")) {
+		return word.substring(0, word.length - 2) + "ði";
 	} else {
-		if (last_letter == "ú") {
-			return stem.substring(0, stem.length - 1) + "ýði";
+		var stem = word.substring(0, word.length - 1);
+		var ending = "";
+		var ja_ending = false;
+
+		for (var i = word.length - 2; i > 0; i--) {
+			if (vowels.includes(word.charAt(i))) break;
+			if (word.charAt(i) == "j") ja_ending = true; else ending = word.charAt(i) + ending;
 		}
 
-		if (last_letter == "ó") {
-			return stem + "ði";
-		}
+		if (ja_ending) {
+			if (can_apply_umlaut(word.substring(0, word.length - 2), past_tense_sound_shift)) {
+				if ("bkpsz".includes(ending.charAt(0)) && ending != "kk" && ending != "pp") {
+					return apply_umlaut(word.substring(0, word.length - 2), past_tense_sound_shift) + "ti";
+				}
 
-		if (last_letter == "j" && "frg".includes(stem.charAt(stem.length - 2))) {
-			return stem.substring(0, stem.length - 1) + "ði";
-		}
+				if (ending.endsWith("g") || ending.endsWith("r")) return apply_umlaut(word.substring(0, word.length - 2), past_tense_sound_shift) + "ði";
+				if (ending == "l") return apply_umlaut(word.substring(0, word.length - 2), past_tense_sound_shift) + "di";
+			} else if (ending.endsWith("g") || ending.endsWith("r")) {
+				return word.substring(0, word.length - 2) + "ði";
+			} else if (ending == "l") {
+				return word.substring(0, word.length - 2) + "di";
+			}
 
-		if (stem.endsWith("kv") || stem.endsWith("gv")) {
-			return stem.substring(0, stem.length - 1) + "uði";
+			return word + "ði";
+		} else {
+			if (word.endsWith("va")) return word.substring(0, word.length - 2) + "uði";
+			if (ending == "mm" || ending == "nn") return stem + "di";
+			if (ending == "nd") return stem + "ði";
+
+			if (ending.length == 2 && "bkpsz".includes(ending.charAt(1)) && ending != "kk" && ending != "pp") {
+				return word.substring(0, word.length - 1) + "ti";
+			}
+
+			if (ending.length == 1) {
+				if ("bkpsz".includes(ending)) return stem + "ti";
+				if ("fr".includes(ending)) return stem + "ði";
+				if (ending == "m" || ending == "n") return stem + "di";
+			}
+
+			if (ending.endsWith("g")) return stem + "ði";
 		}
 	}
 
@@ -544,39 +544,56 @@ function get_past_participle(word) {
 		return special_declensions[word]["past_participle"];
 	}
 
-	var stem = word.substring(0, word.length - 1);
 	var vowels = "aáæeéiíoóöuúyý";
 
-	// makes sure that only -a verb endings are removed
-	if ("áæeéiíoóöuúyý".includes(word.charAt(word.length - 1))) stem = word;
+	if (word.endsWith("á")) {
+		return word.substring(0, word.length - 1) + "æt";
+	} else if (word.endsWith("óa")) {
+		return word.substring(0, word.length - 2) + "eið";
+	} else if (word.endsWith("úa")) {
+		return word.substring(0, word.length - 2) + "ýð";
+	} else if (word.endsWith("eyja")) {
+		return word.substring(0, word.length - 2) + "ð";
+	} else {
+		var stem = word.substring(0, word.length - 1);
+		var ending = "";
+		var ja_ending = false;
 
-	var past = get_past_tense(word);
+		for (var i = word.length - 2; i > 0; i--) {
+			if (vowels.includes(word.charAt(i))) break;
+			if (word.charAt(i) == "j") ja_ending = true; else ending = word.charAt(i) + ending;
+		}
 
-	var stem = (past.endsWith("jaði") || past.endsWith("uði")) ? stem : apply_umlaut(stem, a_umlaut);
+		if (ja_ending) {
+			if (can_apply_umlaut(word.substring(0, word.length - 2), past_tense_sound_shift)) {
+				if ("bkpsz".includes(ending.charAt(0)) && ending != "kk" && ending != "pp") {
+					return apply_umlaut(word.substring(0, word.length - 2), past_tense_sound_shift) + "t";
+				}
 
-	if (word.length >= 3) {
-		if (stem.endsWith("f") || stem.endsWith("r")) {
-			return stem + "ið";
-		} else if (stem.endsWith("p") || stem.endsWith("k") || stem.endsWith("s") || stem.endsWith("z") || stem.endsWith("m") || stem.endsWith("g")) {
-			return stem + "t";
-		} else if (stem.endsWith("n") && (vowels.includes(stem.charAt(stem.length - 2)) || stem.endsWith("nn"))) {
-			return stem + "t";
-		} else if (stem.endsWith("gj")) {
-			return stem.substring(0, stem.length - 1) + "t";
-		} else if (stem.endsWith("á")) {
-			return stem.substring(0, stem.length - 1) + "æt";
-		} else if (stem.endsWith("ó")) {
-			return stem.substring(0, stem.length - 1) + "eið";
-		} else if (word.endsWith("va") && !vowels.includes(stem.charAt(stem.length - 1))) {
-			return stem + "ið";
-		} else if (stem.endsWith("j")) {
-			if (stem.endsWith("eyj")) {
-				return stem.substring(0, stem.length - 1) + "ð";
-			} else {
-				return stem.substring(0, stem.length - 1) + "ið";
+				if (ending.endsWith("g") || ending.endsWith("r")) return apply_umlaut(word.substring(0, word.length - 2), past_tense_sound_shift) + "t";
+				
+				return apply_umlaut(word.substring(0, word.length - 2), past_tense_sound_shift) + "ið";
+			} else if (ending.endsWith("g") || ending.endsWith("r")) {
+				return word.substring(0, word.length - 2) + "t";
 			}
-		} else if (stem.endsWith("ú")) {
-			return stem.substring(0, stem.length - 1) + "ýð";
+
+			return word.substring(0, word.length - 2) + "ið";
+		} else {
+			if (word.endsWith("va")) return word.substring(0, word.length - 1) + "ið";
+
+			if (ending == "mm" || ending == "nn") return stem + "t";
+
+			if (ending.length == 2 && "bkpsz".includes(ending.charAt(1)) && ending != "kk" && ending != "pp") {
+				return word.substring(0, word.length - 1) + "t";
+			}
+
+			if (ending.length == 1) {
+				if ("bkpsz".includes(ending)) return stem + "t";
+				if ("fr".includes(ending)) return stem + (stem.endsWith("eyr") ? "ð" : "ið");
+				if (ending == "m" || ending == "n") return stem + "t";
+			}
+
+			if (ending.endsWith("g")) return stem + "t";
 		}
 	}
 
@@ -684,38 +701,7 @@ function get_mediopassive_past(word) {
 		return special_declensions[word]["past_tense_mediopassive"];
 	}
 
-	var stem = word.substring(0, word.length - 1);
-	var vowels = "aáæeéiíoóöuúyý";
-
-	// makes sure that only -a verb endings are removed
-	if ("áæeéiíoóöuúyý".includes(word.charAt(word.length - 1))) stem = word;
-
-	var last_letter = stem.charAt(stem.length - 1);
-	var last_2_letters = last_letter;
-
-	if (word.length >= 3) last_2_letters = stem.charAt(stem.length - 2) + stem.charAt(stem.length - 1);
-
-	if (word.endsWith("inna")) return word.substring(0, word.length - 4) + "ynnðisk";
-
-	stem = apply_umlaut(stem, a_umlaut);
-
-	if ("bkpszð".includes(last_letter) || last_2_letters == "lf") {
-		return stem + "tisk";
-	} else if (last_letter == "ú") {
-		return stem.substring(0, stem.length - 1) + "ýðisk";
-	} else if (last_letter == "á") {
-		return stem.substring(0, stem.length - 1) + "ætask";
-	} else if (stem.endsWith("eyj") || (last_letter == "j" && "frg".includes(stem.charAt(stem.length - 2)))) {
-		return stem.substring(0, stem.length - 1) + "ðisk";
-	} else if (vowels.includes(last_letter)) {
-		return stem + "ðisk";
-	} else if (stem.endsWith("kv") || stem.endsWith("gv")) {
-		return stem + "ðisk";
-	} else if (last_letter == "d" || last_letter == "t" || !vowels.includes(stem.charAt(stem.length - 2))) {
-		return stem + "aðisk";
-	} else {
-		return stem + "ðisk";
-	}
+	return get_past_tense(word) + "sk";
 }
 
 function get_mediopassive_present(word) {

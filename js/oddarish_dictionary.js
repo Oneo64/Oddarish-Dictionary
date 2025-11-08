@@ -649,7 +649,6 @@ const entry_words = [
 	"gérð",
 	"gést-heimr",
 	"géstr",
-	"géðja",
 	"gírja",
 	"gírr",
 	"gólf",
@@ -854,6 +853,7 @@ const entry_words = [
 	"hægð",
 	"hæla",
 	"hæling eip",
+	"hælsa",
 	"hæm",
 	"hæmba",
 	"hæmja",
@@ -947,6 +947,7 @@ const entry_words = [
 	"kaun",
 	"kefa",
 	"kefið-ligr",
+	"kefja",
 	"keir",
 	"keitla",
 	"kelari",
@@ -1033,7 +1034,6 @@ const entry_words = [
 	"kumfra",
 	"kuppr",
 	"kvass",
-	"kvefja",
 	"kveggja",
 	"kveita",
 	"kveld",
@@ -1702,11 +1702,11 @@ const entry_words = [
 	"skóði",
 	"skúiðr",
 	"slag",
-	"slagja",
 	"slangr",
 	"slaska",
 	"slaufr",
 	"slef",
+	"slegja",
 	"sleikja",
 	"sleima",
 	"sleipr",
@@ -2959,7 +2959,6 @@ const entries = {
 	"gérð": ["feminine noun", "diameter, girth"],
 	"gést-heimr": ["masculine noun", "inn, hotel"],
 	"géstr": ["masculine noun", "guest, visitor"],
-	"géðja": ["verb", "to greet"],
 	"gírja": ["verb", "to swallow, to devour; to wholly comsume something"],
 	"gírr": ["masculine noun", "a ruler (measurement)"],
 	"gólf": ["neuter noun", "floor"],
@@ -3164,6 +3163,7 @@ const entries = {
 	"hægð": ["neuter noun", "slowness, laziness"],
 	"hæla": ["verb", "to cure, to heal, to recover"],
 	"hæling eip": ["neuter noun", "healing herb"],
+	"hælsa": ["verb", "to greet"],
 	"hæm": ["neuter noun", "light, as in \"sunlight\""],
 	"hæmba": ["verb", "to listen, to heed"],
 	"hæmja": ["verb", "to show, to reveal, to make known"],
@@ -3257,6 +3257,7 @@ const entries = {
 	"kaun": ["feminine noun", "ulcer; boil, abscess"],
 	"kefa": ["verb", "to loosen; to untie; to fire or shoot a bow"],
 	"kefið-ligr": ["adverb", "loose (adjective)"],
+	"kefja": ["verb", "to choke someone"],
 	"keir": ["feminine noun", "tub, basin, vat"],
 	"keitla": ["verb", "to tickle"],
 	"kelari": ["masculine noun", "cellar, basement"],
@@ -3343,7 +3344,6 @@ const entries = {
 	"kumfra": ["feminine noun", "comfrey (herb)"],
 	"kuppr": ["masculine noun", "cup, mug, tankard, goblet"],
 	"kvass": ["neuter noun", "paragraph, length of text"],
-	"kvefja": ["verb", "to choke someone"],
 	"kveggja": ["verb", "to be wearing"],
 	"kveita": ["verb", "to block"],
 	"kveld": ["neuter noun", "evening"],
@@ -4012,11 +4012,11 @@ const entries = {
 	"skóði": ["neuter noun", "poem"],
 	"skúiðr": ["masculine noun", "squid, cuttlefish"],
 	"slag": ["neuter noun", "a strike or blow; a smite"],
-	"slagja": ["verb", "to hit, to strike, to smite"],
 	"slangr": ["masculine noun", "a slope, an uphill or downhill"],
 	"slaska": ["verb", "to scream, to screech, to shriek"],
 	"slaufr": ["masculine noun", "surface"],
 	"slef": ["adjective", "clean, tidy, pure, clear (adjective)"],
+	"slegja": ["verb", "to hit, to strike, to smite"],
 	"sleikja": ["verb", "to lick"],
 	"sleima": ["verb", "to fly"],
 	"sleipr": ["adjective", "slippery, slick, smooth"],
@@ -4664,16 +4664,6 @@ const special_declensions = {
 		"taufri", "taufrinum", "taufrum", "taufrunum",
 		"taufrs", "taufrsins", "taufra", "taufranna",
 	],
-	"apta-tala": {
-		"past_tense": "apta-teldi",
-		"past_participle": "apta-telið",
-		"past_tense_mediopassive": "apta-telðisk"
-	},
-	"blá-tala": {
-		"past_tense": "blá-teldi",
-		"past_participle": "blá-telið",
-		"past_tense_mediopassive": "blá-telðisk"
-	},
 	"bata": {
 		"past_tense": "bæti",
 		"past_participle": "bæt",
@@ -4707,10 +4697,10 @@ const special_declensions = {
 		"present_tense": ["hef", "hefi", "hefir"],
 		"present_mediopassive": "hefisk"
 	},
-	"lang-tala": {
-		"past_tense": "lang-teldi",
-		"past_participle": "lang-telið",
-		"past_tense_mediopassive": "lang-telðisk"
+	"maðka": {
+		"past_tense": "maðkaði",
+		"past_participle": "maðkað",
+		"past_tense_mediopassive": "maðkaðisk"
 	},
 	"meta": {
 		"past_tense": "mæti",
@@ -4718,23 +4708,12 @@ const special_declensions = {
 		"past_tense_mediopassive": "mætisk"
 	},
 	"muna": {
-		"present_tense": ["mun", "mun", "munir"],
-		"past_tense": "mundi"
-	},
-	"of-tala": {
-		"past_tense": "of-teldi",
-		"past_participle": "of-telið",
-		"past_tense_mediopassive": "of-telðisk"
+		"present_tense": ["mun", "mun", "munir"]
 	},
 	"setja": {
 		"past_tense": "sati",
-		"past_participle": "setið",
+		"past_participle": "sat",
 		"past_tense_mediopassive": "satisk"
-	},
-	"sækja": {
-		"past_tense": "sókti",
-		"past_participle": "sókt",
-		"past_tense_mediopassive": "sóktisk"
 	},
 	"skola": {
 		"past_tense": "sköldi",
@@ -4749,22 +4728,16 @@ const special_declensions = {
 		"past_tense_mediopassive": "sváðisk",
 		"gerund": "sveng"
 	},
-	"rala": {
-		"past_tense": "reldi",
-		"past_participle": "relið",
-		"past_tense_mediopassive": "relðisk"
-	},
-	"tala": {
-		"past_tense": "teldi",
-		"past_participle": "telið",
-		"past_tense_mediopassive": "telðisk"
+	"vega": {
+		"past_tense": "vagði",
+		"past_participle": "vagt"
 	},
 	"vesa": {
 		"present_tense": ["ar/vesa", "ar/vesi", "ar/vesir"],
 		"past_tense": "var/vesti"
 	},
 	"vilja": {
-		"present_tense": ["vil", "vili", "vilar"],
+		"present_tense": ["vil", "vil", "vilar"],
 		"past_tense_mediopassive": "viltisk"
 	},
 	"vita": {
