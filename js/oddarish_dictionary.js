@@ -2700,7 +2700,7 @@ const entries = {
 	"eyra": ["neuter noun", "ear of creature (neuter declension)"],
 	"eyðla": ["feminine noun", "a lizard"],
 	"faba": ["verb", "to tell a story, to explain, to describe"],
-	"fara": ["verb", "to go or to travel a long distance for a long time", "", ["Feklan fer til virkanum. = The wagon goes to the castle.", "Mandrinn hef vest farið lengt vegu. = The man has been travelling for a long while."]],
+	"fara": ["verb", "to go or to travel a long distance for a long time", "", ["Feklan ferir til virkanum. = The wagon goes to the castle.", "Mandrinn hefir farið lengt vegu. = The man has been travelling for a long while."]],
 	"fasta": ["verb", "to run"],
 	"faugr": ["masculine noun", "fungi, fungus, mushroom"],
 	"faða": ["verb", "to draw"],
@@ -4688,6 +4688,10 @@ const special_declensions = {
 		"past_tense": "áti",
 		"past_participle": "át",
 		"past_tense_mediopassive": "átisk"
+	},
+	"fara": {
+		"present_tense": ["fer", "feri", "ferir"],
+		"present_mediopassive": "ferisk"
 	},
 	"geta": {
 		"past_tense": "gæti",
