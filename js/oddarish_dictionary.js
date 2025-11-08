@@ -3110,7 +3110,7 @@ const entries = {
 	"hurð": ["feminine noun", "door"],
 	"hurð-tengr": ["masculine noun", "door frame"],
 	"hvanar": ["conjunction", "when, once it has been (conjunction)"],
-	"hvanarna": ["adverb", "for a while, for a moment, for some time; (movement) for a long way"],
+	"hvanarna": ["adverb", "for a while, for a moment, for some time; (movement) for a long way", "", ["Hvanarna, eldstaugrinn hefir eigi deyð. = The volcano hasn't died for a while.", "Ek farði hvanarna. = I travelled a long way."]],
 	"hvanda": ["verb", "to gesture, to point at"],
 	"hvannakr": ["masculine noun", "assignment, quest, mission"],
 	"hvast-góðr": ["adjective", "skilled (adjective)"],
