@@ -571,9 +571,9 @@ function get_past_participle(word) {
 					return apply_umlaut(word.substring(0, word.length - 2), past_tense_sound_shift) + "t";
 				}
 
-				if (ending.endsWith("g") || ending.endsWith("r")) return apply_umlaut(word.substring(0, word.length - 2), past_tense_sound_shift) + "t";
-				
-				return apply_umlaut(word.substring(0, word.length - 2), past_tense_sound_shift) + "ið";
+				if ("fr".includes(ending.charAt(ending.length - 1))) return apply_umlaut(word.substring(0, word.length - 2), past_tense_sound_shift) + "ið";
+				if ("mng".includes(ending.charAt(ending.length - 1))) return apply_umlaut(word.substring(0, word.length - 2), past_tense_sound_shift) + "t";
+				if (ending == "l") return apply_umlaut(word.substring(0, word.length - 2), past_tense_sound_shift) + "ið";
 			} else if (ending.endsWith("g") || ending.endsWith("r")) {
 				return word.substring(0, word.length - 2) + "t";
 			}
