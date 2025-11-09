@@ -59,6 +59,16 @@ var declension_tables_html = [
 		<tr> <th>fyrligr</th> <td id="past_tense2"></td> </tr>
 	</tbody></table>`,
 
+	// verb table (impersonal)
+	`<table id="verb_declension" class="pfont"><tbody>
+		<tr> <th id="declension_top2" colspan="3">orðraðingpung fyrir...</th> </tr>
+		<tr> <th>fyrstorð</th> <td id="infinitive" colspan="2"></td> </tr>
+		<tr> <th>fyrfabingorð</th> <td id="past_participle" colspan="2"></td> </tr>
+		<tr> <th></th> <th>núligr</th> <th>fyrligr</th> </tr>
+		<tr> <th>það, þær</th> <td id="3rd_present"></td> <td id="past_tense"></td> </tr>
+		<tr> <th>nafnorð</th> <td id="gerund" colspan="2"></td> </tr>
+	</tbody></table>`,
+
 	// adjective table
 	`<table id="adjective_declension" class="pfont"><tbody>
 		<tr> <th id="adjective_top" colspan="3">orðraðingpung fyrir...</th> </tr>
