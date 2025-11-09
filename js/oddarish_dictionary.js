@@ -1817,6 +1817,7 @@ const entry_words = [
 	"stjúga",
 	"stofna",
 	"stofr",
+	"strennr",
 	"strá",
 	"stræki",
 	"stríða",
@@ -1827,7 +1828,6 @@ const entry_words = [
 	"stytta",
 	"styða",
 	"stál",
-	"stárr",
 	"stéknafra",
 	"stóa",
 	"stóka",
@@ -3440,7 +3440,7 @@ const entries = {
 	"kýr-kotr": ["masculine noun", "beef, cow meat"],
 
 
-
+	// ################################################################
 
 
 	"lag": ["neuter noun", "improvement"],
@@ -4163,6 +4163,7 @@ const entries = {
 	"stjúga": ["verb", "to trip over from something"],
 	"stofna": ["verb", "to hire, to employ; to assign or arrange someone a work"],
 	"stofr": ["masculine noun", "pole, staff, scepter, a long rod longer than a leg"],
+	"strennr": ["adjective", "big, large, strong, sturdy (adjective)"],
 	"strá": ["neuter noun", "straw, dried grainstalks"],
 	"stræki": ["neuter noun", "reputation (neuter declension)"],
 	"stríða": ["verb", "to tease, to joke; to jest or to make a jest"],
@@ -4173,7 +4174,6 @@ const entries = {
 	"stytta": ["feminine noun", "statue"],
 	"styða": ["verb", "to stroke, to caress; to lightly or softly brush against"],
 	"stál": ["neuter noun", "steel"],
-	"stárr": ["adjective", "big, large, strong, sturdy (adjective)"],
 	"stéknafra": ["feminine noun", "a stave spell or stave drawing"],
 	"stóa": ["verb", "to steal, to rob, to burgle, to mug"],
 	"stóka": ["verb", "to burn, to scorch"],
