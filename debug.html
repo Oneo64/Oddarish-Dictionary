@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title id="title">debug</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="icon" type="image/x-icon" href="images/favicon.png">
+</head>
+<body>
+	<textarea id="in">
+	</textarea>
+	<button id="button">debug</button>
+	<div id="out">
+	</div>
+
+<script src="js/oddarish_dictionary.js"></script>
+<script src="js/declensions.js"></script>
+<script src="js/declension_tables.js"></script>
+<script src="js/ipa.js"></script>
+<script src="js/runes.js"></script>
+
+<script>
+	function checkwords() {
+		var texts = document.getElementById("in").value.split("\n");
+
+		document.getElementById("out").innerHTML = "";
+
+		for (var i = 0; i < texts.length; i++) {
+			var word = texts[i];
+
+			if (!entry_words.includes(word)) {
+				document.getElementById("out").innerHTML += "<div>" + word + " is not in the online dictionary</div>";
+			}
+		}
+
+		for (var i = 0; i < entry_words.length; i++) {
+			var word = entry_words[i];
+
+			if (!texts.includes(word)) {
+				document.getElementById("out").innerHTML += "<div>" + word + " is not in the input</div>";
+			}
+		}
+	}
+
+	document.getElementById("button").onclick = checkwords;
+
+	for (var i = 0; i < entry_words.length; i++) {
+		var word = entry_words[i];
+
+		if (word in entries) {
+			if (entries[word].length > 2) {
+				if (entries[word][2] == "" && !word.includes(" ") && !word.includes("-")) {
+					document.getElementById("out").innerHTML += "<div>" + word + " is missing tags!</div>";
+				}
+			} else if (!word.includes(" ") && !word.includes("-")) {
+				document.getElementById("out").innerHTML += "<div>" + word + " is missing tags!</div>";
+			}
+		} else {
+			document.getElementById("out").innerHTML += "<div>" + word + " has no dictionary entry!</div>";
+		}
+	}
+</script>
+</body>
+</html>
