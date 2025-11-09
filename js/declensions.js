@@ -522,7 +522,6 @@ function get_past_tense(word) {
 		} else {
 			if (word.endsWith("va")) return word.substring(0, word.length - 2) + "uði";
 			if (ending == "mm" || ending == "nn") return stem + "di";
-			if (ending == "nd") return stem + "ði";
 
 			if (ending.length == 2 && "bkpsz".includes(ending.charAt(1)) && ending != "kk" && ending != "pp") {
 				return word.substring(0, word.length - 1) + "ti";
