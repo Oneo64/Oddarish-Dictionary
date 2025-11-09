@@ -2492,7 +2492,7 @@ const entries = {
 	"bansjá": ["feminine noun", "banshee", "english evolved"],
 	"barka": ["verb", "to bark", "old-norse"],
 	"barða": ["verb", "to birth, to give birth", "old-norse deceptive"],
-	"basil": ["masculine noun", "basil (herb)", "english modern-icelandic"],
+	"basil": ["masculine noun", "basil (herb)", "modern-icelandic"],
 	"bastark": ["neuter noun", "baldric", "english evolved"],
 	"bastarð-skjorð": ["neuter noun", "bastard sword"],
 	"bata": ["verb", "to bite", "fictional"],
@@ -3316,11 +3316,6 @@ const entries = {
 	"kirð": ["neuter noun", "chair, stool, seat", "fictional"],
 	"kista": ["feminine noun", "storage chest, box", "middle-english evolved"],
 	"kjapna": ["verb", "to talk, to chat, to have a conversation with", "fictional"],
-
-
-
-
-
 	"kjappi": ["masculine noun", "a conversation, a chat", "fictional"],
 	"kjoptr": ["masculine noun", "jaw, jawline", "old-norse"],
 	"kjá": ["verb", "to hang", "fictional"],
@@ -3554,6 +3549,11 @@ const entries = {
 	"lúggr": ["masculine noun", "leg of creature"],
 	"lúm": ["adjective", "skinny (adjective)"],
 	"lýra": ["feminine noun", "lyre"],
+	
+
+
+
+
 	"magn": ["neuter noun", "the main, center, or focus"],
 	"magn-vérr": ["masculine noun", "artery (biology)"],
 	"mana": ["feminine noun", "food"],
@@ -3687,6 +3687,11 @@ const entries = {
 	"möðvingr": ["masculine noun", "pathogen"],
 	"möðvugr": ["adjective", "pathogenic"],
 	"mús": ["neuter noun", "moose"],
+
+
+
+
+
 	"nafn": ["neuter noun", "name"],
 	"nakri": ["masculine noun", "snake, serpent"],
 	"nalta": ["verb", "to nail"],
@@ -3769,6 +3774,11 @@ const entries = {
 	"nýta": ["verb", "to use, to make use of"],
 	"nýtr fyri": ["expression", "good, fit for, worthy for (preposition)"],
 	"nýtr": ["adjective", "good, fit for use, worthy for use, useful (adjective)"],
+	
+
+
+
+
 	"obbeldi": ["neuter noun", "violence"],
 	"Oddarska": ["feminine noun", "Oddarish, oddarish"],
 	"oddr": ["masculine noun", "a sharp point, especially of a weapon (like swords)"],
@@ -3811,6 +3821,11 @@ const entries = {
 	"ostra": ["feminine noun", "oyster"],
 	"otr": ["masculine noun", "otter"],
 	"oxull": ["masculine noun", "axle; the pole which rotates a cart's wheels"],
+	
+
+
+
+
 	"passa": ["verb", "to pass in progress or time"],
 	"pata": ["feminine noun", "bucket"],
 	"paut": ["neuter noun", "one's laps"],
@@ -3871,6 +3886,11 @@ const entries = {
 	"púnda": ["verb", "to break, to crack, to damage"],
 	"púnding": ["neuter noun", "a dent, crack, or damage"],
 	"púðing": ["feminine noun", "pudding"],
+
+
+
+
+
 	"rabba": ["verb", "to gibber; to make nonsensical noises with one's mouth"],
 	"rala": ["verb", "to arouse, to stir; to rally or to motivate; to boost one's morale; to call together"],
 	"rasta": ["verb", "to fight"],
@@ -3949,6 +3969,11 @@ const entries = {
 	"rýmm, -hrýmm": ["neuter noun", "room"],
 	"rýnja": ["impersonal verb", "to rain", "proto-germanic evolved"],
 	"rýð": ["feminine noun", "(plants) reed, cane"],
+
+
+
+
+
 	"saf-mákar": ["adjective", "juicy, flavorful, full of flavor (adjective)", "no-declension"],
 	"safi": ["masculine noun", "juice, essence"],
 	"safta": ["verb", "to dry"],
@@ -4215,6 +4240,11 @@ const entries = {
 	"sölin-ligr": ["adjective", "beautiful, gorgeous, striking, usually only used to describe someone (adjective)"],
 	"söt": ["neuter noun", "earth, dirt, soil"],
 	"súgi": ["masculine noun", "urine, pee"],
+
+
+
+
+
 	"tafl": ["neuter noun", "board game"],
 	"tafsi": ["masculine noun", "the rest, the remaining; remnant"],
 	"taga": ["feminine noun", "shape, form"],
@@ -4306,6 +4336,11 @@ const entries = {
 	"tösur": ["neuter noun", "children, offspring"],
 	"túla": ["feminine noun", "rabbit"],
 	"týrja": ["verb", "to thrust, to lunge"],
+
+
+
+
+
 	"ufn": ["neuter noun", "oven, furnace"],
 	"ugla": ["verb", "to puke, to vomit, to throw up"],
 	"ugli": ["masculine noun", "puke, vomit (noun)"],
@@ -4326,6 +4361,11 @@ const entries = {
 	"urði": ["neuter noun", "fertilizer; something that grants fertility or growth"],
 	"usli": ["masculine noun", "fire embers; sparks of fire"],
 	"usping": ["neuter noun", "incantation"],
+
+
+
+
+
 	"vahaha": ["interjection", "evil maniacal laughter (interjection)"],
 	"valdr": ["masculine noun", "power, strength (noun)"],
 	"valdr-mákar": ["adjective", "mighty, glorious (adjective); big, vast, or strong (adjective); powerful (adjective)", "no-declension"],
@@ -4443,6 +4483,11 @@ const entries = {
 	"výsa": ["feminine noun", "manner, wise, the way of, method, practice"],
 	"výss": ["neuter noun", "wisdom, insight (noun); wise (adjective)"],
 	"výss-fyndið": ["adjective", "funny, full of wit (adjective)", "no-declension"],
+
+
+
+
+
 	"ybb-ligr": ["adjective", "nervous, anxious (adjective)"],
 	"ybbask þú um þessu": ["phrase", "\"do you mind this?\", \"are you okay with this?\""],
 	"ybbask": ["verb", "to worry; to mind, to worry about; to be nervous"],
@@ -4456,6 +4501,11 @@ const entries = {
 	"yr": ["neuter noun", "yew tree"],
 	"yxir": ["neuter noun", "constallation, a group of stars"],
 	"yxja": ["feminine noun", "angel"],
+
+
+
+
+
 	"á eigi": ["auxiliary", "shouldn't"],
 	"á til": ["auxiliary", "should (auxiliary)"],
 	"á": ["preposition", "of something, of someone (preposition)"],
@@ -4479,6 +4529,11 @@ const entries = {
 	"ávaxtr": ["masculine noun", "fruit"],
 	"áxa": ["verb", "to increase, to raise, to go up"],
 	"áxtolli": ["masculine noun", "axolotl"],
+
+
+
+
+
 	"æ": ["interjection", "ow, hurts (injection)"],
 	"æfi": ["masculine noun", "ivy"],
 	"æka": ["verb", "to claim, to loot, to take for oneself, to make one's own"],
@@ -4492,10 +4547,20 @@ const entries = {
 	"æskja": ["verb", "to wish"],
 	"æss": ["neuter noun", "edge, corner"],
 	"æðr": ["masculine noun", "entrails, bowels; internal organs"],
+
+
+
+
+
 	"éka": ["adjective", "each, every (adjective)"],
 	"ékkva": ["verb", "to succeed or finish; to gain success"],
 	"él": ["feminine noun", "a loud sound made with the mouth; a yell, roar, scream, screech, or shout"],
 	"éta": ["verb", "to eat, to consume"],
+
+
+
+
+
 	"í alla staðarnir": ["expression adverb", "everywhere"],
 	"í dagu": ["expression adverb", "today (adverb)"],
 	"í férr": ["adverb", "yesterday (adverb)"],
@@ -4516,6 +4581,11 @@ const entries = {
 	"ískja": ["verb", "to ice, to freeze"],
 	"ískjang": ["neuter noun", "sleet"],
 	"ístr": ["masculine noun", "kidney"],
+
+
+
+
+
 	"ó": ["interjection", "oh (interjection)"],
 	"ó-": ["prefix", "negative prefix"],
 	"ó-byggð": ["feminine noun", "an uninhabited, uncultivated, and unsettled area"],
@@ -4543,6 +4613,11 @@ const entries = {
 	"ótt-voknandi": ["adjective", "scary, frightening, fear-instilling", "no-declension"],
 	"óttask": ["verb", "to be afraid of, to fear, to dread"],
 	"ótti": ["masculine noun", "dread, fear, terror"],
+
+
+
+
+
 	"öbb": ["neuter noun", "resin"],
 	"öblett": ["adjective", "pink (color) (noun, adjective)"],
 	"öfund": ["feminine noun", "envy (feminine declension)"],
@@ -4566,6 +4641,11 @@ const entries = {
 	"öx": ["neuter noun", "axe (weapon) (neuter declension)"],
 	"öxla": ["feminine noun", "shoulder"],
 	"ööö, öm": ["interjection", "uhh (interjection)"],
+
+
+
+
+
 	"úfan-ligr": ["adjective", "ridiculous, absurd (adjective)"],
 	"úfann": ["masculine noun", "absurdity"],
 	"úfat": ["adjective", "chipped, edged, roughened; chipped, as in a sword with a chipped edge (adjective)"],
@@ -4588,12 +4668,22 @@ const entries = {
 	"útlend-hnatari": ["masculine noun", "a racist person"],
 	"útlend-hnatr": ["masculine noun", "racism"],
 	"útlend-nir": ["masculine noun", "foreigner, outsider"],
+
+
+
+
+
 	"ýja": ["verb", "to swarm"],
 	"ýka": ["verb", "to owe; to be in debt"],
 	"ýla": ["verb", "to howl (wolves)"],
 	"ýling": ["neuter noun", "the howling of wolves"],
 	"ýstr": ["adjective", "thin (adjective)"],
 	"ýð-astr": ["adjective", "rich, wealthy (adjective)"],
+
+
+
+
+
 	"þaf-síma": ["feminine noun", "corded telephone"],
 	"þafir": ["adverb", "far, far away (adverb)"],
 	"þagi": ["masculine noun", "page; a male servant"],
