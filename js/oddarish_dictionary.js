@@ -628,6 +628,7 @@ const entry_words = [
 	"glantr",
 	"glaupi",
 	"gleidr",
+	"gleidra-jástugr",
 	"gleizka",
 	"gleð-ugr",
 	"gleða",
@@ -2271,7 +2272,6 @@ const entry_words = [
 	"ýla",
 	"ýling",
 	"ýstr",
-	"ýð-astr",
 	"þaf-síma",
 	"þafir",
 	"þagi",
@@ -2940,6 +2940,7 @@ const entries = {
 	"glantr": ["adjective", "bright as in \"a bright sun\", shiny (adjective)", "fictional"],
 	"glaupi": ["masculine noun", "slop, mixure", "fictional"],
 	"gleidr": ["masculine noun", "gold", "norvunic"],
+	"gleidra-jástugr": ["adjective", "rich, wealthy (adjective)"],
 	"gleizka": ["verb", "to roast", "fictional"],
 	"gleð-ugr": ["adjective", "happy, glad (adjective)"],
 	"gleða": ["feminine noun", "joy, happiness (feminine declension)", "old-norse"],
@@ -4673,12 +4674,11 @@ const entries = {
 
 
 
-	"ýja": ["verb", "to swarm"],
-	"ýka": ["verb", "to owe; to be in debt"],
-	"ýla": ["verb", "to howl (wolves)"],
-	"ýling": ["neuter noun", "the howling of wolves"],
-	"ýstr": ["adjective", "thin (adjective)"],
-	"ýð-astr": ["adjective", "rich, wealthy (adjective)"],
+	"ýja": ["verb", "to swarm", "old-norse"],
+	"ýka": ["verb", "to owe; to be in debt", "fictional"],
+	"ýla": ["verb", "to howl (wolves)", "old-norse"],
+	"ýling": ["neuter noun", "the howling of wolves", "old-norse"],
+	"ýstr": ["adjective", "thin (adjective)", "fictional"],
 
 
 

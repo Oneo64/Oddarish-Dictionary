@@ -79,8 +79,10 @@
 				var tags = entries[word][2].split(" ");
 
 				for (var i2 = 0; i2 < tags.length; i2++) {
-					stats[tags[i2]]++;
-					totalTags++;
+					if (tags[i2] != "no-declension") {
+						stats[tags[i2]]++;
+						totalTags++;
+					}
 				}
 			}
 		}
