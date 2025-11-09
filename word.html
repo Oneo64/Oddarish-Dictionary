@@ -46,8 +46,19 @@
 		document.getElementById("title").innerHTML = "Orðpængin um Oddarsku - " + v.charAt(0).toUpperCase() + v.substring(1);
 		document.getElementById("word").innerHTML = v + " | " + get_runic_inscription(ipa);
 		document.getElementById("ipa").innerHTML = ipa;
-		document.getElementById("type").innerHTML = word_type_short_form[entry[0]];
+		document.getElementById("type").innerHTML = "";
 
+		if (entry.length > 2) {
+			var tags = entry[2].split(" ");
+
+			for (var i = 0; i < tags.length; i++) {
+				if (tags[i] != "no-declension") {
+					document.getElementById("type").innerHTML += tags[i] + (i != tags.length - 1 ? " " : "<br>");
+				}
+			}
+		}
+
+		document.getElementById("type").innerHTML += word_type_short_form[entry[0]];
 		document.getElementById("definitions").innerHTML = "";
 
 		var defText = entry[1];
