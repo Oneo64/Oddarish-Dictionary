@@ -392,6 +392,7 @@ function add_verb_ending_basic(word, ending) {
 		if (ending == "u") {
 			if (word.endsWith("úa")) return word.substring(0, word.length - 2) + "ú";
 			if (word.endsWith("óa")) return word.substring(0, word.length - 1);
+			if (word.endsWith("va")) return word.substring(0, word.length - 2) + "u";
 
 			var last_vowel_pos = 0;
 
@@ -637,8 +638,10 @@ function get_present_tense(word, pov) {
 			return stem + "i";
 		}
 	} else {
-		if ((stem.endsWith("f") || stem.endsWith("r") || stem.endsWith("g") || stem.endsWith("t") || word.endsWith("va")) && !stem.endsWith("tt")) {
+		if ((stem.endsWith("f") || stem.endsWith("r") || stem.endsWith("g") || stem.endsWith("t")) && !stem.endsWith("tt")) {
 			return stem + "ir";
+		} else if (word.endsWith("va")) {
+			return stem.substring(0, stem.length - 1) + "ur";
 		} else if (stem.endsWith("ú")) {
 			return stem.substring(0, stem.length - 1) + "ýr";
 		} else if (stem.endsWith("á")) {
