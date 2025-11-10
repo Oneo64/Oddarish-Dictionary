@@ -360,9 +360,9 @@ const entry_words = [
 	"egðor",
 	"eifr",
 	"eig-",
-	"eig-einn",
+	"eig-einn (1)",
+	"eig-einn (2)",
 	"eigein-þing",
-	"eigeinn önn",
 	"eigi",
 	"eik-langð",
 	"eik-stytta",
@@ -2672,9 +2672,9 @@ const entries = {
 	"egðor": ["masculine noun", "eagle (masculine declension)", "old-norse evolved"],
 	"eifr": ["neuter noun", "essence, liquid, plant liquid, bodily liquid (neuter declension)", "fictional"],
 	"eig-": ["prefix", "negative prefix, usually means \"with no\"", "old-norse evolved"],
-	"eig-einn": ["adjective", "zero, none, no, isn't, not, negator (adjective)", "old-norse evolved"],
+	"eig-einn (1)": ["adjective", "zero, none, no, isn't, not, negator (adjective)", "old-norse evolved"],
+	"eig-einn (2)": ["masculine noun", "no one"],
 	"eigein-þing": ["neuter noun", "nothing"],
-	"eigeinn önn": ["neuter noun", "no one"],
 	"eigi": ["adverb", "not (adverb)", "old-norse evolved"],
 	"eik-langð": ["neuter noun", "wooden log"],
 	"eik-stytta": ["feminine noun", "wooden figurine"],
@@ -4977,4 +4977,8 @@ const singular_only = [
 	"úldir",
 	"þera",
 	"þruma",
+];
+
+const plural_indefinite_only = [
+	"eig-einn"
 ];
