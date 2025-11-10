@@ -11,7 +11,9 @@
 	<textarea id="in">
 	</textarea>
 	<button id="button">debug</button>
-	<button id="button2">print statistics</button>
+	<button id="button2">statistics</button>
+	<button id="button3">letter frequency</button>
+	<button id="button4">letter frequency (merged)</button>
 	<div id="out">
 	</div>
 
@@ -96,8 +98,65 @@
 		}
 	}
 
+	function letterfreq(mergeLetters) {
+		document.getElementById("out").innerHTML = "";
+
+		var stats = {};
+		var letters = [];
+		var totalTags = 0;
+
+		for (var i = 0; i < entry_words.length; i++) {
+			var word = entry_words[i];
+
+			if (word in entries) {
+				for (var i2 = 0; i2 < word.length; i2++) {
+					var letter = word.charAt(i2).toLowerCase();
+
+					if (".,()12345-/ ".includes(letter)) continue;
+
+					if (mergeLetters) {
+						if (letter == "á") letter = "a";
+						if (letter == "é") letter = "e";
+						if (letter == "í") letter = "i";
+						if (letter == "ó") letter = "o";
+						if (letter == "ú") letter = "u";
+					}
+
+					if (letter in stats) {
+						stats[letter]++;
+					} else {
+						stats[letter] = 1;
+						letters.push(letter);
+					}
+
+					totalTags++;
+				}
+			}
+		}
+
+		letters.sort((a, b) => {
+			return stats[b] - stats[a];
+		});
+
+		document.getElementById("out").innerHTML += "<div>total letters: " + totalTags + "</div>";
+
+		for (var i = 0; i < letters.length; i++) {
+			document.getElementById("out").innerHTML += "<div>" + letters[i] + ": " + (Math.round((stats[letters[i]] / totalTags) * 10000) / 100) + "%</div>";
+		}
+	}
+
+	function doletterfrequency() {
+		letterfreq(false);
+	}
+
+	function doletterfrequency2() {
+		letterfreq(true);
+	}
+
 	document.getElementById("button").onclick = checkwords;
 	document.getElementById("button2").onclick = dostatistics;
+	document.getElementById("button3").onclick = doletterfrequency;
+	document.getElementById("button4").onclick = doletterfrequency2;
 
 	for (var i = 0; i < entry_words.length; i++) {
 		var word = entry_words[i];
