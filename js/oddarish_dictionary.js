@@ -4842,6 +4842,10 @@ const special_declensions = {
 		"present_tense": ["hef", "hefi", "hefir"],
 		"present_mediopassive": "hefisk"
 	},
+	"kindja": {
+		"past_tense": "kenddi",
+		"past_participle": "kendið"
+	},
 	"maðka": {
 		"past_tense": "maðkaði",
 		"past_participle": "maðkað",
