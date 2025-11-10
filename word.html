@@ -54,6 +54,8 @@
 			for (var i = 0; i < tags.length; i++) {
 				if (tags[i] != "no-declension") {
 					document.getElementById("type").innerHTML += tags[i] + (i != tags.length - 1 ? " " : "<br>");
+				} else if (tags.length >= 2) {
+					document.getElementById("type").innerHTML += "<br>";
 				}
 			}
 		}
@@ -187,7 +189,7 @@
 				document.getElementById("3rd_present").innerHTML = get_present_tense(v3, 3) + v4;
 				document.getElementById("gerund").innerHTML = get_gerund(v3) + v4;
 			} else if (entry[0] == "adjective") {
-				document.getElementById("tables").innerHTML = declension_tables_html["verb_adjective"];
+				document.getElementById("tables").innerHTML = declension_tables_html["adjective"];
 
 				document.getElementById("adjective_top").innerHTML = "orðraðingpung fyri '" + v2 + "'";
 				document.getElementById("a0").innerHTML = v2;
