@@ -2861,7 +2861,7 @@ const entries = {
 	"fyska": ["verb", "to fish", "fictional"],
 	"fysking-stofr": ["masculine noun", "fishing rod, fishing pole"],
 	"fytvir": ["neuter noun", "west (noun)", "fictional"],
-	"fyx": ["neuter noun", "an oak tree or its wood", "fictional"],
+	"fyx": ["neuter noun", "an oak tree or its wood", "proto-indo-european evolved"],
 	"fyx-borður": ["neuter noun", "oak planks"],
 	"fál-fok": ["neuter noun", "sea wave"],
 	"fál-kóna": ["feminine noun", "mermaid, siren (creature)"],
