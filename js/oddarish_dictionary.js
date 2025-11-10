@@ -4163,7 +4163,7 @@ const entries = {
 	"spleista": ["verb", "to scatter; to sprinkle"],
 	"spor": ["neuter noun", "track, trail, footstep, footprint, trace"],
 	"spyrk": ["neuter noun", "crack; crevasse", "proto-indo-european evolved"],
-	"spyrka": ["verb", "to crack (not transitive), to become cracked", "proto-indo-european evolved"],
+	"spyrka": ["verb", "to crack (not transitive), to become cracked", "proto-indo-european evolved", ["Geru svengugr, ískhnullungrinn spyrkti! = Be careful, the iceberg cracked!"]],
 	"spöllr": ["adjective", "late (adjective)"],
 	"sríkk": ["neuter noun", "claw, talon"],
 	"staka": ["verb", "to push, to press"],
