@@ -120,16 +120,22 @@
 						if (letter == "í") letter = "i";
 						if (letter == "ó") letter = "o";
 						if (letter == "ú") letter = "u";
+						if (letter == "ý") letter = "y";
 					}
 
+					var multiplier = 1;
+
+					if (debug_words.includes(word)) multiplier = 7;
+					if (debug_words2.includes(word)) multiplier = 3;
+
 					if (letter in stats) {
-						stats[letter]++;
+						stats[letter] += multiplier;
 					} else {
-						stats[letter] = 1;
+						stats[letter] = multiplier;
 						letters.push(letter);
 					}
 
-					totalTags++;
+					totalTags += multiplier;
 				}
 			}
 		}
@@ -138,7 +144,7 @@
 			return stats[b] - stats[a];
 		});
 
-		document.getElementById("out").innerHTML += "<div>total letters: " + totalTags + "</div>";
+		document.getElementById("out").innerHTML += "<div>total letters (with weights): " + totalTags + "</div>";
 
 		for (var i = 0; i < letters.length; i++) {
 			document.getElementById("out").innerHTML += "<div>" + letters[i] + ": " + (Math.round((stats[letters[i]] / totalTags) * 10000) / 100) + "%</div>";
