@@ -4465,7 +4465,7 @@ const entries = {
 	"vjakki": ["masculine noun", "force (noun)"],
 	"vokna": ["verb", "to wake up, to become awake, to awaken"],
 	"vona": ["verb", "to hope, to wish"],
-	"vorð": ["neuter noun", "choice"],
+	"vorð": ["neuter noun", "choice; preference, setting, option, opinion"],
 	"vorðja": ["verb", "to choose, to pick"],
 	"vot-durtingi": ["masculine noun", "waterfall"],
 	"votn": ["neuter noun", "water"],
