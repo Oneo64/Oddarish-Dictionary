@@ -4536,7 +4536,7 @@ const entries = {
 
 
 	"á (1)": ["preposition", "of something, of someone (preposition)"],
-	"á (2)": ["preposition", "should (used only in questions and complex clauses, for the more common form, use á til or sköldi) (auxiliary)"],
+	"á (2)": ["preposition", "should (used only in questions and complex clauses, for the more common form, use á til or sköldi) (auxiliary)", "", ["Hvað á ek gera? = What should I do?"]],
 	"á eigi": ["auxiliary", "shouldn't"],
 	"á til": ["auxiliary", "should (auxiliary)"],
 	"á-brefir": ["adverb", "in front (adverb)"],
