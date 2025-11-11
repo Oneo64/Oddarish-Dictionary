@@ -3195,7 +3195,7 @@ const entries = {
 	"hvosna": ["verb", "to cough", "fictional"],
 	"hváf": ["onomatopeia", "woof, bark, dog's bark (interjection)"],
 	"hvækkva": ["verb", "to cunningly control, to manipulate someone", "fictional"],
-	"hvær": ["conjunction", "where (conjunction)", "old-norse evolved", ["Hvær vegirðú? = Where are you going?", "Hvær á ek at vega? = Where should I go?"]],
+	"hvær": ["conjunction", "where (conjunction)", "old-norse evolved", ["Hvær vegirðú? = Where are you going?", "Hvær á ek vega? = Where should I go?"]],
 	"hværa": ["conjunction", "from where, from what (conjunction)", "old-norse evolved hypothetical"],
 	"hví": ["conjunction", "why (conjunction)", "old-norse"],
 	"hvótan": ["conjunction", "how (conjunction)", "fictional"],
