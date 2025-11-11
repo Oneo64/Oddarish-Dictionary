@@ -2696,7 +2696,7 @@ const entries = {
 	"eikr": ["masculine noun", "wood", "old-norse evolved"],
 	"ein-": ["prefix", "one prefix", "old-norse"],
 	"ein-gengja": ["verb", "to take a step"],
-	"ein-hver": ["neuter noun", "anyone"],
+	"ein-hver": ["neuter noun", "anyone", "", ["Getir einhver hjálpa mér? = Can anyone help me?"]],
 	"ein-hvestligr": ["adjective", "any, anything (adjective)"],
 	"ein-kafl": ["neuter noun", "property, trait, attribute, tag, characteristic, feature, quality"],
 	"ein-ligr": ["adjective", "special (adjective)"],
