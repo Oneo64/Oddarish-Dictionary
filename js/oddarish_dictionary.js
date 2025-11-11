@@ -2149,9 +2149,10 @@ const entry_words = [
 	"yr",
 	"yxir",
 	"yxja",
+	"á (1)",
+	"á (2)",
 	"á eigi",
 	"á til",
-	"á",
 	"á-brefir",
 	"á-hugr",
 	"á-nustir",
@@ -3194,7 +3195,7 @@ const entries = {
 	"hvosna": ["verb", "to cough", "fictional"],
 	"hváf": ["onomatopeia", "woof, bark, dog's bark (interjection)"],
 	"hvækkva": ["verb", "to cunningly control, to manipulate someone", "fictional"],
-	"hvær": ["conjunction", "where (conjunction)", "old-norse evolved", ["Hvær vegirðú? = Where did you go?"]],
+	"hvær": ["conjunction", "where (conjunction)", "old-norse evolved", ["Hvær vegirðú? = Where are you going?", "Hvær á ek at vega? = Where should I go?"]],
 	"hværa": ["conjunction", "from where, from what (conjunction)", "old-norse evolved hypothetical"],
 	"hví": ["conjunction", "why (conjunction)", "old-norse"],
 	"hvótan": ["conjunction", "how (conjunction)", "fictional"],
@@ -4534,9 +4535,10 @@ const entries = {
 
 
 
+	"á (1)": ["preposition", "of something, of someone (preposition)"],
+	"á (2)": ["preposition", "should (used only in questions and complex clauses, for the more common form, use á til or sköldi) (auxiliary)"],
 	"á eigi": ["auxiliary", "shouldn't"],
 	"á til": ["auxiliary", "should (auxiliary)"],
-	"á": ["preposition", "of something, of someone (preposition)"],
 	"á-brefir": ["adverb", "in front (adverb)"],
 	"á-hugr": ["masculine noun", "one's interest or focus; to focus or concentrate"],
 	"á-nustir": ["adverb", "behind (adverb)"],
