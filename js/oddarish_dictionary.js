@@ -4413,7 +4413,7 @@ const entries = {
 	"varðing eip": ["neuter noun", "protection herb"],
 	"varðing": ["neuter noun", "protection, defense"],
 	"varðr": ["masculine noun", "ward, protection, defense, guard"],
-	"vau mér": ["interjection", "interjection of exasperation; wow"]],
+	"vau mér": ["interjection", "interjection of exasperation; wow"],
 	"vauðr": ["masculine noun", "ash"],
 	"vax": ["neuter noun", "wax"],
 	"vaxa": ["verb", "to wax, to apply wax"],
