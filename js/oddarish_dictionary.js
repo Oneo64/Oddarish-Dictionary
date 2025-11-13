@@ -3638,7 +3638,7 @@ const entries = {
 	"mjá (2)": ["verb", "to meow"],
 	"mjá (3)": ["neuter noun", "a meow"],
 	"mjók-serkr": ["masculine noun", "gambeson, padded armor"],
-	"mjök (1)": ["adjective", "much, a lot (adjective)"],
+	"mjök (1)": ["adjective", "really, very; much, a lot (adjective)"],
 	"mjök (2)": ["adverb", "really, very; much, a lot (adverb)"],
 	"mjöðm": ["feminine noun", "hip (feminine declension)"],
 	"mjöðr": ["masculine noun", "mead"],
