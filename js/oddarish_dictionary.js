@@ -3944,7 +3944,7 @@ const entries = {
 	"riða": ["verb", "to sway, to swing lightly; to rock, as in a rocking chair"],
 	"rjástr": ["adjective", "rough, bumpy, uneven, chaotic (used to describe a situation) (adjective)"],
 	"rjátla": ["verb", "to wander astray, to wander off path; to become lost, to become missing"],
-	"rjátlað": ["adjective", "lost, missing (adjective)", "no-declension"],
+	"rjátlað": ["adjective", "lost, missing (adjective)", "no-declension", ["Ek hef rjátlað. = I'm lost."]],
 	"rjóðr": ["masculine noun", "wheel"],
 	"rjúmm": ["neuter noun", "orb, ball, sphere, circle"],
 	"rjúmm-ligr": ["adjective", "round (adjective)"],
