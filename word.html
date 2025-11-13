@@ -89,7 +89,7 @@
 			}
 		}
 
-		if (entry.length != 3 || !entry[2].includes("no-declension")) {
+		if (entry.length < 3 || !entry[2].includes("no-declension")) {
 			if (entry[0].endsWith("noun")) {
 				var sg_only = singular_only.includes(v2);
 				var pl_indef_only = plural_indefinite_only.includes(v2);

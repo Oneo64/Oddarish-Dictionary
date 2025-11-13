@@ -3943,7 +3943,7 @@ const entries = {
 	"reðs-sleikjari": ["masculine noun", "offensive term against men, meaning cocksucker or penis licker (slur, insult)"],
 	"riða": ["verb", "to sway, to swing lightly; to rock, as in a rocking chair"],
 	"rjástr": ["adjective", "rough, bumpy, uneven, chaotic (used to describe a situation) (adjective)"],
-	"rjátla": ["verb", "to wander astray, to wander off path; to become lost, to become missing", "", ["Ek rjátlaði. = I'm lost."]],
+	"rjátla": ["verb", "to wander astray, to wander off path; to become lost, to become missing", "", ["Ek rjátla. = I'm wandering.", "Ek ar rjátlandi. = I'm lost."]],
 	"rjátlað": ["adjective", "lost, missing (adjective)", "no-declension", ["Hann ar rjátlað. = He's lost."]],
 	"rjóðr": ["masculine noun", "wheel"],
 	"rjúmm": ["neuter noun", "orb, ball, sphere, circle"],
