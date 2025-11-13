@@ -2833,7 +2833,7 @@ const entries = {
 	"fopr": ["masculine noun", "hood", "fictional"],
 	"fopr-mótull": ["masculine noun", "hooded cloak"],
 	"for": ["feminine noun", "sewer, drain, furrow; a small trench where water is drained", "old-norse"],
-	"form": ["adjective", "real, not fake (adjective)", "modern-icelandic"],
+	"form": ["adjective", "real, realistic; not fake (adjective)", "modern-icelandic deceptive"],
 	"form-inn": ["neuter noun", "the real or actual thing"],
 	"form-ligr": ["adjective", "proper, formal (adjective)"],
 	"forn": ["adjective", "old (adjective)", "old-norse"],
