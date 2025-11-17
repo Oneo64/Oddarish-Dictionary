@@ -4286,7 +4286,7 @@ const entries = {
 	"tagl": ["masculine noun", "tail"],
 	"tagl-vörnd": ["neuter noun", "bowed lyre, taglharpa"],
 	"tala": ["verb", "to speak, to talk, to say"],
-	"talava": ["feminine", "script, screenplay, playbook; code (in programming languages)"],
+	"talava": ["feminine noun", "script, screenplay, playbook; code (in programming languages)"],
 	"tamr": ["adjective", "tame, not wild; obedient, docile, disciplined (adjective)"],
 	"tapa": ["verb", "to lose, to suffer a loss; to lose a struggle, to be defeated"],
 	"targa": ["verb", "to crash into; to run into a solid thing; to charge at"],
