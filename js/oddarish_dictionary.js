@@ -3176,7 +3176,7 @@ const entries = {
 	"hunsa": ["verb", "to ignore", "old-norse"],
 	"hurð": ["feminine noun", "door", "old-norse"],
 	"hurð-tengr": ["masculine noun", "door frame"],
-	"hvanar": ["conjunction", "when (only used in questions) (conjunction)", "proto-norse", ["Hvanar munirðú vega? = When will you leave?"]],
+	"hvanar": ["conjunction", "when (only used in questions) (conjunction)", "proto-norse", ["Hvanar vegu? = When will you leave?"]],
 	"hvanarna": ["adverb", "for a while, for a moment, for some time; (movement) for a long way", "proto-norse hypothetical", ["Hvanarna, eldstaugrinn hefir eigi deyð. = The volcano hasn't died for a while.", "Ek farði hvanarna. = I travelled a long way."]],
 	"hvanda": ["verb", "to gesture, to point at", "fictional"],
 	"hvannakr": ["masculine noun", "assignment, quest, mission", "fictional"],
