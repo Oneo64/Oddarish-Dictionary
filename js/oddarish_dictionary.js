@@ -1860,7 +1860,7 @@ const entry_words = [
 	"svakkr",
 	"svangr",
 	"svangð",
-	"sve at",
+	"sve um",
 	"sve",
 	"svein",
 	"sveit-fekla",
@@ -4227,7 +4227,7 @@ const entries = {
 	"svakkr": ["masculine noun", "work station, workbench"],
 	"svangr": ["adjective", "hungry (adjective)"],
 	"svangð": ["neuter noun", "hunger"],
-	"sve um": ["verb", "to think, to have an opinion", "old-norse hypothetical", ["Ek svi um það er of lítill. = I think it's too small."]],
+	"sve um": ["verb", "to think, to have an opinion", "old-norse hypothetical", ["Ek sve um það er of lítill. = I think it's too small."]],
 	"sve": ["verb", "to see, to look; to realize, to become aware of; to face a direction", "old-norse hypothetical"],
 	"svein": ["neuter noun", "sand"],
 	"sveit-fekla": ["feminine noun", "a steam train"],
@@ -4909,7 +4909,7 @@ const special_declensions = {
 		"past_participle": "skölið"
 	},
 	"sve": {
-		"present_tense": "svi",
+		"present_tense": ["sve", "svi", "svir"],
 		"past_tense": "svá",
 		"past_participle": "svið",
 		"mediopassive": "svask",
