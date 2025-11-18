@@ -378,6 +378,10 @@ function get_noun_declension(w, t) {
 function add_verb_ending_basic(word, ending) {
 	var vowels = "aáæeéiíoóöuúyý";
 
+	if (ending == "u" && word in special_declensions && "imperative" in special_declensions[word]) {
+		return special_declensions[word]["imperative"];
+	}
+
 	if (word.endsWith("e")) {
 		if (ending == "u") {
 			return word.substring(0, word.length - 1) + "ý";

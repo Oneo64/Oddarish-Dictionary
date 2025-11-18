@@ -4899,6 +4899,9 @@ const special_declensions = {
 	"muna": {
 		"present_tense": ["mun", "mun", "munir"]
 	},
+	"máklja": {
+		"imperative": "máklju"
+	},
 	"setja": {
 		"past_tense": "sati",
 		"past_participle": "sat",
