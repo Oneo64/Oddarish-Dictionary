@@ -2025,7 +2025,7 @@ const entry_words = [
 	"usping",
 	"vahaha",
 	"valdr",
-	"valdr-mákill",
+	"valdra-mákill",
 	"valkyrja",
 	"vallhumall",
 	"valr",
@@ -4407,7 +4407,7 @@ const entries = {
 
 	"vahaha": ["interjection", "evil maniacal laughter (interjection)"],
 	"valdr": ["masculine noun", "power, strength (noun)"],
-	"valdr-mákill": ["adjective", "mighty, glorious (adjective); big, vast, or strong (adjective); powerful (adjective)"],
+	"valdra-mákill": ["adjective", "mighty, glorious (adjective); big, vast, or strong (adjective); powerful (adjective)"],
 	"valkyrja": ["feminine noun", "valkyrie"],
 	"vallhumall": ["masculine noun", "yarrow (herb)"],
 	"valr": ["masculine noun", "valor, prowess, courage, bravery, might, glory"],
