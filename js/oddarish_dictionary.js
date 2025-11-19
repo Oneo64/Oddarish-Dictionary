@@ -4383,7 +4383,7 @@ const entries = {
 	"ufn": ["neuter noun", "oven, furnace"],
 	"ugla": ["verb", "to puke, to vomit, to throw up"],
 	"ugli": ["masculine noun", "puke, vomit (noun)"],
-	"um": ["preposition", "about, of (preposition)", "old-norse", ["Ek tala um sjáninn. = I talk about the boy.", "Ek sve um það ar sváligr. = I think it's beautiful."]],
+	"um": ["preposition", "about, of, for", "old-norse", ["Ek tala um sjáninn. = I talk about the boy.", "Ek sve um það ar sváligr. = I think it's beautiful.", "Ek baði um drýkku. = I asked for a drink."]],
 	"umbr": ["adjective", "lush, full of plant life (adjective)"],
 	"ummend-ugr": ["adjective", "boring", "", ["Þetta ar ummendugr. = This is boring."]],
 	"ummenda": ["verb", "to bore, to make someone bored", "", ["Ek ar ummendað. = I'm bored."]],
