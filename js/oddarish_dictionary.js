@@ -2686,7 +2686,7 @@ const entries = {
 	"ef": ["conjunction", "if, in case, by condition (conjunction)", "old-norse"],
 	"ef-eigi": ["conjunction", "unless, if not (conjunction)"],
 	"ef-til": ["conjunction", "especially if, especially when (conjunction)"],
-	"eftir": ["preposition", "after an event; by, because of, following, in sequence, looking for, waiting", "old-norse", ["Eftir það var ek í búðina. = After that, I was in the store.", "Beigrinn fastaði eftir rjúmminni. = The dog ran after the ball.", "Ek hveða eftir þér. = I'm waiting for you."]],
+	"eftir": ["preposition", "after an event; by, because of, following, in sequence, looking for, waiting", "old-norse", ["Eftir það var ek í búðina. = After that, I was in the store.", "Beigrinn fastaði eftir rjúmminni. = The dog ran after the ball.", "Ek hveða eftir þér. = I'm waiting for you.", "Hann svakkti gungvun eftir verkinni voxans. = He make a trap because of the fox's doing."]],
 	"efðú": ["conjunction", "if you (conjunction)", "old-norse hypothetical"],
 	"egðor": ["masculine noun", "eagle (masculine declension)", "old-norse evolved"],
 	"eifr": ["neuter noun", "essence, liquid, plant liquid, bodily liquid (neuter declension)", "fictional"],
