@@ -509,7 +509,7 @@ function get_past_tense(word) {
 
 		if (ja_ending) {
 			if (can_apply_umlaut(word.substring(0, word.length - 2), past_tense_sound_shift)) {
-				if ("bkpsz".includes(ending.charAt(0)) && ending != "kk" && ending != "pp") {
+				if ("bkpsz".includes(ending.charAt(0)) && ending != "pp") {
 					return apply_umlaut(word.substring(0, word.length - 2), past_tense_sound_shift) + "ti";
 				}
 
@@ -571,7 +571,7 @@ function get_past_participle(word) {
 
 		if (ja_ending) {
 			if (can_apply_umlaut(word.substring(0, word.length - 2), past_tense_sound_shift)) {
-				if ("bkpsz".includes(ending.charAt(0)) && ending != "kk" && ending != "pp") {
+				if ("bkpsz".includes(ending.charAt(0)) && ending != "pp") {
 					return apply_umlaut(word.substring(0, word.length - 2), past_tense_sound_shift) + "t";
 				}
 
