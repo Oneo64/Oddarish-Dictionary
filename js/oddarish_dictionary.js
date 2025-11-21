@@ -4187,7 +4187,6 @@ const entries = {
 	"stjarn-taga": ["feminine noun", "a star shape"],
 	"stjarna": ["feminine noun", "star (a celestial star)", "old-norse"],
 	"stjúga": ["verb", "to trip over from something", "fictional"],
-	
 	"stofna": ["verb", "to hire, to employ; to assign or arrange someone a work"],
 	"stofr": ["masculine noun", "pole, staff, scepter, a long rod longer than a leg"],
 	"strennr": ["adjective", "big, large, strong, sturdy (adjective)", "proto-indo-european evolved"],
@@ -4913,6 +4912,11 @@ const special_declensions = {
 	"skola": {
 		"past_tense": "sköldi",
 		"past_participle": "skölið"
+	},
+	"sterkja": {
+		"past_tense": "starkti",
+		"past_participle": "starkt",
+		"past_tense_mediopassive": "starktisk"
 	},
 	"sve": {
 		"present_tense": ["sve", "svi", "svir"],
