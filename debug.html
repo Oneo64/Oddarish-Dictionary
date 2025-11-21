@@ -61,6 +61,7 @@
 			"modern-scandinavian": 0,
 			"modern-western-germanic": 0,
 			"modern-celtic": 0,
+			"indo-aryan": 0,
 			"norvunic": 0,
 			"middle-english": 0,
 			"english": 0,
@@ -112,7 +113,7 @@
 				var tags = entries[word][2].split(" ");
 
 				for (var i2 = 0; i2 < tags.length; i2++) {
-					if (tags[i2] in loanword_tags) {
+					if (loanword_tags.includes(tags[i2])) {
 						loans++;
 						break;
 					}
