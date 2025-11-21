@@ -105,19 +105,25 @@
 
 		var words_counted = 0;
 		var loans = 0;
+		var notFictional = 0;
 
 		for (var i = 0; i < entry_words.length; i++) {
 			var word = entry_words[i];
 
 			if (word in entries && entries[word].length > 2 && entries[word][2]) {
 				var tags = entries[word][2].split(" ");
+				var isLoan = false;
+				var isNotFictional = false;
 
 				for (var i2 = 0; i2 < tags.length; i2++) {
-					if (loanword_tags.includes(tags[i2])) {
-						loans++;
-						break;
-					}
+					if (loanword_tags.includes(tags[i2])) isLoan = true;
+					if (foreign_tags.includes(tags[i2])) isNotFictional = true;
+
+					if (isLoan && isNotFictional) break;
 				}
+
+				if (isLoan) loans++;
+				if (isNotFictional && !tags.includes("evolved") && !tags.includes("deceptive") && !tags.includes("hypothetical")) notFictional++;
 
 				words_counted++;
 			}
@@ -125,6 +131,7 @@
 
 		document.getElementById("out").innerHTML += "<div>total tags: " + words_counted + "</div>";
 		document.getElementById("out").innerHTML += "<div>loan words: " + loans + " loans, which are " + (Math.round((loans / words_counted) * 10000) / 100) + "% of tagged words</div>";
+		document.getElementById("out").innerHTML += "<div>not fictional: " + (Math.round((notFictional / words_counted) * 10000) / 100) + "% of tagged words</div>";
 	}
 
 	function letterfreq(mergeLetters) {
