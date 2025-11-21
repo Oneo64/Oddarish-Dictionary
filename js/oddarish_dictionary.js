@@ -4223,6 +4223,7 @@ const entries = {
 	"svein": ["neuter noun", "sand", "fictional"],
 	"sveit-fekla": ["feminine noun", "a steam train"],
 	"sveita": ["feminine noun", "steam, vapor", "fictional"],
+	"svekki-mandr": ["masculine noun", "maker, crafter, manufacturer, creator, inventor, craftsman, artisan"],
 	"svekkja": ["verb", "to craft, to create, to make, to weave together", "fictional"],
 	"svekkjang": ["neuter noun", "makings, craft, product, invention, creation", "fictional"],
 	"sveng": ["neuter noun", "sight", "fictional"],
@@ -4274,7 +4275,6 @@ const entries = {
 
 
 
-	"svekki-mandr": ["masculine noun", "maker, crafter, manufacturer, creator, inventor, craftsman, artisan"],
 	"tafl": ["neuter noun", "board game"],
 	"tafsi": ["masculine noun", "the rest, the remaining; remnant"],
 	"taga": ["feminine noun", "shape, form"],
