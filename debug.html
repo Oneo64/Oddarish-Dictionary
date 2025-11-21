@@ -12,8 +12,9 @@
 	</textarea>
 	<button id="button">debug</button>
 	<button id="button2">statistics</button>
-	<button id="button3">letter frequency</button>
-	<button id="button4">letter frequency (merged)</button>
+	<button id="button3">loanword statistics</button>
+	<button id="button4">letter frequency</button>
+	<button id="button5">letter frequency (merged)</button>
 	<div id="out">
 	</div>
 
@@ -98,6 +99,33 @@
 		}
 	}
 
+	function doloanwordstatistics() {
+		document.getElementById("out").innerHTML = "";
+
+		var words_counted = 0;
+		var loans = 0;
+
+		for (var i = 0; i < entry_words.length; i++) {
+			var word = entry_words[i];
+
+			if (word in entries && entries[word].length > 2 && entries[word][2]) {
+				var tags = entries[word][2].split(" ");
+
+				for (var i2 = 0; i2 < tags.length; i2++) {
+					if (tags[i2] in loanword_tags) {
+						loans++;
+						break;
+					}
+				}
+
+				words_counted++;
+			}
+		}
+
+		document.getElementById("out").innerHTML += "<div>total tags: " + words_counted + "</div>";
+		document.getElementById("out").innerHTML += "<div>loan words: " + loans + " loans, which are " + (Math.round((loans / words_counted) * 10000) / 100) + "% of tagged words</div>";
+	}
+
 	function letterfreq(mergeLetters) {
 		document.getElementById("out").innerHTML = "";
 
@@ -161,8 +189,9 @@
 
 	document.getElementById("button").onclick = checkwords;
 	document.getElementById("button2").onclick = dostatistics;
-	document.getElementById("button3").onclick = doletterfrequency;
-	document.getElementById("button4").onclick = doletterfrequency2;
+	document.getElementById("button3").onclick = doloanwordstatistics;
+	document.getElementById("button4").onclick = doletterfrequency;
+	document.getElementById("button5").onclick = doletterfrequency2;
 
 	for (var i = 0; i < entry_words.length; i++) {
 		var word = entry_words[i];

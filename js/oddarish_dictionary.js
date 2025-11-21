@@ -60,6 +60,16 @@ const word_source = {
 	"unsure": "un."
 };
 
+// these MUST be eradicated or at least put below 2% in total
+const loanword_tags = {
+	"old-english": "oe.",
+	"classical-latin": "class.",
+	"modern-western-germanic": "mwg.",
+	"modern-celtic": "mc.",
+	"middle-english": "me.",
+	"english": "eng.",
+};
+
 const entry_words = [
 	"-ari, -tari",
 	"-ingi",
@@ -96,7 +106,6 @@ const entry_words = [
 	"aldr",
 	"aldr-eigi",
 	"aldr-sága",
-	"alfalfa",
 	"alheim-staðr",
 	"alka",
 	"alla mendrnir",
@@ -495,6 +504,7 @@ const entry_words = [
 	"fnakr",
 	"fnyngr",
 	"fok",
+	"foll-kváma",
 	"foll-ræga",
 	"foll-vita",
 	"foll-þröng",
@@ -566,8 +576,6 @@ const entry_words = [
 	"færr",
 	"féga",
 	"féskja",
-	"fírikr",
-	"fírikr-borður",
 	"fítta",
 	"fíða",
 	"fíðing",
@@ -1113,7 +1121,6 @@ const entry_words = [
 	"kóna",
 	"kópn",
 	"kópn-kotr",
-	"kópta",
 	"kömbr",
 	"köng-váfa",
 	"köngull",
@@ -1230,6 +1237,7 @@ const entry_words = [
 	"löðskórr",
 	"lúggr",
 	"lúm",
+	"lúsina",
 	"lútill hreispr",
 	"lútill",
 	"lútt-na",
@@ -2168,6 +2176,8 @@ const entry_words = [
 	"álm-borður",
 	"álmr",
 	"ápa",
+	"ápir",
+	"ápir-borður",
 	"ár",
 	"ás",
 	"ás-sága",
@@ -2430,7 +2440,6 @@ const entries = {
 	"aldr": ["masculine noun", "age, life, period (noun)", "old-norse"],
 	"aldr-eigi": ["adverb", "never (adverb)"],
 	"aldr-sága": ["feminine noun", "history"],
-	"alfalfa": ["feminine noun", "alfalfa (herb)", "english"],
 	"alheim-staðr": ["masculine noun", "demiplane"],
 	"alka": ["feminine noun", "an auk bird", "old-norse"],
 	"alla mendrnir": ["masculine noun", "everyone"],
@@ -2829,6 +2838,7 @@ const entries = {
 	"fnakr": ["masculine noun", "dove", "fictional"],
 	"fnyngr": ["masculine noun", "anvil", "fictional"],
 	"fok": ["neuter noun", "cloud, billow, splash of liquid", "fictional"],
+	"foll-kváma": ["verb", "to complete, to finish"],
 	"foll-ræga": ["verb", "to reign sovereignly; to rule with full power"],
 	"foll-vita": ["verb", "to understand, to acknowledge"],
 	"foll-þröng": ["neuter noun", "community, people, a group of people living in the same place"],
@@ -2900,8 +2910,6 @@ const entries = {
 	"færr": ["adjective", "a low amount of, a little amount of, few, a bit of (adjective)", "old-norse deceptive"],
 	"féga": ["verb", "to smell, to sniff", "fictional"],
 	"féskja": ["verb", "to impress, to give an impression of", "fictional"],
-	"fírikr": ["masculine noun", "fir wood/tree", "english evolved"],
-	"fírikr-borður": ["neuter noun", "fir planks"],
 	"fítta": ["feminine noun", "buttocks", "fictional"],
 	"fíða": ["verb", "to touch, to taste", "fictional"],
 	"fíðing": ["neuter noun", "theme, taste, vibe, feel, texture", "fictional"],
@@ -3447,7 +3455,6 @@ const entries = {
 	"kóna": ["feminine noun", "humanoid female, woman", "old-norse evolved"],
 	"kópn": ["neuter noun", "chicken", "fictional"],
 	"kópn-kotr": ["masculine noun", "chicken meat"],
-	"kópta": ["verb", "to complete, to finish", "english evolved"],
 	"kömbr": ["masculine noun", "bag, pouch", "fictional"],
 	"köng-váfa": ["feminine noun", "spider"],
 	"köngull": ["masculine noun", "a cluster or pile of things", "old-norse deceptive"],
@@ -3569,6 +3576,7 @@ const entries = {
 	"löðskórr": ["masculine noun", "lodestone"],
 	"lúggr": ["masculine noun", "leg of creature"],
 	"lúm": ["adjective", "skinny (adjective)"],
+	"lúsina": ["feminine noun", "alfalfa, lucerne", "modern-icelandic evolved"],
 	"lútill hreispr": ["masculine noun", "pony"],
 	"lútill": ["adjective", "small, little (adjective)", "proto-germanic evolved"],
 	"lútt-na": ["adverb", "slightly, faintly, a bit (adverb)"],
@@ -4183,7 +4191,7 @@ const entries = {
 	"staka": ["verb", "to push, to press"],
 	"stalaktalta": ["feminine noun", "stalactite (ceiling)"],
 	"statang-borður": ["neuter noun", "spruce planks"],
-	"statangr": ["masculine noun", "a spruce tree or its wood"],
+	"statangr": ["masculine noun", "a spruce tree or its wood", "fictional"],
 	"statva": ["verb", "to stand"],
 	"statving": ["masculine noun", "stance, balance, pose (noun)"],
 	"staugr": ["masculine noun", "mountain"],
@@ -4562,6 +4570,8 @@ const entries = {
 	"álm-borður": ["neuter noun", "elm planks"],
 	"álmr": ["masculine noun", "an elm tree or its wood"],
 	"ápa": ["verb", "to taunt, to mock, to provoke"],
+	"ápir": ["masculine noun", "fir wood/tree", "classical-latin evolved"],
+	"ápir-borður": ["neuter noun", "fir planks"],
 	"ár": ["feminine noun", "year"],
 	"ás": ["conjunction", "thus, as, therefore (conjunction)"],
 	"ás-sága": ["feminine noun", "an example"],
@@ -4828,6 +4838,12 @@ const entries = {
 	"þýju": ["adjective", "three times, thrice (adverb)"],
 };
 
+const ipa_exceptions = {
+	"'fʏrɪr": "'fɪrɪr",
+	"'hatl̥ouː": "'halouː",
+	"'fotl̥kʋɑuːma": "'folkʋɑuːma"
+}
+
 const special_declensions = {
 	"ergi": [
 		"ergi", "ergin", "ergi", "ergin",
@@ -4970,7 +4986,6 @@ const singular_only = [
 	"fytvir",
 	"fyx",
 	"fángvi",
-	"fírikr",
 	"gleða",
 	"græssa",
 	"gérð",
@@ -5026,6 +5041,7 @@ const singular_only = [
 	"víði",
 	"yr",
 	"álmr",
+	"ápir",
 	"ár",
 	"ærsl",
 	"ó-byggðir",

@@ -156,12 +156,6 @@ const consonants = {
 	" ": " "
 }
 
-// exceptions go here!!!
-const exceptions = {
-	"'fʏrɪr": "'fɪrɪr",
-	"'hatl̥ouː": "'halouː"
-}
-
 function replace(word, list, replace_with) {
 	var w = word;
 
@@ -245,10 +239,10 @@ function ipa(_word, english) {
 
 	if (syllables > 1) ipa = ipa.substring(0, last_ending) + "'" + ipa.substring(last_ending);
 
-	var exceptions_keys = Object.keys(exceptions);
+	var exceptions_keys = Object.keys(ipa_exceptions);
 
 	for (var i = 0; i < exceptions_keys.length; i++) {
-		ipa = ipa.replace(exceptions_keys[i], exceptions[exceptions_keys[i]]);
+		ipa = ipa.replace(exceptions_keys[i], ipa_exceptions[exceptions_keys[i]]);
 	}
 
 	return "/" + ipa + "/";
