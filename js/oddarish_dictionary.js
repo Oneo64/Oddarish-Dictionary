@@ -1816,8 +1816,6 @@ const entry_words = [
 	"snúa",
 	"soll",
 	"solla",
-	"solva",
-	"solving-keir",
 	"sonr",
 	"soðr",
 	"span-mandr",
@@ -1915,6 +1913,8 @@ const entry_words = [
 	"svöpr",
 	"sága",
 	"sálerni",
+	"sálva",
+	"sálving-keir",
 	"sápa",
 	"sár",
 	"sára-báma",
@@ -3491,11 +3491,6 @@ const entries = {
 	"kúst": ["neuter noun", "chalk", "fictional"],
 	"kýr": ["neuter noun", "cattle, bull, cow, ox", "old-norse"],
 	"kýr-kotr": ["masculine noun", "beef, cow meat"],
-
-
-	// ################################################################
-
-
 	"lag": ["neuter noun", "improvement", "modern-icelandic"],
 	"land": ["neuter noun", "ground, land", "modern-icelandic"],
 	"land-ekkinn": ["neuter noun", "territory"],
@@ -3601,11 +3596,6 @@ const entries = {
 	"lútt-na": ["adverb", "slightly, faintly, a bit (adverb)"],
 	"lútt-vegr": ["masculine noun", "alleyway"],
 	"lýra": ["feminine noun", "lyre", "old-norse"],
-	
-
-
-
-
 	"magn": ["neuter noun", "the main, center, or focus", "old-norse evolved"],
 	"magn-vérr": ["masculine noun", "artery (biology)"],
 	"mana": ["feminine noun", "food", "fictional"],
@@ -3738,11 +3728,6 @@ const entries = {
 	"möðvingr": ["masculine noun", "pathogen", "fictional"],
 	"möðvugr": ["adjective", "pathogenic", "fictional"],
 	"mús": ["neuter noun", "moose", "english evolved"],
-
-
-
-
-
 	"nafn": ["neuter noun", "name", "old-norse"],
 	"nakri": ["masculine noun", "snake, serpent", "indo-aryan evolved"],
 	"nalta": ["verb", "to nail", "fictional"],
@@ -3826,11 +3811,6 @@ const entries = {
 	"nýta": ["verb", "to use, to make use of", "old-norse"],
 	"nýtr fyri": ["expression", "good, fit for, worthy for (preposition)"],
 	"nýtr": ["adjective", "good, fit for use, worthy for use, useful (adjective)", "old-norse hypothetical"],
-	
-
-
-
-
 	"obbeldi": ["neuter noun", "violence", "old-norse"],
 	"Oddarska": ["feminine noun", "Oddarish, oddarish"],
 	"oddr": ["masculine noun", "a sharp point, especially of a weapon (like swords)", "old-norse"],
@@ -3874,11 +3854,6 @@ const entries = {
 	"ostra": ["feminine noun", "oyster", "old-norse"],
 	"otr": ["masculine noun", "otter", "old-norse"],
 	"oxull": ["masculine noun", "axle; the pole which rotates a cart's wheels", "old-norse evolved"],
-	
-
-
-
-
 	"passa": ["verb", "to pass in progress or time", "old-norse"],
 	"pata": ["feminine noun", "bucket", "fictional"],
 	"paut": ["neuter noun", "one's laps", "fictional"],
@@ -3945,11 +3920,6 @@ const entries = {
 	"púnda": ["verb", "to break, to crack, to damage", "fictional"],
 	"púnding": ["neuter noun", "a dent, crack, or damage", "fictional"],
 	"púðing": ["feminine noun", "pudding", "modern-icelandic evolved"],
-
-
-
-
-
 	"rabba": ["verb", "to gibber; to make nonsensical noises with one's mouth", "old-norse evolved"],
 	"rala": ["verb", "to arouse, to stir; to rally or to motivate; to boost one's morale; to call together", "fictional"],
 	"rasta": ["verb", "to fight", "fictional"],
@@ -4028,11 +3998,6 @@ const entries = {
 	"rýmm, -hrýmm": ["neuter noun", "room"],
 	"rýnja": ["impersonal verb", "to rain", "proto-germanic evolved"],
 	"rýð": ["feminine noun", "(plants) reed, cane", "old-norse deceptive"],
-
-
-
-
-
 	"saf-mákill": ["adjective", "juicy, flavorful, full of flavor (adjective)"],
 	"safi": ["masculine noun", "juice, essence", "old-norse"],
 	"safta": ["verb", "to dry", "fictional"],
@@ -4146,48 +4111,46 @@ const entries = {
 	"skótt": ["neuter noun", "boat, ship, longboat, longship", "fictional"],
 	"skóð-kondi": ["neuter noun", "literature"],
 	"skóði": ["neuter noun", "poem", "fictional"],
-	
-	"skúiðr": ["masculine noun", "squid, cuttlefish"],
-	"slag": ["neuter noun", "a strike or blow; a smite"],
-	"slangr": ["masculine noun", "a slope, an uphill or downhill"],
-	"slaska": ["verb", "to scream, to screech, to shriek"],
-	"slaufr": ["masculine noun", "surface"],
-	"slef": ["adjective", "clean, tidy, pure, clear (adjective)"],
-	"slegja": ["verb", "to hit, to strike, to smite"],
-	"sleikja": ["verb", "to lick"],
-	"sleima": ["verb", "to fly"],
-	"sleipr": ["adjective", "slippery, slick, smooth"],
-	"sleppa": ["verb", "to slip, to slide (on a surface)"],
+	"skúiðr": ["masculine noun", "squid, cuttlefish", "english evolved"],
+	"slag": ["neuter noun", "a strike or blow; a smite", "old-norse"],
+	"slangr": ["masculine noun", "a slope, an uphill or downhill", "fictional"],
+	"slaska": ["verb", "to scream, to screech, to shriek", "fictional"],
+	"slaufr": ["masculine noun", "surface", "fictional"],
+	"slef": ["adjective", "clean, tidy, pure, clear (adjective)", "fictional"],
+	"slegja": ["verb", "to hit, to strike, to smite", "old-norse hypothetical"],
+	"sleikja": ["verb", "to lick", "old-norse"],
+	"sleima": ["verb", "to fly", "fictional"],
+	"sleipr": ["adjective", "slippery, slick, smooth", "fictional"],
+	"sleppa": ["verb", "to slip, to slide (on a surface)", "old-norse evolved"],
 	"slimpr": ["adjective", "incorrect, wrong, false (adjective)", "proto-germanic evolved"],
-	"slynnr": ["adjective", "smooth, fine-textured, velvety (adjective)"],
+	"slynnr": ["adjective", "smooth, fine-textured, velvety (adjective)", "fictional"],
 	"slá": ["verb", "to slay; to kill, to murder", "middle-english evolved"],
 	"slá-tari": ["neuter noun", "killer, slayer, murderer"],
-	"slæki": ["neuter noun", "silk (neuter declension)"],
-	"slópna": ["verb", "to tilt, to slant, to become lopsided"],
-	"slöngva": ["verb", "to sling, to throw, to fling"],
-	"smaragðr": ["masculine noun", "emerald"],
-	"smeikr": ["masculine noun", "mistake; an error or fault"],
-	"smjör": ["feminine noun", "butter"],
-	"smæza": ["feminine noun", "clover"],
-	"smírta": ["verb", "to argue"],
-	"snagi": ["masculine noun", "woolen blanket"],
-	"snagsa": ["verb", "to cuddle, to snuggle, to stay in a long embrace"],
-	"snemmr": ["adjective", "early (adjective)"],
-	"snerna": ["verb", "to snarl"],
-	"snop": ["neuter noun", "unfinished/wet clay"],
+	"slæki": ["neuter noun", "silk (neuter declension)", "fictional"],
+	"slópna": ["verb", "to tilt, to slant, to become lopsided", "fictional"],
+	"slöngva": ["verb", "to sling, to throw, to fling", "old-norse"],
+	"smaragðr": ["masculine noun", "emerald", "old-norse"],
+	"smeikr": ["masculine noun", "mistake; an error or fault", "fictional"],
+	"smjör": ["feminine noun", "butter", "modern-icelandic"],
+	"smæza": ["feminine noun", "clover", "old-norse evolved"],
+	"smírta": ["verb", "to argue", "fictional"],
+	"snagi": ["masculine noun", "woolen blanket", "fictional"],
+	"snagsa": ["verb", "to cuddle, to snuggle, to stay in a long embrace", "fictional"],
+	"snemmr": ["adjective", "early (adjective)", "fictional"],
+	"snerna": ["verb", "to snarl", "fictional"],
+	"snop": ["neuter noun", "unfinished/wet clay", "fictional"],
 	"snot-skjorð": ["neuter noun", "shortsword (weapon)"],
-	"snotr": ["adjective", "short (adjective)", "fictional"],
-	"snémbi": ["masculine noun", "sheep"],
-	"snógna": ["verb", "to be comsumed by a sacrificial ritual fire, usually when it was made for a god of nature or storms"],
+	"snotr": ["adjective", "short (adjective)", "fictional", "fictional"],
+	"snémbi": ["masculine noun", "sheep", "fictional"],
+	"snógna": ["verb", "to be comsumed by a sacrificial ritual fire, usually when it was made for a god of nature or storms", "fictional"],
 	"snósk-hrell": ["masculine noun", "snowstorm, blizzard"],
-	"snóskr": ["masculine noun", "snow"],
+	"snóskr": ["masculine noun", "snow", "fictional"],
 	"snöbb-varðr hjálmr": ["masculine noun", "nasal helmet, norman helmet"],
-	"snöbbr": ["masculine noun", "nose"],
-	"snúa": ["verb", "to turn, to rotate"],
-	"soll": ["masculine noun", "grime, dirt, dust"],
-	"solla": ["verb", "to soil, to make dirty"],
-	"solva": ["verb", "to bathe; to clean oneself"],
-	"solving-keir": ["feminine noun", "bathtub"],
+	"snöbbr": ["masculine noun", "nose", "fictional"],
+	"snúa": ["verb", "to turn, to rotate", "modern-icelandic"],
+	"soll": ["masculine noun", "grime, dirt, dust", "fictional"],
+	"solla": ["verb", "to soil, to make dirty", "fictional"],
+	
 	"sonr": ["masculine noun", "son"],
 	"soðr": ["masculine noun", "second"],
 	"span-mandr": ["masculine noun", "patroller, scout, ranger"],
@@ -4284,6 +4247,8 @@ const entries = {
 	"svöpr": ["masculine noun", "broom"],
 	"sága": ["feminine noun", "story, tale"],
 	"sálerni": ["masculine noun", "toilet"],
+	"sálva": ["verb", "to bathe; to clean oneself", "fictional"],
+	"sálving-keir": ["feminine noun", "bathtub"],
 	"sápa": ["feminine noun", "soap"],
 	"sár": ["neuter noun", "wound"],
 	"sára-báma": ["feminine noun", "a balm or salve to treat wounds"],
