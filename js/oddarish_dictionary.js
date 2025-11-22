@@ -4005,7 +4005,7 @@ const entries = {
 	"safta": ["verb", "to dry", "fictional"],
 	"saftr": ["adjective", "dry (adjective)", "fictional"],
 	"sakka": ["verb", "to thank", "fictional"],
-	"salta": ["neuter noun", "sea salt", "proto-germanic"],
+	"salta": ["feminine noun", "sea salt", "proto-germanic"],
 	"sam-huldr": ["masculine noun", "a duel"],
 	"sam-leima": ["verb", "to agree, to accept, to submit, to admit"],
 	"sam-rasta": ["verb", "to duel"],
