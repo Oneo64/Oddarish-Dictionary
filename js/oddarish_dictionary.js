@@ -2924,7 +2924,7 @@ const entries = {
 	"fárz": ["neuter noun", "smoke", "old-norse deceptive"],
 	"fárz-opp": ["neuter noun", "chimney, smoke hole"],
 	"fáta (1)": ["verb", "to gain, to receive, to be given, often used when one receives something from another one", "old-norse evolved"],
-	"fáta (2)": ["verb", "to hear about something, to learn of some event; to let someone know", "old-norse evolved", ["Ek fátaði um staðunu. = I heard of the place.", "Ek fátaði um kant búð byrði þær. = I heard that a new shop opened there.", "Ek fát henni um hýsit hefir vast böggvið. = I let her know that the house has been built."]],
+	"fáta (2)": ["verb", "to hear about something, to learn of some event; to let someone know", "old-norse evolved", ["Ek fátaði um staðunu. = I heard of the place.", "Ek fátaði um kant búð byrði þær. = I heard that a new shop opened there.", "Ek fát henni um hýsit hefir vest böggvið. = I let her know that the house has been built."]],
 	"fátask": ["verb", "to summon; to call, to send for, to ask the presence of", "old-norse evolved"],
 	"færa": ["verb", "to become less in amount", "old-norse deceptive"],
 	"færr": ["adjective", "a low amount of, a little amount of, few, a bit of (adjective)", "old-norse deceptive"],
