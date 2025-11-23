@@ -3257,7 +3257,7 @@ const entries = {
 	"hálf-gérð": ["feminine noun", "radius"],
 	"hálf-viti": ["masculine noun", "stupid person, idiot, halfwit, nitwit (insult)"],
 	"hálfr (1)": ["adjective", "half (adjective)", "old-norse"],
-	"hálfr (2)": ["adverb", "almost (adverb)", "old-norse hypothetical"],
+	"hálfr (2)": ["adverb", "almost (adverb)", "old-norse hypothetical", ["Ek kvámdi hálfr lok ænn þær var angr. = I almost finished but there was a problem."]],
 	"hálr": ["masculine noun", "conflict, war", "fictional"],
 	"hám": ["pronoun", "he, him, his (accusative and dative case)", "old-norse"],
 	"hámi": ["pronoun", "he, him (dative case)", "old-norse"],
