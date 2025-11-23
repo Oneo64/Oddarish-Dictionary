@@ -2461,7 +2461,7 @@ const entries = {
 	"alheim-staðr": ["masculine noun", "demiplane"],
 	"alka": ["feminine noun", "an auk bird", "old-norse"],
 	"alla mendrnir": ["masculine noun", "everyone"],
-	"allr": ["adjective", "every, all (adjective)", "old-norse"],
+	"allr": ["adjective", "every, all (adjective)", "old-norse", ["Allt aulur hefir votn. = All rivers have water.", "Allt þó ar óraðligr. = It's all chaotic.", "Hann jafði brottur allt þeim. = He gave bread to them all."]],
 	"altari": ["masculine noun", "an altar; a place of ritual or sacrificing offerings", "old-norse"],
 	"amaðysti": ["masculine noun", "amethyst", "old-norse"],
 	"amb-un": ["feminine noun", "a bundle or a bouquet; a group of things held together by a rope or string"],
