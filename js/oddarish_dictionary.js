@@ -58,7 +58,8 @@ const word_source = {
 	"hypothetical": "e.",
 	"deceptive": "de.",
 	"fictional": "f.",
-	"unsure": "un."
+	"unsure": "un.",
+	"other": "o."
 };
 
 // these MUST be eradicated or at least put below 2% in total
@@ -2659,7 +2660,7 @@ const entries = {
 	"dauðr": ["masculine noun", "death", "old-norse"],
 	"dega": ["verb", "to remove; to doff or to take off", "fictional"],
 	"deigla": ["feminine noun", "crucible", "old-norse"],
-	"deivi": ["neuter noun", "daeva, demon", "english evolved"],
+	"deivi": ["neuter noun", "a daeva from zoroastrian mythology; a demon from abrahamic religions or any similar modern depictions of them; a demon of hell", "other evolved"],
 	"depja": ["verb", "to sadden, to depress", "old-norse hypothetical"],
 	"dersa": ["verb", "to spit out or onto", "fictional"],
 	"derta": ["verb", "to flirt", "modern-icelandic evolved"],
@@ -3592,7 +3593,7 @@ const entries = {
 	"lúsina": ["feminine noun", "alfalfa, lucerne", "modern-icelandic evolved"],
 	"lútill hreispr": ["masculine noun", "pony"],
 	"lútill": ["adjective", "small, little (adjective)", "proto-germanic evolved"],
-	"lútt-na": ["adverb", "slightly, faintly, a bit (adverb)"],
+	"lútt-na": ["adverb", "slightly, faintly, a bit (adverb)", "", ["Það ar lúttna óraðligr. = It's a bit chaotic."]],
 	"lútt-vegr": ["masculine noun", "alleyway"],
 	"lýra": ["feminine noun", "lyre", "old-norse"],
 	"lýð": ["feminine noun", "smell, scent, aroma (feminine declension)", "modern-icelandic evolved"],
@@ -3797,7 +3798,7 @@ const entries = {
 	"nóst-inn": ["neuter noun", "the last one (noun)"],
 	"nóstr": ["adjective", "last (as in a list) (adjective)", "fictional"],
 	"nöppi": ["masculine noun", "drop of liquid", "fictional"],
-	"nöxtr": ["masculine noun", "fiend, demon, devil", "fictional"],
+	"nöxtr": ["masculine noun", "fiend, demon", "fictional"],
 	"núfabing-orð": ["neuter noun", "a present participle"],
 	"núna, nú": ["adverb", "now (adverb)", "modern-icelandic"],
 	"núðja": ["verb", "to grind, to crush, to mash", "fictional"],
@@ -4254,7 +4255,7 @@ const entries = {
 	"sæng": ["feminine noun", "bed", "modern-scandinavian evolved"],
 	"sæng-jarptr": ["masculine noun", "bed mattress"],
 	"sæng-tengr": ["masculine noun", "bed frame"],
-	"ségja": ["verb", "to tell, to say to", "modern-icelandic evolved"],
+	"ségja": ["verb", "to tell, to say to", "modern-icelandic evolved", ["Hver artú ségjandi? = Who are you telling?"]],
 	"sémma": ["verb", "to rest, to relax, to take a break", "fictional"],
 	"sémming eip": ["neuter noun", "relaxation herb"],
 	"sérr": ["adverb", "here (adverb)", "fictional"],
@@ -4280,7 +4281,7 @@ const entries = {
 	"taga": ["feminine noun", "shape, form"],
 	"tagl": ["masculine noun", "tail"],
 	"tagl-vörnd": ["neuter noun", "bowed lyre, taglharpa"],
-	"tala": ["verb", "to speak, to talk, to say"],
+	"tala": ["verb", "to speak, to talk, to say", ["Hver artú talandi með? = Who are you talking to?"]],
 	"talava": ["feminine noun", "script, screenplay, playbook; code (in programming languages)"],
 	"tamr": ["adjective", "tame, not wild; obedient, docile, disciplined (adjective)"],
 	"tapa": ["verb", "to lose, to suffer a loss; to lose a struggle, to be defeated"],
