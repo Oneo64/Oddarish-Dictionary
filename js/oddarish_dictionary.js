@@ -3697,7 +3697,7 @@ const entries = {
 	"myskr": ["masculine noun", "bee", "fictional"],
 	"máfr": ["masculine noun", "seagull", "modern-icelandic evolved"],
 	"mák-stund": ["adverb", "usually, frequently, regularly"],
-	"mákill": ["adjective", "many, several, a lot, a high amount of; superlative is már (for both indefinite and definite)", "old-norse evolved"],
+	"mákill": ["adjective", "many, several, a lot, a high amount of; superlative is már, not máktar (for both indefinite and definite)", "old-norse evolved"],
 	"máklja": ["verb", "to multiply, to become many", "old-norse hypothetical"],
 	"mál": ["neuter noun", "affair, business, concern, doing, involvement (neuter declension)", "modern-icelandic"],
 	"mál-verk": ["neuter noun", "painting, drawing"],
