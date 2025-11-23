@@ -4281,7 +4281,7 @@ const entries = {
 	"taga": ["feminine noun", "shape, form"],
 	"tagl": ["masculine noun", "tail"],
 	"tagl-vörnd": ["neuter noun", "bowed lyre, taglharpa"],
-	"tala": ["verb", "to speak, to talk, to say", ["Hver artú talandi með? = Who are you talking to?"]],
+	"tala": ["verb", "to speak, to talk, to say", "old-norse", ["Hver artú talandi með? = Who are you talking to?"]],
 	"talava": ["feminine noun", "script, screenplay, playbook; code (in programming languages)"],
 	"tamr": ["adjective", "tame, not wild; obedient, docile, disciplined (adjective)"],
 	"tapa": ["verb", "to lose, to suffer a loss; to lose a struggle, to be defeated"],
