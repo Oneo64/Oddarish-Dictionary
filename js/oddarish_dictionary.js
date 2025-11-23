@@ -3076,7 +3076,7 @@ const entries = {
 	"hafa mind-angr": ["verb", "to be troubled, usually with stress or trauma"],
 	"hafa veika": ["verb", "to be sick, to have an illness; to feel sick, to feel nauseous"],
 	"hafa áhugu um": ["verb", "to be interested in"],
-	"hafa": ["verb", "to have (auxiliary, verb)", "old-norse"],
+	"hafa": ["verb", "to have; to own; perfect tense article thing; see this similar entry that might be more fitting: hönda", "old-norse"],
 	"hagl": ["masculine noun", "(meteorology) hail, hailstone", "old-norse"],
 	"hagl-pvæld": ["neuter noun", "hailstorm"],
 	"haka": ["feminine noun", "someone's chin", "old-norse evolved"],
