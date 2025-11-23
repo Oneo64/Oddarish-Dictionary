@@ -2005,7 +2005,7 @@ const entry_words = [
 	"tundr",
 	"tundra",
 	"tunga",
-	"tungu-leiði",
+	"tunga-leiði",
 	"tvarpa",
 	"tvyð-",
 	"tvyð-ingi",
@@ -4344,7 +4344,7 @@ const entries = {
 	"tundr": ["masculine noun", "a torch, or a firetorch; a wooden stick or pole, with a burning tar tip used for light and warmth"],
 	"tundra": ["verb", "to catch fire, to be set on fire", "", ["Hlágrinn hæ tundraði. = The pile of hay caught on fire."]],
 	"tunga": ["feminine noun", "tongue; the pinkish thing that animals have"],
-	"tungu-leiði": ["neuter noun", "language"],
+	"tunga-leiði": ["neuter noun", "language"],
 	"tvarpa": ["verb", "to torture"],
 	"tvyð-": ["prefix", "two prefix"],
 	"tvyð-ingi": ["masculine noun", "a couple (as in relationship)"],
@@ -4539,7 +4539,7 @@ const entries = {
 
 
 
-	"á (1)": ["preposition", "of something, of someone (preposition)"],
+	"á (1)": ["preposition", "of something, of someone (with dative) (preposition)"],
 	"á (2)": ["preposition", "should (used only in questions and complex clauses, for the more common form, use á til or sköldi) (auxiliary)", "", ["Hvað á ek gera? = What should I do?"]],
 	"á eigi": ["auxiliary", "shouldn't"],
 	"á til": ["auxiliary", "should (auxiliary)"],
@@ -4578,7 +4578,7 @@ const entries = {
 	"æn-til": ["conjunction", "until (usually used at the start of a sentence, to express \"until\" in the middle of a sentence, use \"til\" instead) (conjunction)"],
 	"ænn (1)": ["conjunction", "but, still, yet (conjunction)"],
 	"ænn (2)": ["adverb", "to be still doing (adverb)"],
-	"ænn ygann": ["conjunction", "than, compared to (conjunction)"],
+	"ænn ygann": ["conjunction", "than, compared to (with accusative) (conjunction)"],
 	"ærsl": ["masculine noun", "frenzy, madness; a state of being mad, crazy, or in a frenzy; run mad"],
 	"æskja": ["verb", "to wish"],
 	"æss": ["neuter noun", "edge, corner"],
