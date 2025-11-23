@@ -2773,7 +2773,7 @@ const entries = {
 	"elsk-etir": ["neuter noun", "one's lover; significant other, romantic partner"],
 	"elsk-ugr": ["adjective", "romantic (adjective)"],
 	"elska (1)": ["feminine noun", "love", "old-norse"],
-	"elska (2)": ["verb", "to love dearly", "old-norse"],
+	"elska (2)": ["verb", "to love dearly or romantically; to really like or enjoy something", "old-norse"],
 	"elskr": ["adjective", "in love", "old-norse hypothetical"],
 	"eltask": ["verb", "to make better, to better, to update, to upgrade", "fictional"],
 	"eltjast": ["adjective", "best (adjective)", "fictional no-declension"],
