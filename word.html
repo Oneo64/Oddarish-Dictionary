@@ -3,13 +3,13 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title id="title">Orðpæng um Oddarsku</title>
+	<title id="title">Orðpæng um Oddörsku</title>
 	<link rel="stylesheet" href="style.css">
 	<link rel="icon" type="image/x-icon" href="images/favicon.png">
 </head>
 <body>
 <div class="body">
-	<span class="titlespan"><img class="h1favicon" src="images/favicon.png" alt="favicon"><h1><a href="index.html">Orðpængin um Oddarsku</a></h1></span>
+	<span class="titlespan"><img class="h1favicon" src="images/favicon.png" alt="favicon"><h1><a href="index.html">Orðpængin um Oddörsku</a></h1></span>
 	<div id="letters" class="letterlist h2font"></div>
 	<hr>
 	<h3 id="word">Orðit ar eigi fyndið</h3>
@@ -43,7 +43,7 @@
 
 		var ipa = ipa(v2.replaceAll("-", "."), false);
 
-		document.getElementById("title").innerHTML = "Orðpængin um Oddarsku - " + v.charAt(0).toUpperCase() + v.substring(1);
+		document.getElementById("title").innerHTML = "Orðpængin um Oddörsku - " + v.charAt(0).toUpperCase() + v.substring(1);
 		document.getElementById("word").innerHTML = v + " | " + get_runic_inscription(ipa);
 		document.getElementById("ipa").innerHTML = ipa;
 		document.getElementById("type").innerHTML = "";

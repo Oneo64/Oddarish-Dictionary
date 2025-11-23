@@ -2887,7 +2887,7 @@ const entries = {
 	"frungr": ["masculine noun", "fern", "fictional"],
 	"fryja": ["feminine noun", "lady, mistress, madam; a polite way to address a woman", "modern-scandinavian evolved"],
 	"frysta": ["verb", "to freeze", "old-norse"],
-	"frá": ["preposition", "from, away from (preposition)", "old-norse"],
+	"frá": ["preposition", "from, away from (with dative) (preposition)", "old-norse"],
 	"frá-væg": ["preposition", "past, pass (preposition)"],
 	"frá-þessu": ["preposition", "because of, by (preposition) (for more casual speech, use \"um\" instead)"],
 	"frá-þetta": ["conjunction", "because of this, because that, since that (conjunction)"],
