@@ -2172,9 +2172,9 @@ const entry_words = [
 	"výsa",
 	"výss",
 	"výss-fyndið",
-	"ybb-ligr",
-	"ybbask þú um þessu",
+	"ybb-ugr",
 	"ybbask",
+	"ybbisk þú af þessu",
 	"ygann",
 	"ygla",
 	"ymið",
@@ -4531,9 +4531,9 @@ const entries = {
 
 
 
-	"ybb-ligr": ["adjective", "nervous, anxious (adjective)"],
-	"ybbask þú um þessu": ["phrase", "\"do you mind this?\", \"are you okay with this?\""],
-	"ybbask": ["verb", "to worry; to mind, to worry about; to be nervous"],
+	"ybb-ugr": ["adjective", "nervous, anxious (adjective)"],
+	"ybbask": ["verb", "to worry; to mind, to worry about; to be nervous", "", ["Ybbask eigi af mér. = Don't worry about me."]],
+	"ybbisk þú af þessu": ["phrase", "\"do you mind this?\", \"are you okay with this?\""],
 	"ygann": ["preposition", "against, versus (preposition)"],
 	"ygla": ["verb", "to frown"],
 	"ymið": ["preposition", "between (preposition)"],
