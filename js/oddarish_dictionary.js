@@ -2988,7 +2988,7 @@ const entries = {
 	"girðing": ["feminine noun", "fence", "old-norse"],
 	"gjalda": ["verb", "to pay back, to repay, to tribute; to be paid by one's employer", "old-norse"],
 	"gjalla": ["verb", "to resonate, to make loud noises; to yell, to scream, to cry", "old-norse evolved"],
-	"gjarka": ["verb", "to declare, to state, to make known; to name, to give a title to", "middle-english evolved", ["Hvað gjarkti þæt? = What's that called?"]],
+	"gjarka": ["verb", "to declare, to state, to make known; to name, to give a title to", "middle-english evolved", ["Hvað gjarkti þæt? = What's that called?", "Gjarka þú mér sjánu? = Are you calling me a boy?"]],
 	"gjarni": ["masculine noun", "core, kernel; the middle of a nut; the nucleus of a biological cell", "modern-icelandic evolved"],
 	"gjástr": ["masculine noun", "ghost, specter, apparition, spirit (usually with monstrous or evil conontations)", "english evolved"],
 	"gjófa": ["verb", "to cover; a cover, usually made of fabric or wood", "fictional"],
