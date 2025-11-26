@@ -2686,7 +2686,7 @@ const entries = {
 	"drangr": ["adjective", "crazy, insane, delusional (adjective)", "fictional"],
 	"draugr": ["masculine noun", "draugr, ghost, spirit", "old-norse"],
 	"draumr": ["masculine noun", "a dream", "old-norse"],
-	"dreiki": ["masculine noun", "dragon, wyvern", "old-norse"],
+	"dreiki": ["masculine noun", "dragon, wyvern", "old-norse evolved"],
 	"dreyma": ["verb", "to dream", "old-norse"],
 	"drumbr": ["masculine noun", "a log of dry or rotten wood", "old-norse"],
 	"drymba": ["feminine noun", "stockings, long socks (singular); a hose (pants, not like a garden hose)", "old-norse"],
