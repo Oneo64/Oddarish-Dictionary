@@ -2854,7 +2854,7 @@ const entries = {
 	"fjöll": ["masculine noun", "wind", "fictional"],
 	"fjöll-vyr": ["neuter noun", "window"],
 	"fjörðr": ["masculine noun", "fjord", "old-norse"],
-	"flaska": ["feminine noun", "bottle, jar", "old-norse"],
+	"flaska": ["feminine noun", "bottle, flask, canteen, jar", "old-norse"],
 	"flatask": ["verb", "to make even or fair; to flatten", "old-norse"],
 	"flatr": ["adjective", "flat, level, even, fair (adjective)", "old-norse"],
 	"flauja": ["feminine noun", "a flag or banner (neuter declension)", "fictional"],
