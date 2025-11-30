@@ -3023,7 +3023,7 @@ const entries = {
 	"gralda": ["verb", "to sieze, to capture; to forcibly take hold of; to physically restrain or hold down", "norvunic evolved"],
 	"grannr": ["adjective", "slender, slim (adjective)", "old-norse"],
 	"graskr": ["masculine noun", "pumpkin", "modern-icelandic evolved"],
-	"graur": ["adjective", "gray, grey (color) (noun, adjective)", "old-norse"],
+	"graur": ["adjective", "gray, grey (color) (noun, adjective)", "old-norse evolved"],
 	"greið": ["neuter noun", "a cross", "fictional"],
 	"greið-bogi": ["masculine noun", "crossbow"],
 	"greið-örr": ["masculine noun", "crossbow bolt"],
@@ -4894,6 +4894,10 @@ const special_declensions = {
 		"past_tense": "áti",
 		"past_participle": "át",
 		"past_tense_mediopassive": "átisk"
+	},
+	"fanda": {
+		"past_tense": "fondi",
+		"past_participle": "fond"
 	},
 	"fara": {
 		"present_tense": ["fer", "feri", "ferir"],
