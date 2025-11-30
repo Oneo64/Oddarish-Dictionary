@@ -417,7 +417,7 @@ function add_verb_ending_basic(word, ending) {
 	} else if (word.endsWith("á")) {
 		if (ending == "u") {
 			if (word.endsWith("já")) return word;
-			if (word.endsWith("á")) return word.substring(0, word.length - 1) + "au";
+			if (word.endsWith("á")) return word.substring(0, word.length - 1) + "auju";
 		}
 	}
 
@@ -490,7 +490,7 @@ function get_past_tense(word) {
 	if (word.endsWith("inna")) {
 		return word.substring(0, word.length - 4) + "ynnði";
 	} else if (word.endsWith("á")) {
-		return word.substring(0, word.length - 1) + "æði";
+		return word.substring(0, word.length - 1) + "ékki";
 	} else if (word.endsWith("óa")) {
 		return word.substring(0, word.length - 1) + "ði";
 	} else if (word.endsWith("úa")) {
@@ -552,7 +552,7 @@ function get_past_participle(word) {
 	var vowels = "aáæeéiíoóöuúyý";
 
 	if (word.endsWith("á")) {
-		return word.substring(0, word.length - 1) + "æt";
+		return word.substring(0, word.length - 1) + "engið";
 	} else if (word.endsWith("óa")) {
 		return word.substring(0, word.length - 2) + "eið";
 	} else if (word.endsWith("úa")) {
