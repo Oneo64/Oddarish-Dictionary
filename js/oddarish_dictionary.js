@@ -2606,7 +2606,7 @@ const entries = {
 	"brand": ["neuter noun", "arm ring", "fictional"],
 	"brangr": ["masculine noun", "brass", "fictional"],
 	"brata": ["verb", "to change, to modify", "proto-germanic evolved"],
-	"bratask": ["verb", "to transform, to turn into; to become", "proto-germanic evolved"],
+	"bratask": ["verb", "to transform, to turn into; to become", "proto-germanic evolved", ["Ek bratisk til nágni. = I turn into a zombie."]],
 	"breifla": ["verb", "to swing, to brandish; to wave a weapon", "fictional"],
 	"breiði": ["neuter noun", "width, breadth", "old-norse"],
 	"breiðr": ["adjective", "wide, vast, broad (adjective)", "old-norse"],
