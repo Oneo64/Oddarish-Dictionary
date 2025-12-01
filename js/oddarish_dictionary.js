@@ -701,7 +701,7 @@ const entry_words = [
 	"gunungr",
 	"guð-laust",
 	"guðr",
-	"gva",
+	"gvappr",
 	"gvarðr",
 	"gvax",
 	"gveta með",
@@ -3049,7 +3049,7 @@ const entries = {
 	"gunungr": ["adjective", "hard, difficult (adjective)", "fictional"],
 	"guð-laust": ["adjective", "blasphemous, unholy (adjective)"],
 	"guðr": ["masculine noun", "god, deity", "old-norse evolved"],
-	"gva": ["feminine noun", "ginger (plant)", "fictional"],
+	"gvappr": ["masculine noun", "ginger (plant)", "fictional"],
 	"gvarðr": ["masculine noun", "gvarth (creature)", "fictional"],
 	"gvax": ["neuter noun", "a duck", "norvunic evolved"],
 	"gveta með": ["verb", "to bring"],
@@ -4889,6 +4889,10 @@ const special_declensions = {
 		"past_tense": "baði",
 		"past_participle": "bað",
 		"past_tense_mediopassive": "baðisk"
+	},
+	"duna": {
+		"past_tense": "dunaði",
+		"past_participle": "dunað"
 	},
 	"éta": {
 		"past_tense": "áti",
