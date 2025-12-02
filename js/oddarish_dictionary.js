@@ -4221,7 +4221,7 @@ const entries = {
 	"stjúga": ["verb", "to trip over from something", "fictional"],
 	"stofna": ["verb", "to hire, to employ; to assign or arrange someone a work", "fictional"],
 	"stofr": ["masculine noun", "pole, staff, scepter, a long rod longer than a leg", "fictional"],
-	"strennr": ["adjective", "big, large, strong, sturdy", "proto-indo-european evolved"],
+	"strennr": ["adjective", "big, large; strong, sturdy", "proto-indo-european evolved"],
 	"strá": ["neuter noun", "straw, dried grainstalks", "modern-icelandic"],
 	"stræki": ["neuter noun", "reputation", "fictional"],
 	"stubbi": ["masculine noun", "a block; (less commonly) a brick", "old-norse deceptive"],
