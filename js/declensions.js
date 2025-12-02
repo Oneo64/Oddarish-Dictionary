@@ -429,7 +429,10 @@ function add_adj_ending_basic(w, ending) {
 	var vowels = "aáæeéiíoóöuúyý";
 
 	if (word.endsWith("ill")) {
-		word = word.substring(0, word.length - 3) + "t";
+		word = word.substring(0, word.length - 3) + "l";
+
+		if (ending == "") return word + "i";
+		if (ending == "na") return word + "ana";
 	}
 
 	if (word.endsWith("nn")) return word.substring(0, word.length - 1) + ending;
