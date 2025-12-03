@@ -2085,6 +2085,7 @@ const entry_words = [
 	"vaxa",
 	"veg-skórr",
 	"vega at kúra",
+	"vega só",
 	"vega til sængin",
 	"vega í hildi",
 	"vega í kanning",
@@ -2859,7 +2860,7 @@ const entries = {
 	"fjórm": ["neuter noun", "size, scale, mass", "fictional"],
 	"fjóðir": ["numeral", "four", "old-norse evolved"],
 	"fjóðir-inn": ["numeral", "the fourth"],
-	"fjökkna": ["verb", "to explode, to burst; to go up in flames; to instantly combust", "fictional"],
+	"fjökkna": ["verb", "to explode, to burst, to blast (intransitive); to go up in flames, to instantly combust (intransitive)", "fictional"],
 	"fjökkning": ["neuter noun", "explosion", "fictional"],
 	"fjöll": ["masculine noun", "wind", "fictional"],
 	"fjöll-vyr": ["neuter noun", "window"],
@@ -4455,6 +4456,7 @@ const entries = {
 	"vaxa": ["verb", "to wax, to apply wax"],
 	"veg-skórr": ["masculine noun", "pavement, cobblestone"],
 	"vega at kúra": ["verb", "to go to sleep"],
+	"vega só": ["verb", "to finish with, to finish by (with verb with same tense and perspective)", "", ["Eldverkit vánn só fjökknaði! = The firework went of with a bang!"]],
 	"vega til sængin": ["verb", "to go to bed"],
 	"vega í hildi": ["verb", "to go to war"],
 	"vega í kanning": ["verb", "to go exploring"],
@@ -4979,7 +4981,7 @@ const special_declensions = {
 		"gerund": "sveng"
 	},
 	"vega": {
-		"past_tense": "vagði",
+		"past_tense": "vánn",
 		"past_participle": "vagt"
 	},
 	"vesa": {
