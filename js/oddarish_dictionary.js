@@ -3543,7 +3543,7 @@ const entries = {
 	"leikr": ["masculine noun", "game, sport", "old-norse"],
 	"leima": ["verb", "to think, to suppose, to guess", "fictional"],
 	"leiða höndum með ...": ["verb", "to hold hands", "", ["Viltú leiða höndum með mér? = Do you want to hold hands with me?"]],
-	"leiða": ["verb", "to lead; to take someone along with; to lead, as in a road leading somethere", "modern-icelandic"],
+	"leiða": ["verb", "to lead; to take someone along with; to lead, as in a road leading somethere", "modern-icelandic", ["Hann leiðar gvaxann til tjörninni. = He leads the duck to the pond.", "Ek leiða hána með mér. = I take her with me.", "Allt vegar leiðar til Romu. = All roads lead to Rome."]],
 	"lendr": ["adjective", "landed; with land", "old-norse"],
 	"leypa": ["verb", "to let, to allow, to may, to permit, to tolerate, to bear something", "old-norse evolved"],
 	"leypi": ["neuter noun", "permission, license; token, ticket (as in a ticket to pass a barrier)", "old-norse evolved"],
