@@ -102,9 +102,9 @@ const noun_declensions = {
 		"", "ans", "na", "nanna",
 	],
 	neuter_á: [
-		"á", "áet", "eyr", "eyrnar",
-		"á", "áet", "eyr", "eyrnar",
-		"æ", "æinni", "eyjum", "eyjunum",
+		"á", "áet", "eyri", "eyrin",
+		"á", "áet", "eyri", "eyrin",
+		"æ", "æinu", "eyjum", "eyjunum",
 		"ás", "ásins", "eyja", "eyjanna",
 	]
 };
