@@ -5057,6 +5057,7 @@ const singular_only = [
 	"lóð",
 	"lýð",
 	"mana",
+	"mjondáss",
 	"myrkr",
 	"mænt",
 	"míkt",
