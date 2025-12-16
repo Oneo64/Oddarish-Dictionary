@@ -5071,6 +5071,7 @@ const singular_only = [
 	"rög",
 	"safi",
 	"salta",
+	"skinda",
 	"snóskr",
 	"soll",
 	"statangr",
