@@ -5012,6 +5012,7 @@ const singular_only = [
 	"aurr",
 	"beyki",
 	"bjarka",
+	"blóð",
 	"brangr",
 	"breiði",
 	"bémm",
