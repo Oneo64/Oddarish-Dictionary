@@ -84,8 +84,8 @@ const noun_declensions = {
 		"ur", "urinnar", "ra", "ranna",
 	],
 	neuter: [
-		"", "it", "i", "ið",
-		"", "it", "i", "ið",
+		"", "it", "a", "in",
+		"", "it", "a", "in",
 		"i", "inu", "um", "unum",
 		"s", "sins", "a", "anna",
 	],
