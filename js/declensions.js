@@ -84,15 +84,21 @@ const noun_declensions = {
 		"ur", "urinnar", "ra", "ranna",
 	],
 	neuter: [
-		"", "it", "ur", "urnir",
-		"", "it", "ur", "urnir",
-		"i", "inni", "um", "unum",
+		"", "it", "ri", "rinir",
+		"", "it", "ri", "rinir",
+		"i", "inu", "um", "unum",
 		"s", "sins", "a", "anna",
+	],
+	neuter_i: [
+		"", "it", "íri", "írinir",
+		"", "it", "íri", "írinir",
+		"", "inu", "jum", "junum",
+		"is", "isins", "ja", "janna",
 	],
 	neuter_a: [
 		"", "at", "u", "un",
 		"", "at", "u", "un",
-		"", "anni", "um", "unum",
+		"", "anu", "um", "unum",
 		"", "ans", "na", "nanna",
 	],
 	neuter_á: [
@@ -331,14 +337,10 @@ function get_noun_declension(w, t) {
 		}
 	} else if (word.endsWith("i")) {
 		for (var i = 0; i < 16; i++) {
-			if (noun_declensions.neuter[i] == "" || (word.endsWith("vi") && (noun_declensions.neuter[i] == " " || noun_declensions.neuter[i] == "i"))) {
+			if (noun_declensions.neuter_i[i] == "") {
 				declension.push(word);
 			} else {
-				if (word.endsWith("vi") && (!"aui".includes(noun_declensions.neuter[i].charAt(0)))) {
-					declension.push(word + noun_declensions.neuter[i]);
-				} else {
-					declension.push(word.substring(0, word.length - 1) + noun_declensions.neuter[i]);
-				}
+				declension.push(word.substring(0, word.length - 1) + noun_declensions.neuter_i[i]);
 			}
 		}
 	} else if (word.endsWith("a")) {
