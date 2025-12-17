@@ -4298,7 +4298,7 @@ const entries = {
 	"sémming eip": ["neuter noun", "relaxation herb"],
 	"sérr": ["adverb", "here", "fictional"],
 	"séði": ["neuter noun", "sperm, semen", "modern-icelandic evolved"],
-	"síma": ["feminine noun", "telephone", "modern-icelandic"],
+	"síma": ["feminine noun", "telephone", "modern-icelandic evolved"],
 	"Síntra/Angliska": ["feminine noun", "Centrumic/English, english"],
 	"sökkva": ["verb", "to sink down", "modern-icelandic"],
 	"söl": ["feminine noun", "sun", "old-norse evolved"],
