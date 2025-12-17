@@ -54,8 +54,8 @@ const noun_declensions = {
 		"ar", "arinnar", "a", "anna",
 	],
 	feminine_a: [
-		"", "an", "ur", "irnar",
-		"u", "una", "ur", "irnar",
+		"", "an", "ur", "urnar",
+		"u", "una", "ur", "urnar",
 		"u", "unni", "um", "unum",
 		"u", "unnar", "a", "anna",
 	],
