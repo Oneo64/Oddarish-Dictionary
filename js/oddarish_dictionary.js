@@ -2442,8 +2442,8 @@ const entry_words = [
 	"þú",
 	"þý-",
 	"þý-inn",
+	"þý-kúin-taga",
 	"þý-tán",
-	"þý-æss-taga",
 	"þýju",
 ];
 
@@ -3511,7 +3511,7 @@ const entries = {
 	"kömbr": ["masculine noun", "bag, pouch", "fictional"],
 	"könglu-váfa": ["feminine noun", "spider"],
 	"köngull": ["masculine noun", "a cluster or pile of things", "old-norse deceptive"],
-	"kúin": ["neuter noun", "horn, antler", "fictional"],
+	"kúin": ["feminine noun", "horn, antler; corner", "fictional"],
 	"kúin-kýr": ["neuter noun", "yak"],
 	"kúnd": ["neuter noun", "pitcher, jug", "fictional"],
 	"kúnnar-mæta": ["verb", "to bet; to gamble"],
@@ -4625,7 +4625,7 @@ const entries = {
 	"ænn ygann": ["conjunction", "than, compared to (with accusative)"],
 	"ærsl": ["masculine noun", "frenzy, madness; a state of being mad, crazy, or in a frenzy; run mad"],
 	"æskja": ["verb", "to wish"],
-	"æss": ["neuter noun", "edge, corner"],
+	"æss": ["neuter noun", "edge, rim", "unsure"],
 	"æðr": ["masculine noun", "entrails, bowels; internal organs"],
 
 
@@ -4866,8 +4866,8 @@ const entries = {
 	"þú": ["pronoun", "you (nominative case)"],
 	"þý-": ["prefix", "three prefix"],
 	"þý-inn": ["numeral", "the third"],
+	"þý-kúin-taga": ["feminine noun", "triangle"],
 	"þý-tán": ["numeral", "thirteen"],
-	"þý-æss-taga": ["feminine noun", "triangle"],
 	"þýju": ["adjective", "three times, thrice"],
 };
 
