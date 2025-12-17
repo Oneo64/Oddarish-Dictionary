@@ -54,8 +54,8 @@ const noun_declensions = {
 		"ar", "arinnar", "a", "anna",
 	],
 	feminine_a: [
-		"", "an", "ir", "irnar",
-		"u", "una", "ir", "irnar",
+		"", "an", "ur", "irnar",
+		"u", "una", "ur", "irnar",
 		"u", "unni", "um", "unum",
 		"u", "unnar", "a", "anna",
 	],
@@ -84,8 +84,8 @@ const noun_declensions = {
 		"ur", "urinnar", "ra", "ranna",
 	],
 	neuter: [
-		"", "it", "a", "in",
-		"", "it", "a", "in",
+		"", "it", "ur", "in",
+		"", "it", "ur", "in",
 		"i", "inu", "um", "unum",
 		"s", "sins", "a", "anna",
 	],
@@ -111,9 +111,7 @@ const noun_declensions = {
 
 const u_umlaut = {
 	"a": "ö",
-	"á": "au",
-	"ja": "jö",
-	"ái": "ey"
+	"ja": "jö"
 };
 
 const i_umlaut = {
