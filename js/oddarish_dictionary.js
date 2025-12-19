@@ -2896,7 +2896,7 @@ const entries = {
 	"fimm-tán": ["numeral", "fifteen"],
 	"findr": ["adjective", "charming", "unsure"],
 	"finga": ["feminine noun", "medicine, tonic", "fictional"],
-	"finn-ligr": ["adjective", "nice, friendly, kind; fine, polished"],
+	"finn-ligr": ["adjective", "(personality) nice, friendly, kind; (objects) fine, polished"],
 	"finnr": ["masculine noun", "friend, ally", "old-norse evolved"],
 	"fipa": ["verb", "to disturb, to bother, to upset", "fictional"],
 	"fiping-bémm": ["neuter noun", "ruckus, sound/noise disturbance, commotion"],
