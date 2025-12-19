@@ -4338,7 +4338,7 @@ const entries = {
 	"svæðr": ["masculine noun", "silver", "fictional"],
 	"svérkr": ["masculine noun", "soldier", "fictional"],
 	"svéta": ["verb", "to sweeten", "old-norse evolved"],
-	"svétr": ["adjective", "(taste) sweet, saccharine, sugary; (appearance) cute, pretty; (personality) sweet, nice, kind", "old-norse evolved"],
+	"svétr": ["adjective", "(taste) sweet, saccharine, sugary; (appearance) cute, pretty; (personality) sweet, pleasant, nice, innocent", "old-norse evolved"],
 	"svígr": ["adjective", "can be seen, visible", "fictional"],
 	"svín": ["neuter noun", "swine; a pig, boar, or hog", "old-norse"],
 	"svíu": ["feminine noun", "a reflection on water, glass, or other reflective things", "fictional"],
