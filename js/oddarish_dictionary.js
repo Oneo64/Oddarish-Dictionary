@@ -3649,7 +3649,7 @@ const entries = {
 	"læra": ["verb", "to learn", "old-norse"],
 	"læring-hýs": ["neuter noun", "school, academy"],
 	"læða": ["feminine noun", "a lurker, someone who sneaks", "old-norse"],
-	"lékkja": ["verb", "to please or pleasure; to exite", "fictional"],
+	"lékkja": ["verb", "to please or pleasure; to exite; (vulgar) to sexually arouse", "fictional"],
 	"lépa": ["verb", "to read", "old-norse evolved"],
 	"léttr": ["adjective", "easy, simple; light in weight", "old-norse"],
 	"líf-hæla": ["verb", "to revive, to resurrect, to bring back to life"],
