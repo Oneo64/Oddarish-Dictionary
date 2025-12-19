@@ -3620,7 +3620,7 @@ const entries = {
 	"litr": ["masculine noun", "color, dye", "old-norse"],
 	"ljofnir": ["masculine noun", "a lion", "english evolved"],
 	"ljómuna": ["feminine noun", "lemon", "indo-iranian evolved"],
-	"ljúfr": ["adjective", "mild, gentle, kind", "old-norse"],
+	"ljúfr": ["adjective", "mild, gentle, kind, nice, friendly, sweet; generally good in personality", "old-norse"],
 	"ljúnna": ["feminine noun", "a soft light, often used to refer to moonlight; twilight", "fictional"],
 	"ljútr": ["adjective", "ugly, unsightly, repulsive", "old-norse evolved"],
 	"lofa": ["verb", "to praise, to flatter; to be fond of", "old-norse evolved"],
