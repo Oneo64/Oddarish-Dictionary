@@ -3598,7 +3598,7 @@ const entries = {
 	"lauki": ["masculine noun", "leek", "unsure"],
 	"lauskja": ["verb", "to sneak, to go stealthily, to move quietly", "unsure"],
 	"lausting": ["neuter noun", "void, empty space", "fictional"],
-	"lað-ugr": ["adjective", "attractive, full of attraction; (physics) magnetic", "modern-icelandic hypothetical"],
+	"lað-ugr": ["adjective", "full of attraction; attractive, as in an attractive tourist destination; (physics) magnetic", "modern-icelandic hypothetical"],
 	"laða": ["verb", "to attract, to pull", "modern-icelandic"],
 	"legja": ["verb", "to fix, to repair, to mend", "modern-icelandic hypothetical"],
 	"leik-ingi": ["masculine noun", "player; a player in a game"],
