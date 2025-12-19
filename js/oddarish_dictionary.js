@@ -5013,7 +5013,8 @@ const special_declensions = {
 		"gerund": "sveng"
 	},
 	"vega": {
-		"past_tense": "vánn",
+		"present_tense": ["ví", "vé", "vega"],
+		"past_tense": "vann",
 		"past_participle": "vagt"
 	},
 	"vesa": {
