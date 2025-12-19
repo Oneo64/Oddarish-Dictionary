@@ -4952,7 +4952,7 @@ const special_declensions = {
 		"past_participle": "fond"
 	},
 	"fara": {
-		"present_tense": ["fer", "feri", "ferir"],
+		"present_tense": ["fer", "fer", "ferir"],
 		"present_mediopassive": "ferisk"
 	},
 	"geta": {
@@ -5013,7 +5013,7 @@ const special_declensions = {
 		"gerund": "sveng"
 	},
 	"vega": {
-		"present_tense": ["ví", "vé", "vega"],
+		"present_tense": ["veg", "veg", "vegir"],
 		"past_tense": "vann",
 		"past_participle": "vagt"
 	},
