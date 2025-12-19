@@ -2705,7 +2705,7 @@ const entries = {
 	"dersa": ["verb", "to spit out or onto", "fictional"],
 	"derta": ["verb", "to flirt", "modern-icelandic evolved"],
 	"deyja": ["verb", "to die", "old-norse"],
-	"deyð": ["adjective", "dead", "old-norse no-declension"],
+	"deyð": ["adjective", "dead", "old-norse hypothetical no-declension"],
 	"dilva": ["verb", "to decrease, to lower, to go down", "fictional"],
 	"dimmr": ["adjective", "dim, dark, not bright", "old-norse"],
 	"djörm": ["neuter noun", "animal, beast", "proto-indo-european evolved"],
