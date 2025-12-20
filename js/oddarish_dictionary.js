@@ -997,6 +997,7 @@ const entry_words = [
 	"inn-þjortingja",
 	"innland-ligr",
 	"innlandingi",
+	"inntepjari",
 	"itr",
 	"itra",
 	"iðr",
@@ -1152,6 +1153,7 @@ const entry_words = [
 	"kvirr",
 	"kvonang",
 	"kvostr",
+	"kvám-búi",
 	"kváma inn/í, vega inn/í",
 	"kváma lok",
 	"kváma",
@@ -2411,6 +2413,7 @@ const entry_words = [
 	"ýling",
 	"ýna",
 	"ýstr",
+	"þaf-búi",
 	"þaf-síma",
 	"þafan-skrand",
 	"þafir",
@@ -3426,6 +3429,7 @@ const entries = {
 	"inn-þjortingja": ["verb", "to imprison, to throw in prison; to jail", "", ["Dámt fólkri ar innþjortingt inn þjortingar. = Bad people are thrown into jail."]],
 	"innland-ligr": ["adjective", "native, aboriginal"],
 	"innlandingi": ["neuter noun", "native, aboriginal (as in the people)"],
+	"inntepjari": ["masculine noun", "invader"],
 	"itr": ["masculine noun", "an itch", "fictional"],
 	"itra": ["verb", "to itch", "fictional"],
 	"iðr": ["adjective", "idle, unused", "old-norse"],
@@ -3581,6 +3585,7 @@ const entries = {
 	"kvirr": ["adjective", "quiet, subtle, slight", "old-norse archaic-form"],
 	"kvonang": ["neuter noun", "honey (bees)", "proto-indo-european evolved"],
 	"kvostr": ["masculine noun", "table, desk", "fictional"],
+	"kvám-búi": ["masculine noun", "traveller (spelled traveler in usa)"],
 	"kváma inn/í, vega inn/í": ["verb", "to enter, to go in, to come in"],
 	"kváma lok": ["verb", "to come to an end, to end, to finish (intransitive)"],
 	"kváma": ["verb", "to come", "proto-germanic evolved"],
@@ -4905,6 +4910,7 @@ const entries = {
 
 
 
+	"þaf-búi": ["masculine noun", "foreigner"],
 	"þaf-síma": ["feminine noun", "corded telephone"],
 	"þafan-skrand": ["neuter noun", "scope, lens"],
 	"þafir": ["adverb", "far, far away"],
