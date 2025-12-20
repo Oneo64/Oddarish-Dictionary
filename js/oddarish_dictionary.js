@@ -2870,7 +2870,7 @@ const entries = {
 	"elr": ["masculine noun", "parent, elder", "old-norse evolved"],
 	"elsk-ugr": ["adjective", "romantic"],
 	"elska (1)": ["feminine noun", "love", "old-norse"],
-	"elska (2)": ["verb", "to love dearly or romantically", "old-norse", ["Ek elska þek. = I love you.", "Fyrist"]],
+	"elska (2)": ["verb", "to love dearly or romantically", "old-norse", ["Ek elska þek. = I love you.", "Fyristu elsku þek, hrun get þú at sterkja þek. = Love yourself first, then you can improve."]],
 	"elskar-anaðjari": ["neuter noun", "one's lover; significant other, romantic partner"],
 	"elsking-eip": ["neuter noun", "love herb"],
 	"elskr": ["adjective", "in love", "old-norse hypothetical"],
