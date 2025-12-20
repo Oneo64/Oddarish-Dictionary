@@ -9,7 +9,7 @@ const noun_declensions = {
 		"", "rinn", "ar", "arnir",
 		" ", "inn", "a", "ana",
 		"i", "num", "um", "unum",
-		"s", "sins", "a", "anna",
+		"s", "sins", "ja", "janna",
 	],
 	masculine_r2: [
 		"", "inn", "ir", "irnir",
