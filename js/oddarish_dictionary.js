@@ -2407,6 +2407,7 @@ const entry_words = [
 	"ýka",
 	"ýla",
 	"ýling",
+	"ýna",
 	"ýstr",
 	"þaf-síma",
 	"þafan-skrand",
@@ -2868,7 +2869,7 @@ const entries = {
 	"elr": ["masculine noun", "parent, elder", "old-norse evolved"],
 	"elsk-ugr": ["adjective", "romantic"],
 	"elska (1)": ["feminine noun", "love", "old-norse"],
-	"elska (2)": ["verb", "to love dearly or romantically; to really like or enjoy something", "old-norse"],
+	"elska (2)": ["verb", "to love dearly or romantically", "old-norse", ["Ek elska þek. = I love you."]],
 	"elskar-anaðjari": ["neuter noun", "one's lover; significant other, romantic partner"],
 	"elsking-eip": ["neuter noun", "love herb"],
 	"elskr": ["adjective", "in love", "old-norse hypothetical"],
@@ -4893,6 +4894,7 @@ const entries = {
 	"ýka": ["verb", "to owe; to be in debt", "fictional"],
 	"ýla": ["verb", "to howl (wolves)", "old-norse"],
 	"ýling": ["neuter noun", "the howling of wolves", "old-norse"],
+	"ýna": ["verb", "to love; to really like or enjoy something", "fictional", ["Ek ýna púðing! = I love pudding!"]],
 	"ýstr": ["adjective", "thin", "fictional"],
 
 
