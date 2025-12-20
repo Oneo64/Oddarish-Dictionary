@@ -3,35 +3,35 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title id="title">Orðpæng um Oddörsku</title>
+	<title id="title">Online Oddarish Dictionary</title>
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="custom_checkboxes.css">
 	<link rel="icon" type="image/x-icon" href="images/favicon.png">
 </head>
 <body>
 <div class="body">
-	<span class="titlespan"><img class="h1favicon" src="images/favicon.png" alt="favicon"><h1><a href="index.html">Orðpængin um Oddörsku</a></h1></span>
+	<span class="titlespan"><img class="h1favicon" src="images/favicon.png" alt="favicon"><h1><a href="index.html">Online Oddarish Dictionary</a></h1></span>
 	<div id="letters" class="letterlist h2font"></div>
 	<hr>
 
 	<form action="search.html" method="GET">
 		<input type="text" class="inputbox pfont" id="searchbox" name="v">
 		<br><br>
-		<label for="pos" class="pfont">Kvisti um Telli:</label>&nbsp&nbsp<select name="pos" id="pos" class="pfont button" style="width: auto;">
-			<option value="all">allr</option>
-			<option value="adjective">hrimlingorð</option>
-			<option value="adverb">verkhrimlingorð</option>
-			<option value="noun">nafnorð</option>
-			<option value="verb">verkorð</option>
-			<option value="prefix">byrjandi um</option>
-			<option value="suffix">með loki</option>
+		<label for="pos" class="pfont">Part of Speech:</label>&nbsp&nbsp<select name="pos" id="pos" class="pfont button" style="width: auto;">
+			<option value="all">all</option>
+			<option value="adjective">adjective</option>
+			<option value="adverb">adverb</option>
+			<option value="noun">noun</option>
+			<option value="verb">verb</option>
+			<option value="prefix">begins with</option>
+			<option value="suffix">ends with</option>
 		</select>
 		<br><br>
-		<label class="container pfont" style="margin-bottom: 20px;">Silfa í Orðraðingpungum
+		<label class="container pfont" style="margin-bottom: 20px;">Search in declensions
 			<input id="declensions" name="d" type="checkbox" checked="checked">
 			<span class="checkmark" style="border: 2px solid black;"></span>
 		</label>
-		<input type="submit" class="submit pfont" value="Silfa" style="margin: 0;">
+		<input type="submit" class="submit pfont" value="Search" style="margin: 0;">
 	</form>
 	<h3 id="search"></h3>
 	<div id="results" class="list4 pfont"></div>
@@ -53,11 +53,11 @@
 	document.getElementById("pos").value = pos != null ? pos : "all";
 	document.getElementById("declensions").checked = d != null;
 
-	document.getElementById("title").innerHTML = "Orðpængin um Oddörsku - Orðsilfing";
-	document.getElementById("search").innerHTML = "Silfingur um '" + v + "'";
+	document.getElementById("title").innerHTML = "Online Oddarish Dictionary - Search";
+	document.getElementById("search").innerHTML = "Results for '" + v + "'";
 
 	if (v == "") {
-		document.getElementById("results").innerHTML = "<div>Silfingit getir eigi at vera eigeinn.</div>";
+		document.getElementById("results").innerHTML = "<div>You cannot search with an empty query! (because if you do there's a LOT of lag)</div>";
 	} else {
 		var slotsLeft = 100;
 

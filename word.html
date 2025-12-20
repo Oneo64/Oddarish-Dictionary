@@ -3,25 +3,25 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title id="title">Orðpæng um Oddörsku</title>
+	<title id="title">Online Oddarish Dictionary</title>
 	<link rel="stylesheet" href="style.css">
 	<link rel="icon" type="image/x-icon" href="images/favicon.png">
 </head>
 <body>
 <div class="body">
-	<span class="titlespan"><img class="h1favicon" src="images/favicon.png" alt="favicon"><h1><a href="index.html">Orðpængin um Oddörsku</a></h1></span>
+	<span class="titlespan"><img class="h1favicon" src="images/favicon.png" alt="favicon"><h1><a href="index.html">Online Oddarish Dictionary</a></h1></span>
 	<div id="letters" class="letterlist h2font"></div>
 	<hr>
-	<h3 id="word">Orðit ar eigi fyndið</h3>
+	<h3 id="word">Sorry! That word isn't coined.</h3>
 	<h4 id="ipa" class="ipa">IPA</h4>
 	<p id="type">n/a</p>
 	<ol id="definitions" class="pfont"></ol>
 	<div id="tables"></div>
 	<br>
 	<hr>
-	<p id="examples">Eigein ásságur :(</p>
+	<p id="examples">No examples :(</p>
 	<hr>
-	<p>Minnu! IPA-inn, orðraðingpungit, ok runirnar getir verið eigi réttr, ássi þú á til at tryggja um það ar réttr í fyrr.</p><p>Þetta tungaleiði ar setið með <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.</p>
+	<p>Remember! The IPA, declensions, and runes may not be correct, so you should ensure that they are correct.</p><p>This language and website is published under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.</p>
 </div>
 
 <script src="js/letters.js"></script>
@@ -43,7 +43,7 @@
 
 		var ipa = ipa(v2.replaceAll("-", "."), false);
 
-		document.getElementById("title").innerHTML = "Orðpængin um Oddörsku - " + v.charAt(0).toUpperCase() + v.substring(1);
+		document.getElementById("title").innerHTML = "Online Oddarish Dictionary - " + v.charAt(0).toUpperCase() + v.substring(1);
 		document.getElementById("word").innerHTML = v + " | " + get_runic_inscription(ipa);
 		document.getElementById("ipa").innerHTML = ipa;
 		document.getElementById("type").innerHTML = "";
@@ -110,10 +110,10 @@
 					window.onresize = onWindowResize;
 					onWindowResize();
 
-					document.getElementById("declension_top").innerHTML = "orðraðingpung fyri '" + v2 + "'";
+					document.getElementById("declension_top").innerHTML = "declension for '" + v2 + "'";
 					
 					if (!sg_only && !pl_indef_only) {
-						document.getElementById("_declension_top").innerHTML = "orðraðingpung fyri '" + v2 + "'";
+						document.getElementById("_declension_top").innerHTML = "declension for '" + v2 + "'";
 					}
 
 					if (entry[0] == "masculine noun") {
@@ -144,7 +144,7 @@
 
 				if (!v2.endsWith("ask")) {
 					document.getElementById("tables").innerHTML = declension_tables_html["verb"];
-					document.getElementById("declension_top2").innerHTML = "orðraðingpung fyri '" + v2 + "'";
+					document.getElementById("declension_top2").innerHTML = "declension for '" + v2 + "'";
 					document.getElementById("infinitive").innerHTML = "at " + v2;
 					document.getElementById("imperative").innerHTML = add_verb_ending_basic(v3, "u") + v4;
 					document.getElementById("present_participle").innerHTML = add_verb_ending_basic(v3, "andi") + v4;
@@ -181,7 +181,7 @@
 				}
 
 				document.getElementById("tables").innerHTML = declension_tables_html["verb_impersonal"];
-				document.getElementById("declension_top2").innerHTML = "orðraðingpung fyri '" + v2 + "'";
+				document.getElementById("declension_top2").innerHTML = "declension for '" + v2 + "'";
 				document.getElementById("infinitive").innerHTML = "at " + v2;
 				document.getElementById("past_participle").innerHTML = get_past_participle(v3) + v4;
 
@@ -191,7 +191,7 @@
 			} else if (entry[0] == "adjective") {
 				document.getElementById("tables").innerHTML = declension_tables_html["adjective"];
 
-				document.getElementById("adjective_top").innerHTML = "orðraðingpung fyri '" + v2 + "'";
+				document.getElementById("adjective_top").innerHTML = "declension for '" + v2 + "'";
 				document.getElementById("a0").innerHTML = v2;
 				document.getElementById("a1").innerHTML = add_adj_ending_basic(v2, "");
 				document.getElementById("a2").innerHTML = add_adj_ending_basic(v2, "a");

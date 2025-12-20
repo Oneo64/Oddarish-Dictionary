@@ -3,18 +3,18 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title id="title">Orðpængin um Oddörsku</title>
+	<title id="title">Online Oddarish Dictionary</title>
 	<link rel="stylesheet" href="style.css">
 	<link rel="icon" type="image/x-icon" href="images/favicon.png">
 </head>
 <body>
 <div class="body">
-	<span class="titlespan"><img class="h1favicon" src="images/favicon.png" alt="favicon"><h1><a href="index.html">Orðpængin um Oddörsku</a></h1></span>
+	<span class="titlespan"><img class="h1favicon" src="images/favicon.png" alt="favicon"><h1><a href="index.html">Online Oddarish Dictionary</a></h1></span>
 	<div id="letters" class="letterlist h2font"></div>
 	<hr>
 	<h3 id="letter">A</h3>
 	<div id="words" class="list pfont"></div>
-	<p>Þetta tungaleiði ar setið með <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.</p>
+	<p>This language and website is published under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.</p>
 </div>
 
 <script src="js/letters.js"></script>
@@ -24,8 +24,8 @@
 	var params = new URLSearchParams(query);
 	var v = params.get("v");
 
-	document.getElementById("title").innerHTML = "Orðpængin um Oddörsku - " + v.toUpperCase() + " Orður";
-	document.getElementById("letter").innerHTML = "Runan " + v.toUpperCase();
+	document.getElementById("title").innerHTML = "Online Oddarish Dictionary - " + v.toUpperCase();
+	document.getElementById("letter").innerHTML = "Letter " + v.toUpperCase();
 
 	var list = [];
 
