@@ -2825,7 +2825,7 @@ const entries = {
 	"eiki-kulr": ["masculine noun", "charcoal"],
 	"eikr": ["masculine noun", "wood", "old-norse evolved"],
 	"ein-": ["prefix", "one prefix", "old-norse"],
-	"ein-fastað": ["adjective", "alone, often used in a romantic context", "no-declension"],
+	"ein-fastað": ["adjective", "alone, single (often used romantically)", "no-declension"],
 	"ein-fell": ["neuter noun", "singular case"],
 	"ein-gengja": ["verb", "to take a step"],
 	"ein-hver": ["neuter noun", "anyone, someone", "", ["Getir einhver hjálpa mér? = Can anyone help me?"]],
