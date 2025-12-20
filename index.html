@@ -4,8 +4,8 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<meta name="author" content="Neo">
-	<meta name="description" content="Official dictionary for Oddarish, a North Germanic conlang created by Neo for Aldraheimr.">
+	<meta name="author" content="Oneo64">
+	<meta name="description" content="Official dictionary for Oddarish, a North Germanic conlang created by Oneo64 for Aldraheimr.">
 
 	<title>Online Oddarish Dictionary</title>
 	<link rel="stylesheet" href="style.css">
@@ -16,7 +16,7 @@
 	<span class="titlespan"><img class="h1favicon" src="images/favicon.png" alt="favicon"><h1><a href="index.html">Online Oddarish Dictionary</a></h1></span>
 	<div id="letters" class="letterlist h2font"></div>
 	<hr>
-	<p>This is the official dictionary for the constructed language Oddarish, created by Neo for the personal worldbuilding project Aldraheimr and spoken by the people of Oddarsveldi. Here, you can find words presented nicely in the highest quality possible.</p>
+	<p>This is the official dictionary for the constructed language Oddarish, created by Oneo64 for the personal worldbuilding project Aldraheimr and spoken by the people of Oddarsveldi. Here, you can find words presented nicely in the highest quality possible.</p>
 	<p>Oddarish is a North Germanic conlang based on Old West Norse, and also the most successful conlang I have created. Containing over 2000 words, it is usable in daily conversations, storytelling, and even poetry!</p>
 	<p>Oddarish came from Fjallandic, which came from Norvunic, which came from Kagalarian. Keep in mind that this is NOT the in-lore evolution!</p>
 	<p>You may find the source here: <a href="https://docs.google.com/spreadsheets/d/1AggLjhQJxt3sIcegQ47OOLx4KZX0nQdFapMGkq7yZVk/">Google Sheets</a></p>
@@ -60,6 +60,19 @@
 	}
 
 	document.getElementById("wordcount").innerHTML = "Now, Oddarish has " + entry_words.length + " words (" + roots + " roots), and is " + years2 + " year(s) and " + days2 + " days old!";
+</script>
+<script type="application/ld+json">
+{
+	"@context": "https://schema.org",
+	"@type": "CreativeWork",
+	"name": "Oddarish",
+	"creator": {
+		"@type": "Person",
+		"name": "Oneo64"
+	},
+	"about": "Constructed language created for the Aldraheimr worldbuilding project.",
+	"inLanguage": "English"
+}
 </script>
 </body>
 </html>
