@@ -7,6 +7,12 @@ const noun_declensions = {
 	],
 	masculine_r: [
 		"", "rinn", "ar", "arnir",
+		"u", "unu", "ar", "arnir",
+		"i", "inum", "um", "unum",
+		"s", "sins", "a", "anna",
+	],
+	masculine_rr: [
+		"", "rinn", "ar", "arnir",
 		" ", "inn", "a", "ana",
 		"i", "num", "um", "unum",
 		"s", "sins", "ja", "janna",
@@ -224,6 +230,14 @@ function get_noun_declension(w, t) {
 					declension.push(word);
 				} else {
 					declension.push(word.substring(0, word.length - 1) + noun_declensions.masculine_r2[i]);
+				}
+			}
+		} else if (word.endsWith("rr")) {
+			for (var i = 0; i < 16; i++) {
+				if (noun_declensions.masculine_rr[i] == "") {
+					declension.push(word);
+				} else {
+					declension.push(word.substring(0, word.length - 1) + noun_declensions.masculine_rr[i]);
 				}
 			}
 		} else if (word.endsWith("r")) {
