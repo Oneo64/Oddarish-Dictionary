@@ -1,5 +1,5 @@
 # Overview
-Oddarish is a North Germanic conlang based on Old West Norse, and also the first and most successful conlang I have created. I made this conlang for Oddarsveldi, a fictional kingdom in my worldbuilding project, Aldraheimr.
+Oddarish is a North Germanic conlang based on Old West Norse, and also the most successful conlang I have created. I made this conlang for Oddarsveldi, a fictional kingdom in my worldbuilding project, Aldraheimr.
 
 Containing over 2000 words, it is usable in daily conversations, storytelling, and even poetry!
 
