@@ -3735,7 +3735,7 @@ const entries = {
 	"löga": ["verb", "to law, to make a rule", "old-norse hypothetical"],
 	"lögt": ["adjective", "allowed by law, legal; only, the only thing allowed (exists only in attributive form)", "old-norse hypothetical"],
 	"lösiming": ["feminine noun", "butterfly", "fictional"],
-	"löð": ["feminine noun", "(mining) lode, a type of ore where the metal is deposited in streaks rather than the entire rock", "english evolved"],
+	"löð": ["feminine noun", "(mining) a lode, a type of ore where the metal is deposited in streaks rather than the entire rock", "english evolved"],
 	"löð-skónn": ["masculine noun", "lodestone", "english evolved"],
 	"lúggr": ["masculine noun", "leg of creature", "norvunic"],
 	"lúm": ["adjective", "skinny", "fictional"],
