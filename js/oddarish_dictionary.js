@@ -3091,7 +3091,7 @@ const entries = {
 	"ger-mjúka": ["verb", "to soften, to tenderize; to humble, to put down, to restrain, to dominate, to make submissive"],
 	"germanskr": ["masculine noun", "germanic"],
 	"geta vest": ["auxiliary", "maybe, might"],
-	"geta": ["verb", "to be permitted, to be allowed to, to have the power to, to be able, to can; to make someone as", "old-norse", ["Ek get at mála málverk. = I can paint paintings.", "Getirðú gveta hvestligþing fyri mér? = Can you get something for me?", "Þin beyra getir ollum gleðugr. = Your smile makes everyone happy.", "Getu þæt at danza! = Make it dance!"]],
+	"geta": ["verb", "to be permitted, to be allowed to, to have the power to, to be able, to can; to make someone as", "old-norse", ["Ek get at mála málverk. = I can paint paintings.", "Getirðú gveta hvestligþing fyri mér? = Can you get something for me?", "Þin beyra getir ollum gleðugr. = Your smile makes everyone happy.", "Getu því at danza! = Make it dance!"]],
 	"gifta": ["verb", "to marry someone off, to appoint someone to marriage (but not themselves)", "old-norse"],
 	"giftask": ["verb", "to wed, to marry", "old-norse"],
 	"giftr": ["adjective", "married", "old-norse"],
