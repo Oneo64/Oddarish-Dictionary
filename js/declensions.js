@@ -47,6 +47,12 @@ const noun_declensions = {
 		"illi", "linum", "lum", "lunum",
 		"ills", "lins", "la", "lanna",
 	],
+	masculine_nn: [
+		"", "ninn", "ar", "arnir",
+		"u", "unu", "ar", "arnir",
+		"i", "inum", "um", "unum",
+		"s", "ins", "a", "anna",
+	],
 	feminine: [
 		"", "in", "ir", "irnar",
 		"", "ina", "ir", "irnar",
@@ -226,6 +232,14 @@ function get_noun_declension(w, t) {
 					declension.push(word);
 				} else {
 					declension.push(word.substring(0, word.length - 1) + noun_declensions.masculine_r[i]);
+				}
+			}
+		} else if (word.endsWith("nn")) {
+			for (var i = 0; i < 16; i++) {
+				if (noun_declensions.masculine_nn[i] == "") {
+					declension.push(word);
+				} else {
+					declension.push(word.substring(0, word.length - 1) + noun_declensions.masculine_nn[i]);
 				}
 			}
 		} else if (word.endsWith("i")) {
