@@ -4395,7 +4395,7 @@ const entries = {
 	"svakkr": ["masculine noun", "work station, workbench", "fictional"],
 	"svangr": ["adjective", "hungry", "old-norse"],
 	"svangð": ["neuter noun", "hunger", "old-norse"],
-	"sve": ["verb", "to see, to look; to realize, to become aware of; to face a direction; (with \"ána\") to look at; (with \"um\") to think, to have an opinion", "old-norse hypothetical", ["Hví artú svandi ána mik? = Why are you looking at me?", "Ek sve um þæt ar of lútill. = I think it's too small."]],
+	"sve": ["verb", "to see, to look; to realize, to become aware of; to face a direction; (with \"ána\") to look at; (with \"um\") to think, to have an opinion", "old-norse hypothetical", ["Hví artú svandi ána mek? = Why are you looking at me?", "Ek sve um þæt ar of lútill. = I think it's too small."]],
 	"svein": ["neuter noun", "sand", "fictional"],
 	"sveita": ["feminine noun", "steam, vapor", "fictional"],
 	"sveita-fekla": ["feminine noun", "a steam train"],
