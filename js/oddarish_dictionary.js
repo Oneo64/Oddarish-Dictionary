@@ -5157,6 +5157,11 @@ const special_declensions = {
 		"past_tense_mediopassive": "sváðisk",
 		"gerund": "sveng"
 	},
+	"vanga": {
+		"present_tense": ["vanga", "vangar", "vangar"],
+		"past_tense": "vangaði",
+		"past_participle": "vangt"
+	},
 	"vega": {
 		"present_tense": ["veg", "veig", "vegir"],
 		"past_tense": "vann",
