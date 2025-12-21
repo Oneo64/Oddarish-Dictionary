@@ -4544,7 +4544,7 @@ const entries = {
 	"tvúfa": ["feminine noun", "ribbon"],
 	"tángi": ["masculine noun", "tongs"],
 	"tár": ["neuter noun", "tear (as in tear drop)"],
-	"tóa": ["verb", "to tie a knot; to fasten or put on (a belt, seatbelt, wristwatch); to close a bag; to zip up a zipper", "fictional", ["Hefirðú teið þreinit? = Did you tie the rope?", "Tó þin kirðbúfn. = Put your seatbelt on.", "Þin kömbr ar eigi teið! = Your pouch isn't closed!"]],
+	"tóa": ["verb", "to tie, to fasten (a rope or knot); to put on (a belt, seatbelt, or wristwatch); to close, to zip (a bag or zipper)", "fictional", ["Hefirðú teið þreinit? = Did you tie the rope?", "Tó þin kirðbúfn. = Put your seatbelt on.", "Hon tóar kömbunu. = She closes the bag."]],
 	"tói": ["neuter noun", "a knot; a tied knot"],
 	"tól": ["neuter noun", "tool"],
 	"tómr": ["adjective", "empty, vacant, desolate"],
