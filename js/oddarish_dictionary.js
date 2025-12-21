@@ -4655,7 +4655,7 @@ const entries = {
 	"vika": ["feminine noun", "week"],
 	"vilja": ["verb", "to want, to will, to wish"],
 	"viljandi til": ["adjective", "to be willing to", "no-declension"],
-	"vinga": ["verb", "to long, to yearn; to deeply want", "fictional"],
+	"vinga": ["verb", "to long, to yearn; to desire, to want deeply", "fictional"],
 	"vingun": ["feminine noun", "desire, longing", "fictional"],
 	"vinna": ["verb", "to need, to require, to cost"],
 	"virki": ["masculine noun", "fortified structure, fortress, mostly used to refer castles"],
