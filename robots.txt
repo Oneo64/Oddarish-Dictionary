@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://oneo64.github.io/Oddarish-Dictionary/sitemap.xml
