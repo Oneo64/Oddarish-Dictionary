@@ -4597,7 +4597,7 @@ const entries = {
 	"vallhumall": ["masculine noun", "(plant) yarrow"],
 	"valr": ["masculine noun", "valor, prowess, courage, bravery, might, glory"],
 	"vampir": ["masculine noun", "vampire"],
-	"vanga": ["verb", "to long, to yearn; (with \"um\") to desire, to want deeply", "fictional", ["Hann vangar um þik! = He desires you!"]],
+	"vanga": ["verb", "to long, to yearn; (with \"um\") to desire, to want deeply", "fictional", ["Hann vangar um þek! = He desires you!"]],
 	"vappnir": ["neuter noun", "weapon"],
 	"var": ["auxiliary", "was, were (past tense of vesa)"],
 	"varasta": ["verb", "to surprise"],
