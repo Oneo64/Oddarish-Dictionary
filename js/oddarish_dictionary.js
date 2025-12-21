@@ -4544,7 +4544,7 @@ const entries = {
 	"tvúfa": ["feminine noun", "ribbon"],
 	"tángi": ["masculine noun", "tongs"],
 	"tár": ["neuter noun", "tear (as in tear drop)"],
-	"tóa": ["verb", "to tie a knot"],
+	"tóa": ["verb", "to tie a knot; to fasten or put on (a belt, seatbelt, wristwatch); to close a bag; to zip up a zipper"],
 	"tói": ["neuter noun", "a knot; a tied knot"],
 	"tól": ["neuter noun", "tool"],
 	"tómr": ["adjective", "empty, vacant, desolate"],
