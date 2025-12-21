@@ -4227,7 +4227,7 @@ const entries = {
 	"sjánda": ["feminine noun", "illusion", "fictional"],
 	"sjánn": ["masculine noun", "boy", "fictional"],
 	"sjógn": ["neuter noun", "(physics) electron", "kagalarian evolved"],
-	"sjóna": ["verb", "to boil", "fictional"],
+	"sjóna": ["verb", "to boil (intransitive)", "fictional"],
 	"sjótt": ["feminine noun", "boat, ship, longboat, longship", "fictional"],
 	"sjöm-rýð": ["feminine noun", "sugar cane"],
 	"sjöma": ["feminine noun", "sugar", "fictional"],
