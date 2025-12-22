@@ -880,7 +880,7 @@ const entry_words = [
 	"hræra",
 	"hrígi",
 	"hríka",
-	"hríking staugum"
+	"hríking staugum",
 	"hró-inn",
 	"hróa",
 	"hrófir",
