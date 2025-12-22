@@ -4754,8 +4754,8 @@ const entries = {
 
 	"á (1)": ["preposition", "of something, of someone (with dative)"],
 	"á (2)": ["preposition", "should (used only in questions and complex clauses, for the more common form, use á til or sköldi)", "", ["Hvað á ek gvera? = What should I do?"]],
-	"á eigi": ["auxiliary", "shouldn't"],
-	"á til": ["auxiliary", "should"],
+	"á eigi": ["auxiliary", "shouldn't (the infinitive article is usually omitted)"],
+	"á til": ["auxiliary", "should (the infinitive article is usually omitted)", "", ["Þú á til vega væg. = You should go away."]],
 	"á-fram": ["adverb", "in front", "", ["Vegu áfram. = Go in front.", "Hann ar áfram mek. = He is in front of me.", "Ek hef þæt áfram. = I have it in front of me."]],
 	"á-fyrr": ["adverb", "before"],
 	"á-hugr": ["masculine noun", "one's interest or focus; to focus or concentrate"],
