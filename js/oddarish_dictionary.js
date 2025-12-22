@@ -2717,7 +2717,7 @@ const entries = {
 	"brinda": ["verb", "to burn (intransitive)", "old-norse evolved"],
 	"bring": ["feminine noun", "yard, enclosure", "old-norse"],
 	"brjókkr": ["masculine noun", "barrel, keg", "fictional"],
-	"brjóst": ["neuter noun", "breast; the breasts of someone", "old-norse"],
+	"brjóst": ["neuter noun", "breast (mamma); one of a woman's breasts", "old-norse"],
 	"brjúma": ["verb", "to cook in water, to boil (used with accusative); to brew or make a potion; to concoct", "fictional"],
 	"brott": ["neuter noun", "bread", "old-norse evolved"],
 	"brult-mök": ["neuter noun", "hedgehog"],
