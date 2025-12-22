@@ -2713,7 +2713,7 @@ const entries = {
 	"breiði": ["neuter noun", "width, breadth", "old-norse"],
 	"breiðr": ["adjective", "wide, vast, broad", "old-norse"],
 	"breyma": ["verb", "to change, to modify", "proto-germanic evolved"],
-	"breymask": ["verb", "to transform, to turn into, to become; (physics) to become, to compound, to combine", "proto-germanic evolved", ["Ek breymisk til nágni. = I turn into a zombie.", "Míktit þvað ar eint andingmíkt ok tvór vetníri ar breymt til votn. = The material which is one oxygen and two hydrogen is called water."]],
+	"breymask": ["verb", "to transform; (with \"til\") to turn into, to become; (physics) (with \"til\") to become, to compound, to combine", "proto-germanic evolved", ["Ek breymisk til nágni. = I turn into a zombie.", "Eint andingmíktit ok tvór vetnírinir breymdisk til kérnurpreppa votni. = The one oxygen atom and the two hydrogens fused into a water molecule."]],
 	"brinda": ["verb", "to burn (intransitive)", "old-norse evolved"],
 	"bring": ["feminine noun", "yard, enclosure", "old-norse"],
 	"brjókkr": ["masculine noun", "barrel, keg", "fictional"],
