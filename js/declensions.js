@@ -17,6 +17,12 @@ const noun_declensions = {
 		"i", "num", "um", "unum",
 		"s", "sins", "ja", "janna",
 	],
+	masculine_ll: [
+		"", "linn", "ar", "arnir",
+		" ", "inn", "a", "ana",
+		"i", "num", "um", "unum",
+		"s", "sins", "a", "anna",
+	],
 	masculine_r2: [
 		"", "inn", "ir", "irnir",
 		"u", "unu", "ir", "irnir",
@@ -232,12 +238,20 @@ function get_noun_declension(w, t) {
 					declension.push(word.substring(0, word.length - 1) + noun_declensions.masculine_r2[i]);
 				}
 			}
-		} else if (word.endsWith("rr")) {
+		} else if (word.endsWith("rr") || word.endsWith("gr")) {
 			for (var i = 0; i < 16; i++) {
 				if (noun_declensions.masculine_rr[i] == "") {
 					declension.push(word);
 				} else {
 					declension.push(word.substring(0, word.length - 1) + noun_declensions.masculine_rr[i]);
+				}
+			}
+		} else if (word.endsWith("ll")) {
+			for (var i = 0; i < 16; i++) {
+				if (noun_declensions.masculine_ll[i] == "") {
+					declension.push(word);
+				} else {
+					declension.push(word.substring(0, word.length - 1) + noun_declensions.masculine_ll[i]);
 				}
 			}
 		} else if (word.endsWith("r")) {
@@ -272,7 +286,7 @@ function get_noun_declension(w, t) {
 					declension.push(word.substring(0, word.length - 3) + noun_declensions.masculine_ill[i]);
 				}
 			}
-		} else if (word.charAt(word.length - 1) == word.charAt(word.length - 2) && !word.endsWith("ll")) {
+		} else if (word.charAt(word.length - 1) == word.charAt(word.length - 2)) {
 			for (var i = 0; i < 16; i++) {
 				if (noun_declensions.masculine[i] == "") {
 					declension.push(word);
