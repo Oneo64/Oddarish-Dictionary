@@ -4647,7 +4647,7 @@ const entries = {
 	"versi": ["masculine noun", "a stanza or verse in a poem"],
 	"verstjast": ["adjective", "worst", "no-declension"],
 	"verstr": ["adjective", "worse"],
-	"vesa eins frá í": ["expression", "to be one of, to be any one of"],
+	"vesa eins frá": ["expression", "to be one of, to be any one of"],
 	"vesa eins með": ["expression", "to be like, to be as if"],
 	"vesa með ... í kringum": ["phrase", "\"was surrounded by\""],
 	"vesa tagt til": ["expression", "to come in the shape of"],
