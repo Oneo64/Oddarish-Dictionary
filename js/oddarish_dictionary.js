@@ -5344,6 +5344,7 @@ const singular_only = [
 	"úldir",
 	"þera",
 	"þruma",
+	"þöllun",
 ];
 
 const plural_indefinite_only = [
