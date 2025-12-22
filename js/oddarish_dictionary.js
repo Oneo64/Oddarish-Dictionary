@@ -829,6 +829,7 @@ const entry_words = [
 	"hlíming",
 	"hlínd",
 	"hlípn",
+	"hlísta",
 	"hlóra",
 	"hnakir",
 	"hnat-(t)ari",
@@ -962,7 +963,6 @@ const entry_words = [
 	"hékkva",
 	"hénga",
 	"híla",
-	"híða",
 	"hófn",
 	"hófn-sjarva",
 	"hófn-tói",
@@ -3292,6 +3292,7 @@ const entries = {
 	"hlíming": ["feminine noun", "a dwelling; a place where one lives", "fictional"],
 	"hlínd": ["feminine noun", "a sling", "fictional"],
 	"hlípn": ["neuter noun", "quill, pen", "fictional"],
+	"hlísta": ["verb", "to listen, to heed; (with \"ána\") to listen to", "fictional"],
 	"hlóra": ["verb", "to load, to move into/onto (cargo or heavy object)", "fictional"],
 	"hnakir": ["masculine noun", "throne", "fictional"],
 	"hnat-(t)ari": ["masculine noun", "hater (spelled hnatari)"],
@@ -3425,7 +3426,6 @@ const entries = {
 	"hékkva": ["verb", "to startle, to frighten, to scare", "fictional"],
 	"hénga": ["verb", "to affect, to influence", "fictional"],
 	"híla": ["feminine noun", "veil; a cloth head covering worn by women; a protective headdress around the head and face", "fictional"],
-	"híða": ["verb", "to listen, to heed; (with \"ána\") to listen to", "fictional"],
 	"hófn": ["neuter noun", "head of creature", "old-norse evolved"],
 	"hófn-sjarva": ["verb", "to behead"],
 	"hófn-tói": ["neuter noun", "headache"],
@@ -5156,6 +5156,9 @@ const special_declensions = {
 	"hafa": {
 		"present_tense": ["hef", "hefi", "hefir"],
 		"present_mediopassive": "hefisk"
+	},
+	"hlísta": {
+		"present_tense": ["hlísta", "hlístar", "hlístar"]
 	},
 	"kindja": {
 		"past_tense": "kenddi",
