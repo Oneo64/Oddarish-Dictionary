@@ -3129,7 +3129,7 @@ const entries = {
 	"gjófa": ["verb", "to cover; a cover, usually made of fabric or wood", "fictional"],
 	"gjöf": ["neuter noun", "a gift", "old-norse"],
 	"gjöfull": ["adjective", "generous, giving, caring", "old-norse"],
-	"gjörð": ["feminine noun", "basin, sink (feminine)", "old-norse deceptive"],
+	"gjörð": ["feminine noun", "basin, sink", "old-norse deceptive"],
 	"glantr": ["adjective", "bright as in \"a bright sun\", shiny", "fictional"],
 	"glaupi": ["masculine noun", "slop, mixure", "fictional"],
 	"gleidr": ["masculine noun", "gold", "norvunic"],
