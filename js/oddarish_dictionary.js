@@ -4194,7 +4194,7 @@ const entries = {
 	"saut": ["neuter noun", "shoe", "fictional"],
 	"sax": ["neuter noun", "seax, knife", "old-english"],
 	"sefða": ["verb", "to sheathe a weapon", "fictional"],
-	"sega": ["verb", "to tell, to say to", "modern-icelandic evolved", ["Hver artú segandi? = Who are you telling?"]],
+	"sega": ["verb", "to tell, to say to; (with \"um\") to tell someone something", "modern-icelandic evolved", ["Hver artú segandi? = Who are you telling?", "Hann sagði henni um hann var vegandi at fakka már eldeiku. = He told her that he was going to chop more firewood."]],
 	"segl": ["masculine noun", "sickle", "english evolved"],
 	"seix": ["numeral", "six", "old-norse evolved"],
 	"seix-inn": ["numeral", "the sixth"],
@@ -4622,7 +4622,7 @@ const entries = {
 	"vega í hildi": ["verb", "to go to war"],
 	"vega í kanning": ["verb", "to go exploring"],
 	"vega í víking": ["verb", "to go viking"],
-	"vega": ["verb", "to go, to fare, to make way towards; to move, to walk, to run, to sprint, etc; to leave, to depart", "", ["Þú vinni at vega ána þokit efðú vil at böggva þær. = You need to go up to the roof if you want to build there.", "Vegu til búðina, muntú? = Go to the store, will you?"]],
+	"vega": ["verb", "to go, to fare, to make way towards; to move, to walk, to run, to sprint, etc; to leave, to depart; to go to do something", "", ["Þú vinni at vega ána þokit efðú vil at böggva þær. = You need to go up to the roof if you want to build there.", "Vegu til búðina, muntú? = Go to the store, will you?"]],
 	"vega-konstr": ["masculine noun", "vehicle"],
 	"vegr": ["masculine noun", "road, street, path, way", "modern-icelandic"],
 	"vegðisking": ["neuter noun", "journey, trek"],
@@ -5133,6 +5133,10 @@ const special_declensions = {
 	},
 	"máklja": {
 		"imperative": "máklju"
+	},
+	"sega": {
+		"past_tense": "sagði",
+		"past_participle": "sagt"
 	},
 	"setja": {
 		"past_tense": "sati",
