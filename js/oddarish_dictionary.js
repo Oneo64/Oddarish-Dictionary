@@ -4433,7 +4433,7 @@ const entries = {
 	"svígr": ["adjective", "can be seen, visible", "fictional"],
 	"svín": ["neuter noun", "swine; a pig, boar, or hog", "old-norse"],
 	"svíu": ["feminine noun", "a reflection on water, glass, or other reflective things", "fictional"],
-	"svölk": ["adjective", "such, very, so; of this kind", "middle-english evolved"],
+	"svölk": ["adverb", "such, very, so; that sort of, that kind of; like this", "middle-english evolved"],
 	"svöpa": ["verb", "to sweep (with a broom)", "modern-icelandic evolved"],
 	"svöpr": ["masculine noun", "broom", "modern-icelandic evolved"],
 	"sága": ["feminine noun", "story, tale", "old-norse evolved"],
