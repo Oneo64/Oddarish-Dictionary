@@ -2310,6 +2310,7 @@ const entry_words = [
 	"ávaxtr",
 	"áxa",
 	"áxtolli",
+	"áða",
 	"æ",
 	"æfi",
 	"æka",
@@ -4569,7 +4570,7 @@ const entries = {
 	"ufn": ["neuter noun", "oven, furnace"],
 	"ugla": ["verb", "to puke, to vomit, to throw up"],
 	"ugli": ["masculine noun", "puke, vomit"],
-	"um": ["preposition", "about, of, for", "old-norse", ["Ek tala um sjánunu. = I talk about the boy.", "Ek sve um þæt ar sváligr. = I think it's beautiful.", "Ek baði um drýkku. = I asked for a drink."]],
+	"um": ["preposition", "about, of, for, so, that (used for words and incomplete sentences)", "old-norse", ["Ek tala um sjánunu. = I talk about the boy.", "Ek baði um drýkku. = I asked for a drink."]],
 	"umbr": ["adjective", "lush, full of plant life"],
 	"ummend-ugr": ["adjective", "boring", "", ["Þetta ar ummendugr. = This is boring."]],
 	"ummenda": ["verb", "to bore, to make someone bored", "", ["Ek ar ummendað. = I'm bored."]],
@@ -4783,6 +4784,7 @@ const entries = {
 	"ávaxtr": ["masculine noun", "fruit"],
 	"áxa": ["verb", "to increase, to raise, to go up"],
 	"áxtolli": ["masculine noun", "axolotl"],
+	"áða": ["preposition", "about, of, for, so, that (used to join a second full sentence)", "fictional", ["Ek sve áða þæt ar sváligr. = I think it's beautiful."]],
 
 
 
