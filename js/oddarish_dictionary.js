@@ -2972,7 +2972,7 @@ const entries = {
 	"flauja": ["feminine noun", "a flag or banner", "fictional"],
 	"flegna": ["verb", "to trade; to swap, to change, to exchange", "fictional"],
 	"flensa": ["verb", "to kiss", "old-norse evolved"],
-	"flerra": ["verb", "to blow; to flow", "fictional"],
+	"flerra": ["verb", "to blow (of wind); to flow (of rivers and streams)", "fictional"],
 	"flesk": ["neuter noun", "pork, bacon, ham; general term for pig meat", "old-norse"],
 	"flika": ["verb", "to peel, to skin", "fictional"],
 	"fliking-tengr": ["masculine", "skinning rack"],
