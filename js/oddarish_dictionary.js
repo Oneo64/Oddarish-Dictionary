@@ -17,7 +17,8 @@ const word_type_short_form = {
 	"prefix": "pref.",
 	"pronoun": "pron.",
 	"auxiliary": "aux.",
-	"numeral": "num."
+	"numeral": "num.",
+	"idiomatic phrase": "idm."
 };
 
 // proto-indo-european = from proto-indo-european
