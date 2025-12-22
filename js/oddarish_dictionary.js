@@ -3263,7 +3263,7 @@ const entries = {
 	"hirðir": ["masculine noun", "herdsman, sheperd", "old-norse"],
 	"hjaldr": ["masculine noun", "battle, large scale fight", "old-norse poetic-form"],
 	"hjaldra-stubbar": ["masculine noun", "battlements"],
-	"hjalla": ["verb", "to explain, to describe; to tell someone a story", "fictional"],
+	"hjalla": ["verb", "to explain, to describe; (with \"um\") to tell someone a story", "fictional", ["Hon hjallaði þóm um fornu ságuna. = She told them an old tale."]],
 	"hjarta": ["feminine noun", "heart (anatomy)", "modern-icelandic"],
 	"hjálmr": ["masculine noun", "helmet", "old-norse"],
 	"hjálpa": ["verb", "to help", "old-norse"],
