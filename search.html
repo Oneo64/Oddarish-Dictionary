@@ -89,29 +89,29 @@
 					document.getElementById("results").innerHTML += "<div><a class='listitem' href='word.html?v=" + word + "'>" + entry_words[i] + "</a><div class='nowrap'><ol><li>" + defs.join("</li><li>") + "</li></ol></div></div>";
 					added = true;
 				} else if (word.toLowerCase().includes(v)) {
-					document.getElementById("results").innerHTML += "<div><a class='listitem' href='word.html?v=" + word + "'>" + word + "</a><div class='nowrap'>&nbsp&nbsp(fyndið í orðinni)</div></div>";
+					document.getElementById("results").innerHTML += "<div><a class='listitem' href='word.html?v=" + word + "'>" + word + "</a><div class='nowrap'>&nbsp&nbsp(found in word)</div></div>";
 					added = true;
 				}
 
 				if (entries[word][0] == "verb" && !added && d) {
 					switch (true) {
 						case v == get_past_tense(word):
-							document.getElementById("results").innerHTML += "<div><a class='listitem' href='word.html?v=" + word + "'>" + word + "</a><div class='nowrap'>&nbsp&nbsp(fyndið í fyrligt orði)</div></div>";
+							document.getElementById("results").innerHTML += "<div><a class='listitem' href='word.html?v=" + word + "'>" + word + "</a><div class='nowrap'>&nbsp&nbsp(found in past tense)</div></div>";
 							added = true;
 							break;
 
 						case v == get_past_participle(word):
-							document.getElementById("results").innerHTML += "<div><a class='listitem' href='word.html?v=" + word + "'>" + word + "</a><div class='nowrap'>&nbsp&nbsp(fyndið í fyrligt hrimlingorði)</div></div>";
+							document.getElementById("results").innerHTML += "<div><a class='listitem' href='word.html?v=" + word + "'>" + word + "</a><div class='nowrap'>&nbsp&nbsp(found in past participle)</div></div>";
 							added = true;
 							break;
 
 						case v == get_present_tense(word, 1) || v == get_present_tense(word, 2) || v == get_present_tense(word, 3):
-							document.getElementById("results").innerHTML += "<div><a class='listitem' href='word.html?v=" + word + "'>" + word + "</a><div class='nowrap'>&nbsp&nbsp(fyndið í núligt orði)</div></div>";
+							document.getElementById("results").innerHTML += "<div><a class='listitem' href='word.html?v=" + word + "'>" + word + "</a><div class='nowrap'>&nbsp&nbsp(found in present tense)</div></div>";
 							added = true;
 							break;
 
 						case v == add_verb_ending_basic(word, "andi"):
-							document.getElementById("results").innerHTML += "<div><a class='listitem' href='word.html?v=" + word + "'>" + word + "</a><div class='nowrap'>&nbsp&nbsp(fyndið í núligt hrimlingorði)</div></div>";
+							document.getElementById("results").innerHTML += "<div><a class='listitem' href='word.html?v=" + word + "'>" + word + "</a><div class='nowrap'>&nbsp&nbsp(found in present participle)</div></div>";
 							added = true;
 							break;
 					}
@@ -123,12 +123,12 @@
 					if (slotsLeft <= 0) break;
 				}
 			} else {
-				alert("VÁGING: Orðit " + word + " ar eigi í hleitunni!");
+				alert("WARNING: The word " + word + " is not in the entry list!");
 			}
 		}
 
 		if (document.getElementById("results").innerHTML == "") {
-			document.getElementById("results").innerHTML = "<div>Skít!!! Þær býr eigi orðit '" + v + ".' :(</div>";
+			document.getElementById("results").innerHTML = "<div>Oh no!!! The word '" + v + " has no results.' :(</div>";
 		}
 	}
 </script>
