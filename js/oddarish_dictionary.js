@@ -2026,6 +2026,8 @@ const entry_words = [
 	"súfing-ber",
 	"súgi",
 	"sýfja",
+	"sýga",
+	"sýgari",
 	"tafl",
 	"tafsi",
 	"taga",
@@ -4488,6 +4490,8 @@ const entries = {
 	"súfing-ber": ["feminine noun", "raspberry"],
 	"súgi": ["masculine noun", "urine, pee", "fictional"],
 	"sýfja": ["verb", "to put to sleep", "fictional"],
+	"sýga": ["verb", "to suck", "modern-icelandic evolved", ["Kendit sýgir ána pasifer. = The baby sucks on a pacifer.", "Min prallsjótt var sýgt inn votnsnúingit! = My boat got sucked into the whirlpool!"]],
+	"sýgari": ["masculine noun", "straw (to drink from a cup)", "modern-icelandic evolved"],
 
 
 
