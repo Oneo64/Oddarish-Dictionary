@@ -2611,7 +2611,7 @@ const entries = {
 	"anda": ["verb", "to breathe", "old-norse"],
 	"andi": ["masculine noun", "spirit, soul; ghost, apparition, wisp, spirit, genie", "old-norse"],
 	"anding-míkt": ["neuter noun", "oxygen"],
-	"andvýsalöðun": ["feminine noun", "tendency, inclination, habit, occurance"],
+	"andvýsalöðun": ["feminine noun", "tendency, inclination, disposition, habit"],
 	"angja": ["verb", "to cause trouble, to cause problems", "old-norse evolved"],
 	"angr": ["masculine noun", "problem, trouble", "old-norse evolved"],
 	"ant-elska": ["verb", "to crush on, to be infatuated with; to have romantic feelings for", "fictional"],
