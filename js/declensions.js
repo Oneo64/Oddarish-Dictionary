@@ -55,7 +55,7 @@ const noun_declensions = {
 	],
 	masculine_ill: [
 		"", "illinn", "lar", "larnir",
-		"illu", "lunu", "lar", "larnir",
+		"illu", "linn", "lar", "larnir",
 		"illi", "linum", "lum", "lunum",
 		"ills", "lins", "la", "lanna",
 	],
@@ -246,7 +246,7 @@ function get_noun_declension(w, t) {
 					declension.push(word.substring(0, word.length - 1) + noun_declensions.masculine_rr[i]);
 				}
 			}
-		} else if (word.endsWith("ll")) {
+		} else if (word.endsWith("ll") && !word.endsWith("ill")) {
 			for (var i = 0; i < 16; i++) {
 				if (noun_declensions.masculine_ll[i] == "") {
 					declension.push(word);
