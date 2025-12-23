@@ -2388,6 +2388,8 @@ const entry_words = [
 	"ó-júð",
 	"ó-kjóstaligr",
 	"ó-mókligr",
+	"ó-nefnigr",
+	"ó-nefnigð",
 	"ó-rað",
 	"ó-sefða",
 	"ó-tamr",
@@ -2403,6 +2405,8 @@ const entry_words = [
 	"ór",
 	"órað-ligr",
 	"ósk",
+	"ósk-hæmja",
+	"ósk-hæmjun",
 	"óss",
 	"óssambi",
 	"ótryðis",
@@ -4921,6 +4925,8 @@ const entries = {
 	"ó-júð": ["feminine noun", "despair, hopelessness"],
 	"ó-kjóstaligr": ["adjective", "disgusting, gross"],
 	"ó-mókligr": ["adjective", "polite, refined"],
+	"ó-nefnigr": ["adjective", "disgraceful, dishonorable"],
+	"ó-nefnigð": ["neuter noun", "disgrace"],
 	"ó-rað": ["feminine noun", "chaos, mess"],
 	"ó-sefða": ["verb", "to unsheathe a weapon"],
 	"ó-tamr": ["adjective", "wild, untamed; disobedient, undisciplined, unruly"],
@@ -4936,6 +4942,8 @@ const entries = {
 	"ór": ["preposition", "out, out of, out from; out of, from (as in made from)"],
 	"órað-ligr": ["adjective", "chaotic, messy"],
 	"ósk": ["neuter noun", "a wish or wanting"],
+	"ósk-hæmja": ["verb", "to embarrass"],
+	"ósk-hæmjun": ["feminine noun", "embarrassment"],
 	"óss": ["neuter noun", "river mouth"],
 	"óssambi": ["masculine noun", "mint"],
 	"ótryðis": ["adverb", "incredibly, unbelievably; insanely, crazy"],
@@ -5204,6 +5212,11 @@ const special_declensions = {
 	"hafa": {
 		"present_tense": ["hef", "hefi", "hefir"],
 		"present_mediopassive": "hefisk"
+	},
+	"hæmja": {
+		"present_tense": ["hæmji", "hæmji", "hæmjar"],
+		"past_participle": "hæmjið",
+		"past_tense": "hæmjaði"
 	},
 	"hlísta": {
 		"present_tense": ["hlísta", "hlístar", "hlístar"]
