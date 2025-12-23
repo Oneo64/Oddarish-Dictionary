@@ -5218,6 +5218,11 @@ const special_declensions = {
 		"past_participle": "hæmjið",
 		"past_tense": "hæmjaði"
 	},
+	"ósk-hæmja": {
+		"present_tense": ["ósk-hæmji", "ósk-hæmji", "ósk-hæmjar"],
+		"past_participle": "ósk-hæmjið",
+		"past_tense": "ósk-hæmjaði"
+	},
 	"hlísta": {
 		"present_tense": ["hlísta", "hlístar", "hlístar"]
 	},
@@ -5408,6 +5413,7 @@ const singular_only = [
 	"ærsl",
 	"ó-böggðir",
 	"ó-rað",
+	"ósk-hæmjun",
 	"öbi",
 	"östr",
 	"úldir",
