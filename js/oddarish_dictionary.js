@@ -5004,7 +5004,7 @@ const entries = {
 	"ýling": ["neuter noun", "the howling of wolves", "old-norse"],
 	"ýna": ["verb", "to love; to really like or enjoy something", "fictional", ["Ek ýna púðing! = I love pudding!"]],
 	"ýnar-falligr": ["adjective", "beautiful, gorgeous, striking, usually only used to describe someone"],
-	"ýnugr": ["adjective", "lovely", "fictional"],
+	"ýnugr": ["adjective", "lovely, adoreable", "fictional"],
 	"ýstr": ["adjective", "thin", "fictional"],
 
 
