@@ -2461,8 +2461,8 @@ const entry_words = [
 	"ýla",
 	"ýling",
 	"ýna",
+	"ýna-falligr",
 	"ýna-ligr",
-	"ýnar-falligr",
 	"ýstr",
 	"þaf-búi",
 	"þaf-síma",
@@ -5003,8 +5003,8 @@ const entries = {
 	"ýla": ["verb", "to howl (wolves)", "old-norse"],
 	"ýling": ["neuter noun", "the howling of wolves", "old-norse"],
 	"ýna": ["verb", "to love; to really like or enjoy something", "fictional", ["Ek ýna púðing! = I love pudding!"]],
+	"ýna-falligr": ["adjective", "beautiful, gorgeous, striking, usually only used to describe someone"],
 	"ýna-ligr": ["adjective", "lovely, adoreable", "fictional"],
-	"ýnar-falligr": ["adjective", "beautiful, gorgeous, striking, usually only used to describe someone"],
 	"ýstr": ["adjective", "thin", "fictional"],
 
 
