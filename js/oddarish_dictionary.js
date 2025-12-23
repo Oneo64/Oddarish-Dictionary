@@ -5345,6 +5345,7 @@ const singular_only = [
 	"míkt",
 	"möl",
 	"nafn-fell",
+	"nefnigð",
 	"norðr",
 	"næðingr",
 	"nýgla",
