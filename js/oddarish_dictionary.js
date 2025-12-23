@@ -3418,7 +3418,7 @@ const entries = {
 	"hvanarna": ["adverb", "for a while, for a moment, for some time; (movement) for a long way", "proto-norse hypothetical", ["Hvanarna, eldstaugrinn hefir eigi deyð. = The volcano hasn't died for a while.", "Ek farði hvanarna. = I travelled a long way."]],
 	"hvanda": ["verb", "to gesture, to point at", "fictional"],
 	"hvannakr": ["masculine noun", "assignment, quest, mission", "fictional"],
-	"hvassa": ["conjunction", "how (used to ask to what extent, not used to ask what method)", "fictional", ["Hvassa mjagr ar votnit? = How much water is there?"]],
+	"hvassa": ["conjunction", "how (used to ask to what extent, not used to ask what method)", "fictional", ["Hvassa mjagu ar votnit? = How much water is there?"]],
 	"hvast-góðr": ["adjective", "skilled"],
 	"hvasta": ["verb", "to use, to work, to operate, to control, often with the implication of skill or prior training", "fictional"],
 	"hvastr": ["masculine noun", "skill, technique", "fictional"],
