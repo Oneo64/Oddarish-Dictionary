@@ -3097,7 +3097,7 @@ const entries = {
 	"fylgja": ["verb", "to follow, to accompany; to go with", "old-norse"],
 	"fyrfabing-orð": ["neuter noun", "a past participle"],
 	"fyri": ["preposition", "for, used for, used to clarify purpose, owned by, to, used to (with dative); before, in front of, ahead (with dative)", "proto-germanic evolved", ["Fyri hvest ar þæt? = What's that for?", "Fyri vyrum min! = What a sight!"]],
-	"fyri-þess": ["conjunction", "because, since", "proto-germanic evolved"],
+	"fyri-þess": ["conjunction", "because, since, as", "proto-germanic evolved"],
 	"fyrist-fell": ["neuter noun", "infinitive case; indefinite case"],
 	"fyrist-inn": ["neuter noun", "the first"],
 	"fyrist-orð": ["neuter noun", "default, standard"],
