@@ -4894,7 +4894,7 @@ const entries = {
 	"æming": ["neuter noun", "a trend; something that is common, especially a trait"],
 	"æn-til": ["conjunction", "until (usually used at the start of a sentence, to express \"until\" in the middle of a sentence, use \"til\" instead)"],
 	"ænn": ["adverb", "to be still doing"],
-	"ænn ygann": ["conjunction", "than, compared to (with accusative)"],
+	"ænn ygann": ["conjunction", "than, compared to (with accusative)", "", ["Þæt var tvyðu langt ænn ygann neðu hinn. = It was twice as long as usual."]],
 	"ærsl": ["masculine noun", "frenzy, madness; a state of being mad, crazy, or in a frenzy; run mad"],
 	"æskja": ["verb", "to wish"],
 	"æss": ["neuter noun", "edge, rim", "unsure"],
