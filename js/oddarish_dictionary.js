@@ -4242,7 +4242,7 @@ const entries = {
 	"saut": ["neuter noun", "shoe", "fictional"],
 	"sax": ["neuter noun", "seax, knife", "old-english"],
 	"sefða": ["verb", "to sheathe a weapon", "fictional"],
-	"sega": ["verb", "to say (no preposition needed); (with \"áða\") to tell someone something, to say something to someone; to tell someone", "modern-icelandic evolved", ["Hver artu segandi? = Who are you telling?", "Hann sagði henni áða hann var vegandi at fakka már eldeiku. = He told her that he was going to chop more firewood."]],
+	"sega": ["verb", "to say (no preposition needed); to tell someone (with dative); (with \"áða\") to tell someone something, to say something to someone", "modern-icelandic evolved", ["Hver artu segandi? = Who are you telling?", "Hann sagði henni áða hann var vegandi at fakka már eldeiku. = He told her that he was going to chop more firewood."]],
 	"segl": ["masculine noun", "sickle", "english evolved"],
 	"seix": ["numeral", "six", "old-norse evolved"],
 	"seix-inn": ["numeral", "the sixth"],
