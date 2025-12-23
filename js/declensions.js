@@ -676,14 +676,16 @@ function get_present_tense(word, pov) {
 			return word;
 		}
 	} else if (pov == 2) {
-		if (stem.endsWith("ú")) {
+		if ((stem.endsWith("f") || stem.endsWith("r") || stem.endsWith("g") || stem.endsWith("t")) && !stem.endsWith("tt")) {
+			return stem + "i";
+		} else if (stem.endsWith("ú")) {
 			return stem.substring(0, stem.length - 1) + "ý";
 		} else if (stem.endsWith("á")) {
 			return stem.substring(0, stem.length - 1) + "æ";
 		} else if (stem.endsWith("j")) {
 			return stem.substring(0, stem.length - 1) + "i";
 		} else {
-			return stem + "i";
+			return stem + "ar";
 		}
 	} else {
 		if ((stem.endsWith("f") || stem.endsWith("r") || stem.endsWith("g") || stem.endsWith("t")) && !stem.endsWith("tt")) {
