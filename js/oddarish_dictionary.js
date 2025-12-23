@@ -5219,6 +5219,10 @@ const special_declensions = {
 		"past_participle": "bað",
 		"past_tense_mediopassive": "baðisk"
 	},
+	"blá": {
+		"past_tense": "bláði",
+		"past_participle": "blæt"
+	},
 	"duna": {
 		"past_tense": "dunaði",
 		"past_participle": "dunað"
@@ -5344,6 +5348,10 @@ const special_declensions = {
 	"vita": {
 		"past_tense": "vissi",
 		"past_tense_mediopassive": "vissisk"
+	},
+	"vá": {
+		"past_tense": "váði",
+		"past_participle": "væt"
 	},
 	"af-vita": {
 		"past_tense": "af-vissi",
