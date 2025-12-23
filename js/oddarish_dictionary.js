@@ -3916,7 +3916,7 @@ const entries = {
 	"myrkvi": ["neuter noun", "a thick, dense fog", "old-norse"],
 	"myskr": ["masculine noun", "bee", "fictional"],
 	"máfr": ["masculine noun", "seagull", "modern-icelandic evolved"],
-	"mákill": ["adjective", "many, several, a lot, a high amount of (accusative singular máklu/mákil/mákkið, comparative máklar/máklir/máklur, superlative máklastr/máklast)", "old-norse evolved"],
+	"mákill": ["adjective", "many, several, a lot, a high amount of (accusative singular máklu/mákil/mákkið, comparative már (indeclinable), superlative máklastr/máklast)", "old-norse evolved"],
 	"mákli-fell": ["neuter noun", "plural case"],
 	"mákli-stund": ["adverb", "usually, frequently, regularly"],
 	"máklja": ["verb", "to multiply, to become many", "old-norse hypothetical"],
