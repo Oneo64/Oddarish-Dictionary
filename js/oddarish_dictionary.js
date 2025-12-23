@@ -4093,7 +4093,7 @@ const entries = {
 	"ori": ["masculine noun", "flame, blaze", "proto-germanic evolved"],
 	"ork": ["neuter noun", "orc, ork", "modern-icelandic evolved"],
 	"ormr": ["masculine noun", "worm", "old-norse"],
-	"orramr": ["adjective", "fat, gluttonous", "fictional"],
+	"orramr": ["adjective", "fat, obese, gluttonous", "fictional"],
 	"orð": ["neuter noun", "word", "old-norse"],
 	"orð-pæng": ["feminine noun", "dictionary"],
 	"orð-raðing pung": ["neuter noun", "declension table"],
