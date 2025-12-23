@@ -3861,7 +3861,7 @@ const entries = {
 	"meyja": ["feminine noun", "maiden, a young unmarried woman, can also refer to a woman who is betrothed but not yet married", "old-norse"],
 	"meyla": ["feminine noun", "a little maid (nickname)", "old-norse"],
 	"með ... í höndi": ["expression adverb", "with a tool", "", ["Hann skálfaði þæt með skjorði í höndi. = He slashed it with a sword."]],
-	"með": ["preposition", "with", "modern-icelandic"],
+	"með": ["preposition", "with, accompanying (with dative); using (with dative); having, possessing (with accusative)", "modern-icelandic"],
 	"með-eigi": ["preposition", "without, with not; other than"],
 	"með-löga": ["verb", "to consider, to decide; to think; to take account, to care, to give attention to"],
 	"min, mína": ["pronoun", "i, me, my, mine (possessive case)"],
