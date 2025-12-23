@@ -5195,6 +5195,12 @@ const special_declensions = {
 		"mandi", "mandinum", "mendrum", "mendrunum",
 		"mands", "mandsins", "mendra", "mendranna",
 	],
+	"sonr": [
+		"sonr", "sonrinn", "sonir", "sonirnir",
+		"son", "soninn", "soni", "sonirnir",
+		"soni", "soninum", "sonum", "sonunum",
+		"sons", "sonsins", "sona", "sonanna",
+	],
 	"taufr": [
 		"taufr", "taufrinn", "taufrar", "taufrarnir",
 		"taufru", "taufrinn", "taufra", "taufrana",
