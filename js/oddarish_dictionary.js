@@ -2897,7 +2897,7 @@ const entries = {
 	"egðor": ["masculine noun", "eagle", "old-norse evolved"],
 	"eif": ["neuter noun", "essence, liquid, plant liquid, bodily liquid; (physics) liquid", "fictional"],
 	"eig-": ["prefix", "negative prefix, usually means \"with no\"", "old-norse evolved"],
-	"eig-einn (1)": ["adjective", "zero, none, no, isn't, not, negator", "old-norse evolved"],
+	"eig-einn (1)": ["adjective", "zero, none, no, isn't, not, negator (always use indefinite singular adjective declensions)", "old-norse evolved"],
 	"eig-einn (2)": ["masculine noun", "no one"],
 	"eigein-þing": ["neuter noun", "nothing"],
 	"eigi": ["adverb", "not", "old-norse evolved"],
