@@ -4666,7 +4666,7 @@ const entries = {
 	"valdra-mákill": ["adjective", "powerful, potent, influential; big, vast, or strong"],
 	"valkyrja": ["feminine noun", "valkyrie"],
 	"vallhumall": ["masculine noun", "(plant) yarrow"],
-	"valligr": ["adjective", "mighty, glorious, honorable, valorous"],
+	"valligr": ["adjective", "valorous, mighty, glorious, honorable"],
 	"valr": ["masculine noun", "valor, might, glory"],
 	"vampir": ["masculine noun", "vampire"],
 	"vanga": ["verb", "to long, to yearn; (with \"um\") to desire, to want deeply", "fictional", ["Hann vangar um þek! = He desires you!"]],
