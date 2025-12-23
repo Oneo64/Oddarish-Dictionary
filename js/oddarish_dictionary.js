@@ -3368,7 +3368,7 @@ const entries = {
 	"hraði": ["masculine noun", "speed", "old-norse"],
 	"hraðr": ["adjective", "fast, quick", "old-norse"],
 	"hreifða": ["verb", "to rather; to want something else instead", "fictional"],
-	"hreiga": ["verb", "(with \"ána\") to make someone distressed or stressful, to put weight on someone", "proto-germanic evolved"],
+	"hreiga": ["verb", "(with \"ána\") to distress, to trouble, to put weight or stress on someone", "proto-germanic evolved"],
 	"hreigr": ["verb", "distressed, stressful, troubled, weighted, woed", "proto-germanic evolved"],
 	"hreika": ["verb", "to horrify", "fictional"],
 	"hreisp-kirð": ["neuter noun", "saddle"],
