@@ -5303,6 +5303,7 @@ const singular_only = [
 	"bémm",
 	"börskr",
 	"dap-vöngun",
+	"djaffigð"
 	"eiki-kulr",
 	"eikr",
 	"ein-fell",
@@ -5399,6 +5400,7 @@ const singular_only = [
 	"úldir",
 	"þera",
 	"þruma",
+	"þárrigð",
 	"þöllun",
 ];
 
