@@ -2884,7 +2884,7 @@ const entries = {
 	"eiðuls-kóna": ["feminine noun", "noblewoman"],
 	"eiðuls-mandr": ["masculine noun", "nobleman"],
 	"ek": ["pronoun", "i, me (nominative case)", "old-norse"],
-	"ekkaðr": ["verb", "desolate, deserted, abandoned (for places and locations)", "fictional"],
+	"ekkaðr": ["adjective", "desolate, deserted, abandoned (for places and locations)", "fictional"],
 	"ekkin-kóna": ["feminine noun", "wife"],
 	"ekkin-mandr": ["masculine noun", "husband"],
 	"ekkinn": ["neuter noun", "property, belongings, possessions, someone's things/stuff", "old-norse evolved"],
