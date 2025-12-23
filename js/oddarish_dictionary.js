@@ -1381,7 +1381,7 @@ const entry_words = [
 	"mirða",
 	"miski",
 	"miðja",
-	"mjagr",
+	"mjagi",
 	"mjarkr",
 	"mjondáss",
 	"mjondáss-fegl",
