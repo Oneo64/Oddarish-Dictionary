@@ -4931,7 +4931,7 @@ const entries = {
 	"ósk": ["neuter noun", "a wish or wanting"],
 	"óss": ["neuter noun", "river mouth"],
 	"óssambi": ["masculine noun", "mint"],
-	"ótryðis": ["adjective", "incredibly, unbelievably; insanely, crazy"],
+	"ótryðis": ["adverb", "incredibly, unbelievably; insanely, crazy"],
 	"ótt-voknandi": ["adjective", "scary, frightening, fear-instilling", "no-declension"],
 	"óttask": ["verb", "to be afraid of, to fear, to dread"],
 	"ótti": ["masculine noun", "dread, fear, terror"],
