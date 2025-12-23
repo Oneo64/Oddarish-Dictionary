@@ -2918,7 +2918,7 @@ const entries = {
 	"einar": ["adverb", "one time, once", "old-norse hypothetical"],
 	"einhver-ligr": ["adjective", "some or any (not in numbers), in the same sense of someone or some person"],
 	"einhvest-ligr": ["adjective", "some or any (not in numbers), in the same sense of something or some object"],
-	"einn": ["numeral", "one (the only declinable numeral, attributive indefinite: eint, attributive definite: eina)", "old-norse evolved", ["Hann ar eint mandr. = He is one man.", "Eina fólkit þær ar kveggjandi básta. = The only person there is wearing a hat."]],
+	"einn": ["numeral", "one (the only declinable numeral, always use indefinite singular adjective declensions)", "old-norse evolved", ["Hann ar eint mandr. = He is one man.", "Eina fólkit þær ar kveggjandi básta. = The only person there is wearing a hat."]],
 	"eip": ["neuter noun", "herb", "fictional"],
 	"eissa": ["feminine noun", "magic energy, magic essence", "fictional"],
 	"eitin": ["feminine noun", "pigeon", "fictional"],
