@@ -807,6 +807,7 @@ const entry_words = [
 	"helfa",
 	"helli",
 	"hema",
+	"hengja",
 	"hennar",
 	"henni",
 	"herri",
@@ -1616,6 +1617,7 @@ const entry_words = [
 	"peð",
 	"pil",
 	"pind",
+	"piskja",
 	"piskr",
 	"pjaftr",
 	"pjallundr",
@@ -3328,6 +3330,7 @@ const entries = {
 	"helfa": ["feminine noun", "shelf", "fictional"],
 	"helli": ["masculine noun", "a flow, stream, or run; (poetic) a river", "modern-icelandic evolved"],
 	"hema": ["verb", "to seem; to look like", "fictional"],
+	"hengja": ["verb", "to spank, to beat, to punish", "fictional"],
 	"hennar": ["pronoun", "she, her (genitive case)", "old-norse"],
 	"henni": ["pronoun", "she, her (dative case)", "old-norse"],
 	"herri": ["masculine noun", "lord, master", "modern-icelandic archaic-form"],
@@ -4137,6 +4140,7 @@ const entries = {
 	"peð": ["neuter noun", "pawn, goon, thug, ruffian, hoodlum", "old-norse evolved"],
 	"pil": ["adjective", "still, limp, unmoving, not moving", "fictional"],
 	"pind": ["neuter noun", "spice, spices", "fictional"],
+	"piskja": ["verb", "to whip, to strike with a whip", "modern-scandinavian evolved"],
 	"piskr": ["masculine noun", "whip", "modern-scandinavian evolved"],
 	"pjaftr": ["masculine noun", "pants, shorts (clothing)", "fictional"],
 	"pjallundr": ["adjective", "thousand", "fictional"],
@@ -5295,6 +5299,9 @@ const special_declensions = {
 		"present_tense": ["öndu-semja", "öndu-semjar", "öndu-semjar"],
 		"past_participle": "öndu-semið",
 		"past_tense": "öndu-semjaði"
+	},
+	"hengja": {
+		"present_tense": ["hengja", "hengjar", "hengjar"]
 	},
 	"hlísta": {
 		"present_tense": ["hlísta", "hlístar", "hlístar"]
