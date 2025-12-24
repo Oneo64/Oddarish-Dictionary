@@ -4290,7 +4290,7 @@ const entries = {
 	"sam-rasta": ["verb", "to duel"],
 	"sama": ["verb", "to equal, to be the same as", "old-norse"],
 	"saman": ["adverb", "together", "old-norse"],
-	"sanga": ["verb", "to sing, to hum", "old-norse evolved"],
+	"sanga": ["verb", "to sing softly or quietly, often to oneself; to hum", "old-norse evolved"],
 	"sann-flytja": ["verb", "to convince, to persuade"],
 	"sannr": ["adjective", "true", "old-norse"],
 	"sapna athygli": ["verb", "to get attention"],
@@ -4353,7 +4353,7 @@ const entries = {
 	"skemmta": ["verb", "to amuse, to entertain", "modern-icelandic"],
 	"skerstr": ["adjective", "rare, scarce", "fictional"],
 	"skerta": ["verb", "to tease, to joke; to jest or to make a jest", "proto-germanic evolved"],
-	"skeyja": ["verb", "to sing", "fictional"],
+	"skeyja": ["verb", "to sing melodically", "fictional"],
 	"skeyju-fegl": ["masculine noun", "songbird; a bird that sings"],
 	"skeyjun": ["feminine noun", "song, singing", "fictional"],
 	"skeyning": ["neuter noun", "one's singing", "fictional"],
@@ -4698,8 +4698,8 @@ const entries = {
 	"urtr": ["masculine noun", "effort, struggle, work, labor", "fictional"],
 	"urði": ["neuter noun", "fertilizer; something that grants fertility or growth", "old-norse deceptive"],
 	"usli": ["masculine noun", "fire embers; sparks of fire", "old-norse"],
-	"usping": ["feminine noun", "incantation", "fictional"],
-	"uspingja": ["verb", "to chant, to sing an incantation"],
+	"usping": ["feminine noun", "chant, incantation; war chant", "fictional"],
+	"uspingja": ["verb", "to chant, to sing an incantation; to sing a war song", "fictional"],
 
 
 
