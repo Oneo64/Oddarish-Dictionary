@@ -257,7 +257,7 @@ const entry_words = [
 	"blóð-ugr",
 	"blóðask",
 	"boga",
-	"boga-vest",
+	"boga-vesinn",
 	"bogi",
 	"bokka",
 	"borg-eigi",
@@ -410,7 +410,7 @@ const entry_words = [
 	"eiki-kulr",
 	"eikr",
 	"ein-",
-	"ein-fastað",
+	"ein-fastinn",
 	"ein-fell",
 	"ein-gengja",
 	"ein-hver",
@@ -475,7 +475,7 @@ const entry_words = [
 	"essa",
 	"eyja",
 	"eyra",
-	"eyra-púndað",
+	"eyra-púndinn",
 	"eyðla",
 	"eða",
 	"eðjó",
@@ -666,7 +666,7 @@ const entry_words = [
 	"ger-anta",
 	"ger-mjúka",
 	"germanskr",
-	"geta vest",
+	"geta vesið",
 	"geta",
 	"gifta",
 	"giftask",
@@ -873,7 +873,7 @@ const entry_words = [
 	"hreisp-kirð",
 	"hreisp-mandr",
 	"hreispr",
-	"hreið",
+	"hreinn",
 	"hrekkja",
 	"hrell",
 	"hrella",
@@ -957,7 +957,7 @@ const entry_words = [
 	"hvúst",
 	"hvýðr",
 	"hygli",
-	"hylið, felið",
+	"hylinn, felinn",
 	"hylja",
 	"hyma",
 	"há",
@@ -1180,7 +1180,7 @@ const entry_words = [
 	"kvám-búi",
 	"kváma inn/í, vega inn/í",
 	"kváma lok",
-	"kváma vest um",
+	"kváma vesið um",
 	"kváma",
 	"kvæna",
 	"kvíla á lópgleðu",
@@ -1238,7 +1238,6 @@ const entry_words = [
 	"langð",
 	"lapisskónn",
 	"lauki",
-	"lauskja",
 	"lausting",
 	"lað-ugr",
 	"laða",
@@ -1259,6 +1258,7 @@ const entry_words = [
 	"leypa",
 	"leypi",
 	"leyping",
+	"leyskja",
 	"liga hófnit",
 	"liga ygann",
 	"liga",
@@ -1675,7 +1675,7 @@ const entry_words = [
 	"pæng",
 	"pæng-haldinghýs",
 	"pæra",
-	"pærið",
+	"pærinn",
 	"pættr",
 	"pérr",
 	"pít",
@@ -1714,7 +1714,7 @@ const entry_words = [
 	"riða",
 	"rjástr",
 	"rjátla",
-	"rjátlað",
+	"rjátlinn",
 	"rjóðr",
 	"rjúmm",
 	"rjúmm-ligr",
@@ -1728,7 +1728,7 @@ const entry_words = [
 	"runa",
 	"russa",
 	"rutta",
-	"ruttað",
+	"ruttinn",
 	"ryn",
 	"ryn-galdr",
 	"rysti",
@@ -2258,7 +2258,7 @@ const entry_words = [
 	"vesa þok ypir",
 	"vesa",
 	"vesask",
-	"vest-ligr",
+	"vesin-ligr",
 	"vetni",
 	"vetr",
 	"vigla",
@@ -2292,7 +2292,7 @@ const entry_words = [
 	"vynt-ligr",
 	"vynta",
 	"vyr",
-	"vyr-púndað",
+	"vyr-púndinn",
 	"vyr-selja",
 	"vyr-seljun",
 	"vyra-skrand",
@@ -2329,7 +2329,7 @@ const entry_words = [
 	"vözla-svindling",
 	"výsa",
 	"výss",
-	"výss-fyndið",
+	"výss-fyndinn",
 	"ybb-ugr",
 	"ybbask",
 	"ybbisk þú af þessu",
@@ -2792,7 +2792,7 @@ const entries = {
 	"blóð-ugr": ["adjective", "bloody, blood-covered"],
 	"blóðask": ["verb", "to bleed"],
 	"boga": ["feminine noun", "curve, arch", "old-norse"],
-	"boga-vest": ["adjective", "curvy, curvaceous; having a pronounced womanly shape; having a slender waist with prominent breasts and hips; having shapely and voluptuous curves", "no-declension"],
+	"boga-vesinn": ["adjective", "curvy, curvaceous; having a pronounced womanly shape; having a slender waist with prominent breasts and hips; having shapely and voluptuous curves", "no-declension"],
 	"bogi": ["masculine noun", "bow (weapon)", "old-norse"],
 	"bokka": ["feminine noun", "a glass jar", "fictional"],
 	"borg-eigi": ["adjective", "free, no cost, no payment"],
@@ -2945,7 +2945,7 @@ const entries = {
 	"eiki-kulr": ["masculine noun", "charcoal"],
 	"eikr": ["masculine noun", "wood", "old-norse evolved"],
 	"ein-": ["prefix", "one prefix", "old-norse"],
-	"ein-fastað": ["adjective", "alone, lonely, single, available (often used romantically)", "no-declension"],
+	"ein-fastinn": ["adjective", "alone, lonely, single, available (often used romantically)", "no-declension"],
 	"ein-fell": ["neuter noun", "singular case"],
 	"ein-gengja": ["verb", "to take a step"],
 	"ein-hver": ["neuter noun", "anyone, someone", "", ["Getir einhver hjálpa mér? = Can anyone help me?"]],
@@ -3010,7 +3010,7 @@ const entries = {
 	"essa": ["feminine noun", "presence, existence, being there", "fictional"],
 	"eyja": ["feminine noun", "island", "old-norse"],
 	"eyra": ["neuter noun", "ear of creature", "old-norse"],
-	"eyra-púndað": ["adjective", "deaf", "no-declension"],
+	"eyra-púndinn": ["adjective", "deaf", "no-declension"],
 	"eyðla": ["feminine noun", "a lizard", "old-norse"],
 	"eða": ["conjunction", "or", "old-norse"],
 	"eðjó": ["preposition", "without, with not, other than", "proto-germanic evolved"],
@@ -3092,7 +3092,7 @@ const entries = {
 	"fnakr": ["masculine noun", "dove", "fictional"],
 	"fnyngr": ["masculine noun", "anvil", "fictional"],
 	"fok": ["neuter noun", "cloud, billow, splash of liquid", "fictional"],
-	"foll-kváma": ["verb", "to complete, to finish, to perfect (intransitive); to form fully (intransitive)", "", ["Pvældit hef vest follkvámt! = The storm has fully formed!"]],
+	"foll-kváma": ["verb", "to complete, to finish, to perfect (intransitive); to form fully (intransitive)", "", ["Pvældit hefir vesið follkvámt! = The storm has fully formed!"]],
 	"foll-ræga": ["verb", "to reign sovereignly; to rule with full power"],
 	"foll-vita": ["verb", "to understand, to acknowledge"],
 	"foll-þröng": ["neuter noun", "community, people, a group of people living in the same place"],
@@ -3162,7 +3162,7 @@ const entries = {
 	"fárz": ["neuter noun", "smoke", "old-norse deceptive"],
 	"fárz-opp": ["neuter noun", "chimney, smoke hole"],
 	"fáta (1)": ["verb", "to gain, to receive, to be given, often used when one receives something from another one", "old-norse evolved"],
-	"fáta (2)": ["verb", "to hear about something, to learn of some event; to let someone know", "old-norse evolved", ["Ek fátaði um steðunu. = I heard of the place.", "Ek fátaði áða kant búð byrði þær. = I heard that a new shop opened there.", "Ek fát henni áða hýsit hefir vest böggvið. = I let her know that the house has been built."]],
+	"fáta (2)": ["verb", "to hear about something, to learn of some event; to let someone know", "old-norse evolved", ["Ek fátaði um steðunu. = I heard of the place.", "Ek fátaði áða kant búð byrði þær. = I heard that a new shop opened there.", "Ek fát henni áða hýsit hefir vesið böggvið. = I let her know that the house has been built."]],
 	"fátask": ["verb", "to summon; to call, to send for, to ask the presence of", "old-norse evolved"],
 	"færa": ["verb", "to become less in amount", "old-norse deceptive"],
 	"færr": ["adjective", "a low amount of, a little amount of, few, a bit of; some", "old-norse deceptive", ["Fær þingur ar praumr. = Few things are purple.", "Ek get at tala færna oddörsku. = I can speak some Oddarish."]],
@@ -3201,7 +3201,7 @@ const entries = {
 	"ger-anta": ["verb", "to tempt, to urge"],
 	"ger-mjúka": ["verb", "to soften, to tenderize; to humble, to put down, to restrain, to dominate, to make submissive"],
 	"germanskr": ["masculine noun", "germanic"],
-	"geta vest": ["auxiliary", "maybe, might"],
+	"geta vesið": ["auxiliary", "maybe, might"],
 	"geta": ["verb", "to be permitted, to be allowed to, to have the power to, to be able, to can; to make someone as", "old-norse", ["Ek get at mála málverk. = I can paint paintings.", "Getrðu gveta hvestligþing fyri mér? = Can you get something for me?", "Þin beyra getir ollum gleðugr. = Your smile makes everyone happy.", "Getu því at danza! = Make it dance!"]],
 	"gifta": ["verb", "to marry someone off, to appoint someone to marriage (but not themselves)", "old-norse"],
 	"giftask": ["verb", "to wed, to marry", "old-norse"],
@@ -3408,7 +3408,7 @@ const entries = {
 	"hreisp-kirð": ["neuter noun", "saddle"],
 	"hreisp-mandr": ["masculine noun", "centaur"],
 	"hreispr": ["masculine noun", "horse", "fictional"],
-	"hreið": ["adjective", "warm as in \"a warm blanket\"", "fictional no-declension"],
+	"hreinn": ["adjective", "warm as in \"a warm blanket\"", "fictional no-declension"],
 	"hrekkja": ["verb", "to horrify", "fictional"],
 	"hrell": ["masculine noun", "tempest, a violent storm", "fictional"],
 	"hrella": ["verb", "to violently make a mess, to storm violently; to express rage or anger", "fictional"],
@@ -3492,7 +3492,7 @@ const entries = {
 	"hvúst": ["neuter noun", "priest, cleric", "fictional"],
 	"hvýðr": ["adjective", "wet", "fictional"],
 	"hygli": ["feminine noun", "consideration", "old-norse"],
-	"hylið, felið": ["adjective", "private, secluded, recluded, hidden, secret", "no-declension"],
+	"hylinn, felinn": ["adjective", "private, secluded, recluded, hidden, secret", "no-declension"],
 	"hylja": ["verb", "to hide, to conceal, to cover, usually means to hide or conceal something using a cover or wrap", "old-norse"],
 	"hyma": ["verb", "to melt", "fictional"],
 	"há": ["neuter noun", "hay, dried grass", "english evolved"],
@@ -3715,7 +3715,7 @@ const entries = {
 	"kvám-búi": ["masculine noun", "traveller (spelled traveler in usa)"],
 	"kváma inn/í, vega inn/í": ["verb", "to enter, to go in, to come in"],
 	"kváma lok": ["verb", "to come to an end, to end, to finish (intransitive)"],
-	"kváma vest um": ["verb", "to come to be, to do have/possess, to have grown (with accusative)"],
+	"kváma vesið um": ["verb", "to come to be, to do have/possess, to have grown (with accusative)"],
 	"kváma": ["verb", "to come", "proto-germanic evolved"],
 	"kvæna": ["verb", "to complain, to whine; to whimper", "proto-germanic evolved"],
 	"kvíla á lópgleðu": ["verb", "to have fun"],
@@ -3773,7 +3773,6 @@ const entries = {
 	"langð": ["neuter noun", "length of", "old-norse"],
 	"lapisskónn": ["masculine noun", "lapis lazili", "english evolved"],
 	"lauki": ["masculine noun", "leek", "unsure"],
-	"lauskja": ["verb", "to sneak, to go stealthily, to move quietly", "unsure"],
 	"lausting": ["neuter noun", "void, empty space", "fictional"],
 	"lað-ugr": ["adjective", "full of attraction; attractive, as in an attractive tourist destination; (physics) magnetic", "modern-icelandic hypothetical"],
 	"laða": ["verb", "to attract, to pull", "modern-icelandic"],
@@ -3794,6 +3793,7 @@ const entries = {
 	"leypa": ["verb", "to let, to allow, to may, to permit, to tolerate, to bear something", "old-norse evolved"],
 	"leypi": ["neuter noun", "permission, license; token, ticket (as in a ticket to pass a barrier)", "old-norse evolved"],
 	"leyping": ["neuter noun", "a burden or load", "old-norse evolved"],
+	"leyskja": ["verb", "to sneak, to go stealthily, to move quietly", "unsure"],
 	"liga hófnit": ["verb", "to nod"],
 	"liga ygann": ["verb", "to lean on, to lean against"],
 	"liga": ["verb", "to lean, to bend towards; to bow down", "fictional"],
@@ -4210,7 +4210,7 @@ const entries = {
 	"pæng": ["feminine noun", "book, tome", "fictional"],
 	"pæng-haldinghýs": ["neuter noun", "library"],
 	"pæra": ["verb", "to pair", "modern-icelandic evolved"],
-	"pærið": ["adjective", "paired (past participle of pæra); taken, spoken for (often used romantically)", "no-declension"],
+	"pærinn": ["adjective", "paired (past participle of pæra); taken, spoken for (often used romantically)", "no-declension"],
 	"pættr": ["masculine noun", "art; a mess", "fictional"],
 	"pérr": ["masculine noun", "peer, classmate, roommate (usually in an academic sense)", "english evolved"],
 	"pít": ["neuter noun", "pinch of something", "fictional"],
@@ -4249,7 +4249,7 @@ const entries = {
 	"riða": ["verb", "to sway, to swing lightly; to rock, as in a rocking chair", "modern-icelandic"],
 	"rjástr": ["adjective", "rough, bumpy, uneven, chaotic (used to describe a situation)", "fictional"],
 	"rjátla": ["verb", "to wander astray, to wander off path; to become lost, to become missing", "old-norse", ["Ek rjátla. = I'm wandering.", "Ek ar rjátlandi. = I'm lost."]],
-	"rjátlað": ["adjective", "lost, missing", "old-norse no-declension", ["Hann ar rjátlað. = He's lost."]],
+	"rjátlinn": ["adjective", "lost, missing", "old-norse no-declension", ["Hann ar rjátlinn. = He's lost."]],
 	"rjóðr": ["masculine noun", "wheel", "fictional"],
 	"rjúmm": ["neuter noun", "orb, ball, sphere, circle", "fictional"],
 	"rjúmm-ligr": ["adjective", "round"],
@@ -4263,7 +4263,7 @@ const entries = {
 	"runa": ["feminine noun", "rune, magical letter", "old-norse"],
 	"russa": ["verb", "to rush headlong", "english evolved"],
 	"rutta": ["verb", "to rot", "old-norse evolved"],
-	"ruttað": ["adjective", "rotten", "old-norse evolved no-declension"],
+	"ruttinn": ["adjective", "rotten", "old-norse evolved no-declension"],
 	"ryn": ["adjective", "mystical, unknown", "fictional"],
 	"ryn-galdr": ["masculine noun", "arcane magic, wizardry"],
 	"rysti": ["masculine noun", "sprout, shoot of plant", "fictional"],
@@ -4798,7 +4798,7 @@ const entries = {
 	"vesa þok ypir": ["expression", "a common simile that conveys the idea that something is protective over something else, using þok (roof) as a comparation"],
 	"vesa": ["auxiliary", "to be"],
 	"vesask": ["verb", "to become, to happen, to come to be"],
-	"vest-ligr": ["adjective", "maybe, perhaps; probably, possible"],
+	"vesin-ligr": ["adjective", "maybe, perhaps; probably, possible"],
 	"vetni": ["neuter noun", "hydrogen", "modern-icelandic evolved"],
 	"vetr": ["masculine noun", "winter"],
 	"vigla": ["verb", "to keep or persist in doing; to continue"],
@@ -4832,7 +4832,7 @@ const entries = {
 	"vynt-ligr": ["adjective", "healthy"],
 	"vynta": ["feminine noun", "state of health, vitality"],
 	"vyr": ["neuter noun", "eye of creature"],
-	"vyr-púndað": ["adjective", "blind", "no-declension"],
+	"vyr-púndinn": ["adjective", "blind", "no-declension"],
 	"vyr-selja": ["verb", "to advertise, to promote, to sponsor"],
 	"vyr-seljun": ["feminine noun", "advertisement, promotion, sponsor"],
 	"vyra-skrand": ["neuter noun", "eyeglass"],
@@ -4869,7 +4869,7 @@ const entries = {
 	"vözla-svindling": ["neuter noun", "derogatory term for magic (slur); witchcraft"],
 	"výsa": ["feminine noun", "manner, wise, the way of, method, practice"],
 	"výss": ["neuter noun", "wisdom, insight; wise"],
-	"výss-fyndið": ["adjective", "funny, full of wit", "no-declension"],
+	"výss-fyndinn": ["adjective", "funny, full of wit", "no-declension"],
 
 
 
@@ -5260,30 +5260,29 @@ const special_declensions = {
 	],
 	"bata": {
 		"past_tense": "bæti",
-		"past_participle": "bæt",
+		"past_participle": "bætinn",
 		"past_tense_mediopassive": "bætisk"
 	},
 	"boða": {
 		"past_tense": "baði",
-		"past_participle": "bað",
+		"past_participle": "baðinn",
 		"past_tense_mediopassive": "baðisk"
 	},
 	"blá": {
-		"past_tense": "bláði",
-		"past_participle": "blæt"
+		"past_tense": "bláði"
 	},
 	"duna": {
 		"past_tense": "dunaði",
-		"past_participle": "dunað"
+		"past_participle": "duninn"
 	},
 	"éta": {
 		"past_tense": "áti",
-		"past_participle": "át",
+		"past_participle": "étinn",
 		"past_tense_mediopassive": "átisk"
 	},
 	"fanda": {
 		"past_tense": "fondi",
-		"past_participle": "fond"
+		"past_participle": "fondinn"
 	},
 	"fara": {
 		"present_tense": ["fer", "fer", "ferir"],
@@ -5291,12 +5290,12 @@ const special_declensions = {
 	},
 	"geta": {
 		"past_tense": "gæti",
-		"past_participle": "gæt",
+		"past_participle": "gætinn",
 		"past_tense_mediopassive": "gætisk"
 	},
 	"gveta": {
 		"past_tense": "gvæti",
-		"past_participle": "gvæt",
+		"past_participle": "gvætinn",
 		"past_tense_mediopassive": "gvætisk"
 	},
 	"hafa": {
@@ -5305,27 +5304,27 @@ const special_declensions = {
 	},
 	"semja": {
 		"present_tense": ["semja", "semjar", "semjar"],
-		"past_participle": "semið",
+		"past_participle": "seminn",
 		"past_tense": "semjaði"
 	},
 	"ósk-semja": {
 		"present_tense": ["ósk-semja", "ósk-semjar", "ósk-semjar"],
-		"past_participle": "ósk-semið",
+		"past_participle": "ósk-seminn",
 		"past_tense": "ósk-semjaði"
 	},
 	"út-semja": {
 		"present_tense": ["út-semja", "út-semjar", "út-semjar"],
-		"past_participle": "út-semið",
+		"past_participle": "út-seminn",
 		"past_tense": "út-semjaði"
 	},
 	"öndu-semja": {
 		"present_tense": ["öndu-semja", "öndu-semjar", "öndu-semjar"],
-		"past_participle": "öndu-semið",
+		"past_participle": "öndu-seminn",
 		"past_tense": "öndu-semjaði"
 	},
 	"hengja": {
 		"present_tense": ["hengja", "hengjar", "hengjar"],
-		"past_participle": "hengið",
+		"past_participle": "henginn",
 		"past_tense": "hengjaði"
 	},
 	"hlísta": {
@@ -5333,21 +5332,21 @@ const special_declensions = {
 	},
 	"kindja": {
 		"past_tense": "kenddi",
-		"past_participle": "kendið"
+		"past_participle": "kendinn"
 	},
 	"lækja": {
 		"present_tense": ["lækja", "lækjar", "lækjar"],
-		"past_participle": "lækið",
+		"past_participle": "lækinn",
 		"past_tense": "lækjaði"
 	},
 	"maðka": {
 		"past_tense": "maðkaði",
-		"past_participle": "maðkað",
+		"past_participle": "maðkinn",
 		"past_tense_mediopassive": "maðkaðisk"
 	},
 	"meta": {
 		"past_tense": "mæti",
-		"past_participle": "mæt",
+		"past_participle": "mætinn",
 		"past_tense_mediopassive": "mætisk"
 	},
 	"muna": {
@@ -5358,26 +5357,24 @@ const special_declensions = {
 	},
 	"sega": {
 		"past_tense": "sagði",
-		"past_participle": "sagt"
+		"past_participle": "saginn"
 	},
 	"setja": {
 		"past_tense": "sati",
-		"past_participle": "sat",
+		"past_participle": "satinn",
 		"past_tense_mediopassive": "satisk"
 	},
 	"skola": {
 		"past_tense": "sköldi",
-		"past_participle": "skölið"
+		"past_participle": "skölinn"
 	},
 	"sterkja": {
-		"past_tense": "starkti",
-		"past_participle": "starkt",
-		"past_tense_mediopassive": "starktisk"
+		"past_tense": "starkti"
 	},
 	"sve": {
 		"present_tense": ["sve", "svi", "sve"],
 		"past_tense": "svá",
-		"past_participle": "svið",
+		"past_participle": "sveðinn",
 		"mediopassive": "svask",
 		"present_mediopassive": "svisk",
 		"past_tense_mediopassive": "sváðisk",
@@ -5385,13 +5382,12 @@ const special_declensions = {
 	},
 	"vanga": {
 		"present_tense": ["vanga", "vangar", "vangar"],
-		"past_tense": "vangaði",
-		"past_participle": "vangt"
+		"past_tense": "vangaði"
 	},
 	"vega": {
 		"present_tense": ["veg", "veig", "vegir"],
 		"past_tense": "vann",
-		"past_participle": "vagt"
+		"past_participle": "vaginn"
 	},
 	"vesa": {
 		"present_tense": ["ar/vesa", "ar/vesar", "ar/vesar"],
@@ -5403,11 +5399,11 @@ const special_declensions = {
 	},
 	"vita": {
 		"past_tense": "vissi",
+		"past_participle": "vissinn",
 		"past_tense_mediopassive": "vissisk"
 	},
 	"vá": {
-		"past_tense": "váði",
-		"past_participle": "væt"
+		"past_tense": "váði"
 	},
 	"af-vita": {
 		"past_tense": "af-vissi",
@@ -5418,7 +5414,7 @@ const special_declensions = {
 	},
 	"æma": {
 		"past_tense": "æmaði",
-		"past_participle": "æmað"
+		"past_participle": "æminn"
 	}
 };
 
