@@ -4690,7 +4690,7 @@ const entries = {
 	"ugla": ["verb", "to puke, to vomit, to throw up", "old-norse deceptive"],
 	"ugli": ["masculine noun", "puke, vomit", "old-norse deceptive"],
 	"um": ["preposition", "about, of, for, so, that (used for words and incomplete sentences)", "old-norse", ["Ek tala um sjánunu. = I talk about the boy.", "Ek baði um drýkku. = I asked for a drink."]],
-	"um-háll": ["masculine noun", "war"],
+	"um-háll": ["masculine noun", "war, conflict, warfare, crusade"],
 	"umbr": ["adjective", "lush, full of plant life", "fictional"],
 	"umhál-mandr": ["masculine noun", "warrior, fighter"],
 	"umhál-öx": ["neuter noun", "battleaxe (weapon)"],
