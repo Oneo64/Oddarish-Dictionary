@@ -2465,6 +2465,7 @@ const entry_words = [
 	"örs-lög",
 	"örs-löga",
 	"örslög í hellum",
+	"örslöga í ólífi",
 	"östr",
 	"ötlunir-viskr",
 	"öx",
@@ -5023,6 +5024,7 @@ const entries = {
 	"öl-hlett": ["neuter noun", "alcoholic beverage"],
 	"ömbun": ["feminine noun", "a bundle or a bouquet; a group of things held together by a rope or string"],
 	"ömbundi": ["masculine noun", "throat", "fictional"],
+	"öndu-semja": ["verb", "to express feelings, emotions, and desires"],
 	"öngill": ["masculine noun", "vine", "fictional"],
 	"önn": ["masculine noun", "one, as in \"one of\" or \"one can do blah blah blah\"", "fictional"],
 	"örk": ["neuter noun", "oath", "fictional"],
@@ -5032,12 +5034,12 @@ const entries = {
 	"örs-lög": ["neuter noun", "destiny, fate; result, aftermath, conclusion"],
 	"örs-löga": ["verb", "to fate; to be destined to; is destined for"],
 	"örslög í hellum": ["idiomatic phrase", "destiny or fate of someone's life (without negative conontations)"],
+	"örslöga í ólífi": ["verb", "to be fated a death (poetic)"],
 	"östr": ["masculine noun", "east", "old-norse evolved"],
 	"ötlunir-viskr": ["adjective", "responsibility, duty, obligation, job"],
 	"öx": ["neuter noun", "axe (weapon)", "old-norse"],
 	"öxla": ["feminine noun", "shoulder", "old-norse evolved"],
 	"ööö, öm": ["interjection", "uhh"],
-	"öndu-semja": ["verb", "to express feelings, emotions, and desires"],
 
 
 
