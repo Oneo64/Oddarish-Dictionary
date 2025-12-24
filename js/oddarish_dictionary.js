@@ -3002,7 +3002,7 @@ const entries = {
 	"eyðla": ["feminine noun", "a lizard", "old-norse"],
 	"eða": ["conjunction", "or", "old-norse"],
 	"eðjó": ["preposition", "without, with not, other than", "proto-germanic evolved"],
-	"fakka": ["verb", "to cut, to slice; to chop down a tree", "fictional"],
+	"fakka": ["verb", "to cut, to slice (foods and objects); to chop down a tree", "fictional"],
 	"falla": ["verb", "to fall, to drop; to die, to be killed; to end", "old-norse"],
 	"falligr": ["adjective", "beautiful, pretty, sightly, striking", "modern-icelandic evolved"],
 	"fanda": ["verb", "to find, to search, to look for, to seek", "old-norse"],
