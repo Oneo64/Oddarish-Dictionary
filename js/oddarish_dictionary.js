@@ -3503,7 +3503,7 @@ const entries = {
 	"háspa": ["verb", "to yawn", "fictional"],
 	"hægr": ["adjective", "slow", "fictional"],
 	"hægð": ["neuter noun", "slowness, laziness", "fictional"],
-	"hæla": ["verb", "to heal, to cure (with accusative); to heal, to cure (with accusative (who) + \"af\" + dative (from what)); (transitive) (can be used physically or emotionally)", "modern-icelandic deceptive", ["Lækjarinn hælaði mek af skinduíblóðfelli upp begaverki. = The doctor healed by skin cancer with surgery."]],
+	"hæla": ["verb", "to heal, to cure (with accusative); to heal, to cure (with accusative (who) + \"af\" + dative (from what)); (transitive) (can be used physically or emotionally)", "modern-icelandic deceptive", ["Lækjarinn hælaði mek af skinduíblóðfelli upp begaverki. = The doctor healed by skin cancer with surgery.", "Min sár ar hælandi sek! = My wound is healing!"]],
 	"hæling eip": ["neuter noun", "healing herb"],
 	"hælsa": ["verb", "to greet", "proto-germanic evolved"],
 	"hæm": ["neuter noun", "light, as in \"sunlight\"", "fictional"],
