@@ -4519,7 +4519,7 @@ const entries = {
 	"stóa": ["verb", "to steal, to rob, to burgle, to mug", "fictional"],
 	"stóka": ["verb", "to burn, to scorch", "fictional"],
 	"stóvun": ["feminine noun", "thievery, theft", "fictional"],
-	"stöggva": ["verb", "to hit, to strike, to smash, to smite, to bash (with a weapon)", "fictional"],
+	"stöggva": ["verb", "to hit, to strike, to smash, to smite, to bash (with a weapon); to smite (of lightning, falling trees, hail, rock debris, etc)", "fictional"],
 	"stöngr": ["masculine noun", "a metal bar (longer than an ingot)", "fictional"],
 	"stöðingr": ["masculine noun", "equipment, gear", "fictional"],
 	"stýra": ["verb", "to use, to work, to operate, to control, to steer", "modern-icelandic"],
