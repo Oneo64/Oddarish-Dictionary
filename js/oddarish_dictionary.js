@@ -5142,7 +5142,7 @@ const entries = {
 	"þunask": ["verb", "to go numb"],
 	"þunt": ["adjective", "numb, unfeeling", "no-declension"],
 	"þurstr": ["neuter noun", "thirst"],
-	"þvaga": ["verb", "(with \"ána\") to pierce, to strike, to thwack, to land (of arrows and bolts)", "fictional"],
+	"þvaga": ["verb", "(with \"ána\") to pierce, to strike, to land onto, to stick onto (transitive) (of arrows and bolts); to land, to stick, to thwack (intransitive) (of arrows and bolts)", "fictional"],
 	"þvanar": ["conjunction", "when, once it has been", "old-norse evolved", ["Ek ét þvanar ek kváma til heimu. = I eat when I come home.", "Þvanar þú ar þrastað, við ar til vegu. = When you are ready, we'll go."]],
 	"þvara": ["feminine noun", "cooking spoon, kitchen spoon"],
 	"þvað": ["conjunction", "what (not a question word)", "old-norse evolved", ["Ek vit eigi þvað þú ságði."]],
