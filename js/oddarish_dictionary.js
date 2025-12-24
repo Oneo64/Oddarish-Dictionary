@@ -4437,7 +4437,7 @@ const entries = {
 	"slópna": ["verb", "to tilt, to slant, to become lopsided", "fictional"],
 	"slöngva": ["verb", "to sling, to throw, to fling", "old-norse"],
 	"smaragðr": ["masculine noun", "emerald", "old-norse"],
-	"smarta": ["verb", "to hurt, to harm, to damage (can be used abstractedly or physically)", "old-english evolved"],
+	"smarta": ["verb", "to hurt, to harm, to damage (can be used abstractedly, physically, or emotionally)", "old-english evolved"],
 	"smeikr": ["masculine noun", "mistake; an error or fault", "fictional"],
 	"smjör": ["feminine noun", "butter", "modern-icelandic"],
 	"smæza": ["feminine noun", "clover", "old-norse evolved"],
