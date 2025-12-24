@@ -2841,7 +2841,7 @@ const entries = {
 	"böggva": ["verb", "to build, to construct", "old-norse evolved"],
 	"böggving": ["neuter noun", "construction", "old-norse evolved"],
 	"böggving-hýs": ["neuter noun", "a building"],
-	"bölva": ["verb", "to succumb, to die, to perish to", "old-norse evolved"],
+	"bölva": ["verb", "to succumb, to die, to perish", "old-norse evolved"],
 	"börsk-eip": ["neuter noun", "(plant) cedar"],
 	"börskr": ["masculine noun", "tree bark", "modern-icelandic evolved"],
 	"búa": ["verb", "to live at, to live in; to have or to be, in the sense of being there", "old-norse"],
