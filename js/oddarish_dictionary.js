@@ -3819,7 +3819,7 @@ const entries = {
 	"læða": ["feminine noun", "a lurker, someone who sneaks", "old-norse"],
 	"lépa": ["verb", "to read", "old-norse evolved"],
 	"léttr": ["adjective", "easy, simple; light in weight", "old-norse"],
-	"líf-hæla": ["verb", "to revive, to resurrect, to bring back to life"],
+	"líf-hæla": ["verb", "to revive, to resurrect, to bring back to life; to cure one's depression"],
 	"líf-míkt": ["neuter noun", "carbon"],
 	"líf-nág-nir": ["masculine noun", "lich"],
 	"lífa frávæg": ["verb", "to survive or live from an event"],
