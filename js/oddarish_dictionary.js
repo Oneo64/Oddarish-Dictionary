@@ -3817,7 +3817,7 @@ const entries = {
 	"lángi": ["masculine noun", "lung", "modern-icelandic evolved"],
 	"lægi (1)": ["neuter noun", "a leech", "old-norse"],
 	"lægi (2)": ["verb", "derogatory slur against vampires", "old-norse"],
-	"lækja": ["verb", "to heal, to cure (by medicine) (with accusative (who) + \"af\" + dative (from what))", "proto-germanic evolved", ["Hann lækjaði mek af veika upp fingum. = He cured me of sickness with the use of medicines."]],
+	"lækja": ["verb", "to heal, to cure (by medicine) (transitive) (with accusative (who) + \"af\" + dative (from what))", "proto-germanic evolved", ["Hann lækjaði mek af veika upp fingum. = He cured me of sickness with the use of medicines."]],
 	"lækjari": ["verb", "healer, doctor", "proto-germanic evolved"],
 	"læn": ["neuter noun", "linen", "proto-germanic evolved"],
 	"lær": ["feminine noun", "thigh", "old-norse"],
