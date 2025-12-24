@@ -4701,7 +4701,7 @@ const entries = {
 	"upp (2)": ["conjunction", "with preparing, with using", "old-norse"],
 	"upp-flegni": ["neuter noun", "business, commerce"],
 	"upp-flegnun": ["feminine noun", "company, corporation, establishment, institution, organisation, organization, enterprise"],
-	"upp-hæla": ["verb", "to revive, to heal completely"],
+	"upp-hæla": ["verb", "to revive, to fully recover, to heal completely"],
 	"upp-hönd": ["neuter noun", "favorite"],
 	"upp-lyfta": ["verb", "to promote (as in promoted to a higher position or rank)"],
 	"upp-nægja": ["verb", "to enlighten, to make smarter"],
