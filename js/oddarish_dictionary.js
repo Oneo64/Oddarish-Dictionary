@@ -3004,7 +3004,7 @@ const entries = {
 	"eða": ["conjunction", "or", "old-norse"],
 	"eðjó": ["preposition", "without, with not, other than", "proto-germanic evolved"],
 	"fakka": ["verb", "to cut, to slice (foods and objects); to chop down a tree", "fictional"],
-	"falla": ["verb", "to fall, to drop; to fall from grace; to die, to be killed, to be ended (in battle)", "old-norse"],
+	"falla": ["verb", "to fall, to drop; to fall from grace; to die, to be killed, to be ended (in battle or combat)", "old-norse"],
 	"falligr": ["adjective", "beautiful, pretty, sightly, striking", "modern-icelandic evolved"],
 	"fanda": ["verb", "to find, to search, to look for, to seek", "old-norse"],
 	"fara": ["verb", "to go or to travel a long distance for a long time", "old-norse evolved", ["Feklan ferir til virkanum. = The wagon goes to the castle.", "Mandrinn hefir farið hvanarna. = The man has been travelling for a long while."]],
