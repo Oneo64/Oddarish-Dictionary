@@ -28,7 +28,7 @@ const noun_declensions = {
 		"i", "inum", "um", "unum",
 		"s", "sins", "a", "anna",
 	],
-	// -rr
+	// -rr, -gr
 	masculine_rr: [
 		"", "rinn", "ar", "arnir",
 		" ", "inn", "a", "ana",
@@ -123,8 +123,8 @@ const noun_declensions = {
 
 	// NEUTER
 	neuter: [
-		"", "it", "ur", "in",
-		"", "it", "ur", "in",
+		"", "it", "a", "in",
+		"", "it", "a", "in",
 		"i", "inu", "um", "unum",
 		"s", "sins", "a", "anna",
 	],
