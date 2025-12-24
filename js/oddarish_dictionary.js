@@ -2178,6 +2178,7 @@ const entry_words = [
 	"urði",
 	"usli",
 	"usping",
+	"uspingja",
 	"vahaha",
 	"valdr",
 	"valdra-mákill",
