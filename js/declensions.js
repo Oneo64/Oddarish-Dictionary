@@ -1,106 +1,127 @@
 const noun_declensions = {
+	// MASCULINE
+	// fallback
 	masculine: [
 		"", "inn", "ar", "arnir",
-		"u", "unu", "ar", "arnir",
+		"u", "unn", "a", "ana",
 		"i", "inum", "um", "unum",
 		"s", "sins", "a", "anna",
 	],
+	// default -r
 	masculine_r: [
 		"", "rinn", "ar", "arnir",
-		"u", "unu", "ar", "arnir",
+		"u", "unn", "a", "ana",
 		"i", "inum", "um", "unum",
 		"s", "sins", "a", "anna",
 	],
+	// -dr
+	masculine_dr: [
+		"", "inn", "ar", "arnir",
+		"u", "unn", "a", "ana",
+		"i", "inum", "um", "unum",
+		"s", "sins", "a", "anna",
+	],
+	// -gtr, -ptr, -gðr
+	masculine_r2: [
+		"", "inn", "ir", "irnir",
+		"u", "unn", "i", "ina",
+		"i", "inum", "um", "unum",
+		"s", "sins", "a", "anna",
+	],
+	// -rr
 	masculine_rr: [
 		"", "rinn", "ar", "arnir",
 		" ", "inn", "a", "ana",
 		"i", "num", "um", "unum",
 		"s", "sins", "ja", "janna",
 	],
+
+	// default -ll
 	masculine_ll: [
 		"", "linn", "ar", "arnir",
 		" ", "inn", "a", "ana",
 		"i", "num", "um", "unum",
 		"s", "sins", "a", "anna",
 	],
-	masculine_r2: [
-		"", "inn", "ir", "irnir",
-		"u", "unu", "ir", "irnir",
-		"i", "inum", "um", "unum",
-		"s", "sins", "a", "anna",
+	// -ill
+	masculine_ill: [
+		"", "illinn", "lar", "larnir",
+		"lu", "lunn", "la", "lana",
+		"li", "linum", "lum", "lunum",
+		"ils", "lins", "la", "lanna",
 	],
-	masculine_i: [
-		"", "inn", "ar", "arnir",
-		"a", "ann", "ar", "arnir",
-		"a", "anum", "um", "unum",
-		"a", "ans", "a", "anna",
-	],
-	masculine_dr: [
-		"", "inn", "ar", "arnir",
-		"u", "inn", "a", "ana",
-		"i", "inum", "um", "unum",
-		"s", "sins", "a", "anna",
-	],
+
+	// default -ir
 	masculine_ir: [
 		"", "irinn", "r", "rnir",
 		"ur", "urnu", "r", "rnir",
 		"ur", "urnum", "rum", "runum",
 		"ur", "urins", "ra", "ranna",
 	],
+	// -nir
 	masculine_ir2: [
-		"", "inn", "íri", "ærinn",
-		"u", "ynu", "íri", "ærinn",
-		"i", "ynum", "yrjum", "ærunum",
-		"is", "ins", "yrja", "æranna",
+		"", "irinn", "ar", "arnir",
+		"u", "inn", "a", "ana",
+		"i", "inum", "um", "unum",
+		"is", "isins", "a", "anna",
 	],
-	masculine_ill: [
-		"", "illinn", "lar", "larnir",
-		"illu", "linn", "lar", "larnir",
-		"illi", "linum", "lum", "lunum",
-		"ills", "lins", "la", "lanna",
+
+	// -i
+	masculine_i: [
+		"", "inn", "ar", "arnir",
+		"a", "ann", "a", "ana",
+		"a", "anum", "um", "unum",
+		"a", "ans", "a", "anna",
 	],
+	// -nn
 	masculine_nn: [
 		"", "ninn", "ar", "arnir",
-		"u", "unu", "ar", "arnir",
+		"u", "nunn", "a", "ana",
 		"i", "inum", "um", "unum",
 		"s", "ins", "a", "anna",
 	],
+
+	// FEMININE
+	// fallback
 	feminine: [
 		"", "in", "ir", "irnar",
 		"", "ina", "ir", "irnar",
 		"", "inni", "um", "unum",
 		"ar", "arinnar", "a", "anna",
 	],
+
+	// default -a
 	feminine_a: [
 		"", "an", "ur", "urnar",
 		"u", "una", "ur", "urnar",
 		"u", "unni", "um", "unum",
 		"u", "unnar", "a", "anna",
 	],
-	feminine_a2: [
-		"", "an", "ur", "urnar",
-		"u", "una", "ur", "urnar",
-		"u", "unni", "um", "unum",
-		"u", "unnar", "a", "anna",
-	],
+	// -ja
 	feminine_ja: [
 		"", "an", "ar", "arnar",
 		"u", "una", "ar", "arnar",
 		"u", "unni", "um", "unum",
 		"u", "unnar", "a", "anna",
 	],
+
+	// default -ei
 	feminine_ei: [
 		"", "énn", "jar", "jarnar",
 		"", "énna", "jar", "jarnar",
 		"", "énni", "jum", "junum",
 		"z", "jar", "ja", "janna",
 	],
+
+	// default -ir
 	feminine_ir: [
 		"", "irin", "r", "rnar",
 		"ur", "urina", "r", "rnar",
 		"ur", "urinni", "rum", "runum",
 		"ur", "urinnar", "ra", "ranna",
 	],
+
+	// NEUTER
 	neuter: [
 		"", "it", "ur", "in",
 		"", "it", "ur", "in",
@@ -337,16 +358,16 @@ function get_noun_declension(w, t) {
 
 			if (vowel in u_umlaut) {
 				for (var i = 0; i < 16; i++) {
-					if (noun_declensions.feminine_a2[i] == "") {
+					if (noun_declensions.feminine_a[i] == "") {
 						declension.push(word);
 					} else {
 						var shifted = word.substring(0, word.length - 1);
 
-						if (noun_declensions.feminine_a2[i].charAt(0) == "u") {
+						if (noun_declensions.feminine_a[i].charAt(0) == "u") {
 							shifted = word.substring(0, last_vowel_pos - (vowel.length - 1)) + u_umlaut[vowel] + word.substring(last_vowel_pos + 1, word.length - 1);
 						}
 
-						declension.push(shifted + noun_declensions.feminine_a2[i]);
+						declension.push(shifted + noun_declensions.feminine_a[i]);
 					}
 				}
 			} else {
