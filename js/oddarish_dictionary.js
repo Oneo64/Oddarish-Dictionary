@@ -3498,7 +3498,7 @@ const entries = {
 	"háspa": ["verb", "to yawn", "fictional"],
 	"hægr": ["adjective", "slow", "fictional"],
 	"hægð": ["neuter noun", "slowness, laziness", "fictional"],
-	"hæla": ["verb", "to cure, to heal, to recover", "old-norse"],
+	"hæla": ["verb", "to heal, to cure (injuries, sicknesses, weaknesses, etc, but never emotionally)", "modern-icelandic deceptive"],
 	"hæling eip": ["neuter noun", "healing herb"],
 	"hælsa": ["verb", "to greet", "proto-germanic evolved"],
 	"hæm": ["neuter noun", "light, as in \"sunlight\"", "fictional"],
@@ -3812,6 +3812,8 @@ const entries = {
 	"lángi": ["masculine noun", "lung", "modern-icelandic evolved"],
 	"læki (1)": ["neuter noun", "a leech", "old-norse"],
 	"læki (2)": ["verb", "derogatory slur against vampires", "old-norse"],
+	"lækja": ["verb", "to heal, to cure (with mek/þek/sek + \"af\" + dative)", "proto-germanic evolved", "Hann lækjaði mek af íblóðfelli. = He cured me of cancer."],
+	"lækjari": ["verb", "healer, doctor", "proto-germanic evolved"],
 	"læn": ["neuter noun", "linen", "proto-germanic evolved"],
 	"lær": ["feminine noun", "thigh", "old-norse"],
 	"læra": ["verb", "to learn", "old-norse"],
@@ -4614,7 +4616,7 @@ const entries = {
 	"tefning": ["feminine noun", "design, appearance", "fictional"],
 	"tegja": ["verb", "to shape, to form, to create", "fictional"],
 	"tegn": ["adjective", "simple, basic, common", "fictional"],
-	"tekja": ["verb", "to take, to bring; to take into possession; to take something along; (with \"með mér/sér/því\") to bring someone along", "old-norse evolved", ["Getrðu tekja mér tólit? = Can you bring me the tool?", "Hann takti sér bástann. = He took a hat with him.", "Þose tekju mek með þér til lytingina. = Please take me with you to the festival."]],
+	"tekja": ["verb", "to take, to bring; to take into possession; to take something along; (with \"með mér/þér/sér/því\") to bring someone along", "old-norse evolved", ["Getrðu tekja mér tólit? = Can you bring me the tool?", "Hann takti sér bástann. = He took a hat with him.", "Þose tekju mek með þér til lytingina. = Please take me with you to the festival."]],
 	"tellr": ["masculine noun", "speech", "fictional"],
 	"tenda": ["feminine noun", "feeling, emotion; mood; sense", "fictional"],
 	"tenga": ["verb", "to give a frame to; to timber or set a frame up", "fictional"],
@@ -4714,7 +4716,6 @@ const entries = {
 	"usli": ["masculine noun", "fire embers; sparks of fire", "old-norse"],
 	"usping": ["feminine noun", "chant, incantation; war chant", "fictional"],
 	"uspingja": ["verb", "to chant, to sing an incantation; to sing a war song", "fictional"],
-
 
 
 
@@ -4961,6 +4962,7 @@ const entries = {
 	"í ygann": ["preposition", "through, into"],
 	"í ássága": ["conjunction", "for example"],
 	"í": ["preposition", "in, into, inside"],
+	"íblóðfell": ["neuter noun", "cancer"],
 	"ígull": ["masculine noun", "sea urchin"],
 	"ísk": ["neuter noun", "ice"],
 	"Ísk-land": ["neuter noun", "Iceland"],
