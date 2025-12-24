@@ -148,7 +148,11 @@
 					document.getElementById("infinitive").innerHTML = "at " + v2;
 					document.getElementById("imperative").innerHTML = add_verb_ending_basic(v3, "u") + v4;
 					document.getElementById("present_participle").innerHTML = add_verb_ending_basic(v3, "andi") + v4;
-					document.getElementById("past_participle").innerHTML = get_past_participle(v3) + v4;
+
+					var participle = get_past_participle(v3) + v4;
+
+					document.getElementById("past_participle").innerHTML = participle;
+					document.getElementById("supine").innerHTML = get_supine(participle);
 
 					document.getElementById("past_tense").innerHTML = get_past_tense(v3) + v4;
 					document.getElementById("1st_present").innerHTML = get_present_tense(v3, 1) + v4;

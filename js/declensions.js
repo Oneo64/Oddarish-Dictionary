@@ -618,13 +618,11 @@ function get_past_participle(word) {
 	var vowels = "aáæeéiíoóöuúyý";
 
 	if (word.endsWith("á")) {
-		return word.substring(0, word.length - 1) + "engið";
+		return word.substring(0, word.length - 1) + "enginn";
 	} else if (word.endsWith("óa")) {
-		return word.substring(0, word.length - 2) + "eið";
-	} else if (word.endsWith("úa")) {
-		return word.substring(0, word.length - 2) + "ýð";
+		return word.substring(0, word.length - 2) + "einn";
 	} else if (word.endsWith("eyja")) {
-		return word.substring(0, word.length - 2) + "ð";
+		return word.substring(0, word.length - 2) + "inn";
 	} else {
 		var stem = word.substring(0, word.length - 1);
 		var ending = "";
@@ -637,38 +635,22 @@ function get_past_participle(word) {
 
 		if (ja_ending) {
 			if (can_apply_umlaut(word.substring(0, word.length - 2), past_tense_sound_shift)) {
-				if ("bkpsz".includes(ending.charAt(0)) && ending != "pp") {
-					return apply_umlaut(word.substring(0, word.length - 2), past_tense_sound_shift) + "t";
-				}
-
-				if ("fr".includes(ending.charAt(ending.length - 1))) return apply_umlaut(word.substring(0, word.length - 2), past_tense_sound_shift) + "ið";
-				if ("mng".includes(ending.charAt(ending.length - 1))) return apply_umlaut(word.substring(0, word.length - 2), past_tense_sound_shift) + "t";
-				if (ending == "l") return apply_umlaut(word.substring(0, word.length - 2), past_tense_sound_shift) + "ið";
-			} else if (ending.endsWith("g")) {
-				return word.substring(0, word.length - 2) + "t";
+				return apply_umlaut(word.substring(0, word.length - 2), past_tense_sound_shift) + "inn";
 			}
 
-			return word.substring(0, word.length - 2) + "ið";
-		} else {
-			if (word.endsWith("va")) return word.substring(0, word.length - 1) + "ið";
-
-			if (ending == "mm" || ending == "nn") return stem + "t";
-
-			if (ending.length == 2 && "bkpsz".includes(ending.charAt(1)) && ending != "kk" && ending != "pp") {
-				return word.substring(0, word.length - 1) + "t";
-			}
-
-			if (ending.length == 1) {
-				if ("bkpsz".includes(ending)) return stem + "t";
-				if ("fr".includes(ending)) return stem + (stem.endsWith("eyr") ? "ð" : "ið");
-				if (ending == "m" || ending == "n") return stem + "t";
-			}
-
-			if (ending.endsWith("g")) return stem + "t";
+			return word.substring(0, word.length - 2) + "inn";
 		}
 	}
 
-	return stem + "að";
+	return stem + "inn";
+}
+
+function get_supine(participle) {
+	if (participle.endsWith("yinn")) {
+		return participle.substring(0, participle.length - 3) + "ð";
+	}
+
+	return participle.substring(0, participle.length - 2) + "ð";
 }
 
 function get_present_tense(word, pov) {
