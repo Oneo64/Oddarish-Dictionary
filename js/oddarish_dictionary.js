@@ -4420,7 +4420,7 @@ const entries = {
 	"slaska": ["verb", "to scream, to screech, to shriek", "fictional"],
 	"slaufr": ["masculine noun", "surface", "fictional"],
 	"slef": ["adjective", "clean, tidy, pure, clear", "fictional"],
-	"slegja": ["verb", "to hit, to strike, to smite", "old-norse hypothetical"],
+	"slegja": ["verb", "to hit, to strike, to smite (general physical hitting/striking)", "old-norse hypothetical"],
 	"sleikja": ["verb", "to lick", "old-norse"],
 	"sleima": ["verb", "to fly", "fictional"],
 	"sleipr": ["adjective", "slippery, slick, smooth", "fictional"],
