@@ -5262,9 +5262,6 @@ const special_declensions = {
 		"present_tense": ["fer", "fer", "ferir"],
 		"present_mediopassive": "ferisk"
 	},
-	"flerra": {
-		"present_tense": ["flerra", "flerrar", "flerrar"]
-	},
 	"geta": {
 		"past_tense": "gæti",
 		"past_participle": "gæt",

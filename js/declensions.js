@@ -687,7 +687,7 @@ function get_present_tense(word, pov) {
 	if ("áæeéiíoóöuúyý".includes(word.charAt(word.length - 1))) stem = word;
 
 	if (pov == 1) {
-		if ((stem.endsWith("f") || stem.endsWith("r") || stem.endsWith("g") || stem.endsWith("t")) && !stem.endsWith("tt")) {
+		if ((stem.endsWith("f") || stem.endsWith("r") || stem.endsWith("g") || stem.endsWith("t")) && !stem.endsWith("tt") && !stem.endsWith("rr")) {
 			return stem;
 		} else if (stem.endsWith("eyj")) {
 			return stem.substring(0, stem.length - 1);
@@ -697,7 +697,7 @@ function get_present_tense(word, pov) {
 			return word;
 		}
 	} else if (pov == 2) {
-		if ((stem.endsWith("f") || stem.endsWith("r") || stem.endsWith("g") || stem.endsWith("t")) && !stem.endsWith("tt")) {
+		if ((stem.endsWith("f") || stem.endsWith("r") || stem.endsWith("g") || stem.endsWith("t")) && !stem.endsWith("tt") && !stem.endsWith("rr")) {
 			return stem + "i";
 		} else if (stem.endsWith("ú")) {
 			return stem.substring(0, stem.length - 1) + "ý";
@@ -709,7 +709,7 @@ function get_present_tense(word, pov) {
 			return stem + "ar";
 		}
 	} else {
-		if ((stem.endsWith("f") || stem.endsWith("r") || stem.endsWith("g") || stem.endsWith("t")) && !stem.endsWith("tt")) {
+		if ((stem.endsWith("f") || stem.endsWith("r") || stem.endsWith("g") || stem.endsWith("t")) && !stem.endsWith("tt") && !stem.endsWith("rr")) {
 			return stem + "ir";
 		} else if (word.endsWith("va")) {
 			return stem.substring(0, stem.length - 1) + "ur";
