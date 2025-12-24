@@ -4733,7 +4733,7 @@ const entries = {
 	"veg-skónn": ["masculine noun", "pavement, cobblestone"],
 	"vega at súfa": ["verb", "to go to sleep"],
 	"vega inn gangrast með bárum": ["idiomatic phrase", "to go against or try to do something almost impossible", "", ["Hann sve eigi áða hann ar vegandi inn gangrast með bárum! = He doesn't realise that he's trying to do something impossible!"]],
-	"vega inn gangrast": ["verb", "to brawl, (with \"með\") to fight with"],
+	"vega inn gangrast": ["verb", "to brawl; (with \"með\") to fight with"],
 	"vega só": ["verb", "to finish with, to finish by (with verb with same tense and perspective)", "", ["Eldverkit vánn só fjökknaði! = The firework went of with a bang!"]],
 	"vega til sængin": ["verb", "to go to bed"],
 	"vega í hildi": ["verb", "to go to war"],
