@@ -3815,7 +3815,7 @@ const entries = {
 	"lángi": ["masculine noun", "lung", "modern-icelandic evolved"],
 	"læki (1)": ["neuter noun", "a leech", "old-norse"],
 	"læki (2)": ["verb", "derogatory slur against vampires", "old-norse"],
-	"lækja": ["verb", "to heal, to cure (with mek/þek/sek + \"af\" + dative)", "proto-germanic evolved", "Hann lækjaði mek af íblóðfelli. = He cured me of cancer."],
+	"lækja": ["verb", "to heal, to cure (with mek/þek/sek + \"af\" + dative)", "proto-germanic evolved", ["Hann lækjaði mek af íblóðfelli. = He cured me of cancer."]],
 	"lækjari": ["verb", "healer, doctor", "proto-germanic evolved"],
 	"læn": ["neuter noun", "linen", "proto-germanic evolved"],
 	"lær": ["feminine noun", "thigh", "old-norse"],
@@ -5316,7 +5316,9 @@ const special_declensions = {
 		"past_tense": "öndu-semjaði"
 	},
 	"hengja": {
-		"present_tense": ["hengja", "hengjar", "hengjar"]
+		"present_tense": ["hengja", "hengjar", "hengjar"],
+		"past_participle": "hengið",
+		"past_tense": "hengjaði"
 	},
 	"hlísta": {
 		"present_tense": ["hlísta", "hlístar", "hlístar"]
@@ -5324,6 +5326,11 @@ const special_declensions = {
 	"kindja": {
 		"past_tense": "kenddi",
 		"past_participle": "kendið"
+	},
+	"lækja": {
+		"present_tense": ["lækja", "lækjar", "lækjar"],
+		"past_participle": "lækið",
+		"past_tense": "lækjaði"
 	},
 	"maðka": {
 		"past_tense": "maðkaði",
