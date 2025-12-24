@@ -4290,7 +4290,7 @@ const entries = {
 	"sam-rasta": ["verb", "to duel"],
 	"sama": ["verb", "to equal, to be the same as", "old-norse"],
 	"saman": ["adverb", "together", "old-norse"],
-	"sanga": ["verb", "to sing, to hum", "fictional"],
+	"sanga": ["verb", "to sing, to hum", "old-norse evolved"],
 	"sann-flytja": ["verb", "to convince, to persuade"],
 	"sannr": ["adjective", "true", "old-norse"],
 	"sapna athygli": ["verb", "to get attention"],
