@@ -4238,7 +4238,7 @@ const entries = {
 	"rauðr": ["adjective", "red", "old-norse"],
 	"rað": ["feminine noun", "row, order, sequence", "old-norse evolved"],
 	"raða": ["verb", "to sort, to order", "old-norse evolved"],
-	"refja": ["verb", "to punish, to blame", "proto-germanic evolved"],
+	"refja": ["verb", "to punish, to discipline, to penalise", "proto-germanic evolved"],
 	"refjun": ["feminine noun", "punishment", "proto-germanic evolved"],
 	"reim": ["neuter noun", "a strip of material; a strap", "old-norse deceptive"],
 	"reina": ["verb", "to clean, to wash", "fictional"],
