@@ -623,6 +623,8 @@ function get_past_participle(word) {
 		return word.substring(0, word.length - 2) + "einn";
 	} else if (word.endsWith("eyja")) {
 		return word.substring(0, word.length - 2) + "inn";
+	} else if ("gkpstz".includes(word.charAt(word.length - 2)) && (vowels.includes(word.charAt(word.length - 3)) || word.endsWith("ssa"))) {
+		return word.substring(0, word.length - 1) + "tr";
 	} else {
 		var stem = word.substring(0, word.length - 1);
 		var ending = "";
@@ -648,6 +650,10 @@ function get_past_participle(word) {
 function get_supine(participle) {
 	if (participle.endsWith("yinn")) {
 		return participle.substring(0, participle.length - 3) + "ð";
+	}
+
+	if (participle.endsWith("tr")) {
+		return participle.substring(0, participle.length - 1);
 	}
 
 	return participle.substring(0, participle.length - 2) + "ð";
