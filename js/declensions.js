@@ -575,7 +575,7 @@ function get_past_tense(word) {
 
 		if (ja_ending) {
 			if (can_apply_umlaut(word.substring(0, word.length - 2), past_tense_sound_shift)) {
-				if ("bkpsz".includes(ending.charAt(0)) && ending != "pp") {
+				if ("kpsz".includes(ending.charAt(0)) && ending != "pp") {
 					return apply_umlaut(word.substring(0, word.length - 2), past_tense_sound_shift) + "ti";
 				}
 
@@ -593,12 +593,12 @@ function get_past_tense(word) {
 			if (word.endsWith("va")) return word.substring(0, word.length - 2) + "uði";
 			if (ending == "mm" || ending == "nn") return stem + "di";
 
-			if (ending.length == 2 && "bkpsz".includes(ending.charAt(1)) && ending != "kk" && ending != "pp") {
+			if (ending.length == 2 && "kpsz".includes(ending.charAt(1)) && ending != "kk" && ending != "pp") {
 				return word.substring(0, word.length - 1) + "ti";
 			}
 
 			if (ending.length == 1) {
-				if ("bkpsz".includes(ending)) return stem + "ti";
+				if ("kpsz".includes(ending)) return stem + "ti";
 				if ("fr".includes(ending)) return stem + "ði";
 				if (ending == "m" || ending == "n") return stem + "di";
 			}
