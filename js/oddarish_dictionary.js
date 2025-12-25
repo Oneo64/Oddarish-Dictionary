@@ -5057,7 +5057,7 @@ const entries = {
 	"örvis-lög": ["neuter noun", "destiny, fate; result, aftermath, conclusion"],
 	"örvis-löga": ["verb", "to fate; to be destined to; is destined for"],
 	"örvislög í hellum": ["idiomatic phrase", "destiny or fate of someone's life (without negative conontations)"],
-	"örvislög í ólífi": ["verb", "to be fated a death (poetic)"],
+	"örvislöga í ólífi": ["verb", "to be fated a death (poetic)"],
 	"östr": ["masculine noun", "east", "old-norse evolved"],
 	"ötlunir-viskr": ["adjective", "responsibility, duty, obligation, job"],
 	"öx": ["neuter noun", "axe (weapon)", "old-norse"],
