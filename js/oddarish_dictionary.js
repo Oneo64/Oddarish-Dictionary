@@ -3067,7 +3067,7 @@ const entries = {
 	"fekla": ["feminine noun", "cart, wagon", "fictional"],
 	"fela": ["verb", "to hide, to conceal, usually means to hide out of sight; can also mean to keep a secret", "old-norse"],
 	"feldr": ["masculine noun", "vellum", "fictional"],
-	"fell": ["neuter noun", "case, condition", "old-norse hypothetical"],
+	"fell": ["neuter noun", "case, condition; stage, status", "old-norse hypothetical"],
 	"felun": ["feminine noun", "mystery, unknown thing, enigma", "old-norse evolved"],
 	"felun-ugr": ["adjective", "mysterious"],
 	"fenga": ["feminine noun", "apron", "fictional"],
