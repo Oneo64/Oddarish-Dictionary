@@ -623,7 +623,7 @@ function get_past_participle(word) {
 		return word.substring(0, word.length - 2) + "einn";
 	} else if (word.endsWith("eyja")) {
 		return word.substring(0, word.length - 2) + "inn";
-	} else if ("gkpt".includes(word.charAt(word.length - 2)) && vowels.includes(word.charAt(word.length - 3))) {
+	} else if ("gkp".includes(word.charAt(word.length - 2)) && vowels.includes(word.charAt(word.length - 3))) {
 		return word.substring(0, word.length - 1) + "tr";
 	} else if ("sz".includes(word.charAt(word.length - 2))) {
 		return word.substring(0, word.length - 1) + "tr";
