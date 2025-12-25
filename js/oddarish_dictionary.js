@@ -5396,8 +5396,9 @@ const special_declensions = {
 		"past_participle": "vaginn"
 	},
 	"vesa": {
-		"present_tense": ["ar/vesa", "ar/vesar", "ar/vesar"],
-		"past_tense": "var/vesti"
+		"present_tense": ["ar", "ar", "ar"],
+		"past_tense": "var",
+		"past_participle": "vesinn"
 	},
 	"vilja": {
 		"present_tense": ["vil", "vil", "vilar"],
