@@ -4287,7 +4287,7 @@ const entries = {
 	"ræsta": ["verb", "to try, to test", "proto-germanic evolved", ["Ek mun at ræsta at vega ypir rúlina. = I will try to go over the hill."]],
 	"rétt-bænna": ["adverb", "right into, straight to, right back to; immediately to, without hesitation"],
 	"réttr": ["adjective", "correct, true, right, just", "old-norse"],
-	"rík": ["feminine noun", "realm, world, land, area; place, location", "proto-germanic evolved"],
+	"rík": ["feminine noun", "realm, world, land, area; place, location", "proto-germanic archaic-form evolved"],
 	"rímmr": ["adverb", "right as in the direction", "fictional"],
 	"rógr": ["masculine noun", "grave", "fictional"],
 	"rógtr": ["adjective", "wild, messy, gritty, untamed, rugged", "fictional"],
