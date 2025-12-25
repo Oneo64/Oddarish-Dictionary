@@ -5377,6 +5377,10 @@ const special_declensions = {
 	"máklja": {
 		"imperative": "máklju"
 	},
+	"refja": {
+		"present_tense": ["refja", "refjar", "refjar"],
+		"past_tense": "refjaði"
+	},
 	"sega": {
 		"past_tense": "sagði",
 		"past_participle": "saginn"
