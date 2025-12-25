@@ -3436,7 +3436,7 @@ const entries = {
 	"hrungr": ["adjective", "brown", "fictional"],
 	"hrákk": ["neuter noun", "endurance, bodily strength, constitution, resilience; resistance, armor, protection", "fictional"],
 	"hrákk-ugr": ["adjective", "athletic, acrobatic, gymnastic"],
-	"hrákkja": ["verb", "to resist, to withstand, to endure; to endure, to stand firm, to hold together (intransitive)", "fictional"],
+	"hrákkja": ["verb", "to resist, to withstand, to endure, to bear; to endure, to stand firm, to hold together (intransitive)", "fictional"],
 	"hrápna": ["verb", "to attack with an army", "fictional"],
 	"hrápning-fekla": ["feminine noun", "artillery, siege weapons"],
 	"hrása": ["verb", "to tightly hug or embrace; to tightly hold someone or soemthing", "fictional"],
