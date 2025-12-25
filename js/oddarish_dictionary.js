@@ -2401,6 +2401,7 @@ const entry_words = [
 	"éka",
 	"ékkva",
 	"él",
+	"érfir",
 	"éta",
 	"í alla steðarnir",
 	"í dagu",
@@ -3812,7 +3813,7 @@ const entries = {
 	"ljofnir": ["masculine noun", "a lion", "english evolved"],
 	"ljómuna": ["feminine noun", "lemon", "indo-iranian evolved"],
 	"ljúfr": ["adjective", "mild, gentle, kind, nice, friendly, sweet; generally good in personality", "old-norse"],
-	"ljúnna": ["feminine noun", "a soft light, often used to refer to moonlight; twilight", "fictional"],
+	"ljúnna": ["feminine noun", "a soft light, often used to refer to moonlight", "fictional"],
 	"ljútr": ["adjective", "ugly, unsightly, repulsive", "old-norse evolved"],
 	"lofa": ["verb", "to praise, to flatter; to be fond of", "old-norse evolved"],
 	"lok": ["neuter noun", "the end, tip, or point of a thing, such as a rope, pole, sword, or staff", "old-norse"],
@@ -4967,10 +4968,11 @@ const entries = {
 
 
 	"égn": ["neuter noun", "(physics) neutron", "kagalarian evolved"],
-	"éka": ["adjective", "each, every"],
-	"ékkva": ["verb", "to succeed or finish; to gain success"],
-	"él": ["feminine noun", "a loud sound made with the mouth; a yell, roar, scream, screech, or shout"],
-	"éta": ["verb", "to eat, to consume"],
+	"éka": ["adjective", "each, every", "fictional"],
+	"ékkva": ["verb", "to succeed or finish; to gain success", "fictional"],
+	"él": ["feminine noun", "a loud sound made with the mouth; a yell, roar, scream, screech, or shout", "old-norse"],
+	"érfir": ["masculine noun", "twilight, a stage of day when the sun hasn't risen yet or has already set, but the sky is bright", "ancient-greek evolved"],
+	"éta": ["verb", "to eat, to consume", "old-norse"],
 
 
 
