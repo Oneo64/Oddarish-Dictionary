@@ -4547,7 +4547,7 @@ const entries = {
 	"sum-stund": ["adverb", "sometimes, ocasionally"],
 	"sumarr": ["neuter noun", "summer", "modern-icelandic"],
 	"sumr": ["adjective", "some, a few (as in numbers)", "old-norse"],
-	"suna": ["adverb", "so, very, really", "fictional", ["Skjánginn ar suna kelstr! = The tundra is so chilly!"]],
+	"suna": ["adverb", "so, very, really; this, to this degree", "fictional", ["Skjánginn ar suna kelstr! = The tundra is so chilly!"]],
 	"sundi": ["masculine noun", "difference", "modern-icelandic hypothetical"],
 	"sundr": ["adjective", "different, seperate, apart", "modern-icelandic evolved"],
 	"sundra": ["verb", "to divide, to split", "modern-icelandic"],
