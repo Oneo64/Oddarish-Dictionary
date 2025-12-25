@@ -5401,8 +5401,7 @@ const special_declensions = {
 		"past_participle": "vesinn"
 	},
 	"vilja": {
-		"present_tense": ["vil", "vil", "vilar"],
-		"past_tense_mediopassive": "viltisk"
+		"present_tense": ["vil", "vil", "vilar"]
 	},
 	"vita": {
 		"past_tense": "vissi",
