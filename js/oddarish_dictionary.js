@@ -5394,6 +5394,9 @@ const special_declensions = {
 		"past_tense": "sköldi",
 		"past_participle": "skölinn"
 	},
+	"slimpja": {
+		"present_tense": ["slimpja", "slimpjar", "slimpjar"]
+	},
 	"sterkja": {
 		"past_tense": "starkti"
 	},
