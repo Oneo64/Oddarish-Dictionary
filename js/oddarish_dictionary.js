@@ -4060,7 +4060,7 @@ const entries = {
 	"nál": ["feminine noun", "a needle", "old-norse"],
 	"náranga": ["feminine noun", "(fruit) orange", "indo-iranian evolved"],
 	"násk": ["neuter noun", "vase", "fictional"],
-	"nátrúa": ["feminine noun", "nature", "modern-icelandic"],
+	"nátrúa": ["feminine noun", "nature, life; fate", "modern-icelandic"],
 	"názka": ["verb", "to anger", "fictional"],
 	"názking": ["neuter noun", "anger, wrath", "fictional"],
 	"názkr": ["adjective", "angry, mad", "fictional"],
@@ -5230,6 +5230,12 @@ const ipa_exceptions = {
 }
 
 const special_declensions = {
+	"dagr": [
+		"dagr", "dagrinn", "dagar", "dagarnir",
+		"dagu", "daginn", "daga", "dagana",
+		"dagi", "daginum", "dagum", "dagunum",
+		"dags", "dagsins", "daga", "daganna",
+	],
 	"ergi": [
 		"ergi", "ergin", "ergi", "ergin",
 		"ergi", "ergina", "ergi", "ergina",
