@@ -3519,7 +3519,7 @@ const entries = {
 	"hrimling": ["neuter noun", "description", "fictional"],
 	"hrimlur-pæng": ["feminine noun", "comic book"],
 	"hring-búi": ["masculine noun", "villager"],
-	"hringja": ["verb", "to surround (with accusative); to walk in circles (intransitive)", "fictional"],
+	"hringja": ["verb", "to surround (with accusative); to walk in circles (intransitive)", "old-norse hypothetical"],
 	"hringr": ["masculine noun", "circle, ring; village, community", "old-norse evolved"],
 	"hrjúntrang": ["neuter noun", "sludge, muck, decayed organic matter", "fictional"],
 	"hrofðing": ["feminine noun", "surroundings", "fictional"],
