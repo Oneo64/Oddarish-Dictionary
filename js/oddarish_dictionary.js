@@ -4745,7 +4745,7 @@ const entries = {
 	"treys-safi": ["masculine noun", "tree sap"],
 	"trygginn": ["adjective", "sure, certain", "no-declension"],
 	"tryggja": ["verb", "to make sure, to ensure (with \"áða\")", "old-norse"],
-	"tryggr": ["adjective", "loyal, faithful, true", "old-norse"],
+	"tryggr": ["adjective", "loyal, faithful, devoted, true", "old-norse"],
 	"tryggð": ["neuter noun", "loyalty, trustworthiness", "old-norse"],
 	"trysta": ["verb", "to trust, to believe in, to depend on, to be dependant on (with dative (someone)); to give duty, responsibility, or work to (with dative + \"áða\")", "old-norse evolved"],
 	"tröll": ["neuter noun", "troll", "old-norse"],
