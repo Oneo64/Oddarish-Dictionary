@@ -4064,7 +4064,7 @@ const entries = {
 	"hvað": ["conjunction", "what, which (used alone) (only used in questions)", "modern-icelandic"],
 	"hveikr": ["adjective", "loud", "fictional"],
 	"hvelsa": ["verb", "to care, to take care of", "fictional"],
-	"hvelsun-vorgr": ["adjective", "motherly, lovely, warm, caring"],
+	"hvelsun-vorgr": ["adjective", "motherly, lovely, warm, caring, nurturing, affectionate"],
 	"hver": ["conjunction", "who (only used in questions)", "old-norse"],
 	"hvest konda á...": ["phrase", "\"what kind of...\""],
 	"hvest": ["conjunction", "what, which (used alone or with noun) (only used in questions)", "fictional", ["Hvest önu líki þú? = Which one do you like?", "Hvest skrímsl artað? = What kind of monster is that?"]],
