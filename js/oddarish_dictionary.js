@@ -4153,7 +4153,7 @@ const entries = {
 	"mök": ["neuter noun", "a mouse", "fictional"],
 	"möl": ["feminine noun", "gravel", "old-norse"],
 	"mölva": ["verb", "to shatter, to smash, to burst, to break into fragments", "old-norse"],
-	"mönu-hýs": ["neuter noun", "tavern"],
+	"mönu-hýs": ["neuter noun", "tavern, restaurant"],
 	"mörkna": ["verb", "to fail, to become spoiled", "fictional"],
 	"mörsa": ["verb", "to confuse", "fictional"],
 	"mörvir": ["adjective", "magenta", "fictional"],
