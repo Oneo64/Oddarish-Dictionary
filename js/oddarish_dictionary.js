@@ -4762,7 +4762,7 @@ const entries = {
 	"tjór": ["numeral", "ten", "fictional"],
 	"tjörn": ["feminine noun", "a small lake; pond, pool, tarn", "old-norse"],
 	"tofa": ["verb", "to hit lightly without injuring or drawing blood", "fictional"],
-	"tolla": ["verb", "to ring a bell (not idiomatic)", "fictional"],
+	"tolla": ["verb", "to ring a bell (not idiomatic); to ring, to jingle (of bells)", "fictional"],
 	"tollr": ["masculine noun", "the ringing of a bell", "fictional"],
 	"tor": ["neuter noun", "bug, insect", "fictional"],
 	"tota": ["feminine noun", "spoon", "fictional"],
