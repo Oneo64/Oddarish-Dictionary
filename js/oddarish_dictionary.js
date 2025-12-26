@@ -4370,7 +4370,7 @@ const entries = {
 	"kýr-kotr": ["masculine noun", "beef, cow meat"],
 	"lag": ["neuter noun", "improvement", "modern-icelandic"],
 	"lakki": ["neuter noun", "pleasure", "fictional"],
-	"lakki-ligr": ["adjective", "pleasurable, enjoyable; lovely, warm, or pleasant"],
+	"lakki-ligr": ["adjective", "pleasurable, pleasant (not used to describe personality)"],
 	"lakki-lægi": ["neuter noun", "pervert"],
 	"lakki-þræll": ["masculine noun", "an offensive term, meaning sex slave (slur, insult)"],
 	"land": ["neuter noun", "ground, land", "modern-icelandic"],
