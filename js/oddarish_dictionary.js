@@ -3959,7 +3959,7 @@ const entries = {
 	"lómr": ["masculine noun", "a loon (bird)", "old-norse"],
 	"lóp-gleða": ["feminine noun", "fun, mischief"],
 	"lóp-ugr": ["adjective", "playful, silly, whimsy, whimsical"],
-	"lópa": ["verb", "to play, to fiddle (intransitive); to play with something (with accusative)", "fictional"],
+	"lópa": ["verb", "to play, to fiddle (intransitive); to play with something or someone (with \"með\")", "fictional"],
 	"lóð": ["feminine noun", "crops, products of a farm (only in the sense of wheat, corn, potatoes, etc)", "fictional"],
 	"lödd": ["adverb", "left as in the direction", "fictional"],
 	"lög": ["neuter noun", "rules, law", "old-norse"],
