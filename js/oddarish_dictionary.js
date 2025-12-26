@@ -2406,10 +2406,9 @@ const entry_words = [
 	"yr",
 	"yxir",
 	"yxja",
-	"á (1)",
-	"á (2)",
 	"á eigi",
 	"á til",
+	"á",
 	"á-fram",
 	"á-fyrr",
 	"á-hugr",
@@ -2439,6 +2438,7 @@ const entry_words = [
 	"ávaxtr",
 	"áxa",
 	"áxtolli",
+	"áð",
 	"áða",
 	"æ",
 	"æfi",
@@ -3108,7 +3108,7 @@ const entries = {
 	"fefna inn draumi": ["verb", "to fall asleep"],
 	"fefna": ["verb", "to enter a state or condition, to become", "fictional"],
 	"fegl": ["masculine noun", "bird", "old-norse evolved"],
-	"fegna": ["verb", "to smell (with \"af\" + dative); to breathe in, to smell deliberately (with accusative); to sniff (with \"ána\" + accusative)", "fictional", ["Ek fegna af öggi. = I can smell something stinky.", "Hann fegnar fvindunn á staugsdulnum. = He breathes in the wind of the mountain valley.", "Beigrinn fegnar ána kistuna. = The dog sniffs the box."]],
+	"fegna": ["verb", "to smell (with \"af\" + dative); to breathe in, to smell deliberately (with accusative); to sniff (with \"ána\" + accusative)", "fictional", ["Ek fegna af öggi. = I can smell something stinky.", "Hann fegnar fvindunn áð staugsdulnum. = He breathes in the wind of the mountain valley.", "Beigrinn fegnar ána kistuna. = The dog sniffs the box."]],
 	"feigta": ["verb", "to bounce off; to rebound; to deflect", "fictional"],
 	"feika": ["verb", "to hurt, to harm, to injure, to maim, to scathe (usually physically, or from sicknesses, illnesses, or magic)", "fictional"],
 	"feiminn": ["adjective", "shy, timid", "old-norse"],
@@ -5029,10 +5029,9 @@ const entries = {
 
 
 
-	"á (1)": ["preposition", "of something, of someone (with dative)"],
-	"á (2)": ["preposition", "should (used only in questions and complex clauses, for the more common form, use á til or sköldi)", "", ["Hvað á ek gvera? = What should I do?"]],
 	"á eigi": ["auxiliary", "shouldn't (the infinitive article is usually omitted)"],
 	"á til": ["auxiliary", "should (the infinitive article is usually omitted)", "", ["Þú á til vega væg. = You should go away."]],
+	"á": ["preposition", "should (used only in questions and complex clauses, for the more common form, use á til or sköldi)", "", ["Hvað á ek gvera? = What should I do?"]],
 	"á-fram": ["adverb", "in front", "", ["Vegu áfram. = Go in front.", "Hann ar áfram mek. = He is in front of me.", "Ek hef þæt áfram. = I have it in front of me."]],
 	"á-fyrr": ["adverb", "before, earlier, sooner than (in time)"],
 	"á-hugr": ["masculine noun", "one's interest or focus; to focus or concentrate"],
@@ -5062,6 +5061,7 @@ const entries = {
 	"ávaxtr": ["masculine noun", "fruit"],
 	"áxa": ["verb", "to increase, to raise, to go up"],
 	"áxtolli": ["masculine noun", "axolotl"],
+	"áð": ["preposition", "of something, of someone (with dative)"],
 	"áða": ["preposition", "about, of, for, so, that (used to join a second full sentence) (\"at\" and \"á\" can be omitted when used with this)", "fictional", ["Ek sve áða þæt ar falligt. = I think it's beautiful.", "Ek ar segandi þér áða reina kleindarnir! = I'm telling you to clean the plates!"]],
 
 
