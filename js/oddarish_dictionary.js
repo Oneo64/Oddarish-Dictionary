@@ -3108,7 +3108,7 @@ const entries = {
 	"fefna inn draumi": ["verb", "to fall asleep"],
 	"fefna": ["verb", "to enter a state or condition, to become", "fictional"],
 	"fegl": ["masculine noun", "bird", "old-norse evolved"],
-	"fegna": ["verb", "to smell (with \"af\" + dative); to sniff (with dative)", "fictional"],
+	"fegna": ["verb", "to smell (with \"af\" + dative); to breathe in, to smell deliberately (with accusative); to sniff (with \"ána\" + accusative)", "fictional", ["Ek fegna af öggi. = I can smell something stinky.", "Hann fegnar fvindunn um staugsdulnum. = He breathes in the wind of the mountain valley.", "Beigrinn fegnar ána kistuna. = The dog sniffs the box."]],
 	"feigta": ["verb", "to bounce off; to rebound; to deflect", "fictional"],
 	"feika": ["verb", "to hurt, to harm, to injure, to maim, to scathe (usually physically, or from sicknesses, illnesses, or magic)", "fictional"],
 	"feiminn": ["adjective", "shy, timid", "old-norse"],
