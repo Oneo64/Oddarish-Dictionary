@@ -5317,7 +5317,7 @@ const entries = {
 	"þárrigð": ["neuter noun", "boldness, dareful", "old-norse evolved"],
 	"þæfa": ["verb", "to stamp"],
 	"þæfn": ["neuter noun", "a stamp"],
-	"þænnja": ["verb", "to lay, to lie down; to create a protruding landform on the ground like a hill, crater, boulder, etc.", "", ["Vegu þænnjandi ána sængin efðu hefi veika. = Go lay on the bed if you're feeling sick.", "Þænnju rúl sérr. = Make a hill here."]],
+	"þænnja": ["verb", "to lay, to lie down; to create a protruding landform on the ground like a hill, crater, boulder, etc.", "", ["Vegu at þænnja ána sængina efðu hefi veika. = Go lay on the bed if you're feeling sick.", "Þænnju rúl sérr. = Make a hill here."]],
 	"þær": ["adverb", "there"],
 	"þæs": ["pronoun", "the, that, it (possessive)"],
 	"þæt": ["pronoun", "the, that, it, that one (standalone noun, not a determiner or adjective)"],

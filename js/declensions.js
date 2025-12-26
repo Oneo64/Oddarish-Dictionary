@@ -690,7 +690,7 @@ function get_present_tense(word, pov) {
 		} else if (stem.endsWith("ú")) {
 			return stem.substring(0, stem.length - 1) + "ý";
 		} else if (stem.endsWith("á")) {
-			return stem.substring(0, stem.length - 1) + "æ";
+			return stem.substring(0, stem.length - 1) + "ær";
 		} else if (stem.endsWith("eyj")) {
 			return stem.substring(0, stem.length - 1) + "r";
 		} else {
