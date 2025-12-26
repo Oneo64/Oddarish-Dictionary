@@ -2723,7 +2723,7 @@ const entry_words = [
 
 const entries = {
 	"-ari, -tari": ["suffix", "agent suffix, equivalent to english -er; meaning \"one who believes, one who does, one who is with, or one who is characterised by\""],
-	"-fell": ["suffix", "-ness, -hood, -ship, emphasising the domain or area"],
+	"-fell": ["suffix", "-ness, -hood, -ship, -bility, emphasising the domain or area"],
 	"-ingi": ["suffix", "meaning \"one who is one of, one who is appointed or acted on from someone else\", but never used to describe characterisation"],
 	"-lausinn": ["suffix", "without suffix"],
 	"-ligr": ["suffix", "to be like"],
@@ -2732,7 +2732,7 @@ const entries = {
 	"-ugr, -vugr": ["suffix", "full of, characterised by"],
 	"-un": ["suffix", "equivalent to -ment or -dom"],
 	"-vorgr": ["suffix", "weighted", "old-norse evolved"],
-	"-ð, -d": ["suffix", "-ness, -hood, -ship, emphasising number, value, or richness"],
+	"-ð, -d": ["suffix", "-ness, -hood, -ship, -ity, emphasising number, value, or richness"],
 	
 	"abba": ["feminine noun", "stomach/bowel; belly", "fictional"],
 	"af": ["preposition", "off; by or because of an external cause or force", "old-norse", ["Vegu af! = Get off!", "Böggvingit jurkuði af pvældinni. = The building shook because of the storm.", "Hon vestisk dasask af viskingi. = She became tired from work.", "Ek púndaði min föt af að dyrta af hríganum. = I broke my foot falling of the ladder."]],
