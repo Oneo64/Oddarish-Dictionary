@@ -5455,45 +5455,35 @@ const special_declensions = {
 		"present_mediopassive": "hefisk"
 	},
 	"semja": {
-		"present_tense": ["semja", "semjar", "semjar"],
 		"past_participle": "seminn",
-		"past_tense": "semjaði"
+		"past_tense": "semdi"
 	},
 	"ósk-semja": {
-		"present_tense": ["ósk-semja", "ósk-semjar", "ósk-semjar"],
 		"past_participle": "ósk-seminn",
-		"past_tense": "ósk-semjaði"
+		"past_tense": "ósk-semdi"
 	},
 	"út-semja": {
-		"present_tense": ["út-semja", "út-semjar", "út-semjar"],
 		"past_participle": "út-seminn",
-		"past_tense": "út-semjaði"
+		"past_tense": "út-semdi"
 	},
 	"öndu-semja": {
-		"present_tense": ["öndu-semja", "öndu-semjar", "öndu-semjar"],
 		"past_participle": "öndu-seminn",
-		"past_tense": "öndu-semjaði"
+		"past_tense": "öndu-semdi"
 	},
 	"hengja": {
-		"present_tense": ["hengja", "hengjar", "hengjar"],
 		"past_participle": "henginn",
 		"past_tense": "hengjaði"
 	},
 	"hlísta": {
 		"present_tense": ["hlísta", "hlístar", "hlístar"]
 	},
-	"hringja": {
-		"present_tense": ["hringja", "hringjar", "hringjar"],
-		"past_tense": "hringjaði"
-	},
 	"kindja": {
 		"past_tense": "kenddi",
 		"past_participle": "kendinn"
 	},
 	"lækja": {
-		"present_tense": ["lækja", "lækjar", "lækjar"],
 		"past_participle": "lækinn",
-		"past_tense": "lækjaði"
+		"past_tense": "lækti"
 	},
 	"maðka": {
 		"past_tense": "maðkaði",
@@ -5511,10 +5501,6 @@ const special_declensions = {
 	"máklja": {
 		"imperative": "máklju"
 	},
-	"refja": {
-		"present_tense": ["refja", "refjar", "refjar"],
-		"past_tense": "refjaði"
-	},
 	"sega": {
 		"past_tense": "sagði",
 		"past_participle": "saginn"
@@ -5527,12 +5513,6 @@ const special_declensions = {
 	"skola": {
 		"past_tense": "sköldi",
 		"past_participle": "skölinn"
-	},
-	"slimpja": {
-		"present_tense": ["slimpja", "slimpjar", "slimpjar"]
-	},
-	"sterkja": {
-		"past_tense": "starkti"
 	},
 	"sve": {
 		"present_tense": ["sve", "svi", "sve"],
