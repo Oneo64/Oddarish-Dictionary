@@ -3905,7 +3905,7 @@ const entries = {
 	"hagl-pvæld": ["neuter noun", "hailstorm"],
 	"haka": ["feminine noun", "someone's chin", "old-norse evolved"],
 	"hakkarr": ["masculine noun", "a pickaxe", "fictional"],
-	"halda": ["verb", "to keep, to store; to maintain", "old-norse evolved"],
+	"halda": ["verb", "to keep, to store, to maintain; to contain, to have", "old-norse evolved"],
 	"halding-hýs": ["neuter noun", "a building where a collection of things are; a storage area"],
 	"halló, hæ, hei": ["interjection", "hello, hi, hey"],
 	"hamla": ["verb", "to deter, to stop, to weaken, to pull back, to hinder; to hamstring", "old-norse"],
