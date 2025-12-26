@@ -4063,7 +4063,7 @@ const entries = {
 	"hvað ór fjokinum": ["interjection", "wtf"],
 	"hvað": ["conjunction", "what, which (used alone) (only used in questions)", "modern-icelandic"],
 	"hveikr": ["adjective", "loud", "fictional"],
-	"hvelsa": ["verb", "to care, to take care of", "fictional"],
+	"hvelsa": ["verb", "to care, to nurture", "fictional"],
 	"hvelsun-vorgr": ["adjective", "motherly, lovely, warm, caring, nurturing, affectionate"],
 	"hver": ["conjunction", "who (only used in questions)", "old-norse"],
 	"hvest konda á...": ["phrase", "\"what kind of...\""],
