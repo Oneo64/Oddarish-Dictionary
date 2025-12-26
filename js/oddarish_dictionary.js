@@ -93,6 +93,7 @@ const foreign_tags = [
 const entry_words = [
 	"-ari, -tari",
 	"-fell",
+	"-ing",
 	"-ingi",
 	"-lausinn",
 	"-ligr",
@@ -2737,7 +2738,8 @@ const entries = {
 	"-nir": ["suffix", "meaning \"one who is like, one who is one of\", but never used to describe characterisation"],
 	"-ska, -liska": ["suffix", "language suffix"],
 	"-ugr, -vugr": ["suffix", "full of, characterised by"],
-	"-un": ["suffix", "equivalent to -ment or -dom"],
+	"-un": ["suffix", "equivalent to -ment or -dom; the general action of, often used abstractally; the result of doing something"],
+	"-ing": ["suffix", "gerund suffix; the vivid or definite action of, often used concretely; the actual act of doing something"],
 	"-vorgr": ["suffix", "weighted", "old-norse evolved"],
 	"-ð, -d": ["suffix", "-ness, -hood, -ship, -ity, emphasising number, value, or richness"],
 	
