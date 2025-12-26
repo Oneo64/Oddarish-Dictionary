@@ -5416,6 +5416,13 @@ const special_declensions = {
 		"treyi", "treyinum", "treyjum", "treyjunum",
 		"treys", "treysins", "treyja", "treyjanna",
 	],
+	"öggr": [
+		"öggr", "öggrinn", "a", "a",
+		"öggu", "öggunn", "a", "a",
+		"öggi", "ögginum", "a", "a",
+		"öggs", "öggsins", "a", "a",
+	],
+
 	"bata": {
 		"past_tense": "bæti",
 		"past_participle": "bætinn",
@@ -5681,6 +5688,7 @@ const singular_only = [
 	"ó-rað",
 	"ósk-semjun",
 	"öbi",
+	"öggr",
 	"östr",
 	"úldir",
 	"þera",
