@@ -4088,7 +4088,7 @@ const entries = {
 	"mæta (1)": ["verb", "to meet", "modern-icelandic"],
 	"mæta (2)": ["verb", "to arrange; to place an order, to request some product or service", "modern-icelandic"],
 	"mæð": ["neuter noun", "meal", "fictional"],
-	"méka": ["verb", "to act as, to pretend (with accusative); to play pretend (with accusative)", "fictional"],
+	"méka": ["verb", "to act as, to pretend (with accusative); to playfully pretend as (with \"um\" + accusative)", "fictional"],
 	"ménútr": ["masculine noun", "minute", "modern-icelandic evolved"],
 	"mér": ["pronoun", "i, me (dative)", "modern-icelandic"],
 	"mérnd": ["neuter noun", "metal", "fictional"],
