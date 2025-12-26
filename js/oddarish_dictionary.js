@@ -5061,7 +5061,7 @@ const entries = {
 	"ávaxtr": ["masculine noun", "fruit"],
 	"áxa": ["verb", "to increase, to raise, to go up"],
 	"áxtolli": ["masculine noun", "axolotl"],
-	"áð": ["preposition", "of something, of someone, a genitive preposition like \"hand of god\" or something"],
+	"áð": ["preposition", "of something, of someone, a genitive preposition like \"of\" in \"hand of god\" or \"the cold wind of the mountain\" or something"],
 	"áða": ["preposition", "about, of, for, so, that (used to join a second full sentence) (\"at\" and \"á\" can be omitted when used with this)", "fictional", ["Ek sve áða þæt ar falligt. = I think it's beautiful.", "Ek ar segandi þér áða reina kleindarnir! = I'm telling you to clean the plates!"]],
 
 
