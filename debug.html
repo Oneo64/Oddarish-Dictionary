@@ -15,6 +15,7 @@
 	<button id="button3">loanword statistics</button>
 	<button id="button4">letter frequency</button>
 	<button id="button5">letter frequency (merged)</button>
+	<button id="button6">process into json</button>
 	<div id="out">
 	</div>
 
@@ -188,6 +189,34 @@
 		}
 	}
 
+	function jsonize() {
+		document.getElementById("out").innerHTML = "";
+
+		for (var i = 0; i < entry_words.length; i++) {
+			var word = entry_words[i];
+
+			if (word in entries) {
+				var dat = entries[word];
+				var thing = '<br>"' + word + '": { "type": "' + dat[0] + '", "definition": "' + dat[1].replaceAll('"', '\\"') + '"';
+
+				if (dat.length >= 3) thing += ', "origin": "' + dat[2] + '"';
+				if (dat.length >= 4) {
+					thing += ', "examples": [ ';
+
+					for (var i2 = 0; i2 < dat[3].length; i2++) {
+						thing += '"' + dat[3][i2] + (i2 < dat[3].length - 1 ? '", ' : '"');
+					}
+
+					thing += ' ]';
+				}
+
+				thing += ' },';
+
+				document.getElementById("out").innerHTML += thing;
+			}
+		}
+	}
+
 	function doletterfrequency() {
 		letterfreq(false);
 	}
@@ -201,6 +230,7 @@
 	document.getElementById("button3").onclick = doloanwordstatistics;
 	document.getElementById("button4").onclick = doletterfrequency;
 	document.getElementById("button5").onclick = doletterfrequency2;
+	document.getElementById("button6").onclick = jsonize;
 
 	for (var i = 0; i < entry_words.length; i++) {
 		var word = entry_words[i];
