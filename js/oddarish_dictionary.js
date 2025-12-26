@@ -1,3 +1,405 @@
+// ==================================================
+// ODDARISH DICTIONARY DATABASE
+// Written and coined by Oneo64
+// ==================================================
+
+const ipa_exceptions = {
+	"'fʏrɪr": "'fɪrɪr",
+	"'hatl̥ouː": "'halouː",
+	"'fotl̥kʋɑuːma": "'folkʋɑuːma"
+}
+
+const special_declensions = {
+	"dagr": [
+		"dagr", "dagrinn", "dagar", "dagarnir",
+		"dagu", "daginn", "daga", "dagana",
+		"dagi", "daginum", "dagum", "dagunum",
+		"dags", "dagsins", "daga", "daganna",
+	],
+	"eldr": [
+		"eldr", "eldrinn", "a", "a",
+		"eld", "eldinn", "a", "a",
+		"eldi", "eldinum", "a", "a",
+		"elds", "eldsins", "a", "a",
+	],
+	"ergi": [
+		"ergi", "ergin", "ergi", "ergin",
+		"ergi", "ergina", "ergi", "ergina",
+		"ergi", "erginni", "ergi", "erginni",
+		"ergi", "erginnar", "ergi", "erginnar",
+	],
+	"hirðir": [
+		"hirðir", "hirðirinn", "hirðar", "hirðarnir",
+		"hirður", "hirðurnu", "hirðar", "hirðarnir",
+		"hirður", "hirðurnum", "hirðrum", "hirðrunum",
+		"hirður", "hirðurins", "hirðra", "hirðranna",
+	],
+	"mandr": [
+		"mandr", "mandrinn", "mendr", "mendrnir",
+		"mandu", "mandunn", "mendr", "mendrnir",
+		"mandi", "mandinum", "mendrum", "mendrunum",
+		"mands", "mandsins", "mendra", "mendranna",
+	],
+	"sonr": [
+		"sonr", "sonrinn", "sonir", "sonirnir",
+		"son", "soninn", "soni", "sonina",
+		"soni", "soninum", "sonum", "sonunum",
+		"sons", "sonsins", "sona", "sonanna",
+	],
+	"taufr": [
+		"taufr", "taufrinn", "taufrar", "taufrarnir",
+		"taufru", "taufrinn", "taufra", "taufrana",
+		"taufri", "taufrinum", "taufrum", "taufrunum",
+		"taufrs", "taufrsins", "taufra", "taufranna",
+	],
+	"trey": [
+		"trey", "treyt", "treya", "treyin",
+		"trey", "treyt", "treya", "treyin",
+		"treyi", "treyinum", "treyjum", "treyjunum",
+		"treys", "treysins", "treyja", "treyjanna",
+	],
+	"öggr": [
+		"öggr", "öggrinn", "a", "a",
+		"öggu", "öggunn", "a", "a",
+		"öggi", "ögginum", "a", "a",
+		"öggs", "öggsins", "a", "a",
+	],
+
+	"bata": {
+		"past_tense": "bæti",
+		"past_participle": "bætinn",
+		"past_tense_mediopassive": "bætisk"
+	},
+	"boða": {
+		"past_tense": "baði",
+		"past_participle": "baðinn",
+		"past_tense_mediopassive": "baðisk"
+	},
+	"blá": {
+		"past_tense": "bláði"
+	},
+	"duna": {
+		"past_tense": "dunaði",
+		"past_participle": "duninn"
+	},
+	"éta": {
+		"past_tense": "áti",
+		"past_participle": "étinn",
+		"past_tense_mediopassive": "átisk"
+	},
+	"fanda": {
+		"past_tense": "fondi",
+		"past_participle": "fondinn"
+	},
+	"fara": {
+		"present_tense": ["fer", "fer", "ferir"],
+		"present_mediopassive": "ferisk"
+	},
+	"geta": {
+		"past_tense": "gæti",
+		"past_participle": "gætinn",
+		"past_tense_mediopassive": "gætisk"
+	},
+	"gveta": {
+		"past_tense": "gvæti",
+		"past_participle": "gvætinn",
+		"past_tense_mediopassive": "gvætisk"
+	},
+	"hafa": {
+		"present_tense": ["hef", "hefi", "hefir"],
+		"present_mediopassive": "hefisk"
+	},
+	"semja": {
+		"past_participle": "seminn",
+		"past_tense": "semdi"
+	},
+	"ósk-semja": {
+		"past_participle": "ósk-seminn",
+		"past_tense": "ósk-semdi"
+	},
+	"út-semja": {
+		"past_participle": "út-seminn",
+		"past_tense": "út-semdi"
+	},
+	"öndu-semja": {
+		"past_participle": "öndu-seminn",
+		"past_tense": "öndu-semdi"
+	},
+	"hengja": {
+		"past_participle": "henginn",
+		"past_tense": "hengjaði"
+	},
+	"hlísta": {
+		"present_tense": ["hlísta", "hlístar", "hlístar"]
+	},
+	"kindja": {
+		"past_tense": "kenddi",
+		"past_participle": "kendinn"
+	},
+	"lækja": {
+		"past_participle": "lækinn",
+		"past_tense": "lækti"
+	},
+	"maðka": {
+		"past_tense": "maðkaði",
+		"past_participle": "maðkinn",
+		"past_tense_mediopassive": "maðkaðisk"
+	},
+	"meta": {
+		"past_tense": "mæti",
+		"past_participle": "mætinn",
+		"past_tense_mediopassive": "mætisk"
+	},
+	"muna": {
+		"present_tense": ["mun", "mun", "munir"]
+	},
+	"máklja": {
+		"imperative": "máklju"
+	},
+	"sega": {
+		"past_tense": "sagði",
+		"past_participle": "saginn"
+	},
+	"setja": {
+		"past_tense": "sati",
+		"past_participle": "satinn",
+		"past_tense_mediopassive": "satisk"
+	},
+	"skola": {
+		"past_tense": "sköldi",
+		"past_participle": "skölinn"
+	},
+	"sve": {
+		"present_tense": ["sve", "svi", "sve"],
+		"past_tense": "svá",
+		"past_participle": "sveðinn",
+		"mediopassive": "svask",
+		"present_mediopassive": "svisk",
+		"past_tense_mediopassive": "sváðisk",
+		"gerund": "sveng"
+	},
+	"vanga": {
+		"present_tense": ["vanga", "vangar", "vangar"],
+		"past_tense": "vangaði"
+	},
+	"vega": {
+		"present_tense": ["veg", "veig", "vegir"],
+		"past_tense": "vann",
+		"past_participle": "vaginn"
+	},
+	"vesa": {
+		"present_tense": ["ar", "ar", "ar"],
+		"past_tense": "var",
+		"past_participle": "vesinn"
+	},
+	"vilja": {
+		"present_tense": ["vil", "vil", "vilar"]
+	},
+	"vita": {
+		"past_tense": "vissi",
+		"past_participle": "vissinn",
+		"past_tense_mediopassive": "vissisk"
+	},
+	"vá": {
+		"past_tense": "váði"
+	},
+	"af-vita": {
+		"past_tense": "af-vissi",
+		"past_tense_mediopassive": "af-vissisk"
+	},
+	"þárra": {
+		"present_tense": ["þárra", "þárrar", "þárrar"]
+	},
+	"æma": {
+		"past_tense": "æmaði",
+		"past_participle": "æminn"
+	}
+};
+
+// common words that go in here: measurements, sounds, materials, abstract nouns, masses, liquids, plant growths like grass or moss, etc
+// this list also encompasses suffixes, so if míkt is singular-only, andingmíkt will also be singular-only
+const singular_only = [
+	"af-fell",
+	"askr",
+	"aurr",
+	"beyki",
+	"bjarka",
+	"blóð",
+	"brangr",
+	"breiði",
+	"bémm",
+	"börskr",
+	"dap-vöngun",
+	"djaffigð",
+	"eiki-kulr",
+	"eikr",
+	"ein-fell",
+	"ein-hver",
+	"ekkning-fell",
+	"eldr",
+	"elska",
+	"ergi",
+	"frast",
+	"frjálsun",
+	"fríða",
+	"frýss",
+	"fvindr",
+	"fytvir",
+	"fyx",
+	"fángvi",
+	"gleða",
+	"gogg",
+	"græssa",
+	"gérð",
+	"góð-nímr",
+	"harr",
+	"hauði",
+	"heim-mendr",
+	"hnúgr",
+	"hraði",
+	"hrófir",
+	"há",
+	"hægð",
+	"hæm",
+	"húst",
+	"jurn",
+	"júta",
+	"koparr",
+	"kotr",
+	"kráin",
+	"kulr",
+	"kýr",
+	"langð",
+	"ljúnna",
+	"lyng",
+	"læn",
+	"lóð",
+	"lýð",
+	"mana",
+	"mel",
+	"mjondáss",
+	"myrk-fell",
+	"mákli-fell",
+	"mædd-fell",
+	"mænt",
+	"míkt",
+	"möl",
+	"nafn-fell",
+	"nefnigð",
+	"norðr",
+	"næðingr",
+	"nýgla",
+	"ori",
+	"pind",
+	"pælkr",
+	"raðami",
+	"reizga",
+	"rög",
+	"safi",
+	"salta",
+	"skinda",
+	"snóskr",
+	"soll",
+	"statangr",
+	"stigi",
+	"strá",
+	"stál",
+	"sumarr",
+	"svein",
+	"svæðr",
+	"sót",
+	"söt",
+	"tellr",
+	"til-fell",
+	"tollr",
+	"tár",
+	"té",
+	"vattr",
+	"vauðr",
+	"vei",
+	"vetr",
+	"votn",
+	"vægð",
+	"víði",
+	"ybbun",
+	"yr",
+	"álmr",
+	"ápir",
+	"ár",
+	"ærsl",
+	"ó-böggðir",
+	"ó-rað",
+	"ósk-semjun",
+	"öbi",
+	"öggr",
+	"östr",
+	"úldir",
+	"þera",
+	"þruma",
+	"þys",
+	"þárrigð",
+	"þöll-fell",
+];
+
+const plural_indefinite_only = [
+	"eig-einn"
+];
+
+// a list of all the most common words. will be multiplied 2.5x in testing letter frequencies
+const debug_words = [
+	"at",
+	"eigi",
+	"einn",
+	"ek",
+	"eða",
+	"geta",
+	"hafa",
+	"hann",
+	"hennar",
+	"henni",
+	"hun",
+	"hám",
+	"hámi",
+	"mek",
+	"min, mína",
+	"muna",
+	"mér",
+	"ok",
+	"okkar",
+	"okkr",
+	"oss",
+	"var",
+	"vesa",
+	"við",
+	"átaufrasveng",
+	"í",
+	"þek",
+	"þetta, þessi",
+	"þin, þína",
+	"þæt",
+	"þér",
+	"þú",
+];
+
+// another list of common words. will be multiplied 1.5x in testing letter frequencies
+const debug_words2 = [
+	"ef",
+	"frá",
+	"fyri",
+	"með",
+	"til",
+	"um",
+	"á",
+	"ænn",
+	"þver",
+	"þvest",
+];
+
+// ==================================================
+// ODDARISH DICTIONARY LEXICON STARTS HERE
+// ALSO written and coined by Oneo64
+// ==================================================
+
 const word_type_short_form = {
 	"masculine noun": "m n.",
 	"feminine noun": "k n.",
@@ -97,13 +499,13 @@ const entry_words = [
 	"-ingi",
 	"-lausinn",
 	"-ligr",
+	"-léttr",
 	"-nir",
 	"-ska, -liska",
 	"-ugr, -vugr",
 	"-un",
 	"-vorgr",
 	"-ð, -d",
-
 	"abba",
 	"af",
 	"af-",
@@ -188,8 +590,8 @@ const entry_words = [
 	"askr",
 	"asni",
 	"at",
-	"at-einn (1)",
-	"at-einn (2)",
+	"at-einn",
+	"at-eins",
 	"at-hrifning",
 	"at-hygli",
 	"at-kallandi",
@@ -212,6 +614,7 @@ const entry_words = [
 	"bak",
 	"bak-fylgja",
 	"baka",
+	"bakkun",
 	"bakstr",
 	"bambaur",
 	"band",
@@ -305,6 +708,8 @@ const entry_words = [
 	"byn",
 	"byrja",
 	"byssa",
+	"byssu-sjótt",
+	"byssu-sleimari",
 	"bystr",
 	"bákn",
 	"báma",
@@ -312,6 +717,7 @@ const entry_words = [
 	"bárr",
 	"básti",
 	"bátta",
+	"báttun",
 	"bæn-urði",
 	"bæna",
 	"bæna-mandr",
@@ -355,6 +761,7 @@ const entry_words = [
 	"deigla",
 	"deivi",
 	"depja",
+	"derga",
 	"dersa",
 	"derta",
 	"deyinn",
@@ -461,7 +868,6 @@ const entry_words = [
 	"elda-glæpr",
 	"eldr",
 	"elds-kömbr",
-	"elektra",
 	"elfa",
 	"elgr",
 	"elma",
@@ -792,6 +1198,7 @@ const entry_words = [
 	"gérð",
 	"gést-heimr",
 	"géstr",
+	"gétt",
 	"gírr",
 	"gólf",
 	"gótt dagr",
@@ -1016,6 +1423,7 @@ const entry_words = [
 	"hæm",
 	"hætta",
 	"hæða-míkt",
+	"hæða-skónn",
 	"hæði",
 	"hékkva",
 	"hénga",
@@ -1026,6 +1434,7 @@ const entry_words = [
 	"hófn-þosk",
 	"hóta",
 	"höfu þísst",
+	"höld",
 	"höll",
 	"höm",
 	"hönd",
@@ -1070,6 +1479,8 @@ const entry_words = [
 	"jafa",
 	"jagg",
 	"jaki",
+	"jakott",
+	"jakott-höld",
 	"jarl",
 	"jarptr",
 	"jostr",
@@ -1093,6 +1504,9 @@ const entry_words = [
 	"jóð-verk",
 	"jóðr",
 	"jögg",
+	"jöku-",
+	"jöku-tundr",
+	"jöku-viskandi",
 	"jönd",
 	"jörð",
 	"jörð-dýfi",
@@ -1382,6 +1796,7 @@ const entry_words = [
 	"lýtill",
 	"lýtlana",
 	"lýtli-vegr",
+	"lýtlu-jörð",
 	"lýð",
 	"magn",
 	"magn-vérr",
@@ -1502,6 +1917,8 @@ const entry_words = [
 	"mérnd",
 	"míki",
 	"míkt",
+	"míkts eif",
+	"míktsbreymun-fell",
 	"mókligr",
 	"móla",
 	"mólr",
@@ -1514,6 +1931,7 @@ const entry_words = [
 	"möfn",
 	"mög",
 	"mök",
+	"mökku-ligr",
 	"möl",
 	"mölva",
 	"mönu-hýs",
@@ -1657,6 +2075,7 @@ const entry_words = [
 	"ormr",
 	"orramr",
 	"orð",
+	"orð-léttr",
 	"orð-pæng",
 	"orð-raðing pung",
 	"oss",
@@ -1817,10 +2236,14 @@ const entry_words = [
 	"rög",
 	"rönd",
 	"röstun-fell",
+	"röstun-pættr",
+	"röðju-fell",
+	"röðju-vorgr",
 	"rúa",
 	"rúl",
 	"rún",
 	"rún-skrand",
+	"rúnsk-þænnjari",
 	"rúnskr",
 	"rýmm, -hrýmm",
 	"rýnja",
@@ -1960,6 +2383,7 @@ const entry_words = [
 	"slegja",
 	"sleikja",
 	"sleima",
+	"sleimu-verk",
 	"sleipr",
 	"slemr",
 	"slengja (1)",
@@ -2121,6 +2545,8 @@ const entry_words = [
 	"sæng-tengr",
 	"sémma",
 	"sémming eip",
+	"sér-",
+	"sér-viskandi",
 	"sérr",
 	"séði",
 	"síma",
@@ -2196,6 +2622,7 @@ const entry_words = [
 	"treiða",
 	"trey",
 	"trey-armr",
+	"treys-burðr",
 	"treys-safi",
 	"trygginn",
 	"tryggja",
@@ -2335,7 +2762,6 @@ const entry_words = [
 	"vesa þok ypir",
 	"vesa",
 	"vesask",
-	"vesin-ligr",
 	"vetni",
 	"vetr",
 	"vig-follr",
@@ -2356,12 +2782,14 @@ const entry_words = [
 	"vjakki",
 	"vokna",
 	"vona",
+	"vorg-léttr",
 	"vorga",
 	"vorgr",
 	"vorð",
 	"vorða",
 	"votn",
 	"votns-flerrari",
+	"votns-höld",
 	"votns-jafari",
 	"voxi",
 	"vræðr",
@@ -2615,7 +3043,10 @@ const entry_words = [
 	"ýstr",
 	"þaf-búi",
 	"þaf-síma",
+	"þafan-flytja",
+	"þafan-flytjun",
 	"þafan-skrand",
+	"þafanflytjun-sjótt",
 	"þafir",
 	"þanga",
 	"þanginn",
@@ -2732,17 +3163,17 @@ const entry_words = [
 const entries = {
 	"-ari, -tari": ["suffix", "agent suffix, equivalent to english -er; meaning \"one who believes, one who does, one who is with, or one who is characterised by\""],
 	"-fell": ["suffix", "-ness, -hood, -ship, -bility, emphasising the domain or area"],
+	"-ing": ["suffix", "gerund suffix; the vivid or definite action of, often used concretely; the actual act of doing something"],
 	"-ingi": ["suffix", "meaning \"one who is one of, one who is appointed or acted on from someone else\", but never used to describe characterisation"],
 	"-lausinn": ["suffix", "without suffix"],
 	"-ligr": ["suffix", "to be like"],
+	"-léttr": ["suffix", "mild in weight", "old-norse evolved"],
 	"-nir": ["suffix", "meaning \"one who is like, one who is one of\", but never used to describe characterisation"],
 	"-ska, -liska": ["suffix", "language suffix"],
 	"-ugr, -vugr": ["suffix", "full of, characterised by"],
 	"-un": ["suffix", "equivalent to -ment or -dom; the general action of, often used abstractally; the result of doing something"],
-	"-ing": ["suffix", "gerund suffix; the vivid or definite action of, often used concretely; the actual act of doing something"],
 	"-vorgr": ["suffix", "weighted", "old-norse evolved"],
 	"-ð, -d": ["suffix", "-ness, -hood, -ship, -ity, emphasising number, value, or richness"],
-	
 	"abba": ["feminine noun", "stomach/bowel; belly", "fictional"],
 	"af": ["preposition", "off; by or because of an external cause or force", "old-norse", ["Vegu af! = Get off!", "Böggvingit jurkuði af pvældinni. = The building shook because of the storm.", "Hon vestisk dasask af viskingi. = She became tired from work.", "Ek púndaði min föt af að dyrta af hríganum. = I broke my foot falling of the ladder."]],
 	"af-": ["prefix", "off prefix; mis-, de- (as in inaccurately, off-target, or not on point)", "old-norse"],
@@ -2827,8 +3258,8 @@ const entries = {
 	"askr": ["masculine noun", "an ash tree or its wood", "old-norse"],
 	"asni": ["masculine noun", "asinus, donkey; an ass (it's the animal, not someone's butt)", "old-norse"],
 	"at": ["preposition", "at; infinitive marker, adverbs and prepositions go before the infinitive marker (don't use in the first verb of imperative sentences or questions)", "old-norse"],
-	"at-einn (1)": ["adjective", "only"],
-	"at-einn (2)": ["adverb", "only, just, merely, simply"],
+	"at-einn": ["adjective", "only"],
+	"at-eins": ["adverb", "only, just, merely, simply"],
 	"at-hrifning": ["adjective", "impressive, good"],
 	"at-hygli": ["feminine noun", "attention"],
 	"at-kallandi": ["adjective", "important, critical, urgent"],
@@ -2851,6 +3282,7 @@ const entries = {
 	"bak": ["neuter noun", "back (of a creature); the back or end area of a place, like a room, garden, or cave", "old-norse"],
 	"bak-fylgja": ["verb", "to chase after"],
 	"baka": ["verb", "to bake, to cook in an oven", "old-norse"],
+	"bakkun": ["feminine noun", "vehicle trunk", "kagalarian evolved"],
 	"bakstr": ["masculine noun", "wafer, thin biscuit", "old-norse"],
 	"bambaur": ["masculine noun", "bamboo", "english evolved"],
 	"band": ["neuter noun", "band; a binding", "old-norse"],
@@ -2944,6 +3376,8 @@ const entries = {
 	"byn": ["neuter noun", "bean", "old-norse evolved"],
 	"byrja": ["verb", "to start, to begin", "old-norse"],
 	"byssa": ["feminine noun", "firearm, gun", "modern-icelandic"],
+	"byssu-sjótt": ["feminine noun", "destroyer"],
+	"byssu-sleimari": ["masculine noun", "gunship"],
 	"bystr": ["masculine noun", "ingot, bar of metal", "fictional"],
 	"bákn": ["neuter noun", "beacon, signal", "old-norse"],
 	"báma": ["feminine noun", "salve, balm, cream; a healing salve or cream", "english evolved"],
@@ -2951,6 +3385,7 @@ const entries = {
 	"bárr": ["masculine noun", "bear", "english evolved"],
 	"básti": ["masculine noun", "hat, headwear", "fictional"],
 	"bátta": ["verb", "to beat, to pound, to bang on, to strike repeatedly", "old-english evolved"],
+	"báttun": ["feminine noun", "battery, beating", "fictional"],
 	"bæn-urði": ["neuter noun", "bone meal, bonemeal"],
 	"bæna": ["feminine noun", "bone", "proto-germanic evolved"],
 	"bæna-mandr": ["masculine noun", "skeleton, boneman"],
@@ -2994,6 +3429,7 @@ const entries = {
 	"deigla": ["feminine noun", "crucible", "old-norse"],
 	"deivi": ["neuter noun", "a daeva from zoroastrian mythology; a demon from abrahamic religions or any similar modern depictions of them; a demon of hell", "other evolved"],
 	"depja": ["verb", "to sadden, to depress", "old-norse hypothetical"],
+	"derga": ["verb", "to tug, to pull, to jerk (with accusative); to masturbate oneself, to pleasure someone erotically (with \"í\" + dative)", "kagalarian evolved"],
 	"dersa": ["verb", "to spit out or onto", "fictional"],
 	"derta": ["verb", "to flirt", "modern-icelandic evolved"],
 	"deyinn": ["adjective", "dead", "old-norse hypothetical"],
@@ -3100,7 +3536,6 @@ const entries = {
 	"elda-glæpr": ["masculine noun", "arson"],
 	"eldr": ["masculine noun", "fire", "old-norse"],
 	"elds-kömbr": ["masculine noun", "bellows"],
-	"elektra": ["feminine noun", "electricity", "english evolved"],
 	"elfa": ["feminine noun", "a large river", "old-norse evolved"],
 	"elgr": ["masculine noun", "elk", "modern-icelandic evolved"],
 	"elma": ["feminine noun", "twig, a stick from a tree", "old-norse"],
@@ -3332,7 +3767,7 @@ const entries = {
 	"ger-anta": ["verb", "to tempt, to urge"],
 	"ger-mjúka": ["verb", "to soften, to tenderize; to humble, to put down, to restrain, to dominate, to make submissive"],
 	"germanskr": ["masculine noun", "germanic"],
-	"geta vesið": ["auxiliary", "maybe, might"],
+	"geta vesið": ["auxiliary", "maybe, perhaps, might"],
 	"geta": ["verb", "to be permitted, to be allowed to, to have the power to, to be able, to can; to make someone as", "old-norse", ["Ek get at mála málverk. = I can paint paintings.", "Getrðu gveta hvestligþing fyri mér? = Can you get something for me?", "Þin beyra getir ollum gleðugr. = Your smile makes everyone happy.", "Getu því at danza! = Make it dance!"]],
 	"gifta": ["verb", "to marry someone off, to appoint someone to marriage (but not themselves)", "old-norse"],
 	"giftask": ["verb", "to wed, to marry", "old-norse"],
@@ -3431,6 +3866,7 @@ const entries = {
 	"gérð": ["feminine noun", "diameter, girth", "old-norse evolved"],
 	"gést-heimr": ["masculine noun", "inn, hotel"],
 	"géstr": ["masculine noun", "guest, visitor", "modern-icelandic evolved"],
+	"gétt": ["feminine noun", "fighter jet", "english evolved"],
 	"gírr": ["masculine noun", "a ruler (measurement)", "fictional"],
 	"gólf": ["neuter noun", "floor", "old-norse"],
 	"gótt dagr": ["phrase", "\"good day\", general greeting (phrase)"],
@@ -3655,6 +4091,7 @@ const entries = {
 	"hæm": ["neuter noun", "light, as in \"sunlight\"", "fictional"],
 	"hætta": ["verb", "to stop, to end, to cease, to prevent", "old-norse"],
 	"hæða-míkt": ["neuter noun", "(physics) a gas", "fictional"],
+	"hæða-skónn": ["masculine noun", "meteor, meteorite, space debris; the visible streak when an asteroid/meteoroid falls"],
 	"hæði": ["masculine noun", "air", "fictional"],
 	"hékkva": ["verb", "to startle, to frighten, to scare", "fictional"],
 	"hénga": ["verb", "to affect, to influence", "fictional"],
@@ -3665,6 +4102,7 @@ const entries = {
 	"hófn-þosk": ["neuter noun", "skull"],
 	"hóta": ["verb", "to threaten; to make a threat", "old-norse"],
 	"höfu þísst": ["interjection", "goodbye (formal)", "fictional"],
+	"höld": ["feminine noun", "storage, hold", "old-norse evolved"],
 	"höll": ["masculine noun", "a hall", "old-norse evolved"],
 	"höm": ["neuter noun", "ham", "old-norse evolved"],
 	"hönd": ["neuter noun", "hand", "old-norse"],
@@ -3709,6 +4147,8 @@ const entries = {
 	"jafa": ["verb", "to give (has an \"um\" when the dative is with an adjective); to gift", "middle-english evolved", ["Jöfu mér þin heimnemingverk. = Give me your homework.", "Hann jafði allu þóm um brottur. = He gave them all bread."]],
 	"jagg": ["neuter noun", "argument, quarreling, squabbling", "old-norse evolved"],
 	"jaki": ["masculine noun", "piece of ice; broken chunk of ice", "old-norse"],
+	"jakott": ["feminine noun", "electricity", "kagalarian evolved"],
+	"jakott-höld": ["feminine noun", "battery"],
 	"jarl": ["masculine noun", "lord, jarl, earl; an upper class person", "old-norse"],
 	"jarptr": ["masculine noun", "rug, mat, carpet", "fictional"],
 	"jostr": ["masculine noun", "yeast", "old-norse"],
@@ -3732,6 +4172,9 @@ const entries = {
 	"jóð-verk": ["neuter noun", "ritual, rite"],
 	"jóðr": ["adjective", "sacred, holy", "fictional"],
 	"jögg": ["neuter noun", "egg", "english evolved"],
+	"jöku-": ["prefix", "electricity prefix for when \"-verk\" sounds weird"],
+	"jöku-tundr": ["masculine noun", "flashlight, torch"],
+	"jöku-viskandi": ["adjective", "electric, run on electricity"],
 	"jönd": ["neuter noun", "jade", "fictional"],
 	"jörð": ["feminine noun", "earth, planet, realm, world; the ground, earth, soil; the forest floor", "old-norse"],
 	"jörð-dýfi": ["masculine noun", "earth elemental"],
@@ -3961,7 +4404,7 @@ const entries = {
 	"ljútr": ["adjective", "ugly, unsightly, repulsive", "old-norse evolved"],
 	"lofa": ["verb", "to praise, to flatter; to be fond of", "old-norse evolved"],
 	"lok": ["neuter noun", "the end, tip, or point of a thing, such as a rope, pole, sword, or staff", "old-norse"],
-	"lok-eigi": ["adverb", "never ending, no end, forever"],
+	"lok-eigi": ["adverb", "never-ending, ever-lasting, forever"],
 	"loks": ["adverb", "finally", "modern-icelandic evolved"],
 	"lor": ["feminine noun", "writing system, alphabet", "fictional"],
 	"lota": ["verb", "to borrow", "fictional"],
@@ -4021,6 +4464,7 @@ const entries = {
 	"lýtill": ["adjective", "small, little (accusative singular lýtlu/lýtil/lýttið, comparative lýtlar/lýtlir/lýtlur, superlative lýtlastr/lýtlast)", "proto-germanic evolved"],
 	"lýtlana": ["adverb", "slightly, faintly, a bit", "", ["Þæt ar lútlana óraðligr. = It's a bit chaotic."]],
 	"lýtli-vegr": ["masculine noun", "alleyway"],
+	"lýtlu-jörð": ["feminine noun", "asteroid"],
 	"lýð": ["feminine noun", "smell, scent, aroma", "modern-icelandic evolved"],
 	"magn": ["neuter noun", "the main, center, or focus", "old-norse evolved"],
 	"magn-vérr": ["masculine noun", "artery (biology)"],
@@ -4141,6 +4585,8 @@ const entries = {
 	"mérnd": ["neuter noun", "metal", "fictional"],
 	"míki": ["masculine noun", "material, ingredient, requirement", "fictional"],
 	"míkt": ["neuter noun", "material, mineral; (physics) element", "fictional"],
+	"míkts eif": ["neuter noun", "chemical"],
+	"míktsbreymun-fell": ["neuter noun", "chemistry"],
 	"mókligr": ["adjective", "rude, mean, impolite", "fictional"],
 	"móla": ["verb", "to become pale, to lose color", "fictional"],
 	"mólr": ["adjective", "pale in color", "fictional"],
@@ -4153,6 +4599,7 @@ const entries = {
 	"möfn": ["neuter noun", "mouth", "old-norse evolved"],
 	"mög": ["feminine noun", "crumb, small leftover pieces of cake, bread, carrot, cinnamon, etc; small leftover fibres (fibers) of meat or fruit", "fictional"],
 	"mök": ["neuter noun", "a mouse", "fictional"],
+	"mökku-ligr": ["adjective", "possible, feastable, potential"],
 	"möl": ["feminine noun", "gravel", "old-norse"],
 	"mölva": ["verb", "to shatter, to smash, to burst, to break into fragments", "old-norse"],
 	"mönu-hýs": ["neuter noun", "tavern, restaurant"],
@@ -4296,6 +4743,7 @@ const entries = {
 	"ormr": ["masculine noun", "worm", "old-norse"],
 	"orramr": ["adjective", "fat, obese, gluttonous", "fictional"],
 	"orð": ["neuter noun", "word", "old-norse"],
+	"orð-léttr": ["adjective", "soft spoken, gently spoken"],
 	"orð-pæng": ["feminine noun", "dictionary"],
 	"orð-raðing pung": ["neuter noun", "declension table"],
 	"oss": ["pronoun", "we, us (dative)", "old-norse"],
@@ -4456,10 +4904,14 @@ const entries = {
 	"rög": ["neuter noun", "mold (fungi)", "fictional"],
 	"rönd": ["neuter noun", "a rumor, gossip", "fictional"],
 	"röstun-fell": ["neuter noun", "fighting, combat"],
+	"röstun-pættr": ["masculine noun", "martial art, fighting art"],
+	"röðju-fell": ["neuter noun", "radiation"],
+	"röðju-vorgr": ["adjective", "radioactive"],
 	"rúa": ["feminine noun", "rank, tier, class, level", "fictional"],
 	"rúl": ["feminine noun", "hill", "fictional"],
 	"rún": ["feminine noun", "a secret", "old-norse evolved"],
 	"rún-skrand": ["neuter noun", "obsidian"],
+	"rúnsk-þænnjari": ["feminine noun", "battleship"],
 	"rúnskr": ["masculine noun", "ruins of (singular); destruction, ruin, doom", "fictional"],
 	"rýmm, -hrýmm": ["neuter noun", "room"],
 	"rýnja": ["impersonal verb", "to rain", "proto-germanic evolved"],
@@ -4599,6 +5051,7 @@ const entries = {
 	"slegja": ["verb", "to hit, to strike, to smite (general physical hitting/striking)", "old-norse hypothetical"],
 	"sleikja": ["verb", "to lick", "old-norse"],
 	"sleima": ["verb", "to fly", "fictional"],
+	"sleimu-verk": ["neuter noun", "airplane"],
 	"sleipr": ["adjective", "slippery, slick, smooth", "fictional"],
 	"slemr": ["adjective", "skinny", "fictional"],
 	"slengja (1)": ["verb", "to slope; to go or slope upwards, downwards, uphill, or downhill (of a ground surface like a road or hill)"],
@@ -4760,6 +5213,8 @@ const entries = {
 	"sæng-tengr": ["masculine noun", "bed frame"],
 	"sémma": ["verb", "to rest, to relax, to take a break", "fictional"],
 	"sémming eip": ["neuter noun", "relaxation herb"],
+	"sér-": ["prefix", "self-"],
+	"sér-viskandi": ["adjective", "automatic, self-performing"],
 	"sérr": ["adverb", "here", "fictional"],
 	"séði": ["neuter noun", "sperm, semen", "modern-icelandic evolved"],
 	"síma": ["feminine noun", "telephone", "modern-icelandic evolved"],
@@ -4835,6 +5290,7 @@ const entries = {
 	"treiða": ["verb", "to wander", "fictional"],
 	"trey": ["neuter noun", "tree", "proto-germanic evolved"],
 	"trey-armr": ["masculine noun", "tree branch"],
+	"treys-burðr": ["masculine noun", "tree trunk"],
 	"treys-safi": ["masculine noun", "tree sap"],
 	"trygginn": ["adjective", "sure, certain"],
 	"tryggja": ["verb", "to make sure, to ensure (with \"áða\")", "old-norse"],
@@ -4974,7 +5430,6 @@ const entries = {
 	"vesa þok ypir": ["expression", "a common simile that conveys the idea that something is protective over something else, using þok (roof) as a comparation"],
 	"vesa": ["auxiliary", "to be", "old-norse archaic-form"],
 	"vesask": ["verb", "to become, to happen, to come to be"],
-	"vesin-ligr": ["adjective", "maybe, perhaps; probably, possible"],
 	"vetni": ["neuter noun", "hydrogen (chemical element)", "modern-icelandic evolved"],
 	"vetr": ["masculine noun", "winter", "old-norse"],
 	"vig-follr": ["adjective", "persistent, unyielding, relentless, restless, constant, stubborn"],
@@ -4995,12 +5450,14 @@ const entries = {
 	"vjakki": ["masculine noun", "force", "fictional"],
 	"vokna": ["verb", "to wake up, to become awake, to awaken", "modern-icelandic evolved"],
 	"vona": ["verb", "to hope, to wish", "fictional"],
+	"vorg-léttr": ["adjective", "mild, moderate, underwhelming"],
 	"vorga": ["verb", "to weight", "old-norse evolved"],
-	"vorgr": ["neuter noun", "weight of object", "old-norse evolved"],
+	"vorgr": ["masculine noun", "weight of object", "old-norse evolved"],
 	"vorð": ["neuter noun", "choice; preference, setting, option, opinion", "old-norse evolved"],
 	"vorða": ["verb", "to choose, to pick", "old-norse evolved"],
 	"votn": ["neuter noun", "water", "old-norse evolved"],
 	"votns-flerrari": ["masculine noun", "garden hose, water hose"],
+	"votns-höld": ["feminine noun", "water reservoir"],
 	"votns-jafari": ["masculine noun", "tap, faucet"],
 	"voxi": ["masculine noun", "fox", "english evolved"],
 	"vræðr": ["masculine noun", "wraith", "english evolved"],
@@ -5254,7 +5711,10 @@ const entries = {
 	"ýstr": ["adjective", "thin", "fictional"],
 	"þaf-búi": ["masculine noun", "foreigner"],
 	"þaf-síma": ["feminine noun", "corded telephone"],
+	"þafan-flytja": ["verb", "to transport over a long distance"],
+	"þafan-flytjun": ["feminine noun", "transport"],
 	"þafan-skrand": ["neuter noun", "scope, lens"],
+	"þafanflytjun-sjótt": ["feminine noun", "carrier ship"],
 	"þafir": ["adverb", "far, far away", "norvunic"],
 	"þanga": ["verb", "to perfect, to polish, to finish", "fictional"],
 	"þanginn": ["adjective", "perfect", "fictional"],
@@ -5367,394 +5827,3 @@ const entries = {
 	"þý-tán": ["numeral", "thirteen"],
 	"þýju": ["adjective", "three times, thrice"],
 };
-
-const ipa_exceptions = {
-	"'fʏrɪr": "'fɪrɪr",
-	"'hatl̥ouː": "'halouː",
-	"'fotl̥kʋɑuːma": "'folkʋɑuːma"
-}
-
-const special_declensions = {
-	"dagr": [
-		"dagr", "dagrinn", "dagar", "dagarnir",
-		"dagu", "daginn", "daga", "dagana",
-		"dagi", "daginum", "dagum", "dagunum",
-		"dags", "dagsins", "daga", "daganna",
-	],
-	"eldr": [
-		"eldr", "eldrinn", "a", "a",
-		"eld", "eldinn", "a", "a",
-		"eldi", "eldinum", "a", "a",
-		"elds", "eldsins", "a", "a",
-	],
-	"ergi": [
-		"ergi", "ergin", "ergi", "ergin",
-		"ergi", "ergina", "ergi", "ergina",
-		"ergi", "erginni", "ergi", "erginni",
-		"ergi", "erginnar", "ergi", "erginnar",
-	],
-	"hirðir": [
-		"hirðir", "hirðirinn", "hirðar", "hirðarnir",
-		"hirður", "hirðurnu", "hirðar", "hirðarnir",
-		"hirður", "hirðurnum", "hirðrum", "hirðrunum",
-		"hirður", "hirðurins", "hirðra", "hirðranna",
-	],
-	"mandr": [
-		"mandr", "mandrinn", "mendr", "mendrnir",
-		"mandu", "mandunn", "mendr", "mendrnir",
-		"mandi", "mandinum", "mendrum", "mendrunum",
-		"mands", "mandsins", "mendra", "mendranna",
-	],
-	"sonr": [
-		"sonr", "sonrinn", "sonir", "sonirnir",
-		"son", "soninn", "soni", "sonina",
-		"soni", "soninum", "sonum", "sonunum",
-		"sons", "sonsins", "sona", "sonanna",
-	],
-	"taufr": [
-		"taufr", "taufrinn", "taufrar", "taufrarnir",
-		"taufru", "taufrinn", "taufra", "taufrana",
-		"taufri", "taufrinum", "taufrum", "taufrunum",
-		"taufrs", "taufrsins", "taufra", "taufranna",
-	],
-	"trey": [
-		"trey", "treyt", "treya", "treyin",
-		"trey", "treyt", "treya", "treyin",
-		"treyi", "treyinum", "treyjum", "treyjunum",
-		"treys", "treysins", "treyja", "treyjanna",
-	],
-	"öggr": [
-		"öggr", "öggrinn", "a", "a",
-		"öggu", "öggunn", "a", "a",
-		"öggi", "ögginum", "a", "a",
-		"öggs", "öggsins", "a", "a",
-	],
-
-	"bata": {
-		"past_tense": "bæti",
-		"past_participle": "bætinn",
-		"past_tense_mediopassive": "bætisk"
-	},
-	"boða": {
-		"past_tense": "baði",
-		"past_participle": "baðinn",
-		"past_tense_mediopassive": "baðisk"
-	},
-	"blá": {
-		"past_tense": "bláði"
-	},
-	"duna": {
-		"past_tense": "dunaði",
-		"past_participle": "duninn"
-	},
-	"éta": {
-		"past_tense": "áti",
-		"past_participle": "étinn",
-		"past_tense_mediopassive": "átisk"
-	},
-	"fanda": {
-		"past_tense": "fondi",
-		"past_participle": "fondinn"
-	},
-	"fara": {
-		"present_tense": ["fer", "fer", "ferir"],
-		"present_mediopassive": "ferisk"
-	},
-	"geta": {
-		"past_tense": "gæti",
-		"past_participle": "gætinn",
-		"past_tense_mediopassive": "gætisk"
-	},
-	"gveta": {
-		"past_tense": "gvæti",
-		"past_participle": "gvætinn",
-		"past_tense_mediopassive": "gvætisk"
-	},
-	"hafa": {
-		"present_tense": ["hef", "hefi", "hefir"],
-		"present_mediopassive": "hefisk"
-	},
-	"semja": {
-		"past_participle": "seminn",
-		"past_tense": "semdi"
-	},
-	"ósk-semja": {
-		"past_participle": "ósk-seminn",
-		"past_tense": "ósk-semdi"
-	},
-	"út-semja": {
-		"past_participle": "út-seminn",
-		"past_tense": "út-semdi"
-	},
-	"öndu-semja": {
-		"past_participle": "öndu-seminn",
-		"past_tense": "öndu-semdi"
-	},
-	"hengja": {
-		"past_participle": "henginn",
-		"past_tense": "hengjaði"
-	},
-	"hlísta": {
-		"present_tense": ["hlísta", "hlístar", "hlístar"]
-	},
-	"kindja": {
-		"past_tense": "kenddi",
-		"past_participle": "kendinn"
-	},
-	"lækja": {
-		"past_participle": "lækinn",
-		"past_tense": "lækti"
-	},
-	"maðka": {
-		"past_tense": "maðkaði",
-		"past_participle": "maðkinn",
-		"past_tense_mediopassive": "maðkaðisk"
-	},
-	"meta": {
-		"past_tense": "mæti",
-		"past_participle": "mætinn",
-		"past_tense_mediopassive": "mætisk"
-	},
-	"muna": {
-		"present_tense": ["mun", "mun", "munir"]
-	},
-	"máklja": {
-		"imperative": "máklju"
-	},
-	"sega": {
-		"past_tense": "sagði",
-		"past_participle": "saginn"
-	},
-	"setja": {
-		"past_tense": "sati",
-		"past_participle": "satinn",
-		"past_tense_mediopassive": "satisk"
-	},
-	"skola": {
-		"past_tense": "sköldi",
-		"past_participle": "skölinn"
-	},
-	"sve": {
-		"present_tense": ["sve", "svi", "sve"],
-		"past_tense": "svá",
-		"past_participle": "sveðinn",
-		"mediopassive": "svask",
-		"present_mediopassive": "svisk",
-		"past_tense_mediopassive": "sváðisk",
-		"gerund": "sveng"
-	},
-	"vanga": {
-		"present_tense": ["vanga", "vangar", "vangar"],
-		"past_tense": "vangaði"
-	},
-	"vega": {
-		"present_tense": ["veg", "veig", "vegir"],
-		"past_tense": "vann",
-		"past_participle": "vaginn"
-	},
-	"vesa": {
-		"present_tense": ["ar", "ar", "ar"],
-		"past_tense": "var",
-		"past_participle": "vesinn"
-	},
-	"vilja": {
-		"present_tense": ["vil", "vil", "vilar"]
-	},
-	"vita": {
-		"past_tense": "vissi",
-		"past_participle": "vissinn",
-		"past_tense_mediopassive": "vissisk"
-	},
-	"vá": {
-		"past_tense": "váði"
-	},
-	"af-vita": {
-		"past_tense": "af-vissi",
-		"past_tense_mediopassive": "af-vissisk"
-	},
-	"þárra": {
-		"present_tense": ["þárra", "þárrar", "þárrar"]
-	},
-	"æma": {
-		"past_tense": "æmaði",
-		"past_participle": "æminn"
-	}
-};
-
-// common words that go in here: measurements, sounds, materials, abstract nouns, masses, liquids, plant growths like grass or moss, etc
-// this list also encompasses suffixes, so if míkt is singular-only, andingmíkt will also be singular-only
-const singular_only = [
-	"af-fell",
-	"askr",
-	"aurr",
-	"beyki",
-	"bjarka",
-	"blóð",
-	"brangr",
-	"breiði",
-	"bémm",
-	"börskr",
-	"dap-vöngun",
-	"djaffigð",
-	"eiki-kulr",
-	"eikr",
-	"ein-fell",
-	"ein-hver",
-	"ekkning-fell",
-	"eldr",
-	"elska",
-	"ergi",
-	"frast",
-	"frjálsun",
-	"fríða",
-	"frýss",
-	"fvindr",
-	"fytvir",
-	"fyx",
-	"fángvi",
-	"gleða",
-	"gogg",
-	"græssa",
-	"gérð",
-	"góð-nímr",
-	"harr",
-	"hauði",
-	"heim-mendr",
-	"hnúgr",
-	"hraði",
-	"hrófir",
-	"há",
-	"hægð",
-	"hæm",
-	"húst",
-	"jurn",
-	"júta",
-	"koparr",
-	"kotr",
-	"kráin",
-	"kulr",
-	"kýr",
-	"langð",
-	"ljúnna",
-	"lyng",
-	"læn",
-	"lóð",
-	"lýð",
-	"mana",
-	"mel",
-	"mjondáss",
-	"myrk-fell",
-	"mákli-fell",
-	"mædd-fell",
-	"mænt",
-	"míkt",
-	"möl",
-	"nafn-fell",
-	"nefnigð",
-	"norðr",
-	"næðingr",
-	"nýgla",
-	"ori",
-	"pind",
-	"pælkr",
-	"reizga",
-	"rög",
-	"safi",
-	"salta",
-	"skinda",
-	"snóskr",
-	"soll",
-	"statangr",
-	"stigi",
-	"strá",
-	"stál",
-	"sumarr",
-	"svein",
-	"svæðr",
-	"sót",
-	"söt",
-	"tellr",
-	"til-fell",
-	"tollr",
-	"tár",
-	"té",
-	"vattr",
-	"vauðr",
-	"vei",
-	"vetr",
-	"votn",
-	"vægð",
-	"víði",
-	"ybbun",
-	"yr",
-	"álmr",
-	"ápir",
-	"ár",
-	"ærsl",
-	"ó-böggðir",
-	"ó-rað",
-	"ósk-semjun",
-	"öbi",
-	"öggr",
-	"östr",
-	"úldir",
-	"þera",
-	"þruma",
-	"þys",
-	"þárrigð",
-	"þöll-fell",
-];
-
-const plural_indefinite_only = [
-	"eig-einn"
-];
-
-// a list of all the most common words. will be multiplied 2.5x in testing letter frequencies
-const debug_words = [
-	"at",
-	"eigi",
-	"einn",
-	"ek",
-	"eða",
-	"geta",
-	"hafa",
-	"hann",
-	"hennar",
-	"henni",
-	"hun",
-	"hám",
-	"hámi",
-	"mek",
-	"min, mína",
-	"muna",
-	"mér",
-	"ok",
-	"okkar",
-	"okkr",
-	"oss",
-	"var",
-	"vesa",
-	"við",
-	"átaufrasveng",
-	"í",
-	"þek",
-	"þetta, þessi",
-	"þin, þína",
-	"þæt",
-	"þér",
-	"þú",
-];
-
-// another list of common words. will be multiplied 1.5x in testing letter frequencies
-const debug_words2 = [
-	"ef",
-	"frá",
-	"fyri",
-	"með",
-	"til",
-	"um",
-	"á",
-	"ænn",
-	"þver",
-	"þvest",
-];
