@@ -5482,6 +5482,10 @@ const special_declensions = {
 	"hlísta": {
 		"present_tense": ["hlísta", "hlístar", "hlístar"]
 	},
+	"hringja": {
+		"present_tense": ["hringja", "hringjar", "hringjar"],
+		"past_tense": "hringjaði"
+	},
 	"kindja": {
 		"past_tense": "kenddi",
 		"past_participle": "kendinn"
