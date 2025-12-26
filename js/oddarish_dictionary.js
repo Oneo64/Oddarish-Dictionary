@@ -3889,7 +3889,7 @@ const entries = {
 	"leik-mál": ["neuter noun", "opera; a scene or a play on stage"],
 	"leik-stýrsari": ["feminine noun", "a game controller"],
 	"leik-valr": ["masculine noun", "score, points (in a game or sport)"],
-	"leika": ["verb", "to play a game, especially a board game or sport; to play a role", "old-norse"],
+	"leika": ["verb", "to play a game, especially a board game or sport (with \"í\"); to play a role (with \"um\")", "old-norse"],
 	"leikr": ["masculine noun", "game, sport", "old-norse"],
 	"leima": ["verb", "to think, to suppose, to guess", "fictional"],
 	"leiða höndum með ...": ["verb", "to hold hands", "", ["Viltú leiða höndum með mér? = Do you want to hold hands with me?"]],
