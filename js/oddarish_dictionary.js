@@ -238,6 +238,7 @@ const singular_only = [
 	"ekkning-fell",
 	"eldr",
 	"elska",
+	"elskun",
 	"ergi",
 	"frast",
 	"frjálsun",
