@@ -76,7 +76,7 @@ const noun_declensions = {
 	// -nn
 	masculine_nn: [
 		"", "ninn", "ar", "arnir",
-		"u", "nunn", "a", "ana",
+		"u", "unn", "a", "ana",
 		"i", "inum", "um", "unum",
 		"s", "ins", "a", "anna",
 	],
