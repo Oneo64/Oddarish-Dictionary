@@ -5853,7 +5853,7 @@ const entries = {
 	"þetta, þessi": ["pronoun", "this, this one"],
 	"þeyja": ["verb", "to thaw, to unfreeze", "fictional"],
 	"þeyra": ["verb", "to sew, to weave, to knit, to tailor", "fictional"],
-	"þeyrun-fell": ["neuter noun", "tailoring"],
+	"þeyrun-fell": ["neuter noun", "tailoring, weaving, sewing"],
 	"þifsa": ["feminine noun", "string, thread", "fictional"],
 	"þing": ["neuter noun", "meeting, gathering, assemblage, assembly (archaically called a thing); a social gathering", "old-norse"],
 	"þinn": ["pronoun", "you, your (possessive)"],
