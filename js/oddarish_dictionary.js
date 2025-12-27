@@ -5043,7 +5043,7 @@ const entries = {
 	"seiðr": ["masculine noun", "seiðr, seidr, seidur", "old-norse"],
 	"selja": ["verb", "to sell", "old-norse"],
 	"seljun-hringr": ["masculine noun", "market"],
-	"seljun-mandr": ["masculine noun", "merchant"],
+	"seljun-mandr": ["masculine noun", "merchant, trader, seller, clerk"],
 	"semja": ["verb", "to show, to reveal, to make known", "fictional"],
 	"semjask": ["verb", "to appear, to materialise; to come out of hiding, to come into the light", "fictional"],
 	"senda inn": ["verb", "to submit, to send, to give"],
