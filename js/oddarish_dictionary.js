@@ -4006,7 +4006,7 @@ const entries = {
 	"haxna": ["verb", "to massacre, to cause genocide on, to slaughter, to kill/slay many of", "fictional"],
 	"heiga": ["feminine noun", "female giant, giantess", "fictional"],
 	"heili": ["masculine noun", "brain", "modern-icelandic"],
-	"heim-mendr": ["masculine noun", "family"],
+	"heim-mendr": ["masculine noun", "family, relatives"],
 	"heima": ["adverb", "to home", "old-norse hypothetical", ["Ek veg heima. = I'm going home."]],
 	"heimr": ["masculine noun", "house, home", "old-norse deceptive"],
 	"heimska": ["feminine noun", "foolishness, stupidity", "old-norse"],
