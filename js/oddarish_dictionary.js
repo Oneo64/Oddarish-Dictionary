@@ -28,6 +28,12 @@ const special_declensions = {
 		"ergi", "erginni", "ergi", "erginni",
 		"ergi", "erginnar", "ergi", "erginnar",
 	],
+	"heim-mendr": [
+		"heimmendr", "heimmendrnir", "a", "a",
+		"heimmendr", "heimmendrnir", "a", "a",
+		"heimmendrum", "heimmendrunum", "a", "a",
+		"heimmendra", "heimmendranna", "a", "a",
+	],
 	"hirðir": [
 		"hirðir", "hirðirinn", "hirðar", "hirðarnir",
 		"hirður", "hirðurnu", "hirðar", "hirðarnir",
