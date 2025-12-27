@@ -38,14 +38,14 @@
 	</ul>
 	<hr>
 	<p>This language and website is published under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.</p>
-	<input type="button" class="submit pfont" value="Reset settings" style="width: 140px;" onclick="do_hyphen_setting();">
+	<input type="button" class="submit pfont" value="Reset settings" style="width: 140px;" onclick="do_settings();">
 </div>
 
 <script src="js/letters.js"></script>
 <script src="js/oddarish_dictionary.js"></script>
 <script>
-	function do_hyphen_setting() {
-		localStorage.setItem("hyphens", confirm("Welcome, new linguist! Would you like to turn on hyphens (to see compound words)?"));
+	function do_settings() {
+		document.cookie = "hyphens-" + confirm("Welcome, new linguist! Would you like to turn on hyphens (to see compound words)?");
 	}
 
 	var now = new Date();
@@ -68,7 +68,7 @@
 
 	document.getElementById("wordcount").innerHTML = "Now, Oddarish has " + entry_words.length + " words (" + roots + " roots), and is " + years2 + " year(s) and " + days2 + " days old!";
 
-	if (localStorage.getItem("hyphens") == null) do_hyphen_setting();
+	if (document.cookie == null) do_settings();
 </script>
 <script type="application/ld+json">
 {

@@ -43,8 +43,10 @@
 
 		var ipa = ipa(v2.replaceAll("-", "."), false);
 
-		document.getElementById("title").innerHTML = "Online Oddarish Dictionary - " + v.charAt(0).toUpperCase() + v.substring(1);
-		document.getElementById("word").innerHTML = v + " | " + get_runic_inscription(ipa);
+		var hyphenless = document.cookie == null || !document.cookie.includes("hyphens-true");
+
+		document.getElementById("title").innerHTML = "Online Oddarish Dictionary - " + v.charAt(0).toUpperCase() + v.substring(1).replaceAll("-", "");
+		document.getElementById("word").innerHTML = (hyphenless ? v.replaceAll("-", "") : v) + " | " + get_runic_inscription(ipa);
 		document.getElementById("ipa").innerHTML = ipa;
 		document.getElementById("type").innerHTML = "";
 
@@ -110,10 +112,10 @@
 					window.onresize = onWindowResize;
 					onWindowResize();
 
-					document.getElementById("declension_top").innerHTML = "declension for '" + v2 + "'";
+					document.getElementById("declension_top").innerHTML = "declension for '" + v2.replaceAll("-", "") + "'";
 					
 					if (!sg_only && !pl_indef_only) {
-						document.getElementById("_declension_top").innerHTML = "declension for '" + v2 + "'";
+						document.getElementById("_declension_top").innerHTML = "declension for '" + v2.replaceAll("-", "") + "'";
 					}
 
 					if (entry[0] == "masculine noun") {
@@ -134,7 +136,7 @@
 					}
 				}
 			} else if (entry[0] == "verb" || entry[0] == "auxiliary") {
-				var v3 = v2;
+				var v3 = v2.replaceAll("-", "");
 				var v4 = "";
 
 				if (v2.includes(" ")) {
@@ -144,8 +146,8 @@
 
 				if (!v2.endsWith("ask")) {
 					document.getElementById("tables").innerHTML = declension_tables_html["verb"];
-					document.getElementById("declension_top2").innerHTML = "declension for '" + v2 + "'";
-					document.getElementById("infinitive").innerHTML = "at " + v2;
+					document.getElementById("declension_top2").innerHTML = "declension for '" + v2.replaceAll("-", "") + "'";
+					document.getElementById("infinitive").innerHTML = "at " + v2.replaceAll("-", "");
 					document.getElementById("imperative").innerHTML = add_verb_ending_basic(v3, "u") + v4;
 					document.getElementById("present_participle").innerHTML = add_verb_ending_basic(v3, "andi") + v4;
 
@@ -170,10 +172,10 @@
 
 					document.getElementById("tables").innerHTML += declension_tables_html["verb_mediopassive"];
 
-					document.getElementById("mediopassive_top").innerHTML = get_mediopassive(v2);
-					document.getElementById("infinitive2").innerHTML = "at " + get_mediopassive(v2);
-					document.getElementById("present_tense2").innerHTML = get_mediopassive_present(v2);
-					document.getElementById("past_tense2").innerHTML = get_mediopassive_past(v2);
+					document.getElementById("mediopassive_top").innerHTML = get_mediopassive(v2).replaceAll("-", "");
+					document.getElementById("infinitive2").innerHTML = "at " + get_mediopassive(v2).replaceAll("-", "");
+					document.getElementById("present_tense2").innerHTML = get_mediopassive_present(v2).replaceAll("-", "");
+					document.getElementById("past_tense2").innerHTML = get_mediopassive_past(v2).replaceAll("-", "");
 				}
 			} else if (entry[0] == "impersonal verb") {
 				var v3 = v2;

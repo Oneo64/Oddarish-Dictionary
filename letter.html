@@ -27,6 +27,8 @@
 	document.getElementById("title").innerHTML = "Online Oddarish Dictionary - " + v.toUpperCase();
 	document.getElementById("letter").innerHTML = "Letter " + v.toUpperCase();
 
+	var hyphenless = document.cookie == null || !document.cookie.includes("hyphens-true");
+
 	var list = [];
 
 	if (v) {
@@ -54,7 +56,11 @@
 		});
 
 		for (var i = 0; i < list.length; i++) {
-			document.getElementById("words").innerHTML += "<a class='listitem' href='word.html?v=" + list[i] + "'>" + list[i] + "</a>";
+			var display_word = list[i];
+
+			if (hyphenless) display_word = display_word.replaceAll("-", "");
+
+			document.getElementById("words").innerHTML += "<a class='listitem' href='word.html?v=" + list[i] + "'>" + display_word + "</a>";
 		}
 	}
 

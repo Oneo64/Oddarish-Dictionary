@@ -61,11 +61,16 @@
 	} else {
 		var slotsLeft = 100;
 
+		var hyphenless = document.cookie == null || !document.cookie.includes("hyphens-true");
+
 		for (var i = 0; i < entry_words.length; i++) {
 			var word = entry_words[i];
 
 			if (word in entries) {
 				var word2 = word;
+				var display_word = word;
+
+				if (hyphenless) display_word = display_word.replaceAll("-", "");
 
 				if (word.endsWith(")")) word2 = word.substring(0, word.length - 4);
 
@@ -78,7 +83,6 @@
 
 				if (def.includes("|")) def = def.substring(0, def.indexOf("|")).trim();
 
-
 				var defText = entries[word][1];
 
 				if (defText.includes("|")) defText = defText.substring(0, defText.indexOf("|")).trim();
@@ -86,32 +90,32 @@
 				var defs = defText.split(";");
 
 				if (def.toLowerCase().includes(v)) {
-					document.getElementById("results").innerHTML += "<div><a class='listitem' href='word.html?v=" + word + "'>" + entry_words[i] + "</a><div class='nowrap'><ol><li>" + defs.join("</li><li>") + "</li></ol></div></div>";
+					document.getElementById("results").innerHTML += "<div><a class='listitem' href='word.html?v=" + word + "'>" + display_word + "</a><div class='nowrap'><ol><li>" + defs.join("</li><li>") + "</li></ol></div></div>";
 					added = true;
-				} else if (word.toLowerCase().includes(v)) {
-					document.getElementById("results").innerHTML += "<div><a class='listitem' href='word.html?v=" + word + "'>" + word + "</a><div class='nowrap'>&nbsp&nbsp(found in word)</div></div>";
+				} else if (display_word.toLowerCase().includes(v.replaceAll("-", ""))) {
+					document.getElementById("results").innerHTML += "<div><a class='listitem' href='word.html?v=" + word + "'>" + display_word + "</a><div class='nowrap'>&nbsp&nbsp(found in word)</div></div>";
 					added = true;
 				}
 
 				if (entries[word][0] == "verb" && !added && d) {
 					switch (true) {
 						case v == get_past_tense(word):
-							document.getElementById("results").innerHTML += "<div><a class='listitem' href='word.html?v=" + word + "'>" + word + "</a><div class='nowrap'>&nbsp&nbsp(found in past tense)</div></div>";
+							document.getElementById("results").innerHTML += "<div><a class='listitem' href='word.html?v=" + word + "'>" + display_word + "</a><div class='nowrap'>&nbsp&nbsp(found in past tense)</div></div>";
 							added = true;
 							break;
 
 						case v == get_past_participle(word):
-							document.getElementById("results").innerHTML += "<div><a class='listitem' href='word.html?v=" + word + "'>" + word + "</a><div class='nowrap'>&nbsp&nbsp(found in past participle)</div></div>";
+							document.getElementById("results").innerHTML += "<div><a class='listitem' href='word.html?v=" + word + "'>" + display_word + "</a><div class='nowrap'>&nbsp&nbsp(found in past participle)</div></div>";
 							added = true;
 							break;
 
 						case v == get_present_tense(word, 1) || v == get_present_tense(word, 2) || v == get_present_tense(word, 3):
-							document.getElementById("results").innerHTML += "<div><a class='listitem' href='word.html?v=" + word + "'>" + word + "</a><div class='nowrap'>&nbsp&nbsp(found in present tense)</div></div>";
+							document.getElementById("results").innerHTML += "<div><a class='listitem' href='word.html?v=" + word + "'>" + display_word + "</a><div class='nowrap'>&nbsp&nbsp(found in present tense)</div></div>";
 							added = true;
 							break;
 
 						case v == add_verb_ending_basic(word, "andi"):
-							document.getElementById("results").innerHTML += "<div><a class='listitem' href='word.html?v=" + word + "'>" + word + "</a><div class='nowrap'>&nbsp&nbsp(found in present participle)</div></div>";
+							document.getElementById("results").innerHTML += "<div><a class='listitem' href='word.html?v=" + word + "'>" + display_word + "</a><div class='nowrap'>&nbsp&nbsp(found in present participle)</div></div>";
 							added = true;
 							break;
 					}
