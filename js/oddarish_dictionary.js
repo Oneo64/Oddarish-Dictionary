@@ -5127,7 +5127,7 @@ const entries = {
 	"sleimu-verk": ["neuter noun", "airplane"],
 	"sleipr": ["adjective", "slippery, slick, smooth", "fictional"],
 	"slemr": ["adjective", "skinny", "fictional"],
-	"slengja (1)": ["verb", "to slope; to go or slope upwards, downwards, uphill, or downhill (of a ground surface like a road or hill)"],
+	"slengja (1)": ["verb", "to go, to slope, to curve (upwards, downwards, uphill, or downhill)"],
 	"slengja (2)": ["impersonal verb", "to protrude out of the ground"],
 	"sleppa": ["verb", "to slip, to slide (on a surface)", "old-norse evolved"],
 	"slimpja": ["verb", "to scold, to berate, to tell off", "proto-germanic evolved"],
