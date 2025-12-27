@@ -3289,7 +3289,7 @@ const entries = {
 	"at-eins": ["adverb", "only, just, merely, simply"],
 	"at-hrifning": ["adjective", "impressive, good"],
 	"at-hygli": ["feminine noun", "attention"],
-	"at-kallandi": ["adjective", "important, critical, urgent"],
+	"at-kallandi": ["adjective", "important, critical, urgent, serious"],
 	"at-russing": ["adjective", "to be in a rush"],
 	"atheim-ligr": ["adjective", "domestic"],
 	"atla": ["verb", "to intent, to purpose, to aspire, to want; to ettle", "old-norse"],
