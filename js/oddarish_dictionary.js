@@ -5411,7 +5411,7 @@ const entries = {
 	"til þvenn": ["conjunction", "while, whilst, as it was"],
 	"til": ["preposition", "to, towards, till", "old-norse"],
 	"til-fell": ["neuter noun", "accusative case"],
-	"tilja sæn vyra væg": ["verb", "to advert ones eyes (with \"frá\" + dative or without)"],
+	"tilja sæn vyra væg": ["verb", "to avert one's eyes (with \"frá\" + dative or without)"],
 	"tilja": ["verb", "to aim at, to point at, to direct something at (with dative)", "fictional"],
 	"tisa": ["verb", "to glance, to cast a glance at, to subtly look, to quickly look at", "fictional"],
 	"tjald": ["neuter noun", "tent", "old-norse"],
