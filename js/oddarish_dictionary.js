@@ -132,6 +132,9 @@ const special_declensions = {
 	"hlísta": {
 		"present_tense": ["hlísta", "hlístar", "hlístar"]
 	},
+	"hylja": {
+		"present_tense": ["hyli", "hylir", "hylir"]
+	},
 	"kindja": {
 		"past_tense": "kenddi",
 		"past_participle": "kendinn"
@@ -177,6 +180,9 @@ const special_declensions = {
 		"present_mediopassive": "svisk",
 		"past_tense_mediopassive": "sváðisk",
 		"gerund": "sveng"
+	},
+	"tilja": {
+		"present_tense": ["til", "tilar", "tilar"]
 	},
 	"vanga": {
 		"present_tense": ["vanga", "vangar", "vangar"],
@@ -2641,6 +2647,7 @@ const entry_words = [
 	"til þvenn",
 	"til",
 	"til-fell",
+	"tilja sæn vyra væg",
 	"tilja",
 	"tisa",
 	"tjald",
@@ -5347,6 +5354,7 @@ const entries = {
 	"til þvenn": ["conjunction", "while, whilst, as it was"],
 	"til": ["preposition", "to, towards, till", "old-norse"],
 	"til-fell": ["neuter noun", "accusative case"],
+	"tilja sæn vyra væg": ["verb", "to advert ones eyes (with \"frá\" + dative or without)"],
 	"tilja": ["verb", "to aim at, to point at, to direct something at (with dative)", "fictional"],
 	"tisa": ["verb", "to glance, to cast a glance at, to subtly look, to quickly look at", "fictional"],
 	"tjald": ["neuter noun", "tent", "old-norse"],
