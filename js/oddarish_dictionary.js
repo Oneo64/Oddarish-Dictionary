@@ -5907,7 +5907,7 @@ const entries = {
 	"þíssa": ["verb", "to bless, to grant", "fictional"],
 	"þíssing": ["neuter noun", "blessing"],
 	"þíu": ["numeral", "three"],
-	"þíð": ["neuter noun", "pit, deep hole in the ground"],
+	"þíð": ["feminine noun", "pit, deep hole in the ground"],
 	"þó, þóm": ["pronoun", "the, that, it, those (plural)"],
 	"þókr": ["masculine noun", "swamp, bog", "fictional"],
 	"þónnr": ["adjective", "low", "fictional"],
