@@ -4183,7 +4183,7 @@ const entries = {
 	"hrófir": ["masculine noun", "south", "fictional"],
 	"hrókr": ["adjective", "deep", "fictional"],
 	"hrökkva": ["verb", "to flinch, to recoil", "old-norse"],
-	"hrúka": ["verb", "to carry", "fictional"],
+	"hrúka": ["verb", "to carry, to hold", "fictional"],
 	"hrýga": ["feminine noun", "spine (biology)", "old-norse evolved"],
 	"hug-satinn": ["adjective", "stubborn, unyielding, serious, unplayful, mature; earnest, dedicated, determined"],
 	"hugr": ["masculine noun", "thoughts", "old-norse"],
