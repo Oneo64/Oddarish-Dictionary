@@ -180,9 +180,15 @@ const special_declensions = {
 		"past_participle": "satinn",
 		"past_tense_mediopassive": "satisk"
 	},
+	"skemmta": {
+		"present_tense": ["skemmta", "skemmtar", "skemmtar"]
+	},
 	"skola": {
 		"past_tense": "sköldi",
 		"past_participle": "skölinn"
+	},
+	"stymmta": {
+		"present_tense": ["stymmta", "stymmtar", "stymmtar"]
 	},
 	"sve": {
 		"present_tense": ["sve", "svi", "sve"],
