@@ -5409,7 +5409,7 @@ const entries = {
 	"svekkja": ["verb", "to craft, to create, to make, to weave together", "fictional"],
 	"svekkjang": ["neuter noun", "makings, craft, product, invention, creation", "fictional"],
 	"sveng": ["neuter noun", "sight", "fictional"],
-	"sveng-léttr": ["adjective", "obvious"],
+	"sveng-léttr": ["adjective", "obvious, noticeable"],
 	"svindla": ["verb", "to cheat, to betray, to swindle", "old-norse"],
 	"svo": ["adjective", "so, thus (use suna for intensities)", "old-norse"],
 	"svora": ["verb", "to take apart, to take down, to undo", "fictional"],
