@@ -3770,7 +3770,7 @@ const entries = {
 	"findr": ["adjective", "charming", "unsure"],
 	"finga": ["feminine noun", "medicine, tonic", "fictional"],
 	"fingla": ["feminine noun", "a small flower", "fictional"],
-	"finn-ligr": ["adjective", "(personality) nice, friendly, kind; (objects) fine, polished"],
+	"finn-ligr": ["adjective", "(personality) friendly, good-mannered, nice; (objects) fine, polished"],
 	"finnr": ["masculine noun", "friend, ally", "old-norse evolved"],
 	"fipa": ["verb", "to disturb, to bother, to upset", "fictional"],
 	"fiping-bémm": ["neuter noun", "ruckus, sound/noise disturbance, commotion"],
