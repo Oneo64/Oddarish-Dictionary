@@ -300,7 +300,7 @@ const singular_only = [
 	"mana",
 	"mel",
 	"mind-höld",
-	"mjondáss",
+	"mjóndáss",
 	"myrk-fell",
 	"mákli-fell",
 	"mædd-fell",
