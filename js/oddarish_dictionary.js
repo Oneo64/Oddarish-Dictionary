@@ -5466,7 +5466,7 @@ const entries = {
 	"tefning": ["feminine noun", "design, appearance", "fictional"],
 	"tegja": ["verb", "to shape, to form, to create", "fictional"],
 	"teiginn": ["adjective", "simple, basic, common", "fictional"],
-	"tekja": ["verb", "to take, to bring; to take into possession; to take something along, to bring someone along (with \"með mér/þér/sér/því\")", "old-norse evolved", ["Getrðu tekja mér tólit? = Can you bring me the tool?", "Hann takti sér bástann. = He took a hat with him.", "Þose tekju mek með þér til lytingina. = Please take me with you to the festival."]],
+	"tekja": ["verb", "to take, to bring; to take into possession; to take something along, to bring someone along (with accusative + \"með mér/þér/sér/því\")", "old-norse evolved", ["Getrðu tekja mér tólit? = Can you bring me the tool?", "Hann takti sér bástann. = He took a hat with him.", "Þose tekju mek með þér til lytingina. = Please take me with you to the festival."]],
 	"tellr": ["masculine noun", "speech", "fictional"],
 	"tenda": ["feminine noun", "feeling, emotion; mood; sense", "fictional"],
 	"tenda-stötvunugr": ["adjective", "emotionally stable or consistent"],
