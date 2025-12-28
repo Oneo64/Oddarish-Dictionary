@@ -4718,7 +4718,7 @@ const entries = {
 	"mjá (1)": ["interjection", "meow", "modern-icelandic"],
 	"mjá (2)": ["verb", "to meow", "modern-icelandic"],
 	"mjá (3)": ["neuter noun", "a meow", "modern-icelandic"],
-	"mjóndáss": ["neuter noun", "song, music", "fictional"],
+	"mjóndáss": ["feminine noun", "song, music", "fictional"],
 	"mjök": ["adverb", "really, very; much, a lot", "old-norse"],
 	"mjöðm": ["feminine noun", "hip", "old-norse"],
 	"mjöðr": ["masculine noun", "mead", "old-norse"],
