@@ -443,9 +443,9 @@ const debug_words2 = [
 // ==================================================
 
 const word_type_short_form = {
-	"masculine noun": "m n.",
-	"feminine noun": "k n.",
-	"neuter noun": "n n.",
+	"masculine noun": "masc n.",
+	"feminine noun": "fem n.",
+	"neuter noun": "neu n.",
 	"adjective": "adj.",
 	"adverb": "adv.",
 	"impersonal verb": "iv.",
