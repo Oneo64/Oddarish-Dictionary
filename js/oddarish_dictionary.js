@@ -5707,7 +5707,7 @@ const entries = {
 	"vega at súfa": ["verb", "to go to sleep"],
 	"vega inn gangrast hið bárum": ["idiomatic phrase", "to go against or try to do something almost impossible", "", ["Hann sve eigi áða hann ar vegandi inn gangrast hið bárum! = He doesn't realise that he's trying to do something impossible!"]],
 	"vega inn gangrast": ["verb", "to brawl; to fight with (with \"hið\" + accusative)"],
-	"vega só": ["verb", "to finish with, to finish by (with verb with same tense and perspective)", "", ["Eldverkit vánn só fjökknaði! = The firework went of with a bang!"]],
+	"vega só": ["verb", "to finish with, to finish by (with verb with same tense and perspective)", "", ["Eldverkit vann só fjökknaði! = The firework went of with a bang!"]],
 	"vega til sængin": ["verb", "to go to bed"],
 	"vega í elskufatti með": ["verb", "to go out on a date with someone, to date someone (formal)"],
 	"vega í hildi": ["verb", "to go to war"],
