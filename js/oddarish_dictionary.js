@@ -3687,7 +3687,7 @@ const entries = {
 	"byrja": ["verb", "to start, to begin", "old-norse"],
 	"byssa": ["feminine noun", "firearm, gun", "modern-icelandic"],
 	"byssu-sjótt": ["feminine noun", "destroyer"],
-	"byssu-sleimari": ["masculine noun", "gunship"],
+	"byssu-sleimari": ["masculine noun", "gunship (a large military aircraft with multiple turret guns)"],
 	"bystr": ["masculine noun", "ingot, bar of metal", "fictional"],
 	"byttr": ["masculine noun", "the horizon; the earth's curvature", "proto-germanic evolved"],
 	"bákn": ["neuter noun", "beacon, signal", "old-norse"],
