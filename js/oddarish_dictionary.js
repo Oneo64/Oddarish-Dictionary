@@ -5873,7 +5873,7 @@ const entries = {
 	"valligr": ["adjective", "valorous, mighty, glorious, honorable"],
 	"valr": ["masculine noun", "valor, might, glory", "fictional"],
 	"vampir": ["masculine noun", "vampire", "old-norse"],
-	"vanga": ["verb", "to long, to yearn, to desire, to want deeply (with \"um\"); to miss the company of someone (with \"um\")", "fictional", ["Hann vangar um þek! = He desires you!", "Ek vanga næ um þek. = I miss you."]],
+	"vanga": ["verb", "to long, to yearn, to desire, to want deeply (with \"um\"); to miss the company of someone (with \"um\")", "fictional", ["Hann vangar um þek! = He desires you!", "Ek vangaði næ um þek lengu... = I miss you so much..."]],
 	"vappnir": ["neuter noun", "weapon", "old-norse evolved"],
 	"var": ["auxiliary", "was, were (past tense of vesa)"],
 	"varasta": ["verb", "to surprise", "fictional"],
