@@ -3,14 +3,14 @@ const noun_declensions = {
 	// fallback
 	masculine: [
 		"", "inn", "ar", "arnir",
-		"u", "unn", "ar", "ana",
+		"u", "unn", "ar", "arnir",
 		"i", "inum", "um", "unum",
 		"s", "sins", "a", "anna",
 	],
 	// default -r
 	masculine_r: [
 		"", "rinn", "ar", "arnir",
-		"u", "unn", "ar", "ana",
+		"u", "unn", "ar", "arnir",
 		"i", "inum", "um", "unum",
 		"s", "sins", "a", "anna",
 	],
