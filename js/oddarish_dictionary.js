@@ -5584,7 +5584,7 @@ const entries = {
 	"spor": ["neuter noun", "track, trail, footstep, footprint, trace", "modern-icelandic"],
 	"spretna": ["verb", "to scatter, to sprinkle, to disperse (intransitive)", "proto-germanic evolved"],
 	"spyrka": ["verb", "to crack, to become cracked (intransitive); to crackle, to make a crackling sound", "proto-indo-european evolved", ["Geru svengugr, ískhnullungrinn spyrkti! = Be careful, the iceberg cracked!"]],
-	"spyrkari": ["masculine noun", "helicopter (slang, comes from the word at spyrka, meaning to crack/crackle)", "proto-indo-european evolved"],
+	"spyrkari": ["masculine noun", "helicopter (slang, comes from the word at spyrka, meaning to make a crackling sound)", "proto-indo-european evolved"],
 	"spyrki": ["masculine noun", "crack (thin opening or damage on a hard surface); crevasse", "proto-indo-european evolved"],
 	"spöllr": ["adjective", "late", "fictional"],
 	"spör-fegl": ["masculine noun", "sparrow"],
