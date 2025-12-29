@@ -312,6 +312,7 @@ const singular_only = [
 	"mákli-fell",
 	"mædd-fell",
 	"mænt",
+	"mérnd",
 	"míkt",
 	"möl",
 	"nafn-fell",
