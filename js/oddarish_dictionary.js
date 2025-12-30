@@ -5357,7 +5357,7 @@ const entries = {
 	"rænda": ["verb", "to raid, to pillage, to rob, to steal openly", "old-norse evolved"],
 	"rændr": ["masculine noun", "a raid; a pillaging", "old-norse evolved"],
 	"rændun": ["feminine noun", "robbery, raiding", "old-norse evolved"],
-	"ræsta": ["verb", "to try, to test", "proto-germanic evolved", ["Ek mun at ræsta at vega ypir rúlina. = I will try to go over the hill."]],
+	"ræsta": ["verb", "to try, to attempt", "proto-germanic evolved", ["Ek mun at ræsta at vega ypir rúlina. = I will try to go over the hill."]],
 	"rétt-bænna": ["adverb", "right into, straight to, right back to; immediately to, without hesitation"],
 	"réttr": ["adjective", "correct, true, right, just", "old-norse"],
 	"rík": ["feminine noun", "realm, world, land, area; place, location", "proto-germanic archaic-form evolved"],
