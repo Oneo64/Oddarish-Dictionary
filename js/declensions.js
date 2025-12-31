@@ -80,6 +80,13 @@ const noun_declensions = {
 		"i", "inum", "um", "unum",
 		"s", "sins", "a", "anna",
 	],
+	// -gl
+	masculine_gl: [
+		"", "inn", "ar", "arnir",
+		"", "inn", "a", "ana",
+		"i", "inum", "um", "unum",
+		"ls", "sins", "a", "anna",
+	],
 
 	// FEMININE
 	// fallback
@@ -297,6 +304,14 @@ function get_noun_declension(w, t) {
 					declension.push(word);
 				} else {
 					declension.push(word.substring(0, word.length - 1) + noun_declensions.masculine_i[i]);
+				}
+			}
+		} else if (word.endsWith("gl")) {
+			for (var i = 0; i < 16; i++) {
+				if (noun_declensions.masculine_gl[i] == "") {
+					declension.push(word);
+				} else {
+					declension.push(word.substring(0, word.length - 1) + noun_declensions.masculine_gl[i]);
 				}
 			}
 		} else if (!vowels.includes(word.charAt(word.length - 4)) && word.endsWith("ill")) {
