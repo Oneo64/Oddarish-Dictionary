@@ -82,10 +82,10 @@ const noun_declensions = {
 	],
 	// -gl
 	masculine_gl: [
-		"", "inn", "ar", "arnir",
-		"", "inn", "a", "ana",
-		"i", "inum", "um", "unum",
-		"ls", "sins", "a", "anna",
+		"", "linn", "lar", "larnir",
+		"", "linn", "la", "lana",
+		"i", "linum", "lum", "lunum",
+		"ls", "lsins", "la", "lanna",
 	],
 
 	// FEMININE
