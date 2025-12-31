@@ -94,8 +94,6 @@ const consonants = {
 	"k": "k",
 	"kk": "hk",
 
-	"-llr": "lr̩",
-	"-llt": "l̥t",
 	"ll": "tl̥",
 	"l": "l",
 
