@@ -4494,7 +4494,7 @@ const entries = {
 	"hæling eip": ["neuter noun", "healing herb"],
 	"hælsa": ["verb", "to greet", "proto-germanic evolved"],
 	"hæm": ["neuter noun", "light, as in \"sunlight\"", "fictional"],
-	"hætta": ["verb", "to stop, to end, to cease, to prevent", "old-norse"],
+	"hætta": ["verb", "to stop, to end, to cease, to prevent; to stop (with accusative (who/what) + \"í\" + (from what))", "old-norse", ["Hon viglar at hætta mek í at vega út heimunn. = She keeps stopping me from leaving home."]],
 	"hæða-míkt": ["neuter noun", "(physics) a gas", "fictional"],
 	"hæða-skónn": ["masculine noun", "meteor, meteorite, space debris; the visible streak when an asteroid/meteoroid falls"],
 	"hæði": ["masculine noun", "air", "fictional"],
