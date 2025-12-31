@@ -259,7 +259,7 @@ function get_noun_declension(w, t) {
 					declension.push(word.substring(0, word.length - 1) + noun_declensions.masculine_r2[i]);
 				}
 			}
-		} else if ((word.endsWith("rr") || word.endsWith("gr") || word.endsWith("lr")) && !word.endsWith("ngr")) {
+		} else if ((word.endsWith("rr") || word.endsWith("gr") || word.endsWith("fr") || word.endsWith("lr")) && !word.endsWith("ngr")) {
 			for (var i = 0; i < 16; i++) {
 				if (noun_declensions.masculine_rr[i] == "") {
 					declension.push(word);
