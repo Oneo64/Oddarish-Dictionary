@@ -117,6 +117,9 @@ const special_declensions = {
 		"present_tense": ["fer", "fer", "ferir"],
 		"present_mediopassive": "ferisk"
 	},
+	"fletja": {
+		"past_tense": "flatti"
+	},
 	"geta": {
 		"past_tense": "gæti",
 		"past_participle": "gætinn",
@@ -1062,7 +1065,6 @@ const entry_words = [
 	"fjökkning",
 	"fjörðr",
 	"flaska",
-	"flatask",
 	"flatr",
 	"flauja",
 	"flaumr",
@@ -1072,6 +1074,7 @@ const entry_words = [
 	"flensa",
 	"flerra",
 	"flesk",
+	"fletja",
 	"fleyta",
 	"fleyting-míkt",
 	"flika",
@@ -3992,8 +3995,7 @@ const entries = {
 	"fjökkning": ["neuter noun", "explosion", "fictional"],
 	"fjörðr": ["masculine noun", "fjord", "old-norse"],
 	"flaska": ["feminine noun", "bottle, flask, canteen, jar", "old-norse"],
-	"flatask": ["verb", "to make even or fair; to flatten", "old-norse"],
-	"flatr": ["adjective", "flat, level, even, fair", "old-norse"],
+	"flatr": ["adjective", "flat, level (surfaces); fair, reasonable, even (in reasoning); equal (scaling the weight of two)", "old-norse"],
 	"flauja": ["feminine noun", "a flag or banner", "fictional"],
 	"flaumr": ["masculine noun", "flood", "proto-germanic evolved"],
 	"flegna": ["verb", "to trade; to swap, to change, to exchange", "fictional"],
@@ -4002,6 +4004,7 @@ const entries = {
 	"flensa": ["verb", "to kiss", "old-norse evolved"],
 	"flerra": ["verb", "to blow (of wind); to flow (of rivers and streams)", "fictional"],
 	"flesk": ["neuter noun", "pork, bacon, ham; general term for pig meat", "old-norse"],
+	"fletja": ["verb", "to flatten, to make flat", "old-norse"],
 	"fleyta": ["verb", "to float", "proto-germanic evolved"],
 	"fleyting-míkt": ["neuter noun", "helium (chemical element)"],
 	"flika": ["verb", "to peel, to skin", "fictional"],
