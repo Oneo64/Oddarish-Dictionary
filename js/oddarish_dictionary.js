@@ -5984,7 +5984,7 @@ const entries = {
 	"vesa til fyri": ["expression", "to be used for, to have the purpose for"],
 	"vesa um gerleimið áða": ["verb", "to be supposed to"],
 	"vesa viljandi til": ["verb", "to be willing to"],
-	"vesa ána ... hlett": ["verb", "to be in a way, to be with a manner (accusative neuter declension after ána)"],
+	"vesa ána ... hlett": ["verb", "to be in a way, to be with a manner (after ána, put accusative neuter declension for adjectives or present participle)"],
 	"vesa átögu um": ["verb", "to come in the shape of, to be shaped as"],
 	"vesa þoka ypir": ["expression", "a common simile that conveys the idea that something is protective over something else, using þoka (accusative singular of þoki, meaning roof) as a comparison"],
 	"vesa": ["auxiliary", "to be", "old-norse archaic-form"],
