@@ -4156,7 +4156,7 @@ const entries = {
 	"gera": ["verb", "to do, to make, to create", "old-norse hypothetical"],
 	"germanskr": ["masculine noun", "germanic"],
 	"geta vesið": ["auxiliary", "maybe, perhaps, might"],
-	"geta": ["verb", "to be permitted, to be allowed to, to have the power to, to be able, to can; to make someone as", "old-norse", ["Ek get at mála málverk. = I can paint paintings.", "Getrðu gveta hvestligþing fyri mir? = Can you get something for me?", "Þín beyra getir ollum gleðugr. = Your smile makes everyone happy.", "Getu því at danza! = Make it dance!"]],
+	"geta": ["verb", "to be permitted, to be allowed to, to have the power to, to be able, to can; to make someone do something (with accusative + verb); to make someone as (with dative + adjective)", "old-norse", ["Ek get at mála málverk. = I can paint paintings.", "Getrðu gveta hvestligþing fyri mir? = Can you get something for me?", "Þín beyra getir ollum gleðuga. = Your smile makes everyone happy.", "Getu þæt at danza! = Make it dance!"]],
 	"gifta": ["verb", "to marry someone off, to appoint someone to marriage (but not themselves)", "old-norse"],
 	"giftask": ["verb", "to wed, to marry", "old-norse"],
 	"giftr": ["adjective", "married", "old-norse"],
