@@ -692,18 +692,22 @@ function get_present_tense(word, pov) {
 	if ("áæeéiíoóöuúyý".includes(word.charAt(word.length - 1))) stem = word;
 
 	if (pov == 1) {
-		if ((stem.endsWith("f") || stem.endsWith("r") || stem.endsWith("g") || stem.endsWith("t")) && !stem.endsWith("tt") && !stem.endsWith("rr")) {
+		if (stem.endsWith("dr")) {
+			return stem + "i";
+		} else if ((stem.endsWith("f") || stem.endsWith("r") || stem.endsWith("g") || stem.endsWith("t")) && !stem.endsWith("tt") && !stem.endsWith("rr")) {
 			return stem;
 		} else if (stem.endsWith("eyj")) {
 			return stem.substring(0, stem.length - 1);
+		} else if (stem.endsWith("ú")) {
+			return stem.substring(0, stem.length - 1) + "ý";
 		} else {
 			return word;
 		}
 	} else if (pov == 2) {
 		if ((stem.endsWith("f") || stem.endsWith("r") || stem.endsWith("g") || stem.endsWith("t")) && !stem.endsWith("tt") && !stem.endsWith("rr")) {
-			return stem + "i";
+			return stem + "ir";
 		} else if (stem.endsWith("ú")) {
-			return stem.substring(0, stem.length - 1) + "ý";
+			return stem.substring(0, stem.length - 1) + "ýr";
 		} else if (stem.endsWith("á")) {
 			return stem.substring(0, stem.length - 1) + "ær";
 		} else if (stem.endsWith("eyj")) {
