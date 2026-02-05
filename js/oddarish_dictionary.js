@@ -2702,7 +2702,7 @@ const entry_words = [
 	"spretna",
 	"spull",
 	"spull-follr",
-	"spull-vorgr"
+	"spull-vorgr",
 	"spyrka",
 	"spyrkari",
 	"spyrki",
