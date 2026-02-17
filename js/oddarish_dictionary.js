@@ -5487,7 +5487,7 @@ const entries = {
 	"senda": ["verb", "to send", "modern-icelandic"],
 	"sepja": ["verb", "to gather, to collect, to group", "old-norse evolved"],
 	"Septembir": ["masculine noun", "September", "modern-icelandic evolved"],
-	"serkr": ["masculine noun", "an undergarment shirt/tunic, usually made of linen or cotton; a chemise or frock", "old-norse"],
+	"serkr": ["masculine noun", "an undergarment shirt/tunic, usually made of linen or cotton; chemise, frock, shift", "old-norse"],
 	"set-ugr": ["adjective", "lazy"],
 	"setja": ["verb", "to sit; to put, to place; to set, to fixate, to apply changes (general use); to stay or lay undisturbed (poetic)", "old-norse evolved"],
 	"seygla": ["verb", "to sail", "old-norse evolved"],
