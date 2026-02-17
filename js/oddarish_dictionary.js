@@ -6146,7 +6146,7 @@ const entries = {
 	"ána í ygann": ["adverb", "along"],
 	"ána": ["preposition", "on, on top, atop, up onto", "proto-germanic evolved"],
 	"Ánúari": ["masculine noun", "January", "modern-icelandic evolved"],
-	"ápa": ["verb", "to taunt, to mock, to provoke", "fictional"],
+	"ápa": ["verb", "to taunt, to provoke; to mock", "fictional"],
 	"ápir": ["masculine noun", "fir wood/tree", "classical-latin evolved"],
 	"ápir-borður": ["neuter noun", "fir planks"],
 	"Áprill": ["masculine noun", "April", "english evolved"],
