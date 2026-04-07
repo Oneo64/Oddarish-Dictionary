@@ -109,7 +109,7 @@ const special_declensions = {
 		"past_participle": "étinn",
 		"past_tense_mediopassive": "átisk"
 	},
-	"fanda": {
+	"finna": {
 		"past_tense": "fondi",
 		"past_participle": "fondinn"
 	},
@@ -1013,7 +1013,6 @@ const entry_words = [
 	"fakka",
 	"falla",
 	"falligr",
-	"fanda",
 	"fanja",
 	"fara",
 	"fassa",
@@ -1051,6 +1050,7 @@ const entry_words = [
 	"finga",
 	"fingla",
 	"finn-ligr",
+	"finna",
 	"finnr",
 	"fipa",
 	"fiping-bémm",
@@ -2545,6 +2545,7 @@ const entry_words = [
 	"Septembir",
 	"serkr",
 	"set-ugr",
+	"setja ræg ána",
 	"setja",
 	"seygla",
 	"sika",
@@ -3976,7 +3977,6 @@ const entries = {
 	"fakka": ["verb", "to cut, to slice (foods and objects); to chop down a tree", "fictional"],
 	"falla": ["verb", "to fall, to drop; to fall from grace; to die, to be killed, to be ended (in battle or combat)", "old-norse"],
 	"falligr": ["adjective", "beautiful, pretty, sightly, striking", "modern-icelandic evolved"],
-	"fanda": ["verb", "to find, to search, to look for, to seek", "old-norse"],
 	"fanja": ["feminine noun", "fen, patterned bog; a type of marshland where pools and ponds are polka-dotted everywhere but the land is otherwise solid", "proto-germanic evolved"],
 	"fara": ["verb", "to go or to travel a long distance for a long time", "old-norse evolved", ["Feklan ferir til virkanum. = The wagon goes to the castle.", "Mandrinn hefir farið lengu. = The man has been travelling for a long while."]],
 	"fassa": ["feminine noun", "waterfall", "old-norse evolved"],
@@ -4014,6 +4014,7 @@ const entries = {
 	"finga": ["feminine noun", "medicine, tonic", "fictional"],
 	"fingla": ["feminine noun", "a small flower", "fictional"],
 	"finn-ligr": ["adjective", "(personality) friendly, good-mannered, nice; (objects) fine, polished"],
+	"finna": ["verb", "to find, to search, to look for, to seek", "old-norse"],
 	"finnr": ["masculine noun", "friend, ally", "old-norse evolved"],
 	"fipa": ["verb", "to disturb, to bother, to upset", "fictional"],
 	"fiping-bémm": ["neuter noun", "ruckus, sound/noise disturbance, commotion"],
@@ -5508,6 +5509,7 @@ const entries = {
 	"Septembir": ["masculine noun", "September", "modern-icelandic evolved"],
 	"serkr": ["masculine noun", "an undergarment shirt/tunic, usually made of linen or cotton; chemise, frock, shift", "old-norse"],
 	"set-ugr": ["adjective", "lazy"],
+	"setja ræg ána": ["verb", "to take over, to capture (with accusative)", "", ["Ek skal at setja ræg ána alheimunn! = I shall take over the world!"]],
 	"setja": ["verb", "to sit; to put, to place; to set, to fixate, to apply changes (general use); to stay or lay undisturbed (poetic)", "old-norse evolved"],
 	"seygla": ["verb", "to sail", "old-norse evolved"],
 	"sika": ["verb", "to blame, to accuse", "old-norse evolved"],
