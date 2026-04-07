@@ -128,6 +128,14 @@ const noun_declensions = {
 		"ur", "urinnar", "ra", "ranna",
 	],
 
+	// default -ing
+	feminine_ing: [
+		"", "in", "ar", "arnar",
+		"", "ina", "ar", "arnar",
+		"u", "unni", "um", "unum",
+		"ar", "arinnar", "a", "anna",
+	],
+
 	// NEUTER
 	neuter: [
 		"", "it", "a", "in",
@@ -400,6 +408,14 @@ function get_noun_declension(w, t) {
 					declension.push(word);
 				} else {
 					declension.push(word + noun_declensions.feminine_ei[i]);
+				}
+			}
+		} else if (word.endsWith("ing")) {
+			for (var i = 0; i < 16; i++) {
+				if (noun_declensions.feminine_ing[i] == "") {
+					declension.push(word);
+				} else {
+					declension.push(word + noun_declensions.feminine_ing[i]);
 				}
 			}
 		} else {
