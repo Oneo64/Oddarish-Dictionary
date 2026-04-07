@@ -5064,7 +5064,7 @@ const entries = {
 	"morjúm-stjarna": ["feminine noun", "morning star (weapon)"],
 	"morna": ["verb", "to cry; to weep, to sob, to sniffle", "fictional"],
 	"mugg-arða": ["feminine noun", "(plant) mugwort"],
-	"muna": ["auxiliary", "to will; to be able or to can, passively (see morphemes, also see \"ar til\")", "old-norse deceptive", ["Þyrnin munir at feika þek efðu ar eigi ávoknið. = The spines will hurt you if you're not careful.", "Ek mun at vega núna. = I will leave now."]],
+	"muna": ["auxiliary", "to will, to ought; to be able or to can, passively (see morphemes, also see \"ar til\")", "old-norse deceptive", ["Þyrnin munir at feika þek efðu ar eigi ávoknið. = The spines will hurt you if you're not careful.", "Ek mun at vega núna. = I will leave now."]],
 	"muninn": ["adjective", "willed, fated (past participle of muna)"],
 	"munkr": ["masculine noun", "monk", "modern-icelandic evolved"],
 	"murga": ["verb", "to rub", "fictional"],
