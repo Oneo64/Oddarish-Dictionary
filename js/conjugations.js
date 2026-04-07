@@ -56,7 +56,156 @@ const verb_conjugations = {
 	],
 };
 
+const irregular_conjugations = {
+	"vesa": [
+		"ar", "art", "ar",
+		"var", "vart", "var",
+		"vestr"
+	],
+	"verta": [
+		"verti", "vertir", "vertir",
+		"varti", "vartir", "varti",
+		"vertinn"
+	],
+	"fasta": [
+		"fest", "fest", "fest",
+		"fast", "fast", "fast",
+		"fastinn"
+	],
+	"gera": [
+		"ger", "gerð", "ger",
+		"gar", "garð", "gar",
+		"gerinn"
+	],
+	"geta": [
+		"get", "gest", "get",
+		"gat", "gast", "gat",
+		"getinn"
+	],
+	"fara": [
+		"fer", "ferð", "fer",
+		"far", "farð", "far",
+		"farinn"
+	],
+	"vaxa": [
+		"vex", "vext", "vex",
+		"vax", "vaxt", "vax",
+		"vaxinn"
+	],
+
+
+	"setja": [
+		"set", "sest", "set",
+		"setti", "settir", "setti",
+		"settinn"
+	],
+	"vita": [
+		"vit", "vist", "vit",
+		"vitti", "vittir", "vitti",
+		"vittinn"
+	],
+
+	"muna": [
+		"mun", "munt", "mun",
+		"myndi", "myndir", "myndi",
+		"muninn"
+	],
+	"skola": [
+		"skal", "skalt", "skall",
+		"sköldi", "sköldir", "sköldi",
+		"skolinn"
+	],
+	"vilja": [
+		"vil", "vilt", "vill",
+		"vildi", "vildir", "vildi",
+		"vilinn"
+	],
+
+	"hafa": [
+		"hef", "hefst", "hef",
+		"haf", "hafst", "haf",
+		"hafinn"
+	],
+	"jafa": [
+		"jef", "jefst", "jef",
+		"jaf", "jafst", "jaf",
+		"jafinn"
+	],
+	"sega": [
+		"seg", "segst", "seg",
+		"sag", "sagst", "sag",
+		"saginn"
+	],
+	"sitja": [
+		"sit", "sist", "sit",
+		"sat", "sast", "sat",
+		"satinn"
+	],
+	"svekkja": [
+		"svekk", "svekkst", "svekk",
+		"svakk", "svakkst", "svakk",
+		"svakkinn"
+	],
+	"vega": [
+		"veg", "vegst", "veg",
+		"vag", "vagst", "vag",
+		"vaginn"
+	],
+
+	"finna": [
+		"finn", "finnst", "finn",
+		"fann", "fannst", "fann",
+		"fondinn"
+	],
+	"minna": [
+		"minn", "minnst", "minn",
+		"mann", "mannst", "mann",
+		"mondinn"
+	],
+	"vinna": [
+		"vinn", "vinnst", "vinn",
+		"vann", "vannst", "vann",
+		"vondinn"
+	],
+
+	"gengja": [
+		"gengi", "gengir", "gengir",
+		"gangði", "gangðir", "gangði",
+		"gengðr"
+	],
+	"ekka": [
+		"ekki", "ekkir", "ekkir",
+		"akkti", "akktir", "akkti",
+		"ekktr"
+	],
+	"tekja": [
+		"teki", "tekir", "tekir",
+		"takti", "taktir", "takti",
+		"tektr"
+	],
+
+	"sve": [
+		"svi", "svir", "svir",
+		"svá", "svár", "svá",
+		"svaðr"
+	],
+	"elda": [
+		"elda", "eldar", "eldar",
+		"eldaði", "eldaðir", "eldaði",
+		"eldaðr"
+	],
+	"deyja": [
+		"dey", "deyr", "deyr",
+		"dó", "dór", "dó",
+		"deyðr"
+	],
+}
+
 function get_verb_conjugation(word, thing) {
+	if (word in irregular_conjugations) {
+		return irregular_conjugations[word][thing];
+	}
+
 	var vowels = "aáæeéiíoóöuúyý";
 	var last_vowel_pos = 0;
 
