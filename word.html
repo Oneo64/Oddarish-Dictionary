@@ -30,6 +30,9 @@
 <script src="js/declension_tables.js"></script>
 <script src="js/ipa.js"></script>
 <script src="js/runes.js"></script>
+
+<script src="js/conjugations.js"></script>
+
 <script>
 	var query = window.location.search;
 	var params = new URLSearchParams(query);
@@ -40,6 +43,10 @@
 		var v2 = v;
 
 		if (v.endsWith(")")) v2 = v.substring(0, v.length - 4);
+
+		console.log(get_verb_conjugation(v2, 0), get_verb_conjugation(v2, 1));
+		console.log(get_verb_conjugation(v2, 3), get_verb_conjugation(v2, 4));
+		console.log(get_verb_conjugation(v2, 6));
 
 		var ipa = ipa(v2.replaceAll("-", "."), false);
 
