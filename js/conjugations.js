@@ -18,9 +18,9 @@ const verb_conjugations = {
 		"tr", "t"
 	],
 	i_stem_dh: [
-		"i", "ir", "ir",
+		"ði", "ðir", "ðir",
 		"ddi", "ddir", "ddi",
-		"ddr", "tt"
+		"ðinn", "ðið"
 	],
 	i_stem_eyja: [
 		"", "r", "r",
@@ -230,7 +230,7 @@ function get_verb_conjugation(word, thing) {
 	if (vowel.length == 1) {
 		if ("eéiíyýæ".includes(vowel)) stem_test = "i";
 	} else {
-		if (vowel == "au" || vowel == "ey") stem_test = "i";
+		if (vowel == "au" || vowel == "ey" || vowel == "ei") stem_test = "i";
 	}
 
 	if (word.endsWith("va") && !vowels.includes(word.charAt(last_vowel_pos - 3))) stem_test = "va";
