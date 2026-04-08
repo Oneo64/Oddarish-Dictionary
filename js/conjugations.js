@@ -189,6 +189,22 @@ const irregular_conjugations = {
 		"tektr", "tekt"
 	],
 
+	"frjósa": [
+		"frýs", "frýs", "frýs",
+		"fraus", "fraus", "fraus",
+		"frosinn", "frosið"
+	],
+	"jósa": [
+		"ýs", "ýs", "ýs",
+		"aus", "aus", "aus",
+		"osinn", "osið"
+	],
+	"skjóta": [
+		"skýt", "skýst", "skýt",
+		"skaut", "skaust", "skaut",
+		"skotinn", "skotið"
+	],
+
 	"sve": [
 		"svi", "svir", "svir",
 		"svá", "svár", "svá",
@@ -319,6 +335,7 @@ function get_verb_conjugation(word, thing) {
 		var word2 = word.substring(0, word.length - ending_size) + conjugation[i];
 
 		word2 = word2.replace("dt", "t");
+		word2 = word2.replace("tt", "t");
 
 		newc.push(word2);
 	}
