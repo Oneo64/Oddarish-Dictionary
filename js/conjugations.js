@@ -278,6 +278,13 @@ function get_verb_conjugation(word, thing) {
 			conjugation = verb_conjugations.i_stem_dh;
 			ending_size = 2;
 		}
+
+		if (!vowels.includes(word.charAt(word.length - 2)) && (word.endsWith("na") || word.endsWith("sa"))) {
+			if (!word.endsWith("nna") && ! word.endsWith("ssa")) {
+				conjugation = verb_conjugations.a_stem;
+				ending_size = 1;
+			}
+		}
 	} else {
 		switch (stem_test) {
 			case "va":
@@ -309,7 +316,11 @@ function get_verb_conjugation(word, thing) {
 	var newc = [];
 
 	for (var i = 0; i < conjugation.length; i++) {
-		newc.push(word.substring(0, word.length - ending_size) + conjugation[i]);
+		var word2 = word.substring(0, word.length - ending_size) + conjugation[i];
+
+		word2 = word2.replace("dt", "t");
+
+		newc.push(word2);
 	}
 
 	return newc;
