@@ -110,6 +110,11 @@ const irregular_conjugations = {
 		"myndi", "myndir", "myndi",
 		"muninn", "munið"
 	],
+	"skilja": [
+		"skil", "skilt", "skill",
+		"skildi", "skildir", "skildi",
+		"skilinn", "skilið"
+	],
 	"skola": [
 		"skal", "skalt", "skall",
 		"sköldi", "sköldir", "sköldi",
@@ -258,14 +263,14 @@ function get_verb_conjugation(word, thing) {
 		}
 
 		if (word.endsWith("ja")) {
+			ending_size = 2;
+
 			if ("fkpsztd".includes(word.charAt(word.length - 3))) {
 				conjugation = verb_conjugations.i_stem_voiceless;
-				ending_size = 2;
-			}
-
-			if (word.endsWith("eyja")) {
+			} else if (word.endsWith("eyja")) {
 				conjugation = verb_conjugations.i_stem_eyja;
-				ending_size = 2;
+			} else {
+				conjugation = verb_conjugations.i_stem_voiced;
 			}
 		}
 
