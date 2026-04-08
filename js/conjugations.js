@@ -199,6 +199,11 @@ const irregular_conjugations = {
 		"fraus", "fraust", "fraus",
 		"frosinn", "frosið"
 	],
+	"gjófa": [
+		"gýf", "gýfst", "gýf",
+		"gauf", "gaufst", "gauf",
+		"gjofinn", "gjofið"
+	],
 	"jósa": [
 		"ýs", "ýst", "ýs",
 		"aus", "aust", "aus",
