@@ -183,6 +183,11 @@ const irregular_conjugations = {
 		"akkti", "akktir", "akkti",
 		"ekktr", "ekkt"
 	],
+	"fakka": [
+		"fekki", "fekkir", "fekkir",
+		"fakkti", "fakktir", "fakkti",
+		"fakktr", "fakkt"
+	],
 	"tekja": [
 		"teki", "tekir", "tekir",
 		"takti", "taktir", "takti",
@@ -190,13 +195,13 @@ const irregular_conjugations = {
 	],
 
 	"frjósa": [
-		"frýs", "frýs", "frýs",
-		"fraus", "fraus", "fraus",
+		"frýs", "frýst", "frýs",
+		"fraus", "fraust", "fraus",
 		"frosinn", "frosið"
 	],
 	"jósa": [
-		"ýs", "ýs", "ýs",
-		"aus", "aus", "aus",
+		"ýs", "ýst", "ýs",
+		"aus", "aust", "aus",
 		"osinn", "osið"
 	],
 	"skjóta": [
