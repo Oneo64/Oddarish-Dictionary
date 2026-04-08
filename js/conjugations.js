@@ -110,7 +110,7 @@ const irregular_conjugations = {
 	],
 	"vita": [
 		"vit", "vist", "vit",
-		"vitti", "vittir", "vitti",
+		"vissi", "vissir", "vissi",
 		"vittinn", "vittið"
 	],
 
