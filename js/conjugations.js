@@ -341,6 +341,8 @@ function get_verb_conjugation(word, thing) {
 
 		word2 = word2.replace("dt", "t");
 		word2 = word2.replace("stt", "st");
+		word2 = word2.replace("ltt", "lt");
+		word2 = word2.replace("ttt", "tt");
 
 		newc.push(word2);
 	}
