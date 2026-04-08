@@ -194,6 +194,11 @@ const irregular_conjugations = {
 		"eldaði", "eldaðir", "eldaði",
 		"eldaðr", "eldað"
 	],
+	"firra": [
+		"firra", "firrar", "firrar",
+		"firraði", "firraðir", "firraði",
+		"firraðr", "firrað"
+	],
 	"deyja": [
 		"dey", "deyr", "deyr",
 		"dó", "dór", "dó",
