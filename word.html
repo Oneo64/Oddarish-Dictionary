@@ -44,10 +44,6 @@
 
 		if (v.endsWith(")")) v2 = v.substring(0, v.length - 4);
 
-		console.log(get_verb_conjugation(v2, 0), get_verb_conjugation(v2, 1));
-		console.log(get_verb_conjugation(v2, 3), get_verb_conjugation(v2, 4));
-		console.log(get_verb_conjugation(v2, 6));
-
 		var ipa = ipa(v2.replaceAll("-", "."), false);
 
 		var hyphenless = document.cookie == null || !document.cookie.includes("hyphens-true");
@@ -151,7 +147,27 @@
 					v4 = v2.substring(v2.indexOf(" "));
 				}
 
-				if (!v2.endsWith("ask")) {
+				var conjugation = get_verb_conjugation(v3);
+
+				document.getElementById("tables").innerHTML = declension_tables_html["verb"];
+				document.getElementById("conjugation_top").innerHTML = "conjugation for '" + v2.replaceAll("-", "") + "'";
+				document.getElementById("infinitive").innerHTML = "at " + v2.replaceAll("-", "");
+				document.getElementById("imperative").innerHTML = add_verb_ending_basic(v3, "u") + v4;
+				document.getElementById("present_participle").innerHTML = add_verb_ending_basic(v3, "andi") + v4;
+				document.getElementById("past_participle").innerHTML = conjugation[6] + v4;
+				document.getElementById("supine").innerHTML = conjugation[7] + v4;
+
+				document.getElementById("1st_present").innerHTML = conjugation[0] + v4;
+				document.getElementById("2nd_present").innerHTML = conjugation[1] + v4;
+				document.getElementById("3rd_present").innerHTML = conjugation[2] + v4;
+
+				document.getElementById("1st_past").innerHTML = conjugation[3] + v4;
+				document.getElementById("2nd_past").innerHTML = conjugation[4] + v4;
+				document.getElementById("3rd_past").innerHTML = conjugation[5] + v4;
+				
+				document.getElementById("gerund").innerHTML = get_gerund(v3) + v4;
+
+				/*if (!v2.endsWith("ask")) {
 					document.getElementById("tables").innerHTML = declension_tables_html["verb"];
 					document.getElementById("declension_top2").innerHTML = "declension for '" + v2.replaceAll("-", "") + "'";
 					document.getElementById("infinitive").innerHTML = "at " + v2.replaceAll("-", "");
@@ -183,7 +199,7 @@
 					document.getElementById("infinitive2").innerHTML = "at " + get_mediopassive(v2).replaceAll("-", "");
 					document.getElementById("present_tense2").innerHTML = get_mediopassive_present(v2).replaceAll("-", "");
 					document.getElementById("past_tense2").innerHTML = get_mediopassive_past(v2).replaceAll("-", "");
-				}
+				}*/
 			} else if (entry[0] == "impersonal verb") {
 				var v3 = v2;
 				var v4 = "";

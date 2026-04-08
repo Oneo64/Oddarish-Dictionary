@@ -469,55 +469,6 @@ function get_noun_declension(w, t) {
 	return declension;
 }
 
-function add_verb_ending_basic(word, ending) {
-	var vowels = "aáæeéiíoóöuúyý";
-
-	if (ending == "u" && word in special_declensions && "imperative" in special_declensions[word]) {
-		return special_declensions[word]["imperative"];
-	}
-
-	if (word.endsWith("e")) {
-		if (ending == "u") {
-			return word.substring(0, word.length - 1) + "ý";
-		} else {
-			return word.substring(0, word.length - 1) + "andi";
-		}
-	}
-
-	if (word.endsWith("a")) {
-		var shifted = word.substring(0, word.length - 1);
-
-		if (ending == "u") {
-			if (word.endsWith("úa")) return word.substring(0, word.length - 2) + "ú";
-			if (word.endsWith("óa")) return word.substring(0, word.length - 1);
-			if (word.endsWith("va")) return word.substring(0, word.length - 2) + "u";
-
-			var last_vowel_pos = 0;
-
-			for (var i = 0; i < word.length - 1; i++) {
-				if (vowels.includes(word.charAt(i))) last_vowel_pos = i;
-			}
-
-			var vowel = word.charAt(last_vowel_pos);
-
-			if (last_vowel_pos > 0 && word.charAt(last_vowel_pos - 1) == "j") vowel = "j" + vowel;
-			
-			if (vowel in u_umlaut) {
-				shifted = word.substring(0, last_vowel_pos - (vowel.length - 1)) + u_umlaut[vowel] + word.substring(last_vowel_pos + 1, word.length - 1);
-			}
-		}
-
-		return shifted + ending;
-	} else if (word.endsWith("á")) {
-		if (ending == "u") {
-			if (word.endsWith("já")) return word;
-			if (word.endsWith("á")) return word.substring(0, word.length - 1) + "auju";
-		}
-	}
-
-	return word + ending;
-}
-
 function add_adj_ending_basic(w, ending) {
 	var word = w;
 	var vowels = "aáæeéiíoóöuúyý";
@@ -750,30 +701,6 @@ function get_present_tense(word, pov) {
 	}
 
 	return stem + "ir";
-}
-
-function get_gerund(word) {
-	if (word in special_declensions && "gerund" in special_declensions[word]) {
-		return special_declensions[word]["gerund"];
-	}
-
-	var stem = word.substring(0, word.length - 1);
-	var vowels = "aáæeéiíoóöuúyý";
-
-	// makes sure that only -a verb endings are removed
-	if ("áæeéiíoóöuúyý".includes(word.charAt(word.length - 1))) stem = word;
-
-	if (stem.endsWith("á")) {
-		return stem.substring(0, stem.length - 1) + "æing";
-	} else if (stem.endsWith("eyj")) {
-		return stem.substring(0, stem.length - 1) + "ning";
-	} else if (stem.endsWith("lj")) {
-		return stem.substring(0, stem.length - 1) + "ing";
-	} else if (stem.endsWith("j")) {
-		return stem + "ang";
-	} else {
-		return stem + "ing";
-	}
 }
 
 function get_mediopassive(word) {

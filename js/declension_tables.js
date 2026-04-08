@@ -39,6 +39,22 @@ var declension_tables_html = {
 		<tr> <th>dative</th> <td id="_n10"></td> <td id="_n11"></td> </tr>
 		<tr> <th>genitive</th> <td id="_n14"></td> <td id="_n15"></td> </tr>
 	</tbody></table>`,
+
+	"verb": `<table id="verb_conjugation" class="pfont"><tbody>
+		<tr> <th id="conjugation_top" colspan="3">conjugation for...</th> </tr>
+		<tr> <th>infinitive</th> <td id="infinitive" colspan="2"></td> </tr>
+		<tr> <th>imperative</th> <td id="imperative" colspan="2"></td> </tr>
+		<tr> <th>present participle</th> <td id="present_participle" colspan="2"></td> </tr>
+		<tr> <th>past participle</th> <td id="past_participle" colspan="2"></td> </tr>
+		<tr> <th>supine</th> <td id="supine" colspan="2"></td> </tr>
+		<tr> <th></th> <th>present tense</th> <th>past tense</th> </tr>
+		<tr> <th>1st person</th> <td id="1st_present"></td> <td id="1st_past"></td> </tr>
+		<tr> <th>2nd person</th> <td id="2nd_present"></td> <td id="2nd_past"></td> </tr>
+		<tr> <th>3rd person</th> <td id="3rd_present"></td> <td id="3rd_past"></td> </tr>
+		<tr> <th>gerund</th> <td id="gerund" colspan="2"></td> </tr>
+	</tbody></table>`,
+
+	/*
 	"verb": `<table id="verb_declension" class="pfont"><tbody>
 		<tr> <th id="declension_top2" colspan="3">declension for...</th> </tr>
 		<tr> <th>infinitive</th> <td id="infinitive" colspan="2"></td> </tr>
@@ -66,5 +82,5 @@ var declension_tables_html = {
 		<tr> <th></th> <th>present tense</th> <th>past tense</th> </tr>
 		<tr> <th>3rd person</th> <td id="3rd_present"></td> <td id="past_tense"></td> </tr>
 		<tr> <th>gerund</th> <td id="gerund" colspan="2"></td> </tr>
-	</tbody></table>`
+	</tbody></table>`*/
 };
