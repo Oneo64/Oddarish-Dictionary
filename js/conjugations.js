@@ -87,12 +87,21 @@ const irregular_conjugations = {
 		"far", "farð", "far",
 		"farinn", "farið"
 	],
+	"lægja": [
+		"læ", "læst", "læ",
+		"ló", "lóst", "ló",
+		"læginn", "lægið"
+	],
+	"spera": [
+		"sper", "sperð", "sper",
+		"spar", "sparð", "spar",
+		"sperinn", "sperið"
+	],
 	"vaxa": [
 		"vex", "vext", "vex",
 		"vax", "vaxt", "vax",
 		"vaxinn", "vaxið"
 	],
-
 
 	"setja": [
 		"set", "sest", "set",
@@ -157,6 +166,11 @@ const irregular_conjugations = {
 		"vaginn", "vagið"
 	],
 
+	"brinna": [
+		"brinn", "brinnst", "brinn",
+		"brann", "brannst", "brann",
+		"brondinn", "brondið"
+	],
 	"finna": [
 		"finn", "finnst", "finn",
 		"fann", "fannst", "fann",
@@ -194,6 +208,7 @@ const irregular_conjugations = {
 		"tektr", "tekt"
 	],
 
+	// jó-stem
 	"frjósa": [
 		"frýs", "frýst", "frýs",
 		"fraus", "fraust", "fraus",
@@ -204,15 +219,35 @@ const irregular_conjugations = {
 		"gauf", "gaufst", "gauf",
 		"gjofinn", "gjofið"
 	],
+	"hjóga": [
+		"hýg", "hýgst", "hýg",
+		"haug", "haugst", "haug",
+		"hjoginn", "hjogið"
+	],
 	"jósa": [
 		"ýs", "ýst", "ýs",
 		"aus", "aust", "aus",
-		"osinn", "osið"
+		"josinn", "josið"
+	],
+	"njóta": [
+		"nýt", "nýst", "nýt",
+		"naut", "naust", "naut",
+		"notinn", "notið"
+	],
+	"sjóna": [
+		"sýn", "sýnt", "sýn",
+		"saun", "saunt", "saun",
+		"soninn", "sonið"
 	],
 	"skjóta": [
 		"skýt", "skýst", "skýt",
 		"skaut", "skaust", "skaut",
 		"skotinn", "skotið"
+	],
+	"spjónna": [
+		"spýnn", "spýnnst", "spýnn",
+		"spaunn", "spaunnst", "spaunn",
+		"sponninn", "sponnið"
 	],
 
 	"sve": [
@@ -224,11 +259,6 @@ const irregular_conjugations = {
 		"elda", "eldar", "eldar",
 		"eldaði", "eldaðir", "eldaði",
 		"eldaðr", "eldað"
-	],
-	"firra": [
-		"firra", "firrar", "firrar",
-		"firraði", "firraðir", "firraði",
-		"firraðr", "firrað"
 	],
 	"deyja": [
 		"dey", "deyr", "deyr",
@@ -274,6 +304,7 @@ function get_verb_conjugation(word, thing) {
 	if (word.endsWith("óa")) stem_test = "óa";
 	if (word.endsWith("úa")) stem_test = "úa";
 	if (word.endsWith("egja")) stem_test = "egja";
+	if (word.endsWith("rra")) stem_test = "a";
 
 	// get conjugation
 	var conjugation = [];
@@ -305,8 +336,8 @@ function get_verb_conjugation(word, thing) {
 			ending_size = 2;
 		}
 
-		if (!vowels.includes(word.charAt(word.length - 2)) && (word.endsWith("na") || word.endsWith("sa"))) {
-			if (!word.endsWith("nna") && ! word.endsWith("ssa")) {
+		if (!vowels.includes(word.charAt(word.length - 3)) && (word.endsWith("na") || word.endsWith("sa"))) {
+			if (!word.endsWith("nna") && !word.endsWith("ssa")) {
 				conjugation = verb_conjugations.a_stem;
 				ending_size = 1;
 			}
