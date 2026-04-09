@@ -27,6 +27,11 @@ const verb_conjugations = {
 		"ði", "ðir", "ði",
 		"ðinn", "ðið"
 	],
+	i_stem_frg: [
+		"i", "ir", "ir",
+		"ði", "ðir", "ði",
+		"inn", "ið"
+	],
 
 	// specials
 	va_stem: [
@@ -309,21 +314,30 @@ function get_verb_conjugation(word, thing) {
 	// get conjugation
 	var conjugation = [];
 	var ending_size = 1;
+	var ablaut = false;
 
 	if (stem_test == "a") {
 		conjugation = verb_conjugations.a_stem;
 	} else if (stem_test == "i") {
 		conjugation = verb_conjugations.i_stem_voiced;
 
-		if ("fkpsztd".includes(word.charAt(word.length - 2)) || word.endsWith("lla")) {
+		if ("kpsztd".includes(word.charAt(word.length - 2)) || word.endsWith("lla")) {
 			conjugation = verb_conjugations.i_stem_voiceless;
+		}
+
+		if ("frg".includes(word.charAt(word.length - 2))) {
+			conjugation = verb_conjugations.i_stem_frg;
+			ablaut = true;
 		}
 
 		if (word.endsWith("ja")) {
 			ending_size = 2;
 
-			if ("fkpsztd".includes(word.charAt(word.length - 3))) {
+			if ("kpsztd".includes(word.charAt(word.length - 3))) {
 				conjugation = verb_conjugations.i_stem_voiceless;
+			} else if ("frg".includes(word.charAt(word.length - 3))) {
+				conjugation = verb_conjugations.i_stem_frg;
+				ablaut = true;
 			} else if (word.endsWith("eyja")) {
 				conjugation = verb_conjugations.i_stem_eyja;
 			} else {
@@ -373,7 +387,15 @@ function get_verb_conjugation(word, thing) {
 	var newc = [];
 
 	for (var i = 0; i < conjugation.length; i++) {
-		var word2 = word.substring(0, word.length - ending_size) + conjugation[i];
+		var word2changed = word;
+
+		if (ablaut && (i >= 3 && i <= 7)) {
+			if (vowel == "e") {
+				word2changed = word.substring(0, last_vowel_pos) + "a" + word2changed.substring(last_vowel_pos + 1, word.length);
+			}
+		}
+
+		var word2 = word2changed.substring(0, word2changed.length - ending_size) + conjugation[i];
 
 		word2 = word2.replace("dt", "t");
 		word2 = word2.replace("stt", "st");
