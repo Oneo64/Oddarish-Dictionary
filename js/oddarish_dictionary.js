@@ -4952,7 +4952,7 @@ const entries = {
 	"lausting": ["feminine noun", "void, empty space", "fictional"],
 	"lauðr": ["masculine noun", "sea foam, lather; soap bubbles", "proto-germanic evolved"],
 	"lað-ugr": ["adjective", "full of attraction; attractive, as in an attractive tourist destination; (physics) magnetic", "modern-icelandic hypothetical"],
-	"laða": ["verb", "to attract, to pull", "modern-icelandic"],
+	"laða": ["verb", "to attract, to pull (with \"at\" + accusative or \"af\" + dative)", "modern-icelandic"],
 	"laðing-skónn": ["masculine noun", "magnet"],
 	"laðing-valdr": ["masculine noun", "magnetism"],
 	"legja": ["verb", "to fix, to repair, to mend", "modern-icelandic hypothetical"],
