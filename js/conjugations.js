@@ -92,11 +92,6 @@ const irregular_conjugations = {
 		"gvat", "gvast", "gvat",
 		"gvetinn", "gvetið"
 	],
-	"hæðja": [
-		"hæði", "hæðir", "hæðir",
-		"hóði", "hóðir", "hóði",
-		"hæðjinn", "hæðjið"
-	],
 	"hlæja": [
 		"hlæi", "hlæir", "hlæir",
 		"hlói", "hlóir", "hlói",
@@ -362,6 +357,11 @@ function get_verb_conjugation(word, thing) {
 		if (word.endsWith("ða")) {
 			conjugation = verb_conjugations.i_stem_dh;
 			ending_size = 2;
+		}
+
+		if (word.endsWith("ðja")) {
+			conjugation = verb_conjugations.i_stem_dh;
+			ending_size = 3;
 		}
 
 		if (!vowels.includes(word.charAt(word.length - 3)) && (word.endsWith("na") || word.endsWith("sa"))) {
