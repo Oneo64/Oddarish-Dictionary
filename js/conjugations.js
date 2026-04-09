@@ -92,6 +92,11 @@ const irregular_conjugations = {
 		"gvat", "gvast", "gvat",
 		"gvetinn", "gvetið"
 	],
+	"hæðja": [
+		"hæði", "hæðir", "hæðir",
+		"hóði", "hóðir", "hóði",
+		"hæðjinn", "hæðjið"
+	],
 	"hlæja": [
 		"hlæi", "hlæir", "hlæir",
 		"hlói", "hlóir", "hlói",
