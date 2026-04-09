@@ -4529,7 +4529,7 @@ const entries = {
 	"hnérta": ["verb", "to sneeze", "old-norse evolved"],
 	"hník": ["neuter noun", "barb; a small hook", "fictional"],
 	"hnúgr": ["masculine noun", "magma, lava", "fictional"],
-	"hnúsa": ["verb", "to tightly hug or embrace; to hug affectionately; to tightly hold someone or soemthing", "modern-icelandic evolved"],
+	"hnúsa": ["verb", "to tightly hug or embrace; to hug affectionately; to tightly hold someone or something", "modern-icelandic evolved"],
 	"hof": ["neuter noun", "a hallway in a building", "old-norse evolved"],
 	"hon": ["pronoun", "she, her (nominative case) (accusative hána, dative henni, genitive hennar)", "old-norse"],
 	"horn": ["neuter noun", "fin (of fishes, whales, and sharks)", "old-norse evolved"],
