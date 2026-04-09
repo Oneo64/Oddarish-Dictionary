@@ -138,8 +138,8 @@ const noun_declensions = {
 
 	// NEUTER
 	neuter: [
-		"", "it", "a", "in",
-		"", "it", "a", "in",
+		"", "it", "", "in",
+		"", "it", "", "in",
 		"i", "inu", "um", "unum",
 		"s", "sins", "a", "anna",
 	],
