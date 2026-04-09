@@ -54,11 +54,6 @@ const verb_conjugations = {
 		"ýði", "ýðir", "ýði",
 		"ýinn", "ýið"
 	],
-	egja_stem: [
-		"egi", "egir", "egir",
-		"agði", "agðir", "agði",
-		"aginn", "agið"
-	],
 };
 
 const irregular_conjugations = {
@@ -308,7 +303,6 @@ function get_verb_conjugation(word, thing) {
 	if (word.endsWith("á")) stem_test = "á";
 	if (word.endsWith("óa")) stem_test = "óa";
 	if (word.endsWith("úa")) stem_test = "úa";
-	if (word.endsWith("egja")) stem_test = "egja";
 	if (word.endsWith("rra")) stem_test = "a";
 
 	// get conjugation
@@ -375,11 +369,6 @@ function get_verb_conjugation(word, thing) {
 			case "úa":
 				conjugation = verb_conjugations.ua_stem;
 				ending_size = 2;
-				break;
-
-			case "egja":
-				conjugation = verb_conjugations.egja_stem;
-				ending_size = 4;
 				break;
 		}
 	}
