@@ -67,6 +67,11 @@ const irregular_conjugations = {
 		"varti", "vartir", "varti",
 		"vertinn", "vertið"
 	],
+	"fara": [
+		"fer", "ferð", "fer",
+		"far", "farð", "far",
+		"farinn", "farið"
+	],
 	"fasta": [
 		"fest", "fest", "fest",
 		"fast", "fast", "fast",
@@ -82,15 +87,20 @@ const irregular_conjugations = {
 		"gat", "gast", "gat",
 		"getinn", "getið"
 	],
-	"fara": [
-		"fer", "ferð", "fer",
-		"far", "farð", "far",
-		"farinn", "farið"
+	"hlæja": [
+		"hlæi", "hlæir", "hlæir",
+		"hlói", "hlóir", "hlói",
+		"hlæjinn", "hlæjið"
 	],
 	"lægja": [
-		"læ", "læst", "læ",
-		"ló", "lóst", "ló",
+		"læi", "læir", "læir",
+		"lói", "lóir", "lói",
 		"læginn", "lægið"
+	],
+	"næja": [
+		"næi", "næir", "næir",
+		"nói", "nóir", "nói",
+		"næjinn", "næjið"
 	],
 	"spera": [
 		"sper", "sperð", "sper",
