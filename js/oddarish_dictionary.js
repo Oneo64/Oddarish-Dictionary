@@ -94,174 +94,6 @@ const special_declensions = {
 		"öggi", "ögginum", "a", "a",
 		"öggs", "öggsins", "a", "a",
 	],
-
-	"andi-semja": {
-		"past_participle": "andi-seminn",
-		"past_tense": "andi-semdi"
-	},
-	"bata": {
-		"past_tense": "bæti",
-		"past_participle": "bætinn",
-		"past_tense_mediopassive": "bætisk"
-	},
-	"boða": {
-		"past_tense": "baði",
-		"past_participle": "baðinn",
-		"past_tense_mediopassive": "baðisk"
-	},
-	"blá": {
-		"past_tense": "bláði"
-	},
-	"duna": {
-		"past_tense": "dunaði",
-		"past_participle": "duninn"
-	},
-	"éta": {
-		"past_tense": "áti",
-		"past_participle": "étinn",
-		"past_tense_mediopassive": "átisk"
-	},
-	"finna": {
-		"past_tense": "fondi",
-		"past_participle": "fondinn"
-	},
-	"fara": {
-		"present_tense": ["fer", "ferð", "fer"],
-		"present_mediopassive": "fersk"
-	},
-	"fletja": {
-		"past_tense": "flatti"
-	},
-	"geta": {
-		"past_tense": "gæti",
-		"past_participle": "gætinn",
-		"past_tense_mediopassive": "gætisk"
-	},
-	"gveta": {
-		"past_tense": "gvæti",
-		"past_participle": "gvætinn",
-		"past_tense_mediopassive": "gvætisk"
-	},
-	"hafa": {
-		"present_tense": ["hef", "hefst", "hef"],
-		"present_mediopassive": "hefsk"
-	},
-	"semja": {
-		"past_participle": "seminn",
-		"past_tense": "semdi"
-	},
-	"ósk-semja": {
-		"past_participle": "ósk-seminn",
-		"past_tense": "ósk-semdi"
-	},
-	"út-semja": {
-		"past_participle": "út-seminn",
-		"past_tense": "út-semdi"
-	},
-	"glentja": {
-		"past_tense": "glantjaði"
-	},
-	"hengja": {
-		"past_participle": "henginn",
-		"past_tense": "hengjaði"
-	},
-	"hlísta": {
-		"present_tense": ["hlísta", "hlístar", "hlístar"]
-	},
-	"hylja": {
-		"present_tense": ["hyli", "hylir", "hylir"]
-	},
-	"kindja": {
-		"past_tense": "kenddi",
-		"past_participle": "kendinn"
-	},
-	"lækja": {
-		"past_participle": "lækinn",
-		"past_tense": "lækti"
-	},
-	"maðka": {
-		"past_tense": "maðkaði",
-		"past_participle": "maðkinn",
-		"past_tense_mediopassive": "maðkaðisk"
-	},
-	"meta": {
-		"past_tense": "mæti",
-		"past_participle": "mætinn",
-		"past_tense_mediopassive": "mætisk"
-	},
-	"muna": {
-		"present_tense": ["mun", "mun", "munir"]
-	},
-	"máklja": {
-		"imperative": "máklju"
-	},
-	"sega": {
-		"past_tense": "sagði",
-		"past_participle": "saginn"
-	},
-	"setja": {
-		"past_tense": "sati",
-		"past_participle": "satinn",
-		"past_tense_mediopassive": "satisk"
-	},
-	"skemmta": {
-		"present_tense": ["skemmta", "skemmtar", "skemmtar"]
-	},
-	"skola": {
-		"past_tense": "sköldi",
-		"past_participle": "skölinn"
-	},
-	"stymmta": {
-		"present_tense": ["stymmta", "stymmtar", "stymmtar"]
-	},
-	"sve": {
-		"present_tense": ["sve", "svi", "sve"],
-		"past_tense": "svá",
-		"past_participle": "sveðinn",
-		"mediopassive": "svask",
-		"present_mediopassive": "svisk",
-		"past_tense_mediopassive": "sváðisk",
-		"gerund": "sveng"
-	},
-	"tilja": {
-		"present_tense": ["til", "tilar", "tilar"]
-	},
-	"vanga": {
-		"present_tense": ["vanga", "vangar", "vangar"],
-		"past_tense": "vangaði"
-	},
-	"vega": {
-		"present_tense": ["veg", "veig", "vegir"],
-		"past_tense": "vann",
-		"past_participle": "vaginn"
-	},
-	"vesa": {
-		"present_tense": ["ar", "ar", "ar"],
-		"past_tense": "var",
-		"past_participle": "vesinn"
-	},
-	"vilja": {
-		"present_tense": ["vil", "vil", "vilar"]
-	},
-	"vita": {
-		"past_tense": "vissi",
-		"past_participle": "vissinn",
-		"past_tense_mediopassive": "vissisk"
-	},
-	"vá": {
-		"past_tense": "váði"
-	},
-	"af-vita": {
-		"past_tense": "af-vissi",
-		"past_tense_mediopassive": "af-vissisk"
-	},
-	"þárra": {
-		"present_tense": ["þárra", "þárrar", "þárrar"]
-	},
-	"æma": {
-		"past_tense": "æmaði",
-		"past_participle": "æminn"
-	}
 };
 
 // common words that go in here: measurements, sounds, materials, abstract nouns, masses, liquids, plant growths like grass or moss, etc
@@ -4304,7 +4136,7 @@ const entries = {
 	"geta vest": ["auxiliary", "could be, might be", "", ["Ek get vest farið eptir tjór mínutum."]],
 	"geta": ["verb", "to be permitted, to be allowed to, to have the power to, to be able, to can; to make someone do something (with accusative + verb); to make someone as (with dative + adjective)", "old-norse", ["Ek get at mála málverk. = I can paint paintings.", "Getrðu gveta hvestligþing fyri mir? = Can you get something for me?", "Þín beyra getir ollum gleðuga. = Your smile makes everyone happy.", "Getu þæt at danza! = Make it dance!"]],
 	"gifta": ["verb", "to marry someone off, to appoint someone to marriage (but not themselves)", "old-norse", ["Hvústit lókti ok giftaði þóm saman. = The priest watched and wedded them together.", "Hann meðlögði at gifta hans son með eiðulsstelpunni af boðuninni heimmendranna hennar. = He considered marrying his son with the noble girl by her family's request."]],
-	"giftask": ["verb", "to wed, to marry", "old-norse", ["Þó munir at giftask saman í jól. = They will marry on yule."]],
+	"giftask": ["verb", "to wed, to marry", "old-norse", ["Þó mun at giftask saman í jól. = They will marry on yule."]],
 	"gifting": ["feminine noun", "wedding, marriage, marrying"],
 	"giftr": ["adjective", "married", "old-norse"],
 	"gikna": ["verb", "to take quickly; to snatch", "fictional"],
@@ -5191,7 +5023,7 @@ const entries = {
 	"morjúm-stjarna": ["feminine noun", "morning star (weapon)"],
 	"morna": ["verb", "to cry; to weep, to sob, to sniffle", "fictional"],
 	"mugg-arða": ["feminine noun", "(plant) mugwort"],
-	"muna": ["auxiliary", "to will, to ought; to be able or to can, passively (see morphemes, also see \"ar til\")", "old-norse deceptive", ["Þyrnin munir at feika þek efðu ar eigi ávoknið. = The spines will hurt you if you're not careful.", "Ek mun at vega núna. = I will leave now."]],
+	"muna": ["auxiliary", "to will, to ought; to be able or to can, passively (see morphemes, also see \"ar til\")", "old-norse deceptive", ["Þyrnin mun at feika þek efðu ar eigi ávoknið. = The spines will hurt you if you're not careful.", "Ek mun at vega núna. = I will leave now."]],
 	"muninn": ["adjective", "willed, fated (past participle of muna)"],
 	"munkr": ["masculine noun", "monk", "modern-icelandic evolved"],
 	"murga": ["verb", "to rub", "fictional"],
