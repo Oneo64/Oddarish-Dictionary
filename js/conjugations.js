@@ -397,8 +397,9 @@ function get_verb_conjugation(word, thing) {
 		var word2 = word2changed.substring(0, word2changed.length - ending_size) + conjugation[i];
 
 		word2 = word2.replace("dt", "t");
-		word2 = word2.replace("stt", "st");
 		word2 = word2.replace("ltt", "lt");
+		word2 = word2.replace("rtt", "rt");
+		word2 = word2.replace("stt", "st");
 		word2 = word2.replace("ttt", "tt");
 
 		newc.push(word2);
