@@ -4841,7 +4841,7 @@ const entries = {
 	"leima ýnaligna af": ["verb", "to crush on, to have crush on, to be infatuated with, to have romantic feelings for"],
 	"leima": ["verb", "to think, to suppose, to guess (intransitive); to find, to have an opinion (with \"af\") (more formal than \"sve um\", or used informally with third-person)", "fictional", ["Hann leimir dámna af því. = He thinks illy of that."]],
 	"leiða höndum með ...": ["verb", "to hold hands", "", ["Viltú leiða höndum með mir? = Do you want to hold hands with me?"]],
-	"leiða": ["verb", "to lead; to take someone along with; to lead, as in a road leading somethere", "modern-icelandic", ["Hann leiðar gvaxann til tjörninni. = He leads the duck to the pond.", "Ek leiða hána hið mir. = I take her with me.", "Alli vegar leiðar til Romu. = All roads lead to Rome."]],
+	"leiða": ["verb", "to lead; to take someone along with; to lead, as in a road leading somethere", "modern-icelandic", ["Hann leiðir gvaxann til tjörninni. = He leads the duck to the pond.", "Ek leiði hána hið mir. = I take her with me.", "Alli vegar leiðir til Romu. = All roads lead to Rome."]],
 	"lekkja": ["verb", "to please, to pleasure; (vulgar) to sexually arouse", "fictional"],
 	"lekkjandi": ["adjective", "sexually arousing"],
 	"lempr": ["masculine noun", "limb", "old-norse evolved"],
