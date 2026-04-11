@@ -166,7 +166,7 @@ function replace(word, list, replace_with) {
 }
 
 function ipa(_word, english) {
-	var word = _word;
+	var word = _word.toLowerCase();
 
 	if (english) {
 		word = word.replace("th", "þ").replace("dh", "ð");
