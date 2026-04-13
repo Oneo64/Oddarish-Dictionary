@@ -73,12 +73,19 @@ const noun_declensions = {
 		"a", "anum", "um", "unum",
 		"a", "ans", "a", "anna",
 	],
-	// -nn
+	// -inn
 	masculine_nn: [
 		"", "inninn", "nar", "narnir",
 		"nu", "nunn", "na", "nana",
 		"ni", "ninum", "num", "nunum",
 		"ins", "insins", "na", "nanna",
+	],
+	// -nn
+	masculine_nn2: [
+		"", "ninn", "ar", "arnir",
+		"u", "unn", "a", "ana",
+		"i", "inum", "um", "unum",
+		"ins", "sins", "a", "anna",
 	],
 	// -gl
 	masculine_gl: [
@@ -298,12 +305,20 @@ function get_noun_declension(w, t) {
 					declension.push(word.substring(0, word.length - 1) + noun_declensions.masculine_r[i]);
 				}
 			}
-		} else if (word.endsWith("nn")) {
+		} else if (word.endsWith("inn")) {
 			for (var i = 0; i < 16; i++) {
 				if (noun_declensions.masculine_nn[i] == "") {
 					declension.push(word);
 				} else {
 					declension.push(word.substring(0, word.length - 3) + noun_declensions.masculine_nn[i]);
+				}
+			}
+		} else if (word.endsWith("nn")) {
+			for (var i = 0; i < 16; i++) {
+				if (noun_declensions.masculine_nn2[i] == "") {
+					declension.push(word);
+				} else {
+					declension.push(word.substring(0, word.length - 1) + noun_declensions.masculine_nn2[i]);
 				}
 			}
 		} else if (word.endsWith("i")) {
