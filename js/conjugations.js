@@ -107,6 +107,11 @@ const irregular_conjugations = {
 		"nói", "nóir", "nói",
 		"næjinn", "næjið"
 	],
+	"skera": [
+		"sker", "skerð", "sker",
+		"skar", "skarð", "skar",
+		"skerinn", "skerið"
+	],
 	"spera": [
 		"sper", "sperð", "sper",
 		"spar", "sparð", "spar",
