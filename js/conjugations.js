@@ -83,13 +83,13 @@ const irregular_conjugations = {
 		"gerinn", "gerið"
 	],
 	"geta": [
-		"get", "gest", "get",
-		"gat", "gast", "gat",
+		"get", "gezt", "get",
+		"gat", "gazt", "gat",
 		"getinn", "getið"
 	],
 	"gveta": [
-		"gvet", "gvest", "gvet",
-		"gvat", "gvast", "gvat",
+		"gvet", "gvezt", "gvet",
+		"gvat", "gvazt", "gvat",
 		"gvetinn", "gvetið"
 	],
 	"hlæja": [
@@ -124,12 +124,12 @@ const irregular_conjugations = {
 	],
 
 	"setja": [
-		"set", "sest", "set",
+		"set", "sezt", "set",
 		"setti", "settir", "setti",
 		"settinn", "settið"
 	],
 	"vita": [
-		"vit", "vist", "vit",
+		"vit", "vizt", "vit",
 		"vissi", "vissir", "vissi",
 		"vittinn", "vittið"
 	],
@@ -171,8 +171,8 @@ const irregular_conjugations = {
 		"saginn", "sagið"
 	],
 	"sitja": [
-		"sit", "sist", "sit",
-		"sat", "sast", "sat",
+		"sit", "sizt", "sit",
+		"sat", "sazt", "sat",
 		"satinn", "satið"
 	],
 	"svekkja": [
@@ -250,8 +250,8 @@ const irregular_conjugations = {
 		"josinn", "josið"
 	],
 	"njóta": [
-		"nýt", "nýst", "nýt",
-		"naut", "naust", "naut",
+		"nýt", "nýzt", "nýt",
+		"naut", "nauzt", "naut",
 		"notinn", "notið"
 	],
 	"sjóna": [
@@ -260,8 +260,8 @@ const irregular_conjugations = {
 		"soninn", "sonið"
 	],
 	"skjóta": [
-		"skýt", "skýst", "skýt",
-		"skaut", "skaust", "skaut",
+		"skýt", "skýzt", "skýt",
+		"skaut", "skauzt", "skaut",
 		"skotinn", "skotið"
 	],
 	"spjónna": [
@@ -270,6 +270,29 @@ const irregular_conjugations = {
 		"sponninn", "sponnið"
 	],
 
+	// jú-stem
+	"brjúma": [
+		"brým", "brýmst", "brým",
+		"braum", "braumst", "braum",
+		"bruminn", "brumið"
+	],
+	"fljúga": [
+		"flýg", "flýgst", "flýg",
+		"flaug", "flaugst", "flaug",
+		"fluginn", "flugið"
+	],
+	"hljúða": [
+		"hlýð", "hlýðst", "hlýð",
+		"hlauð", "hlauðst", "hlauð",
+		"hluðinn", "hluðið"
+	],
+	"júfa": [
+		"ýf", "ýfst", "ýf",
+		"auf", "aufst", "auf",
+		"ufinn", "ufið"
+	],
+
+	// others
 	"sve": [
 		"svi", "svir", "svir",
 		"svá", "svár", "svá",
@@ -284,6 +307,11 @@ const irregular_conjugations = {
 		"dey", "deyr", "deyr",
 		"dó", "dór", "dó",
 		"deyðr", "deytt"
+	],
+	"éta": [
+		"ét", "ézt", "ét",
+		"jat", "jazt", "jat",
+		"étr", "étt"
 	],
 }
 
