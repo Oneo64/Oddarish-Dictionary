@@ -5401,7 +5401,7 @@ const entries = {
 	"prængr": ["masculine noun", "circlet, crown", "fictional"],
 	"prík-köngull": ["masculine noun", "thistle"],
 	"príka": ["verb", "to prick, to sting, to pierce; to poke sharply", "modern-icelandic evolved"],
-	"príkr": ["masculine noun", "a thorn", "modern-icelandic evolved"],
+	"príkr": ["masculine noun", "thorn, prickle; sting, pain", "modern-icelandic evolved"],
 	"próf": ["neuter noun", "exam, examination, test", "modern-icelandic"],
 	"prófa": ["verb", "to proof, to test, to examinate", "modern-icelandic"],
 	"próm-spera": ["verb", "to forgive"],
