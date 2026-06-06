@@ -4948,7 +4948,7 @@ const entries = {
 	"leypa": ["verb", "to let, to allow, to may, to permit, to tolerate, to bear something", "old-norse evolved"],
 	"leypi": ["neuter noun", "permission, license; token, ticket (as in a ticket to pass a barrier)", "old-norse evolved"],
 	"leyping": ["feminine noun", "a burden or load", "old-norse evolved"],
-	"leyskja": ["verb", "to sneak, to go stealthily, to move quietly", "unsure"],
+	"leyskja": ["verb", "to sneak, to go stealthily, to move quietly, to crouch", "unsure"],
 	"lifarr": ["masculine noun", "liver (organ)", "proto-germanic evolved"],
 	"liga hófnit": ["verb", "to nod"],
 	"liga ygann": ["verb", "to lean on, to lean against"],
